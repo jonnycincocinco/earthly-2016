@@ -1,6 +1,6 @@
-Eleven WordPress Angular Theme
+Earthly WordPress Angular Theme
 =========================
-This is the Eleven Wordpress Angular Theme based off [royboy789](http://www.roysivan.com)'s AngularJS WordPress theme.
+This is the Earthly Wordpress Angular Theme based off [royboy789](http://www.roysivan.com)'s AngularJS WordPress theme.
 
 npm & gulp
 -----------
@@ -57,4 +57,3 @@ Documentation
 **GLOBAL JS VARIABLES**
 + ajaxInfo.api_url - JSON-REST-API url
 + ajaxInfo.template_directory - Current WordPress theme directory
-
