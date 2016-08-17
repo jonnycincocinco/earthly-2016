@@ -155,7 +155,7 @@ a {
   &.text-link {
     position: relative;
     &:before {
-      @include caret(-135deg,calculateRem(6px));
+      @include caret(-135deg,calculateRem(6px),calculateRem(-17px));
     }
   }
 }

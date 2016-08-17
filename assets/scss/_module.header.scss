@@ -120,7 +120,7 @@ header {
       position: relative;
       margin-right: 48px;
       &:after {
-        @include caret(-45deg,9px);
+        @include caret(-45deg,9px,-17px);
       }
       &:hover {
         .desktop-nav--main__sub {

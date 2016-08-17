@@ -24,11 +24,17 @@
 }
 
 .text-align-left {
+  text-align: center;
+  @include breakpoint(tablet) {
     text-align: left;
+  }
 }
 
 .text-align-right {
+  text-align: center;
+  @include breakpoint(tablet) {
     text-align: right;
+  }
 }
 
 .vertical-align {
@@ -60,6 +66,10 @@
     @include breakpoint(desktop) {
         display: none;
     }
+}
+
+.push-below {
+  padding-bottom: calculateRem(20px);
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

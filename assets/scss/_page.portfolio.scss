@@ -1,5 +1,11 @@
 //  ## EARTHLY DNA  ----------------------------------------------------------//
 .portfolio--container {
+  .inner-hero {
+    &.bg-strip {
+      padding-top: calculateRem(80px);
+      padding-bottom: calculateRem(80px);
+    }
+  }
   .inner-hero__image {
     margin-top: calculateRem(37px);
     @include breakpoint(tablet) {
@@ -24,12 +30,86 @@
     }
     h3 {
        font-weight: normal;
-    }  
+    }
   }
   .etf__left {
-    padding-right: calculateRem(50px);
+    @include breakpoint(tablet) {
+      padding-right: calculateRem(30px);
+    }
   }
   .etf__right {
-    padding-left: calculateRem(50px);
+    @include breakpoint(tablet) {
+      padding-left: calculateRem(30px);
+    }
+  }
+}
+
+.etf__header {
+  padding-top: calculateRem(50px);
+}
+
+.diversification {
+  .diversification__image {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+      @include span-columns(5 of 12);
+   }
+   img {
+     transform: rotate(90deg);
+     width: 280px;
+     @include breakpoint(desktop) {
+       width: 350px;
+     }
+   }
+  }
+  .diversification__text {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+      @include span-columns(7 of 12);
+   }
+   p {
+     @include font-size(18);
+     @include line-height(24);
+     margin-bottom: calculateRem(50px);
+       @include breakpoint(tablet) {
+         width: 80%;
+       }
+       &:first-child {
+         @include breakpoint(tablet) {
+           margin-top: calculateRem(80px);
+         }
+       }
+     }
+  }
+}
+
+.section-tout {
+  .section-tout__icon {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+      width: auto;
+      float: none;
+      display: inline-block;
+    }
+  }
+  .section-tout__text {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+      @include span-columns(8 of 12);
+      float: none;
+      display: inline-block;
+    }
+   p {
+     @include font-size(18);
+     @include line-height(24);
+     &:first-child {
+       padding-top: calculateRem(10px);
+     }
+   }
+    .text-link {
+      &:before {
+        @include caret(-135deg,calculateRem(6px),calculateRem(-14px));
+      }
+    }
   }
 }

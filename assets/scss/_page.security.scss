@@ -2,11 +2,30 @@
 
 .security--container {
   .inner-hero {
+    &.bg-strip {
+      padding-top: calculateRem(50px);
+      padding-bottom: calculateRem(50px);
+    }
+  }
+  .inner-hero {
     .inner-hero__image {
       margin-top: calculateRem(76px);
     }
     .inner-hero__text {
       padding: calculateRem(20px);
+    }
+  }
+}
+
+.security {
+  &.inner-page-section {
+    h2 {
+      margin-bottom: calculateRem(60px);
+    }
+  }
+  .icon-text-col__item {
+    .grid__item {
+      padding-bottom: calculateRem(20px);
     }
   }
 }

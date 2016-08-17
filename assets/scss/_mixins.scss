@@ -153,12 +153,12 @@
     animation-fill-mode: forwards; /* this prevents the animation from restarting! */
 }
 
-@mixin caret($rotation,$bottom) {
+@mixin caret($rotation,$bottom,$right) {
   content: "";
   position: absolute;
   bottom: $bottom;
   transform: rotate($rotation);
-  right: -17px;
+  right: $right;
   height: 7px;
   width: 7px;
   border: 1px solid;

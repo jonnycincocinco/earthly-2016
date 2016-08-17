@@ -1,11 +1,13 @@
 //  ## EARTHLY DNA  ----------------------------------------------------------//
 
-.ethical-screening {
-  @include breakpoint(tablet) {
-    background-image: url(/wp-content/themes/earthly-2016/build/images/icons/icon-circle-line.png);
-    background-repeat: no-repeat;
-    background-position: 56%;
-    background-size: 80%;
+.icon-text {
+  &.ethical-screening {
+    @include breakpoint(tablet) {
+      background-image: url(/wp-content/themes/earthly-2016/build/images/icons/icon-circle-line.png);
+      background-repeat: no-repeat;
+      background-position: 56%;
+      background-size: 80%;
+    }
   }
   @include breakpoint(desktop) {
     background-size: 60%;
@@ -36,7 +38,7 @@
      .icon-text-col__text {
        @include span-columns(12 of 12);
        @include breakpoint(tablet) {
-          @include span-columns(6 of 12);
+          @include span-columns(8 of 12);
           text-align: left;
         }
      }
@@ -62,7 +64,7 @@
   .text-link {
       @include font-size(20);
       &:before {
-        @include caret(-135deg,calculateRem(8px));
+        @include caret(-135deg,calculateRem(8px),calculateRem(-17px));
       }
   }
     .whitepaper__icon {
