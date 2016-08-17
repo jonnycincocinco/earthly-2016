@@ -1,0 +1,99 @@
+//  ## A POTPOURRI OF SORTS /// OF MODULES  ------------------------------------------------------------------------//
+.bg-strip {
+  padding-top: calculateRem(80px);
+  padding-bottom: calculateRem(80px);
+  background: $base--bgStripcolor url(../images/global/bg-pattern.png) 0 0;
+}
+
+.three-up-tiles {
+   .grid__item {
+     text-align: center;
+     @include span-columns(12 of 12);
+     @include breakpoint(tablet) {
+        @include span-columns(4 of 12);
+        text-align: left;
+     }
+   }
+   .three-up-tiles__icon {
+
+   }
+   .three-up-tiles__text {
+     color: $base--colorWhite;
+     @include font-size(15);
+     @include line-height(25);
+     margin-bottom: 12px;
+     @include breakpoint(desktop) {
+       padding-right: 15%;
+     };
+   }
+}
+
+.inner-hero {
+  &.bg-strip {
+    padding-top: calculateRem(40px);
+    padding-bottom: calculateRem(40px);
+  }
+  .inner-hero__image {
+    margin-top: calculateRem(105px);
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+       @include span-columns(5 of 12);
+       text-align: center;
+     }
+  }
+  .inner-hero__text {
+    padding-right: calculateRem(125px);
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+       @include span-columns(7 of 12);
+       text-align: left;
+     }
+  }
+  .inner-hero__text--subhead {
+    @include font-size(26);
+    font-weight: 800;
+    margin-bottom: calculateRem(32px);
+  }
+  .inner-hero__text--main {
+    @include font-size(15);
+    @include line-height(30);
+  }
+}
+
+.inner-page-section {
+  h2 {
+    margin-bottom: calculateRem(30px);
+  }
+  .subhead {
+    padding: 0 calculateRem(120px) calculateRem(25px);
+    @include font-size(18);
+    @include line-height(32);
+  }
+  li {
+    @include font-size(16);
+    font-weight: 800;
+    padding-bottom: calculateRem(5px);
+    @include line-height(15);
+    span {
+      @include font-size(12);
+    }
+  }
+  &.three-up-tiles {
+    p {
+      margin: 0
+    }
+    h5 {
+      margin-top: 0;
+    }
+  }
+  &.flush-bottom {
+    padding-bottom: 0;
+  }
+  &.flush-top {
+    padding-top: 0;
+  }
+}
+
+.icon-text {
+  
+}

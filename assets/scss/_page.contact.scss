@@ -1,0 +1,139 @@
+//  ## CONTACT  ----------------------------------------------------------//
+
+.contact--map-container {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+        @include span-columns(6 of 12);
+    }
+    @include breakpoint(desktop) {
+        margin-top: 50px;
+    }
+}
+
+.contact--map-scale {
+    @include fill-parent();
+    float: left;
+    margin-bottom: 20px;
+    @include breakpoint(desktop) {
+        width: 440px;
+        float: none;
+        @include horz-align(relative);
+    }
+}
+
+.contact--map {
+    @include fill-parent();
+    height: 320px;
+    @include breakpoint(desktop) {
+        height: 440px;
+    }
+}
+
+.contact--office {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+        @include span-columns(6 of 12);
+        margin-top: 4px;
+    }
+    @include breakpoint(desktop) {
+        margin-top: 50px;
+    }
+    h2 {
+        @include font-size(28);
+        @include line-height(30);
+        margin-bottom: 30px;
+        &.line {
+            &:before {
+                top: -11px;
+            }
+        }
+    }
+    address {
+        @include font-size(16);
+        font-style: normal;
+        margin-bottom: 30px;
+    }
+    .contact--phone-link {
+        float: left;
+        @include font-size(16);
+        margin-bottom: 30px;
+    }
+    .contact--map-link {
+        display: block;
+        font-weight: bold;
+        @include font-size(16);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        clear: both;
+    }
+}
+
+.contact--dept {
+    @include span-columns(12 of 12);
+    clear: both;
+    @include breakpoint(desktop) {
+        float: right;
+        @include span-columns(6 of 12);
+        clear: none;
+    }
+    h3 {
+        @include font-size(16);
+        @include line-height(18);
+        margin-bottom: 2px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .last-line {
+        @include font-size(14);
+        margin-bottom: 30px;
+        display: block;
+        @include breakpoint(desktop) {
+           margin-bottom: 20px;
+        }
+    }
+}
+
+.contact--inner-container {
+    @include fill-parent();
+    padding: 0;
+    @include breakpoint(tablet) {
+        padding: 0 26px;
+    }
+    @include breakpoint(desktop) {
+       padding: 0 26px 0 50px;
+    }
+    &.dept {
+        @include breakpoint(tablet) {
+            padding: 0;
+            margin-top: 20px;
+        }
+        @include breakpoint(desktop) {
+           padding: 0 26px 0 50px;
+           margin-top: 20px;
+        }
+    }
+}
+
+.contact--rule {
+    @include fill-parent();
+    float: left;
+    border-top: 1px solid $base--ruleColor;
+    padding-top: 30px;
+    @include breakpoint(tablet) {
+        padding-top: 50px;
+    }
+}
+
+.contact--dept-tier-one {
+    @include span-columns(12 of 12);
+}
+
+.contact--dept-tier-two {
+    float: left;
+    clear: both;
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+        margin-top: 15px;
+    }
+}

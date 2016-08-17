@@ -1,0 +1,73 @@
+//  ## FORMS  -----------------------------------------------------------------------//
+
+fieldset {
+    border: 0;
+    border-top: 1px solid $base--ruleColor;
+    padding: 20px 0;
+    margin: 0;
+//    @extend %trade-gothic-headline;
+}
+
+legend {
+    @include font-size(18);
+    padding: 0 20px 0 0;
+}
+
+label {
+    display: block;
+    float: left;
+    margin: 8px 0 0 0;
+    width: 100%;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=date],
+input[type=password],
+textarea {
+    font-family: $base--fontFamily;
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    @include font-size(14);
+    padding: 6px 5px;
+    width: 100%;
+    transition: background-color 0.5s;
+    outline: none;
+}
+
+textarea {
+    border-radius: 0;
+    line-height: 30px;
+    min-height: 140px;
+    overflow-y: scroll;
+    padding: 5px;
+    resize: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+:-moz-placeholder { // Firefox 18-
+    color: #999;
+}
+
+::-moz-placeholder {  // Firefox 19+
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+}

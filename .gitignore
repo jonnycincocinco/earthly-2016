@@ -1,0 +1,59 @@
+# STATIC BASE PROJECT
+# GIT IGNORE FILES LIST
+
+
+# -----------------------
+# GENERAL PROJECT IGNORES
+# -----------------------
+
+# Any build log files
+logs/
+
+
+# ---------------------
+# BUILD GENERATED FILES
+# ---------------------
+
+# SASS Cache files
+.sass-cache/
+
+# Generated CSS files
+build/
+
+
+# ------------
+# Node Modules - https://github.com/github/gitignore/blob/master/Node.gitignore
+# ------------
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+coverage
+
+npm-debug.log
+node_modules
+
+# -----------------------------------------
+# ENVIRONMENT & IDE SPECIFIC SETTINGS FILES
+# -----------------------------------------
+
+# Sublime text
+*.sublime-project
+*.sublime-workspace
+
+
+# Mac folder attributes
+.DS_Store
+
+# Windows folder attributes
+Desktop.ini
+Thumbs.db
+

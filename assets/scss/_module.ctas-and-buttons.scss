@@ -1,0 +1,100 @@
+//  ## CTAs  ------------------------------------------------------------------------//
+
+.cta,
+.form-buttons {
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.cta a,
+.cta button,
+button.cta,
+.form-buttons input {
+//    @extend %trade-gothic-headline;
+    @include font-size(16);
+    background-color: $base--ctaColor;
+    border: 1px solid $base--ctaColor;
+    border-radius: 0;
+    color: $base--ctaTextColor;
+    display: block;
+    float: left;
+    font-weight: 800;
+    @include line-height(30);
+    padding: 4px 20px;
+    text-decoration: none;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    box-shadow: 0 .05556rem 0 0 $base--ctaColor;
+    border-radius: .33333rem;
+    &.right {
+      float: right;
+      clear: both;
+      margin-right: 1%;
+    }
+    &:hover {
+      background-color: $base--ctaColorHover;
+      border-color: $base--ctaColorHover;
+      box-shadow: 0 .05556rem 0 0 $base--ctaColorHover;
+    }
+}
+
+.form-buttons input {
+    float: right;
+    margin-left: 20px;
+}
+
+.cta a:hover,
+.cta a:focus,
+.cta a:active,
+.cta button:hover,
+.cta button:focus,
+.cta button:active,
+.form-buttons input:hover,
+.form-buttons input:focus,
+.form-buttons input:active {
+    background-color: $base--ctaColorHover;
+    border: 1px solid $base--ctaColorHover;
+}
+
+.cta a.inactive,
+.cta button.inactive,
+.form-buttons input.inactive {
+    background-color: #CCC;
+    border: 1px solid #CCC;
+    color: #999;
+}
+
+.cta a.inactive:hover,
+.cta a.inactive:focus,
+.cta a.inactive:active,
+.cta button.inactive:hover,
+.cta button.inactive:focus,
+.cta button.inactive:active,
+.form-buttons input.inactive:hover,
+.form-buttons input.inactive:focus,
+.form-buttons input.inactive:active {
+    background-color: #CCC;
+    border: 1px solid #CCC;
+    color: #999;
+}
+
+.cta-secondary a,
+.cta-secondary button,
+.form-buttons input[type=reset] {
+    background-color: transparent;
+    border: 1px solid $base--ctaColor;
+    color: $base--ctaColor;
+}
+
+.cta-secondary a:hover,
+.cta-secondary a:focus,
+.cta-secondary a:active,
+.cta-secondary button:hover,
+.cta-secondary button:focus,
+.cta-secondary button:active,
+.form-buttons input[type=reset]:hover,
+.form-buttons input[type=reset]:focus,
+.form-buttons input[type=reset]:active {
+    background-color: transparent;
+    border: 1px solid $base--ctaColorHover;
+    color: $base--ctaTextColor;
+}

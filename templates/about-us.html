@@ -1,0 +1,32 @@
+<div class="page page-about" ng-cloak>
+
+    <div class="about-us--container">
+        <div class="about-us--inner-container">
+
+            <ul class="about-us--bios">
+                <li ng-repeat="post in posts" class="anim-in-out anim-slide-below-fade">
+                    <a class="about-us--bio" href="{{site + '#/about-us/bio/' + post.slug}}">
+
+                        <picture picturefill>
+                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                            <source pf-media="(min-width: 1024px)" ng-srcset="{{post.acf.bio_teaser_image}}, {{getRetina(post.acf.bio_teaser_image)}} 2x"/>
+                            <source pf-media="(min-width: 768px)" ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_teaser_image, 'tablet') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_teaser_image, 'tablet')) }} 2x"/>
+                            <source ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_teaser_image, 'mobile') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_teaser_image, 'mobile')) }} 2x"/>
+                            <!--[if IE 9]></video><![endif]-->
+                            <img ng-srcset="{{post.acf.bio_teaser_image  | to_trustedURL }}" alt="{{post.title.rendered | to_trusted}}" class="about-us--bio-img" />
+                        </picture>
+
+                        <div class="about-us--bio-dim"></div>
+                        <div class="about-us--bio-desc">
+                            <h2 class="line">{{post.title.rendered}}</h2>
+                            <h3 class="subheading">{{post.acf.bio_job_title}}</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+

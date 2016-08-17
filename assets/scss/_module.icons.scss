@@ -1,0 +1,31 @@
+//  ## ICONS  ------------------------------------------------------------------------//
+
+.icon-ui {
+  float: left;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 32px 32px;
+  @include opacity(1);
+  @include transition(opacity 0.5s);
+  &:hover {
+    @include opacity(.50);
+  }
+  &.icon-ui--inactive {
+    @include opacity(.50);
+  }
+}
+
+.icon-ui--previous {
+    background-image: url('../images/icons/icon-arrow-left.svg');
+}
+
+.icon-ui--next {
+    background-image: url('../images/icons/icon-arrow-right.svg');
+}
+
+.icon-ui--close {
+    background-image: url('../images/icons/icon-close.svg');
+}

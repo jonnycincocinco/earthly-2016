@@ -1,0 +1,228 @@
+//  ## WHAT WE DO  ----------------------------------------------------------//
+body.what-we-do {
+  background:url('http://localhost:8888/11_site_final/wp-content/themes/earthly-2016/build/images/global/what-we-do-mural.jpg') no-repeat center center fixed;
+  @include background-size(cover);
+}
+
+
+.page-what-we-do {
+
+  .what-we-do--container {
+      float: left;
+      @include fill-parent();
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include breakpoint(tablet) {
+        margin-top: 30px;
+      }
+      @include breakpoint(desktop) {
+        margin-top: 0;
+      }
+  }
+
+  .what-we-do--section {
+      @include span-columns(12 of 12);
+      margin-bottom: 40px;
+      margin-left: 40px;
+      color: $base--backgroundColor;
+      @include breakpoint(tablet) {
+          @include span-columns(12);
+          padding-right: 30px;
+          margin-left: 100px;
+      }
+      @include breakpoint(desktop) {
+          margin-top: 70px;
+          margin-left: 0;
+          @include span-columns(3 of 12);
+      }
+      a {
+        color: $base--backgroundColor;
+        &:hover {
+          color: $base--linkColorHover;
+        }
+      }
+      .what-we-do--section-number {
+          display: block;
+          @include font-size(200);
+          line-height: 1em;
+          font-weight: normal;
+          @include breakpoint(desktop) {
+              @include font-size(100);
+              font-weight: normal;
+              position: relative;
+              left: -5px;
+              margin-bottom: .1em;
+          }
+          @include breakpoint(cinema) {
+            @include font-size(130);
+          }
+      }
+      .what-we-do--expertise {
+        &:after {
+          content: " . "
+        }
+      }
+      h2 {
+          margin-bottom: 23px;
+          margin-top: 54px;
+          @include font-size(32);
+          @include breakpoint(tablet) {
+              @include font-size(26);
+          }
+          @include breakpoint(desktop) {
+              @include font-size(17);
+              margin-bottom: 10px;
+              margin-top: 0;
+              @include line-height(20);
+          }
+          @include breakpoint(cinema) {
+              @include font-size(24);
+              margin-bottom: 10px;
+          }
+          &.line {
+              &:before {
+                  top: -31px;
+                  width: 43px;
+                  height: 7px;
+                  background: $base--backgroundColor;
+                  @include breakpoint(desktop) {
+                      top: -8px;
+                      width: 25px;
+                      height: 3px;
+                  }
+              }
+          }
+      }
+      h3 {
+          font-weight: normal;
+          font-style: italic;
+          text-transform: none;
+          color: #B7B7B7;
+          @include font-size(23);
+          @include line-height(20);
+          height: auto;
+          width: 80%;
+          padding-bottom: 58px;
+          margin-bottom: 50px;
+          border-bottom: 1px solid $base--backgroundColor;
+          @include breakpoint(desktop) {
+              @include font-size(14);
+              @include line-height(16);
+              padding-bottom: 24px;
+              margin-bottom: 24px;
+              height: 42px;
+              width: 83%;
+              top: -9px;
+              display: block;
+          }
+          @include breakpoint(cinema) {
+            @include font-size(16);
+            margin-bottom: 30px;
+
+          }
+      }
+      > p {
+          @include font-size(15);
+          margin-bottom: 5rem;
+          @include breakpoint(tablet) {
+              height: 253px;
+          }
+          @include breakpoint(desktop) {
+              @include font-size(13);
+              height: 400px;
+          }
+          @include breakpoint(cinema) {
+              @include font-size(14);
+              height: 340px;
+          }
+      }
+      .cta--arrow {
+          @extend %circular-medium;
+          float: left;
+          @include font-size(28);
+          color: $base--backgroundColor;
+          @include breakpoint(desktop) {
+              @include font-size(15);
+          }
+          @include breakpoint(cinema) {
+              @include font-size(16);
+          }
+          &.line {
+              &:before {
+                  width: 26px;
+                  height: 2px;
+                  background: $base--backgroundColor;
+              }
+          }
+      }
+  }
+}
+
+.carousel-navigation {
+    @include horz-align(absolute);
+    z-index: 1111;
+    top: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    left: auto;
+    right: -40px;
+    &.tablet-carousel {
+      display: none;
+      @include breakpoint(tablet) {
+        display: block;
+      }
+    }
+    @include breakpoint(tablet) {
+        bottom: 40px;
+        left: auto;
+        right: 0;
+        top: 245px;
+    }
+    @include breakpoint(desktop) {
+        display: none;
+    }
+    li {
+        float: left;
+        margin-left: 6px;
+
+        @include breakpoint(tablet) {
+            margin-left: 15px;
+            .icon-ui--next {
+              background-image: url(../images/icons/icon-arrow-white-right.svg)
+            }
+            .icon-ui--previous {
+              background-image: url(../images/icons/icon-arrow-white-left.svg)
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+            margin-right: 6px;
+            @include breakpoint(tablet) {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+// Carousel Overrides
+.slick-slider {
+    overflow: hidden;
+}
+
+.slick-disabled {
+    @include opacity(.20);
+    &:hover {
+        @include opacity(.20);
+    }
+}
+
+.slick-track {
+    @include breakpoint(desktop) {
+        -webkit-transform: translate3d(0,0,0) !important;
+        -moz-transform: translate3d(0,0,0) !important;
+        -ms-transform: translate3d(0,0,0) !important;
+        -o-transform: translate3d(0,0,0) !important;
+        transform: translate3d(0,0,0) !important;
+    }
+}

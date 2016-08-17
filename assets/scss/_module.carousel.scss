@@ -1,0 +1,62 @@
+//  ## CAROUSEL  -----------------------------------------------------------------------//
+$card-width: 675px;
+$card-height: 321px;
+
+$total: 10;
+$n: 0;
+
+.carousel {
+  &.section-strip {
+    position: relative;
+    padding-bottom: calculateRem(-180px);
+  }
+  h2 {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .carousel-cards {
+    @include horz-align(relative);
+    width: 100%;
+    min-height: calculateRem(430px);
+    top: calculateRem(30px);
+    .carousel-cards__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: #FFFFFF;
+      width: $card-width;
+      height: $card-height;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(#000, 0.2);
+      transform-origin: center;
+      transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+      cursor: pointer;
+
+      @while $total >= $n {
+        &:nth-child(#{$n + 1}) {
+          z-index: #{$total - $n};
+          top: #{-$n * 15 + "px"};
+          transform-origin: top;
+          transform: scale(#{1 - $n * .1});
+          opacity: #{1 - $n * .1};
+        }
+
+        $n: $n + 1;
+      }
+
+      &:first-child {
+        &:hover {
+          box-shadow: 0 0 20px rgba(#000, 0.4);
+          transform: scale(1.05);
+        }
+      }
+
+      &:last-child {
+        opacity: 0;
+      }
+    }
+  }
+
+}

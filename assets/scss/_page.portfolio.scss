@@ -1,0 +1,35 @@
+//  ## EARTHLY DNA  ----------------------------------------------------------//
+.portfolio--container {
+  .inner-hero__image {
+    margin-top: calculateRem(37px);
+    @include breakpoint(tablet) {
+       @include span-columns(5 of 12);
+       text-align: center;
+     }
+  }
+  .inner-hero__text {
+    padding-right: calculateRem(35px);
+    @include breakpoint(tablet) {
+       @include span-columns(7 of 12);
+       text-align: left;
+     }
+  }
+}
+
+.etf {
+  .icon-text-col {
+     @include span-columns(12 of 12);
+     @include breakpoint(tablet) {
+       @include span-columns(6 of 12);
+    }
+    h3 {
+       font-weight: normal;
+    }  
+  }
+  .etf__left {
+    padding-right: calculateRem(50px);
+  }
+  .etf__right {
+    padding-left: calculateRem(50px);
+  }
+}

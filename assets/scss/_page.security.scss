@@ -1,0 +1,12 @@
+//  ## SECURITY  ----------------------------------------------------------//
+
+.security--container {
+  .inner-hero {
+    .inner-hero__image {
+      margin-top: calculateRem(76px);
+    }
+    .inner-hero__text {
+      padding: calculateRem(20px);
+    }
+  }
+}

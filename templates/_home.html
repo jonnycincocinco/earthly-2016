@@ -1,0 +1,19 @@
+<div class="page page-home" ng-repeat="post in posts" ng-cloak>
+
+    <div class="page-home--hero" style="background-image: url({{post.acf.homepage_video_placeholder}})">
+
+        <video class="page-home--video" autoplay loop muted>
+            <source ng-src="{{getVideoSrc(post.acf.homepage_video_mp4)}}" type='video/mp4' />
+            <source ng-src="{getVideoSrc(post.acf.homepage_video_ogv)}}" type='video/ogg; codecs="theora, vorbis"' />
+        </video>
+
+        <div class="page-home--intro">
+            <div class="page-home--intro-hdr">
+                <h1 ng-bind-html="post.acf.intro_headline | to_trusted"></h1>
+                <p ng-bind-html="post.acf.intro_tagline | to_trusted"></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

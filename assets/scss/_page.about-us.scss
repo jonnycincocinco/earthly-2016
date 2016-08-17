@@ -1,0 +1,103 @@
+//  ## ABOUT US  ----------------------------------------------------------//
+
+.about-us--container {
+  @include fill-parent();
+  height: 100%;
+}
+
+.about-us--inner-container {
+    padding: 0 26px;
+    @include breakpoint(desktop) {
+        padding: 0 64px;
+    }
+}
+
+.about-us--bios {
+    @include fill-parent();
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    li {
+        float: left;
+        margin-bottom: 26px;
+        @include span-columns(12 of 12);
+        @include breakpoint(tablet) {
+            @include span-columns(6 of 12);
+            padding: 30px;
+            margin-bottom: 0;
+        }
+        @include breakpoint(desktop) {
+            @include span-columns(3 of 12);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-us--bio {
+    float: left;
+    @include fill-parent();
+    position: relative;
+    &:hover {
+        .about-us--bio-dim, {
+            @include opacity(0.5);
+            visibility: visible;
+            @include transition(opacity 0.5s);
+        }
+        .about-us--bio-desc, {
+            @include opacity(1);
+            visibility: visible;
+            @include transition(opacity 0.5s);
+        }
+
+    }
+}
+
+.about-us--bio-img {
+    float: left;
+    @include fill-parent();
+    height: auto;
+}
+
+.about-us--bio-dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include fill-parent();
+    height: 100%;
+    z-index: 20;
+    display: block;
+    background: #000;
+    @include opacity(0);
+    visibility: hidden;
+    @include transition(opacity 0.5s, visibility 0s 0.5s);
+}
+
+.about-us--bio-desc {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    padding-right: 15px;
+    z-index: 30;
+    @include opacity(0);
+    visibility: hidden;
+    @include transition(opacity 0.5s, visibility 0s 0.5s);
+    h2 {
+        margin-bottom: 0;
+        color: $base--projectLinkColor;
+        @include font-size(16);
+        @include line-height(16);
+    }
+    h3 {
+        color: $base--projectLinkColor;
+        margin-bottom: 0;
+        @include font-size(15);
+        @include line-height(17);
+    }
+    .line {
+      top: -2px;
+        &:before {
+            background: $base--projectLinkColor;
+        }
+    }
+}

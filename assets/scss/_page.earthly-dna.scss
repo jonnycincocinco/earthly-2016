@@ -1,0 +1,72 @@
+//  ## EARTHLY DNA  ----------------------------------------------------------//
+
+.ethical-screening {
+  @include breakpoint(tablet) {
+    background-image: url(/wp-content/themes/earthly-2016/build/images/icons/icon-circle-line.png);
+    background-repeat: no-repeat;
+    background-position: 56%;
+    background-size: 80%;
+  }
+  @include breakpoint(desktop) {
+    background-size: 60%;
+  }
+  .icon-text-col {
+    @include breakpoint(desktop) {
+      margin-left: calculateRem(80px);
+    }
+  }
+  .icon-text-col__item {
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+       @include span-columns(5 of 12);
+       text-align: left;
+     }
+     .icon-text-col__icon {
+       @include span-columns(12 of 12);
+       @include breakpoint(tablet) {
+          @include span-columns(4 of 12);
+          text-align: right;
+        }
+        img {
+          background: #fff;
+          border-radius: 3px;
+          box-shadow: 0 0 2px rgba(0,0,0,.15);
+        }
+     }
+     .icon-text-col__text {
+       @include span-columns(12 of 12);
+       @include breakpoint(tablet) {
+          @include span-columns(6 of 12);
+          text-align: left;
+        }
+     }
+  }
+  li {
+    @include font-size(18);
+    @include line-height(20);
+    font-weight: 400;
+    span {
+      @include font-size(14);
+    }
+  }
+}
+
+.whitepaper {
+  h2 {
+    margin-bottom: calculateRem(10px);
+  }
+  .grid__item {
+    width: auto;
+    padding-left: 0;
+  }
+  .text-link {
+      @include font-size(20);
+      &:before {
+        @include caret(-135deg,calculateRem(8px));
+      }
+  }
+    .whitepaper__icon {
+    float: left;
+    margin-right: calculateRem(25px);
+  }
+}

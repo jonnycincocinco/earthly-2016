@@ -1,0 +1,38 @@
+//  ## CTA RIBBON  ------------------------------------------------------------------------//
+.cta-ribbon {
+  h2 {
+    margin-bottom: calculateRem(10px);
+  }
+  .cta-ribbon__subhead {
+      @include font-size(24);
+      font-weight: 800;
+      margin-bottom: 40px;
+  }
+  input {
+    line-height: 1;
+    font-weight: 300;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1em;
+    color: #fff;
+  }
+  .cta-ribbon__form {
+
+  }
+
+  .cta-ribbon__form--second {
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+
+  .cta {
+    float: none;
+    margin: auto;
+  }
+}

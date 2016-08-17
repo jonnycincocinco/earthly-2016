@@ -1,0 +1,198 @@
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == cinema {
+        @media only screen and (min-width: $breakpoint-cinema) { @content; }
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: $breakpoint-desktop) { @content; }
+    }
+    @else if $breakpoint == tablet {
+        @media only screen and (min-width: $breakpoint-tablet) { @content; }
+    }
+    @else if $breakpoint == mobileOnly {
+        @media only screen and (max-width: $breakpoint-tablet) { @content; }
+    }
+}
+
+@mixin breakpointNews($breakpointMin, $breakpointMax) {
+  @media only screen and (min-width: $breakpointMin) and (max-width: $breakpointMax){ @content; }
+}
+
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue) + px;
+    font-size: ($sizeValue/16) + rem;
+}
+
+@mixin line-height($sizeValue: 1.6) {
+    line-height: ($sizeValue) + px;
+    line-height: ($sizeValue/16) + rem;
+}
+
+@mixin heightEMs($sizeValue: 1.6) {
+    height: ($sizeValue) + px;
+    height: ($sizeValue/16) + rem;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color) {
+    -webkit-box-shadow: $top $left $blur $spread $color;
+    -moz-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
+}
+
+@mixin table-glow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color, inset $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color, inset $top $left $blur $color;
+    box-shadow: $top $left $blur $color, inset $top $left $blur $color;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin background-size($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+@mixin vertical-align($position) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horz-align($position) {
+  position: $position;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin xy-align($x,$y) {
+  position: absolute;
+  top: $x;
+  left: $y;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin total-align($position) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+@mixin circle($size, $color) {
+    border-radius: 50%;
+    background-color: $color;
+    width: $size;
+    height: $size;
+}
+
+@mixin text-input-specific {
+  &[type="text"]        {@content}
+  &[type="email"]       {@content}
+  &[type="password"]    {@content}
+  &[type="url"]         {@content}
+  &[type="tel"]         {@content}
+  &[type="number"]      {@content}
+  &[type="search"]      {@content}
+}
+
+@mixin text-overflow-ellipsis($width) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: $width;
+}
+
+@mixin animation ($delay, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+@mixin caret($rotation,$bottom) {
+  content: "";
+  position: absolute;
+  bottom: $bottom;
+  transform: rotate($rotation);
+  right: -17px;
+  height: 7px;
+  width: 7px;
+  border: 1px solid;
+  border-right: none;
+  border-top: none;
+}
+
+$prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
+// ********************
+// fadeIn
+// ********************
+@mixin keyframe-fadeIn {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-o-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-ms-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@mixin fadeIn( $arg ) {
+  $keyframe-name:fadeIn;
+  $duration:$arg;
+  @each $p in $prefix {
+    #{$p}animation:$keyframe-name $duration;
+  }
+}

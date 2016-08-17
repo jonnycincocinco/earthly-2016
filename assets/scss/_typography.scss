@@ -1,0 +1,201 @@
+//  ## TYPOGRAPHY  -----------------------------------------------------------------//
+
+@font-face {
+  font-family: 'Rising-Sun';
+  font-weight: bolder;
+  font-style: normal;
+  src: url("../fonts/rising-sun/RisingSun-Black.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Rising-Sun';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/rising-sun/RisingSun-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Rising-Sun';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/rising-sun/RisingSun-Regular.woff") format("woff"); }
+
+
+%circular-headline {
+  font-family: "Rising-Sun", helvetica, arial, sans-serif;
+  font-weight: bolder;
+//  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+%circular {
+  font-family: "Rising-Sun", helvetica, arial, sans-serif;
+  font-weight: normal;
+}
+
+%circular-medium {
+  font-family: "Rising-Sun", helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+%helvetica {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica", helvetica, arial, sans-serif;
+  font-weight: normal;
+}
+
+html {
+  font-size: $base--fontSize;
+  color: $base--color;
+  @extend %circular;
+  font-weight: $base--fontWeight;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @extend %circular-headline;
+  @include font-size(48);
+  @include line-height(54);
+  margin: 0 0 calculateRem(10px) 0;
+}
+
+h2 {
+  @extend %circular-headline;
+  @include font-size(38);
+  @include line-height(52);
+  margin: 0 0 calculateRem(40px) 0;
+}
+
+h3 {
+  @extend %circular-headline;
+  @include font-size(24);
+  @include line-height(22);
+  margin: 0 0 calculateRem(22px) 0;
+}
+
+h4 {
+  @extend %circular-headline;
+  @include font-size(20);
+  @include line-height(30);
+  margin: calculateRem(25px) 0;
+}
+
+h5 {
+  @extend %circular-headline;
+  @include font-size(16);
+  @include line-height(25);
+  margin: calculateRem(12px) 0;
+}
+
+h6 {
+  @extend %circular-headline;
+  @include font-size(18);
+  @include line-height(25);
+  margin: calculateRem(25px) 0;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child {
+  margin-top: 0;
+}
+
+p {
+  @include font-size(14);
+  margin: 0 0 calculateRem(12px);
+}
+
+ul,
+ol {
+  margin: calculateRem(20px) 0;
+  padding: 0 0 0 calculateRem(25px);
+}
+
+li {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  margin: calculateRem(40px) 0;
+  padding: calculateRem(5px) calculateRem(10px) calculateRem(5px) calculateRem(20px);
+}
+
+blockquote p:last-child {
+  margin: 0;
+}
+
+legend {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+label {
+  @include line-height(30);
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=date],
+input[type=password],
+textarea {
+  color: $base--color;
+}
+
+a {
+  color: $base--linkColor;
+  text-decoration: none;
+  transition: color 0.3s;
+  &.text-link {
+    position: relative;
+    &:before {
+      @include caret(-135deg,calculateRem(6px));
+    }
+  }
+}
+
+a:hover,
+a:active {
+  color: $base--linkColorHover;
+}
+
+.line {
+  position: relative;
+  top: 7px;
+  &:before {
+    background: #333;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: -7px;
+    width: 16px;
+  }
+}
+
+.subheading {
+  font-weight: normal;
+  @include font-size(16);
+  text-transform: none;
+}
+
+//  ## MEDIA QUERIES  --------------------------------------------------------------//
+
+@include breakpoint(tablet) {
+
+  html {
+    font-size: $base--fontSize;
+  }
+
+  ol,
+  ul {
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,75 @@
+//  ## LAYOUT  ----------------------------------------------------------------------//
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: $base--backgroundColor;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    @include fill-parent();
+    min-width: $min-width;
+//    height: 100%;
+    padding-top: 70px;
+}
+
+.page-ui-view--container {
+//    height: 100%;
+}
+
+.page-ui-view {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.container {
+    @include outer-container;
+    padding: 0 24px;
+    @include breakpoint(desktop) {
+        padding: 0 calculateRem(130px);
+    }
+}
+
+.inner-container {
+    padding: 0 40px;
+    background-color: white;
+    @include breakpoint(tablet) {
+        padding: 0 24px;
+    }
+    @include breakpoint(desktop) {
+        padding: 0 40px;
+    }
+}
+
+.grid__item {
+  display: inline-block;
+  width: 100%;
+  padding-left: 28px;
+  vertical-align: top;
+}
+
+//  ## UI OVERRIDES  ----------------------------------------------------------------//
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+:focus {
+    outline: none !important;
+}

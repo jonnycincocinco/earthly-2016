@@ -1,0 +1,71 @@
+<div class="page page-bio" ng-cloak>
+
+    <div class="bio--container" ng-repeat="post in posts">
+
+        <div class="bio--inner-container">
+
+            <div class="top-lockup anim-in-out anim-slide-below-fade">
+
+                <div class="bio--photo-container">
+
+                    <picture picturefill>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_hero_image, 'mobile') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_hero_image, 'mobile')) }} 2x"/>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img ng-srcset="{{post.acf.bio_hero_image | to_trustedURL }}" alt="{{post.title.rendered | to_trusted}}" class="bio--photo-mobile" />
+                    </picture>
+
+                    <picture picturefill>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source pf-media="(min-width: 1024px)" ng-srcset="{{post.acf.bio_hero_image}}, {{getRetina(post.acf.bio_hero_image)}} 2x"/>
+                        <source pf-media="(min-width: 768px)" ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_hero_image, 'tablet') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_hero_image, 'tablet')) }} 2x"/>
+                        <source ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_hero_image, 'mobile') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_hero_image, 'mobile')) }} 2x"/>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img ng-srcset="{{post.acf.bio_hero_image | to_trustedURL }}" alt="{{post.title.rendered | to_trusted}}" class="bio--photo-tablet" />
+                    </picture>
+
+                </div>
+
+                <div class="bio--desc">
+
+                    <div class="inner-container">
+
+                        <div class="bio--top">
+
+                            <div class="bio--arrows-container">
+                                <a href="{{site + '#/about-us/bio/' + post.acf.previous_post.post_name}}" class="icon-ui icon-ui--previous icon-ui--inactive" ng-click="clickedPrevious()">Previous</a>
+                                <a href="{{site + '#/about-us/bio/' + post.acf.next_post.post_name}}" class="icon-ui icon-ui--next" ng-click="clickedNext()">Next</a>
+                            </div>
+
+                            <a ui-sref="about-us" class="icon-ui icon-ui--close" ng-click="clickedClose()">Close</a>
+
+                            <div class="bio--name-container">
+                                <h2 class="line">{{post.title.rendered}}</h2>
+                                <h3 class="subheading">{{post.acf.bio_job_title}}</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bio--quote-container">
+                    <div class="inner-container">
+                        <blockqoute class="bio--quote">{{post.acf.bio_quote}}</blockqoute>
+                        <div class="bio-text bio-text-side show--ondesktop-only">
+                            <p ng-bind-html="post.content.rendered | to_trusted"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bio-text hide--ondesktop">
+                <p ng-bind-html="post.content.rendered | to_trusted"></p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

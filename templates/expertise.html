@@ -1,0 +1,56 @@
+<div class="page page-expertise ng-cloak" >
+
+    <div class="expertise--container ng-cloak" ng-repeat="post in posts">
+
+        <div class="expertise--fixed-content">
+            <div class="inner-container">
+                <nav class="expertise--nav">
+                    <a href="{{site + '#/what-we-do/' + post.acf.previous_post.post_name}}" class="icon-ui icon-ui--previous icon-ui--inactive" ng-click="clickedPrevious()" >Previous</a>
+                    <a href="{{site + '#/what-we-do/' + post.acf.next_post.post_name}}" class="icon-ui icon-ui--next" ng-click="clickedNext()">Next</a>
+                    <a ui-sref="what-we-do" class="icon-ui icon-ui--close" ng-click="clickedClose()">Close</a>
+                </nav>
+                <div class="expertise--desc-wrapper ng-cloak">
+                    <h2 class="expertise--desc-headline line" ng-bind-html="post.acf.expertise_headline | to_trusted"></h2>
+                    <div class="expertise--desc-body"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="expertise--asset-wrapper ng-cloak">
+
+            <div class="expertise--asset ng-cloak" ng-attr-id="{{post.acf.expertise_assets[$index].link}}" ng-repeat="asset_url in post.acf.expertise_assets">
+
+                <div class="expertise--desc ng-cloak">
+                    <div class="inner-container">
+                        <h3 class="expertise--asset-headline ng-cloak" ng-bind-html="asset_url.asset_headline | to_trusted"></h3>
+                        <p class="ng-cloak" ng-bind-html="asset_url.asset_description | to_trusted"></p>
+                    </div>
+                </div>
+
+                <div class="expertise--heroes anim-in-out anim-slide-below-fade" data-anim-speed="2000">
+                    <picture picturefill ng-if="asset_url.image_asset">
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source pf-media="(min-width: 1024px)" ng-srcset="{{asset_url.image_asset | to_trustedURL }}, {{getRetina(asset_url.image_asset) | to_trustedURL }} 2x"/>
+                        <source pf-media="(min-width: 768px)" ng-srcset="{{ getImageBreakpointSrc(asset_url.image_asset, 'tablet') | to_trustedURL }}, {{ getRetina(getImageBreakpointSrc(asset_url.image_asset, 'tablet')) | to_trustedURL }} 2x"/>
+                        <source ng-srcset="{{ getImageBreakpointSrc(asset_url.image_asset, 'mobile') | to_trustedURL }}, {{ getRetina(getImageBreakpointSrc(asset_url.image_asset, 'mobile')) | to_trustedURL }} 2x"/>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" />
+                        <!-- <span class="loading">loading</span> -->
+                    </picture>
+
+                    
+
+                    <video ng-if="asset_url.video_asset" class="video-js vjs-default-skin vjs-big-play-centered ng-cloak" width="100%" controls preload="none" data-setup="{}" ng-attr-poster="{{asset_url.video_poster | to_trustedURL}}" videoload="contentLoaded()" >
+                        <source ng-src="{{getVideoSrc(asset_url.video_asset) }}" type='video/mp4' />
+                        <source ng-src="{{getVideoTypeSrc(asset_url.video_asset, 'webm') }}" type='video/webm; codecs="vp8, vorbis"' />
+                        <source ng-src="{{getVideoTypeSrc(asset_url.video_asset, 'ogv') }}" type='video/ogg; codecs="theora, vorbis"' />
+                    </video>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+//  ## FOOTER  -----------------------------------------------------------------------//
+
+.site-footer {
+  padding: calculateRem(40px);
+  .grid__item {
+    display: inline-block;
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+       @include span-columns(2 of 12);
+       text-align: left;
+    }
+  }
+  .site-footer-list {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+  }
+  .site-footer-brand__ident {
+    background: url('../images/global/earthly-hand.png') 0 0 no-repeat;
+    display: block;
+    height: calculateRem(90px);
+    margin: .5rem 0 0;
+    text-indent: -999em;
+    overflow: hidden;
+    width: calculateRem(90px);
+    background-size: 50%;
+  }
+}

@@ -1,0 +1,67 @@
+//  ## COMMON  ----------------------------------------------------------------------//
+
+.overlay--open {
+    overflow-y: hidden;
+}
+
+.background-fillimage {
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.vertical-align {
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+
+.hide-text {
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hide--onmobile {
+    display: none;
+
+    @include breakpoint(tablet) {
+        display: inline-block;
+    }
+}
+
+.hide--ontablet {
+    @include breakpoint(tablet) {
+        display: none;
+    }
+}
+
+.hide--ondesktop {
+    @include breakpoint(desktop) {
+        display: none;
+    }
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
