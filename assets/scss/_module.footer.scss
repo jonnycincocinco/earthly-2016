@@ -2,6 +2,7 @@
 
 .site-footer {
   padding: calculateRem(40px);
+  position: relative;
   .grid__item {
     display: inline-block;
     @include span-columns(12 of 12);

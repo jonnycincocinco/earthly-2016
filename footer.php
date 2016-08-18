@@ -1,4 +1,4 @@
-	<footer class="site-footer">
+	<footer class="site-footer anim-in-out anim-slide-below-fade" data-anim-speed="2000">
 		<div class="container">
 			<div class="grid">
 				<div class="grid__item">
