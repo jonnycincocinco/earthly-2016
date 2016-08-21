@@ -3,6 +3,9 @@
 .site-footer {
   padding: calculateRem(40px);
   position: relative;
+  .container {
+    padding-bottom: calculateRem(20px);
+  }
   .grid__item {
     display: inline-block;
     @include span-columns(12 of 12);
@@ -10,12 +13,62 @@
        @include span-columns(2 of 12);
        text-align: left;
     }
+    &.legal {
+      @include breakpoint(tablet) {
+         @include span-columns(6 of 12);
+         text-align: left;
+      }
+      p {
+        @include font-size(12);
+        @include line-height(20);
+        margin-right: calculateRem(50px);
+      }
+    }
+    &.copyright {
+      @include font-size(12);
+      @include line-height(20);
+      @include span-columns(12 of 12);
+      p {
+        text-align: center;
+      }
+    }
   }
   .site-footer-list {
     list-style: none;
     margin: 0 0 1.25rem;
     padding: 0;
   }
+  .site-footer-list__link {
+    @include font-size(12);
+    @include line-height(20);
+  }
+
+  .site-footer-list--social li {
+    display: inline-block;
+  }
+  .site-footer-list__icon {
+    background-size: cover;
+    color: #c8cfdd;
+    display: block;
+    font-size: 14px;
+    font-size: .77778rem;
+    line-height: 2;
+    height: 1.61111rem;
+    margin: 0 .16667rem;
+    text-indent: -999em;
+    overflow: hidden;
+    width: 1.61111rem;
+    &.site-footer-list__icon--facebook {
+      background: url('../images/svg/icon-social-facebook.svg') 0 0 no-repeat;
+    }
+    &.site-footer-list__icon--twitter {
+      background: url('../images/svg/icon-social-twitter.svg') 0 0 no-repeat;
+    }
+    &.site-footer-list__icon--linkedin {
+      background: url('../images/svg/icon-social-linkedin.svg') 0 0 no-repeat;
+    }
+  }
+
   .site-footer-brand__ident {
     background: url('../images/global/earthly-hand.png') 0 0 no-repeat;
     display: block;
@@ -26,4 +79,12 @@
     width: calculateRem(90px);
     background-size: 50%;
   }
+}
+
+.site-footer-divider {
+  background: #ebeef0;
+  border: 0;
+  display: block;
+  height: .05rem;
+  margin: 0 1.667rem .75rem;
 }

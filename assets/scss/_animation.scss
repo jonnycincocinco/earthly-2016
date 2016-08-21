@@ -1,4 +1,5 @@
 $speed: 500ms;
+$prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
 
 .anim-in-out {
 
@@ -12,7 +13,9 @@ $speed: 500ms;
         }
 
         &.anim-slide-left, .anim-slide-left {
-            transform: translateX(100%);
+            @each $p in $prefix {
+              #{$p}transform:translateX(100%);
+            }
         }
 
         &.anim-slide-right, .anim-slide-right {
@@ -20,19 +23,25 @@ $speed: 500ms;
         }
 
         &.anim-slide-below, .anim-slide-below {
-            transform: translateY(20px);
+          @each $p in $prefix {
+            #{$p}transform:translateY(20px);
+          }
         }
 
         &.anim-slide-below-fade, .anim-slide-below-fade {
             opacity: 0;
-            transform: translateY(20px);
+            @each $p in $prefix {
+              #{$p}transform:translateY(20px);
+            }
         }
 
           &.anim-slide-below-fade.ng-enter,
         .anim-slide-below-fade.ng-leave,
         .anim-slide-below-fade.ng-move {
           opacity: 0;
-          transform: translateY(20px);
+          @each $p in $prefix {
+            #{$p}transform:translateY(20px);
+            }
           }
 
 
@@ -69,12 +78,18 @@ $speed: 500ms;
 
         &.anim-fade, .anim-fade {
             opacity: 1;
-            transition: all $speed;
+            @each $p in $prefix {
+              #{$p}transition:all $speed;
+            }
         }
 
         &.anim-slide-left, .anim-slide-left {
-            transform: translateX(0);
-            transition: all $speed;
+            @each $p in $prefix {
+              #{$p}transform:translateX(0);
+              }
+            @each $p in $prefix {
+              #{$p}transition:all $speed;
+            }
             transition-delay: 2s;
         }
 
@@ -90,15 +105,21 @@ $speed: 500ms;
 
         &.anim-slide-below-fade, .anim-slide-below-fade {
             opacity: 1;
-            transform: translateY(0);
-            transition: all $speed;
+            @each $p in $prefix {
+              #{$p}transform:translateY(0);
+              }
+            @each $p in $prefix {
+              #{$p}transition:all $speed;
+            }
         }
 
         &.anim-slide-below-fade.ng-leave.ng-leave-active,
         .anim-slide-below-fade.ng-enter,
         .anim-slide-below-fade.ng-move {
           opacity: 0;
-          transform: translateY(20px);
+          @each $p in $prefix {
+            #{$p}transform:translateY(20px);
+            }
           }
 
 
@@ -160,8 +181,12 @@ $speed: 500ms;
 
         &.anim-slide-below-fade, .anim-slide-below-fade {
             opacity: 1;
-            transform: translateY(0);
-            transition: all $speed;
+            @each $p in $prefix {
+              #{$p}transform:translateY(0);
+              }
+              @each $p in $prefix {
+                #{$p}transition: all $speed;
+                }
         }
 
         &.anim-zoom-out, .anim-zoom-out {

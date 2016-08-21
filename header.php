@@ -52,7 +52,7 @@
                 <li><a ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
               </ul>
             </li>
-            <li><a ui-sref="our-work" ng-class="{active: $state.current.activetab == 'our-work'}">FAQs</a></li>
+            <li><a ui-sref="faqs" ng-class="{active: $state.current.activetab == 'faqs'}">FAQs</a></li>
             <li><a ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">Library</a></li>
             <li>
             <button class="desktop-nav--cta cta">Sign up</button>

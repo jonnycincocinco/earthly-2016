@@ -62,12 +62,12 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
-    .state('about-us',
+    .state('faqs',
         {
-            url: '/about-us',
-            controller: 'aboutUsView',
-            templateUrl: ajaxInfo.template_directory + '/templates/about-us.html',
-            activetab: 'about-us'
+            url: '/faqs',
+            controller: 'faqsView',
+            templateUrl: ajaxInfo.template_directory + '/templates/faqs.html',
+            activetab: 'faqs'
         }
     )
 

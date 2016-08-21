@@ -3,16 +3,20 @@
 .security--container {
   .inner-hero {
     &.bg-strip {
-      padding-top: calculateRem(50px);
+      padding-top: calculateRem(80px);
       padding-bottom: calculateRem(50px);
     }
   }
   .inner-hero {
     .inner-hero__image {
-      margin-top: calculateRem(76px);
+      margin-top: calculateRem(0px);
     }
     .inner-hero__text {
       padding: calculateRem(20px);
+      a {
+        color: inherit;
+//        text-decoration: underline;
+      }
     }
   }
 }
@@ -26,6 +30,17 @@
   .icon-text-col__item {
     .grid__item {
       padding-bottom: calculateRem(20px);
+    }
+  }
+}
+
+.section-tout {
+  &.trust {
+  .section-tout__text {
+    p, li {
+      @include font-size(14);
+      @include line-height(26);
+      }
     }
   }
 }

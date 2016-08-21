@@ -157,7 +157,9 @@
   content: "";
   position: absolute;
   bottom: $bottom;
-  transform: rotate($rotation);
+  @each $p in $prefix {
+    #{$p}transform:rotate($rotation);
+  }
   right: $right;
   height: 7px;
   width: 7px;

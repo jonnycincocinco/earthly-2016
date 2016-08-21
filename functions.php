@@ -12,11 +12,7 @@ class angularjs_wp_theme {
 
 		add_action( 'init', array( $this, 'register_my_menus' ) );
 		add_action( 'init', array( $this, 'register_my_sidebar' ) );
-		add_action( 'init', array( $this, 'createHome' ) );
-		add_action( 'init', array( $this, 'createWhatWeDo' ) );
-		add_action( 'init', array( $this, 'createExpertise' ) );
-		add_action( 'init', array( $this, 'createWork' ) );
-		add_action( 'init', array( $this, 'createContact' ) );
+		add_action( 'init', array( $this, 'createLibrary' ) );
 		add_action( 'after_setup_theme', array( $this, 'add_awesome_theme_support' ) );
 		add_action( 'admin_init', array( $this, 'apiCheck' ) );
 
@@ -75,21 +71,21 @@ class angularjs_wp_theme {
 
 	}
 
-	function createHome() {
+	function createLibrary() {
 		$labels = array(
-			'name'               => _x( 'Home', 'post type general name' ),
-			'singular_name'      => _x( 'Home', 'post type singular name' ),
-			'add_new'            => _x( 'Add New', 'Home' ),
-			'add_new_item'       => __( 'Add New Home' ),
-			'edit_item'          => __( 'Edit Home' ),
-			'new_item'           => __( 'New Home' ),
-			'all_items'          => __( 'All Home' ),
-			'view_item'          => __( 'View Home' ),
-			'search_items'       => __( 'Search Home' ),
-			'not_found'          => __( 'No Home found' ),
-			'not_found_in_trash' => __( 'No Home found in the Trash' ),
+			'name'               => _x( 'Library', 'post type general name' ),
+			'singular_name'      => _x( 'Library', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'Library' ),
+			'add_new_item'       => __( 'Add New Library item' ),
+			'edit_item'          => __( 'Edit Library' ),
+			'new_item'           => __( 'New Library' ),
+			'all_items'          => __( 'All Library' ),
+			'view_item'          => __( 'View Library' ),
+			'search_items'       => __( 'Search Library' ),
+			'not_found'          => __( 'No Library found' ),
+			'not_found_in_trash' => __( 'No Library found in the Trash' ),
 			'parent_item_colon'  => '',
-			'menu_name'          => 'Home'
+			'menu_name'          => 'Library'
 		);
 		$args = array(
 			'labels'        => $labels,

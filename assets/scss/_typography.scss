@@ -152,6 +152,7 @@ a {
   color: $base--linkColor;
   text-decoration: none;
   transition: color 0.3s;
+  cursor: pointer;
   &.text-link {
     position: relative;
     &:before {
