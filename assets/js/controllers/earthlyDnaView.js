@@ -7,10 +7,6 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'earthy-dna';
 
-    PostsByType.getPostsByType('work').then(function (response) {
-        $scope.posts = response;
-    });
-
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {
         var newPath = imageSrc.replace('.jpg', '@2x.jpg');

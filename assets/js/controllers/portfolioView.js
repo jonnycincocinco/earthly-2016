@@ -7,9 +7,6 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'portfolio';
 
-    PostsByType.getPostsByType('work').then(function (response) {
-        $scope.posts = response;
-    });
 
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {

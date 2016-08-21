@@ -7,9 +7,9 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'home';
 
-    PostsByType.getPostsByType('home').then(function (response) {
-        $scope.posts = response;
-    });
+  //  PostsByType.getPostsByType('home').then(function (response) {
+  //      $scope.posts = response;
+  //   });
 
     $scope.getVideoSrc = function (videoSrc) {
       return $sce.trustAsResourceUrl(videoSrc);
