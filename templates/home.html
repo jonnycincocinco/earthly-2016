@@ -12,10 +12,9 @@
         <object type="image/svg+xml" class="anim-element rotor-left" data="/wp-content/themes/earthly-2016/build/images/svg/rotor-left.svg"></object>
         <object type="image/svg+xml" class="anim-element rotor-right" data="/wp-content/themes/earthly-2016/build/images/svg/rotor-right.svg"></object>
       </div>
-        <div class="page-home--intro anim-in-out anim-slide-below-fade" data-anim-speed="300" ng-repeat="post in posts">
+        <div class="page-home--intro anim-in-out anim-slide-below-fade" data-anim-speed="300">
             <div class="page-home--intro-hdr">
-                <h1 ng-bind-html="post.acf.intro_headline | to_trusted"></h1>
-                <!--h1>Invest in your future. <span class="">And the planet’s.</span></h1-->
+                <h1>Invest in your future. <span class="">And the planet’s.</span></h1>
                 <p>Customized wealth building solutions that make an impact</p>
                 <button class="cta right">Sign up</button>
             </div>
@@ -23,7 +22,7 @@
     </div>
 
     <div class="below-hero">
-      <div class="three-up-tiles bg-strip" ng-repeat="post in posts">
+      <div class="three-up-tiles bg-strip">
         <div class="container">
             <div class="grid">
                 <div class="grid__item">
@@ -72,7 +71,7 @@
       </div>
     </div>
 
-    <div class="applet text-align-center section-strip" ng-repeat="post in posts">
+    <div class="applet text-align-center section-strip">
         <h2 class="">Ready to make an impact?</h2>
         <p class="">Start your investment plan.</p>
         <video class="applet-video video-js vjs-default-skin vjs-big-play-centered" width="100%" preload="auto" data-setup="{}" ng-attr-poster="">
@@ -82,7 +81,7 @@
         </video>
     </div>
 
-    <div class="cta-ribbon bg-strip section-strip" ng-repeat="post in posts">
+    <div class="cta-ribbon bg-strip section-strip">
         <h2 class="text-align-center white">Ready to make an impact?</h2>
         <p class="cta-ribbon__subhead text-align-center light-green">Start your investment plan.</p>
         <div class="cta-ribbon__form white text-align-center">
