@@ -27,9 +27,9 @@ angular.module('Earthly.controllers')
 
         tl1.to('.below-hero', .5, { opacity: 1, ease: Power0.easeNone  }, '-=0.4');
 
-        tl1.to('.rotor-main', 4, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
-        tl1.to('.rotor-left', 3, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
-        tl1.to('.rotor-right', 5, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
+        tl1.to('.rotor-main', 17, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
+        tl1.to('.rotor-left', 16, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
+        tl1.to('.rotor-right', 18, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
 
 
 
@@ -40,24 +40,24 @@ angular.module('Earthly.controllers')
     var tl4 = new TimelineMax({repeat:-1,delay: .8});
 
     function cloudSmall() {
-      tl2.to('.cloud-small', 1, {opacity: '1', left:"68", ease:Linear.easeNone});
-      tl2.to('.cloud-small', 12, {left:"648", ease:Linear.easeNone});
-      tl2.to('.cloud-small', 1, {opacity: '0', left:"700", ease:Linear.easeNone});
-      tl2.to('.cloud-small', .1, {left:"0", ease:Linear.easeNone});
+      tl2.to('.cloud-small', 1, {opacity: '1', left:"68", ease:Power0.easeNone});
+      tl2.to('.cloud-small', 25, {left:"648", ease:Power0.easeNone});
+      tl2.to('.cloud-small', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
+      tl2.to('.cloud-small', .1, {left:"0", ease:Power0.easeNone});
     }
 
     function cloudMedium() {
-      tl3.to('.cloud-medium', 1, {opacity: '1', left:"48", ease:Linear.easeNone});
-      tl3.to('.cloud-medium', 13, {left:"648", ease:Linear.easeNone});
-      tl3.to('.cloud-medium', 1, {opacity: '0', left:"700", ease:Linear.easeNone});
-      tl3.to('.cloud-medium', .1, {left:"0", ease:Linear.easeNone});
+      tl3.to('.cloud-medium', 1, {opacity: '1', left:"48", ease:Power0.easeNone});
+      tl3.to('.cloud-medium', 27, {left:"648", ease:Power0.easeNone});
+      tl3.to('.cloud-medium', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
+      tl3.to('.cloud-medium', .1, {left:"0", ease:Power0.easeNone});
     }
 
     function cloudLarge() {
-      tl4.to('.cloud-large', 1, {opacity: '1', left:"38", ease:Linear.easeNone});
-      tl4.to('.cloud-large', 14, {left:"648", ease:Linear.easeNone});
-      tl4.to('.cloud-large', 1, {opacity: '0', left:"700", ease:Linear.easeNone});
-      tl4.to('.cloud-large', .1, {left:"0", ease:Linear.easeNone});
+      tl4.to('.cloud-large', 1, {opacity: '1', left:"38", ease:Power0.easeNone});
+      tl4.to('.cloud-large', 28, {left:"648", ease:Power0.easeNone});
+      tl4.to('.cloud-large', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
+      tl4.to('.cloud-large', .1, {left:"0", ease:Power0.easeNone});
     }
 
     startAnimations();
@@ -76,7 +76,7 @@ angular.module('Earthly.controllers')
         }).fadeIn(400, 'swing');
       };
 
-      timeline = setInterval(rotate, 2300);
+      timeline = setInterval(rotate, 5200);
 
       $('.carousel-cards').hover(function() {
         return clearInterval(timeline);
@@ -101,5 +101,20 @@ angular.module('Earthly.controllers')
         }
         });
       };
+
+
+      $('input.number').keyup(function(event) {
+
+  // skip for arrow keys
+  if(event.which >= 37 && event.which <= 40) return;
+
+  // format number
+  $(this).val(function(index, value) {
+    return value
+    .replace(/\D/g, "")
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    ;
+  });
+});
 
 }]);

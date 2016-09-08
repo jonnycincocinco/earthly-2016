@@ -65,7 +65,7 @@
     margin-bottom: calculateRem(30px);
   }
   .subhead {
-    padding: 0 calculateRem(120px) calculateRem(25px);
+    padding: 0 calculateRem(200px) calculateRem(25px);
     @include font-size(18);
     @include line-height(32);
   }
@@ -95,5 +95,5 @@
 }
 
 .icon-text {
-  
+
 }

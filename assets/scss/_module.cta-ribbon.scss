@@ -21,9 +21,12 @@
     background-color: transparent;
     font-size: 1em;
     color: #fff;
+    &.salary {
+      width: 90px;
+    }
   }
   .cta-ribbon__form {
-
+    @include font-size(20);
   }
 
   .cta-ribbon__form--second {

@@ -30,6 +30,11 @@ button.cta,
       clear: both;
       margin-right: 1%;
     }
+    &.left {
+      float: left;
+      clear: both;
+      margin-right: 1%;
+    }
     &:hover {
       background-color: $base--ctaColorHover;
       border-color: $base--ctaColorHover;

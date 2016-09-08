@@ -20,9 +20,11 @@
 }
 
 .page-home--turbine {
-  position: relative;
-  width: 60%;
+  width: 45%;
+  margin-left: 2em;
+  margin-top: 1em;
   z-index: 1;
+  position: relative;
   .main {
     position: relative;
     z-index: 1;
@@ -90,11 +92,11 @@
 .page-home--intro {
     position: absolute;
     top: 20%;
-    left: 43%;
+    right: 3%;
     color: $base--headerColor;
     z-index: 10;
     @include breakpoint(desktop) {
-        width: 770px;
+        width: 635px;
     }
     .page-home--intro-hdr {
         float: left;
@@ -102,22 +104,21 @@
         h1 {
             float: left;
             position: relative;
-            @include font-size(108);
-            @include line-height(90);
-            font-weight: bold;
+            @include font-size(65);
+            @include line-height(75);
+            font-weight: 300;
             text-transform: none;
-            text-align: right;
+            text-align: left;
             margin: 0;
             padding: 0;
             clear: both;
             letter-spacing: 0;
-            left: -7px;
             @include breakpoint(tablet) {
                 @include font-size(128);
                 left: -9px;
             }
             @include breakpoint(desktop) {
-                @include font-size(110);
+                @include font-size(65);
             }
             @media only screen and (-webkit-min-device-pixel-ratio : 2)
             and (device-aspect-ratio: 2/3)
@@ -132,14 +133,13 @@
         margin-top: 2px;
         @include font-size(22);
         @include line-height(24);
-        float: right;
-        text-align: right;
+        text-align: left;
 //        white-space: nowrap;
         @include breakpoint(tablet) {
             margin-top: 12px;
             @include font-size(26);
             @include line-height(27);
-            width: 60%;
+            width: 75%;
         }
         @include breakpoint(desktop) {
             //float: none;

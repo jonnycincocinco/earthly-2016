@@ -48,6 +48,20 @@
     white-space: nowrap;
 }
 
+.show--ondesktop {
+  display: none;
+  @include breakpoint(desktop) {
+    display: inline-block;
+  }
+}
+
+.show--ontablet {
+  display: none;
+  @include breakpoint(tablet) {
+    display: inline-block;
+  }
+}
+
 .hide--onmobile {
     display: none;
 

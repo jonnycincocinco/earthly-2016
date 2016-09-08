@@ -11,8 +11,8 @@ $n: 0;
     padding-bottom: calculateRem(-180px);
   }
   h2 {
-    margin-right: 25%;
-    margin-left: 25%;
+//    margin-right: 25%;
+//    margin-left: 25%;
   }
   .carousel-cards {
     @include horz-align(relative);

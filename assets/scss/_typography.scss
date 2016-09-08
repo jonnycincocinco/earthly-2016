@@ -57,6 +57,7 @@ h1 {
   @include font-size(48);
   @include line-height(54);
   margin: 0 0 calculateRem(10px) 0;
+  font-weight: 300;
 }
 
 h2 {
@@ -64,6 +65,7 @@ h2 {
   @include font-size(38);
   @include line-height(52);
   margin: 0 0 calculateRem(40px) 0;
+  font-weight: 300;
 }
 
 h3 {
@@ -71,6 +73,7 @@ h3 {
   @include font-size(24);
   @include line-height(22);
   margin: 0 0 calculateRem(22px) 0;
+  font-weight: 300;
 }
 
 h4 {
@@ -78,6 +81,7 @@ h4 {
   @include font-size(20);
   @include line-height(30);
   margin: calculateRem(25px) 0;
+  font-weight: 300;
 }
 
 h5 {
@@ -85,6 +89,7 @@ h5 {
   @include font-size(16);
   @include line-height(25);
   margin: calculateRem(12px) 0;
+  font-weight: 300;
 }
 
 h6 {

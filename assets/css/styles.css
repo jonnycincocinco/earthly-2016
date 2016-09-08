@@ -447,35 +447,40 @@ h1 {
   font-size: 3rem;
   line-height: 54px;
   line-height: 3.375rem;
-  margin: 0 0 0.625rem 0; }
+  margin: 0 0 0.625rem 0;
+  font-weight: 300; }
 
 h2 {
   font-size: 38px;
   font-size: 2.375rem;
   line-height: 52px;
   line-height: 3.25rem;
-  margin: 0 0 2.5rem 0; }
+  margin: 0 0 2.5rem 0;
+  font-weight: 300; }
 
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 22px;
   line-height: 1.375rem;
-  margin: 0 0 1.375rem 0; }
+  margin: 0 0 1.375rem 0;
+  font-weight: 300; }
 
 h4 {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 30px;
   line-height: 1.875rem;
-  margin: 1.5625rem 0; }
+  margin: 1.5625rem 0;
+  font-weight: 300; }
 
 h5 {
   font-size: 16px;
   font-size: 1rem;
   line-height: 25px;
   line-height: 1.5625rem;
-  margin: 0.75rem 0; }
+  margin: 0.75rem 0;
+  font-weight: 300; }
 
 h6 {
   font-size: 18px;
@@ -692,6 +697,18 @@ a,
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap; }
+
+.show--ondesktop {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .show--ondesktop {
+      display: inline-block; } }
+
+.show--ontablet {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .show--ontablet {
+      display: inline-block; } }
 
 .hide--onmobile {
   display: none; }
@@ -951,7 +968,7 @@ a,
 .light-green {
   color: #96c43d; }
 
-.biege {
+.beige {
   color: #c8ab83; }
 
 .light-blue {
@@ -961,13 +978,28 @@ a,
   color: #5B2333; }
 
 .red {
-  color: #ba1b1d; }
+  color: #c64047; }
 
 .army-green {
   color: #7e846b; }
 
 .blue-slate {
   color: #7d8ca3; }
+
+.deep-blue {
+  color: #3a71b2; }
+
+.navy {
+  color: #264c78; }
+
+.dark-green {
+  color: #5b986c; }
+
+.lighter-blue {
+  color: #cddcf0; }
+
+.yellow {
+  color: #fdda5f; }
 
 header {
   width: 100%;
@@ -1148,9 +1180,9 @@ button.cta.desktop-nav--cta {
 
 .desktop-nav--logo {
   display: inline-block;
-  margin-top: 1.125rem;
+  margin-top: 0.9375rem;
   margin-left: 0;
-  width: 203px;
+  width: 256px;
   height: 52px;
   background: url("../images/global/earthly.png") no-repeat 0 0;
   background-size: 60%;
@@ -1397,10 +1429,6 @@ button.cta.desktop-nav--cta {
   position: relative;
   padding-bottom: -11.25rem; }
 
-.carousel h2 {
-  margin-right: 25%;
-  margin-left: 25%; }
-
 .carousel .carousel-cards {
   position: relative;
   left: 50%;
@@ -1591,6 +1619,13 @@ button.cta,
     float: right;
     clear: both;
     margin-right: 1%; }
+  .cta a.left,
+  .cta button.left,
+  button.cta.left,
+  .form-buttons input.left {
+    float: left;
+    clear: both;
+    margin-right: 1%; }
   .cta a:hover,
   .cta button:hover,
   button.cta:hover,
@@ -1774,7 +1809,7 @@ button.cta,
   margin-bottom: 1.875rem; }
 
 .inner-page-section .subhead {
-  padding: 0 7.5rem 1.5625rem;
+  padding: 0 12.5rem 1.5625rem;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 32px;
@@ -1825,6 +1860,12 @@ button.cta,
   background-color: transparent;
   font-size: 1em;
   color: #fff; }
+  .cta-ribbon input.salary {
+    width: 90px; }
+
+.cta-ribbon .cta-ribbon__form {
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .cta-ribbon .cta-ribbon__form--second {
   margin-bottom: 50px;
@@ -1854,9 +1895,11 @@ button.cta,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 ); }
 
 .page-home--turbine {
-  position: relative;
-  width: 60%;
-  z-index: 1; }
+  width: 45%;
+  margin-left: 2em;
+  margin-top: 1em;
+  z-index: 1;
+  position: relative; }
   .page-home--turbine .main {
     position: relative;
     z-index: 1; }
@@ -1915,30 +1958,29 @@ button.cta,
 .page-home--intro {
   position: absolute;
   top: 20%;
-  left: 43%;
+  right: 3%;
   color: #fff;
   z-index: 10; }
   @media only screen and (min-width: 1024px) {
     .page-home--intro {
-      width: 770px; } }
+      width: 635px; } }
   .page-home--intro .page-home--intro-hdr {
     float: left;
     position: relative; }
     .page-home--intro .page-home--intro-hdr h1 {
       float: left;
       position: relative;
-      font-size: 108px;
-      font-size: 6.75rem;
-      line-height: 90px;
-      line-height: 5.625rem;
-      font-weight: bold;
+      font-size: 65px;
+      font-size: 4.0625rem;
+      line-height: 75px;
+      line-height: 4.6875rem;
+      font-weight: 300;
       text-transform: none;
-      text-align: right;
+      text-align: left;
       margin: 0;
       padding: 0;
       clear: both;
-      letter-spacing: 0;
-      left: -7px; }
+      letter-spacing: 0; }
       @media only screen and (min-width: 768px) {
         .page-home--intro .page-home--intro-hdr h1 {
           font-size: 128px;
@@ -1946,8 +1988,8 @@ button.cta,
           left: -9px; } }
       @media only screen and (min-width: 1024px) {
         .page-home--intro .page-home--intro-hdr h1 {
-          font-size: 110px;
-          font-size: 6.875rem; } }
+          font-size: 65px;
+          font-size: 4.0625rem; } }
       @media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
         .page-home--intro .page-home--intro-hdr h1 {
           font-size: 90px;
@@ -1960,8 +2002,7 @@ button.cta,
     font-size: 1.375rem;
     line-height: 24px;
     line-height: 1.5rem;
-    float: right;
-    text-align: right; }
+    text-align: left; }
     @media only screen and (min-width: 768px) {
       .page-home--intro p {
         margin-top: 12px;
@@ -1969,7 +2010,7 @@ button.cta,
         font-size: 1.625rem;
         line-height: 27px;
         line-height: 1.6875rem;
-        width: 60%; } }
+        width: 75%; } }
     @media only screen and (min-width: 1024px) {
       .page-home--intro p {
         margin-right: 1%;
