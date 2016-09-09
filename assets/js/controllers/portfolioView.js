@@ -7,6 +7,15 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'portfolio';
 
+    var startAnimations = function(){
+
+        var tl1 = new TimelineMax({delay: 0});
+
+        tl1.to('.below-hero', .5, { opacity: 1, ease: Power0.easeNone  }, '-=0.4');
+
+    };
+
+    startAnimations();
 
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {

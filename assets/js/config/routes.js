@@ -71,14 +71,15 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
-    .state('bio',
+    .state('about-us',
         {
-            url: '/about-us/bio/:slug',
-            controller: 'bioView',
-            templateUrl: ajaxInfo.template_directory + '/templates/bio.html',
+            url: '/about-us',
+            controller: 'aboutUsView',
+            templateUrl: ajaxInfo.template_directory + '/templates/about-us.html',
             activetab: 'about-us'
         }
     )
+
 
     .state('news',
         {

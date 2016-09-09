@@ -55,10 +55,10 @@
       @include span-columns(5 of 12);
    }
    img {
-     transform: rotate(90deg);
+     //transform: rotate(90deg);
      width: 280px;
      @include breakpoint(desktop) {
-       width: 350px;
+       width: 400px;
      }
    }
   }

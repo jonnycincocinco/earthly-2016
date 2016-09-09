@@ -3,6 +3,14 @@ angular.module('Earthly.controllers')
 .controller('faqsView', ['$scope', '$rootScope', '$state', 'PostsByType', '$sce', function ($scope, $rootScope, $state, PostsByType, $sce) {
     'use strict';
 
+    var startAnimations = function(){
+
+        var tl1 = new TimelineMax({delay: 0});
+
+        tl1.to('.below-hero', .5, { opacity: 1, ease: Power0.easeNone  }, '-=0.4');
+
+    };
+
     $(".tabs-menu .tab-item").click(function() {
         $(this).addClass("current");
         $(this).siblings().removeClass("current");
@@ -11,7 +19,6 @@ angular.module('Earthly.controllers')
         $(tab).fadeIn();
 
     //    $( "html, body" ).animate({scrollTop:topScroll}, 6000, 'swing');
-
 
     });
 

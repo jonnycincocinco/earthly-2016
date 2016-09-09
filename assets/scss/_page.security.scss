@@ -21,6 +21,14 @@
   }
 }
 
+.icon-text-col {
+    .security--container & {
+    @include breakpoint(desktop) {
+      margin-left: calculateRem(34px);
+    }
+  }
+}
+
 .security {
   &.inner-page-section {
     h2 {
@@ -40,6 +48,7 @@
     p, li {
       @include font-size(14);
       @include line-height(26);
+      padding-right: calculateRem(80px);
       }
     }
   }

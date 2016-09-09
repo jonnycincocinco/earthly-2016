@@ -1,32 +1,177 @@
-<div class="page page-about" ng-cloak>
+<div class="page page-our-work anim-in-out anim-slide-below-fade" ng-cloak>
 
-    <div class="about-us--container">
-        <div class="about-us--inner-container">
+    <div class="security--container about-us--container">
 
-            <ul class="about-us--bios">
-                <li ng-repeat="post in posts" class="anim-in-out anim-slide-below-fade">
-                    <a class="about-us--bio" href="{{site + '#/about-us/bio/' + post.slug}}">
-
-                        <picture picturefill>
-                            <!--[if IE 9]><video style="display: none;"><![endif]-->
-                            <source pf-media="(min-width: 1024px)" ng-srcset="{{post.acf.bio_teaser_image}}, {{getRetina(post.acf.bio_teaser_image)}} 2x"/>
-                            <source pf-media="(min-width: 768px)" ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_teaser_image, 'tablet') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_teaser_image, 'tablet')) }} 2x"/>
-                            <source ng-srcset="{{ getImageBreakpointSrc(post.acf.bio_teaser_image, 'mobile') }}, {{ getRetina(getImageBreakpointSrc(post.acf.bio_teaser_image, 'mobile')) }} 2x"/>
-                            <!--[if IE 9]></video><![endif]-->
-                            <img ng-srcset="{{post.acf.bio_teaser_image  | to_trustedURL }}" alt="{{post.title.rendered | to_trusted}}" class="about-us--bio-img" />
-                        </picture>
-
-                        <div class="about-us--bio-dim"></div>
-                        <div class="about-us--bio-desc">
-                            <h2 class="line">{{post.title.rendered}}</h2>
-                            <h3 class="subheading">{{post.acf.bio_job_title}}</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-
+      <div class="bg-strip inner-hero">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__item inner-hero__image anim-in-out anim-slide-below-fade" data-anim-speed="600">
+                  <p class="text-align-left"><img src="/wp-content/themes/earthly-2016/build/images/pages/about-us.png" class="" width="400"></p>
+                </div>
+                <div class="grid__item inner-hero__text anim-in-out anim-slide-below-fade" data-anim-speed="600">
+                  <h1 class="white">About Earthly</h1>
+                  <p class="inner-hero__text--main white">We created Earthly to fill a specific need.  The need for a low cost, diversified, sustainable investing solution. </p>
+                  <p class="inner-hero__text--main white">We took the best features from automated and passive investment management and combined them with sustainable and impact investing to create the best way to invest the planet has ever seen.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-</div>
+  <div class="section-strip inner-page-section icon-text security flush-bottom">
+    <div class="container">
+      <h2 class="text-align-center">E<sup>6</sup> For A Better Way to Invest</h2>
+      <p class="subhead text-align-center">We’ve reimagined the way people invest by creating the E6 framework which serves as the foundation for our platform.</p>
+        <div class="grid__item icon-text-col slate">
+          <div class="grid icon-text-col__item">
+            <div class="grid__item">
+              <div class="grid__item icon-text-col__icon">
+                  <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-enable.png" class="" width="80" />
+              </div>
+              <div class="grid__item icon-text-col__text">
+                  <h3 class="">Enable</h3>
+                  <p>We enable people of all incomes and walks of life to be able to invest towards causes that make a difference, easily and quickly.  </p>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="grid__item icon-text-col__icon">
+                  <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-economize.png" class="" width="80" />
+              </div>
+              <div class="grid__item icon-text-col__text">
+                  <h3 class="">Economize</h3>
+                  <p>Investing shouldn’t be expensive.  Our investment offerings and services are provided at the lowest possible cost to you.</p>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="grid__item icon-text-col__icon">
+                  <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-elucidate.png" class="" width="80" />
+              </div>
+              <div class="grid__item icon-text-col__text">
+                  <h3 class="">Elucidate </h3>
+                  <p>Our methodology and ratings are fully disclosed.  With earthly(DNA), you know exactly why you own specific companies.</p>
+              </div>
+            </div>
+          </div><!--
 
+        --><div class="grid icon-text-col__item">
+          <div class="grid__item">
+            <div class="grid__item icon-text-col__icon">
+                <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-educate.png" class="" width="80" />
+            </div>
+            <div class="grid__item icon-text-col__text">
+                <h3 class="">Educate </h3>
+                <p>Knowledge is power, so providing you with the information you need to make informed investment decisions is a top priority.</p>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__item icon-text-col__icon">
+                <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-embody.png" class="" width="80" />
+            </div>
+            <div class="grid__item icon-text-col__text">
+                <h3 class="">Embody </h3>
+                <p>Every investor is unique so cookie cutter solutions don’t cut it.  earthly(DNA) tailors its composition to your principles.</p>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__item icon-text-col__icon">
+                <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-empower.png" class="" width="80" />
+            </div>
+            <div class="grid__item icon-text-col__text">
+                <h3 class="">Empower </h3>
+                <p>With earthly(DNA), you hold voting rights to your shares.  We vote your shares in accordance with our mission statement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-strip inner-page-section icon-text security about-team">
+    <div class="container">
+      <h2 class="text-align-center">Investment Team</h2>
+        <div class="grid__item icon-text-col">
+          <div class="grid icon-text-col__item">
+            <div class="grid__item">
+              <div class="grid__item icon-text-col__icon">
+                <div class="">
+                  <img src="/wp-content/themes/earthly-2016/build/images/icons/headshot_fpo.jpg" class="" height="145" />
+                  <div class="social-icons">
+                    <a href="#">
+                      <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-twitter.png" class="" height="30" />
+                    </a>
+                    <a href="#">
+                      <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-linkedin.png" class="" height="30" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item icon-text-col__text">
+                  <h3 class="">Anthony Schmitz, CFA</h3>
+                  <p class="title orange">CTO</p>
+                  <p>M.S. Georgia Institute of Technology<br />
+                      B.S. Georgia Institute of Technology<br />
+                      CFA Charterholder
+                    </p>
+              </div>
+            </div>
+          </div><!--
+
+        --><div class="grid icon-text-col__item">
+          <div class="grid__item">
+            <div class="grid__item icon-text-col__icon">
+              <div class="">
+                <img src="/wp-content/themes/earthly-2016/build/images/icons/headshot_fpo.jpg" class="" height="145" />
+                <div class="social-icons">
+                  <a href="#">
+                    <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-twitter.png" class="" height="30" />
+                  </a>
+                  <a href="#">
+                    <img src="/wp-content/themes/earthly-2016/build/images/icons/icon-linkedin.png" class="" height="30" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="grid__item icon-text-col__text">
+                <h3 class="">Paul Cardona </h3>
+                <p class="title orange">Head of Business Development</p>
+                <p>M.B.A. UCLA Anderson School of Management<br />
+                  B.A. Occidental College
+                  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-ribbon bg-strip section-strip">
+      <h2 class="text-align-center white">Ready to make an impact?</h2>
+      <p class="cta-ribbon__subhead text-align-center light-green">Start your investment plan.</p>
+      <div class="cta-ribbon__form white text-align-center">
+        <span class="edit-age">
+        I am
+        <input type="number" placeholder="" maxlength="3" name="age" class="white">
+        years old
+        </span>
+        <span class="edit-retirement">
+        <span class="text">and currently earn</span>
+        <span class="edit-income">
+        <span class="nowrap">$<input type="number" placeholder="" maxlength="10" name="income" class="white">per year.</span>
+        <span class="madlib-error"></span>
+        </span>
+      </div>
+      <div class="cta-ribbon__form cta-ribbon__form--second white text-align-center">
+        <span class="edit-age">
+        I anticipate that I'll need the money in my Earthly portfolio in
+        </span>
+        <span class="edit-retirement">
+        <span class="edit-income">
+        <span class="nowrap"><input type="number" placeholder="" maxlength="10" name="income" class="white">years.</span>
+        <span class="madlib-error"></span>
+        </span>
+      </div>
+        <button class="cta">Get Started</button>
+  </div>
+
+  </div>
+
+</div>

@@ -32,7 +32,17 @@
         img {
           background: #fff;
           border-radius: 3px;
-          box-shadow: 0 0 2px rgba(0,0,0,.15);
+          padding: 3px;
+          box-shadow: 0 0 2px rgba(0,0,0,.5);
+          .about-us--container & {
+            box-shadow: none;
+            padding: 0;
+            margin-left: -25px;
+          }
+          .social-icons {
+            float: left;
+            margin-left: -25px;
+          }
         }
      }
      .icon-text-col__text {

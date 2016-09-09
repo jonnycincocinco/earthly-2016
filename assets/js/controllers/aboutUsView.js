@@ -3,28 +3,15 @@ angular.module('Earthly.controllers')
 .controller('aboutUsView', ['getElement', '$scope', '$rootScope', '$state', 'PostsByType', function (getElement, $scope, $rootScope, $state, PostsByType) {
     'use strict';
 
-    $rootScope.$state = $state;
+    var startAnimations = function(){
 
-    $rootScope.bodylayout = 'about-us';
+        var tl1 = new TimelineMax({delay: 0});
 
-    PostsByType.getPostsByType('bio').then(function (response) {
-        $scope.posts = response;
-    });
+        tl1.to('.below-hero', .5, { opacity: 1, ease: Power0.easeNone  }, '-=0.4');
 
-    $scope.clickedNext = function(){
-      getElement.setValue('next');
-      //console.log('previous clicked', $location.$$path);
-    }
-
-    $scope.clickedPrevious = function(){
-      getElement.setValue('previous');
-      //console.log('previous clicked', $location.$$path);
-    }
-
-
-    $scope.clickedClose = function(){
-      getElement.setValue('close');
     };
+
+    startAnimations();
 
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {
