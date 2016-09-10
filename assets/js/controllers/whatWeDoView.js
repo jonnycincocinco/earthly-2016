@@ -10,7 +10,7 @@ angular.module('Earthly.controllers')
     PostsByType.getPostsByType('what-we-do').then(function (response) {
         $scope.posts = response;
     });
-    
+
     $scope.clickedNext = function(){
       getElement.setValue('next');
       //console.log('previous clicked', $location.$$path);

@@ -2,7 +2,19 @@
 
 .about-us--container {
 
+  .section-strip {
+    &.border-top {
+      padding-top: calculateRem(80px);
+      margin-top: calculateRem(50px);
+      border-top: 1px solid #ddd;
+    }
+  }
+  .icon-text {
+    border-top: 1px;
+  }
 }
+
+
 
 .about-team {
   .title {

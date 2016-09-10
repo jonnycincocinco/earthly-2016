@@ -19,12 +19,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 );
 }
 
+.page-home--hero__section {
+  @include span-columns(12 of 12);
+  @include breakpoint(tablet) {
+    @include span-columns(6 of 12);
+  }
+}
+
+
 .page-home--turbine {
-  width: 45%;
-  margin-left: 2em;
-  margin-top: 1em;
   z-index: 1;
   position: relative;
+  padding: 5% 5% 0;
   .main {
     position: relative;
     z-index: 1;
@@ -36,21 +42,21 @@
     position: absolute;
     z-index: 11;
     &.rotor-right {
-      top: 17.5%;
-      left: 61.8%;
-      width: 38%;
+      top: 23.8%;
+      left: 56.6%;
+      width: 36%;
       opacity: 0;
     }
     &.rotor-left {
-      top: 15.4%;
-      left: 40.2%;
-      width: 38%;
+      top: 22%;
+      left: 39.3%;
+      width: 36%;
       opacity: 0;
     }
     &.rotor-main {
-      top: -.3%;
-      left: 47.3%;
-      width: 48%;
+      top: 7.8%;
+      left: 44.3%;
+      width: 46%;
       opacity: 0;
     }
     &.cloud {
@@ -78,25 +84,24 @@
     padding-bottom: calculateRem(80px);
 }
 
-.page-home--video {
-    top: 0;
-    @include horz-align(absolute);
-    min-width: 100%;
-    min-height: 100%;
-    display: none;
-    @include breakpoint(desktop) {
-        display: block;
-    }
-}
+
 
 .page-home--intro {
     position: absolute;
     top: 20%;
-    right: 3%;
+    right: 0;
     color: $base--headerColor;
     z-index: 10;
+    @include breakpoint(tablet) {
+      top: 10%;
+    }
     @include breakpoint(desktop) {
-        width: 635px;
+      top: 20%;
+    }
+    @include breakpoint(cinema) {
+      top: 28%;
+      right: 3%;
+      padding-left: 2%;
     }
     .page-home--intro-hdr {
         float: left;
@@ -106,7 +111,7 @@
             position: relative;
             @include font-size(65);
             @include line-height(75);
-            font-weight: 300;
+            font-weight: 500;
             text-transform: none;
             text-align: left;
             margin: 0;
@@ -114,10 +119,13 @@
             clear: both;
             letter-spacing: 0;
             @include breakpoint(tablet) {
-                @include font-size(128);
-                left: -9px;
+                @include font-size(58);
+                @include line-height(58);
             }
             @include breakpoint(desktop) {
+                @include font-size(60);
+            }
+            @include breakpoint(cinema) {
                 @include font-size(65);
             }
             @media only screen and (-webkit-min-device-pixel-ratio : 2)

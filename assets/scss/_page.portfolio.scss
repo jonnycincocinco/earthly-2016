@@ -7,7 +7,7 @@
     }
   }
   .inner-hero__image {
-    margin-top: calculateRem(37px);
+    margin-top: calculateRem(-18px);
     @include breakpoint(tablet) {
        @include span-columns(5 of 12);
        text-align: center;

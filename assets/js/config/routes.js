@@ -4,7 +4,7 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
     $sceDelegateProvider.resourceUrlWhitelist([
         // Allow same origin resource loads.
         'self',
-        'http://ell.dev:8888/**/*',
+        'http://erff.dev:8888/**/*',
         'http://127.0.0.1:54000',
         'http://stage-2015.eleveninc.com/**/*',
         'http://www.eleveninc.com/**/*',
@@ -26,12 +26,12 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
-    .state('what-we-do',
+    .state('libary-item',
         {
-            url: '/what-we-do',
-            controller: 'whatWeDoView',
-            templateUrl: ajaxInfo.template_directory + '/templates/what-we-do.html',
-            activetab: 'what-we-do'
+            url: '/library/:slug',
+            controller: 'expertiseView',
+            templateUrl: ajaxInfo.template_directory + '/templates/library-item.html',
+            activetab: 'library'
         }
     )
 
@@ -80,13 +80,12 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
-
-    .state('news',
+    .state('library',
         {
-            url: '/news',
+            url: '/library',
             controller: 'newsView',
-            templateUrl: ajaxInfo.template_directory + '/templates/news.html',
-            activetab: 'news'
+            templateUrl: ajaxInfo.template_directory + '/templates/library.html',
+            activetab: 'library'
         }
     )
 

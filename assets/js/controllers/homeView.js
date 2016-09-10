@@ -7,10 +7,6 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'home';
 
-  //  PostsByType.getPostsByType('home').then(function (response) {
-  //      $scope.posts = response;
-  //   });
-
     $scope.getVideoSrc = function (videoSrc) {
       return $sce.trustAsResourceUrl(videoSrc);
     };
@@ -27,9 +23,9 @@ angular.module('Earthly.controllers')
 
         tl1.to('.below-hero', .5, { opacity: 1, ease: Power0.easeNone  }, '-=0.4');
 
-        tl1.to('.rotor-main', 17, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
-        tl1.to('.rotor-left', 16, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
-        tl1.to('.rotor-right', 18, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
+        tl1.to('.rotor-main', 20, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
+        tl1.to('.rotor-left', 19, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
+        tl1.to('.rotor-right', 22, { rotation: 360, ease: Power0.easeNone,repeat: -1  }, 'firstFrame');
 
 
 
@@ -64,6 +60,11 @@ angular.module('Earthly.controllers')
     cloudSmall();
     cloudMedium();
     cloudLarge();
+
+
+    //scroll reveal
+
+    window.sr = ScrollReveal().reveal('.bg-strip, .section-strip');
 
     //CAROUSEL
 
@@ -102,13 +103,9 @@ angular.module('Earthly.controllers')
         });
       };
 
-
-      $('input.number').keyup(function(event) {
-
-  // skip for arrow keys
+// input comma-adder
+  $('input.number').keyup(function(event) {
   if(event.which >= 37 && event.which <= 40) return;
-
-  // format number
   $(this).val(function(index, value) {
     return value
     .replace(/\D/g, "")

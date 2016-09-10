@@ -14,6 +14,12 @@
 
 @font-face {
   font-family: 'Rising-Sun';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/rising-sun/RisingSun-DemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Rising-Sun';
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/rising-sun/RisingSun-Regular.woff") format("woff"); }
@@ -110,7 +116,7 @@ p:first-child {
 }
 
 p {
-  @include font-size(14);
+  @include font-size(15);
   margin: 0 0 calculateRem(12px);
 }
 

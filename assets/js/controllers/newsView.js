@@ -1,37 +1,26 @@
 angular.module('Earthly.controllers')
 
-.controller('newsView', ['$scope', '$rootScope', '$state', 'PostsByType', 'FacebookPosts', 'TwitterTweets', function ($scope, $rootScope, $state, PostsByType, FacebookPosts, TwitterTweets) {
+.controller('newsView', ['$scope', '$rootScope', '$state', 'PostsByType', 'PostsByTypeAndSlug', '$stateParams', function ($scope, $rootScope, $state, PostsByType, PostsByTypeAndSlug, $stateParams) {
     'use strict';
 
     $rootScope.$state = $state;
 
     $rootScope.bodylayout = 'news';
 
-    PostsByType.getPostsByType('news').then(function (response) {
+    var startAnimations = function(){
+
+        var tl1 = new TimelineMax({delay: 0});
+
+        tl1.to('.below-hero', .5, { opacity: 1, ease: Power0.easeNone  }, '-=0.4');
+
+    };
+
+    startAnimations();
+
+
+    PostsByType.getPostsByType('expertise').then(function (response) {
         $scope.posts = response;
     });
-
-    TwitterTweets.getTweets().then(function (response) {
-        $scope.tweets = response.data.tweets;
-    });
-
-    FacebookPosts.getPosts().then(function (response) {
-        $scope.fbposts = response.data.data;
-    });
-
-    $scope.getRetina = function (imageSrc) {
-      if (typeof imageSrc === 'string') {
-        var newPath = imageSrc.replace('.jpg', '@2x.jpg')
-        return newPath;
-      }
-    };
-
-    $scope.getImageBreakpointSrc = function (imageSrc, breakpoint) {
-      if (typeof imageSrc === 'string') {
-        var newPath = imageSrc.replace('.jpg', '-' + breakpoint + '.jpg');
-        return newPath;
-      }
-    };
 
     $scope.parseDateTimeString = function(timeString) {
       var date, months;
@@ -40,25 +29,38 @@ angular.module('Earthly.controllers')
       return months[date.getMonth()] + " " + (date.getDay()) + ", " + (date.getFullYear());
     };
 
+    $scope.PostsByTypeAndSlug = PostsByTypeAndSlug.getPostsByTypeAndSlug('expertise').query($stateParams);
+
+    $scope.PostsByTypeAndSlug.$promise.then(function (response) {
+      $scope.posts = response;
+    });
+
+//    console.log($scope.post);
+
+
+    $scope.clickedNext = function(){
+      getElement.setValue('next');
+      //console.log('previous clicked', $location.$$path);
+    }
+
+    $scope.clickedPrevious = function(){
+      getElement.setValue('previous');
+      //console.log('previous clicked', $location.$$path);
+    }
+
     $scope.trackViewGA = function(){
-        console.log('Hero View Click');
-        //$window._gaq.push(['_trackPageview', 'view News']);
         ga('send', 'pageview', 'Hero View Click');
-      //   ga('send', {
-      //     hitType: 'event',
-      //     eventCategory: 'News',
-      //     //eventAction: 'play',
-      //     eventLabel: 'Main news'
-      // });
     };
 
+    // input comma-adder
+      $('input.number').keyup(function(event) {
+      if(event.which >= 37 && event.which <= 40) return;
+      $(this).val(function(index, value) {
+        return value
+        .replace(/\D/g, "")
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        ;
+      });
+    });
+
 }])
-.directive('backImg', function(){
-    return function(scope, element, attrs){
-        attrs.$observe('backImg', function(value) {
-            element.css({
-                'background-image': 'url(' + value +')'
-            });
-        });
-    };
-});

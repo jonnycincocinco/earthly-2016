@@ -2,10 +2,18 @@
 .bg-strip {
   padding-top: calculateRem(80px);
   padding-bottom: calculateRem(80px);
-  background: $base--bgStripcolor url(../images/global/bg-pattern.png) 0 0;
+  //background: $base--bgStripcolor url(../images/global/bg-pattern.png) 0 0;
+  background: linear-gradient(to right bottom,rgb(27, 66, 138),rgba(57, 83, 142, 0.92) 30%,#319dd8 80%,rgba(1, 198, 255, 0.76) 100%)
+}
+
+.grid__item {
+  ul {
+    padding-left: calculateRem(18px);
+  }
 }
 
 .three-up-tiles {
+  background: linear-gradient(to right bottom,#1b428a,rgba(0, 0, 0, 0.82) 90%,rgba(0, 0, 0, 0.82) 100%);
    .grid__item {
      text-align: center;
      @include span-columns(12 of 12);
@@ -58,6 +66,9 @@
     @include font-size(15);
     @include line-height(30);
   }
+  .container {
+    margin-top: 70px;
+  }
 }
 
 .inner-page-section {
@@ -73,6 +84,7 @@
     @include font-size(16);
     font-weight: 800;
     padding-bottom: calculateRem(5px);
+    list-style-position: inherit;
     @include line-height(15);
     span {
       @include font-size(12);

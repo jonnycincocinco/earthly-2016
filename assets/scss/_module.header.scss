@@ -2,22 +2,30 @@
 
 header {
     @include fill-parent();
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    background: $base--headerColor;
+//    background: $base--headerColor;
     height: 70px;
     min-width: $min-width;
     z-index: 1000;
+    color: #fff;
 }
 
 .desktop-nav {
   @include fill-parent();
   float: left;
   clear: both;
-  box-shadow: 0 0 2px rgba(0,0,0,.15);
+//  box-shadow: 0 0 2px rgba(0,0,0,.15);
 }
+//linear-gradient(to right bottom,#6dfdff,#6dfdff 30%,#0d87c9 80%,#030e5d 100%)
 
+//linear-gradient(to right bottom,#5183b7,#348aff 30%,#35a9e8 80%,rgba(3, 47, 93, 0.66) 100%)
+
+//linear-gradient(to right bottom,#c1fff9,#41a99f 30%,#0d87c9 80%,rgba(21, 16, 90, 0.68) 100%)
+//linear-gradient(to right bottom,rgba(21, 16, 90, 0.68),rgba(21, 16, 90, 0.68) 30%,#0d87c9 80%,#41a99f 100%)
+
+//linear-gradient(to right bottom,rgba(35, 27, 138, 0.83),rgba(19, 15, 86, 0.78) 30%,#319dd8 80%,rgba(79, 199, 234, 0.76) 100%)
 .desktop-nav--mobile-toggle {
   float: right;
   position: relative;
@@ -101,6 +109,11 @@ header {
   padding: 0;
   text-transform: uppercase;
   display: none;
+  > li {
+    > a {
+      color: #fff;
+    }
+  }
   @include breakpoint(desktop) {
       display: block;
   }

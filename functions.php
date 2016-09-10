@@ -12,7 +12,8 @@ class angularjs_wp_theme {
 
 		add_action( 'init', array( $this, 'register_my_menus' ) );
 		add_action( 'init', array( $this, 'register_my_sidebar' ) );
-		add_action( 'init', array( $this, 'createLibrary' ) );
+		add_action( 'init', array( $this, 'createLibraryItem' ) );
+
 		add_action( 'after_setup_theme', array( $this, 'add_awesome_theme_support' ) );
 		add_action( 'admin_init', array( $this, 'apiCheck' ) );
 
@@ -71,27 +72,27 @@ class angularjs_wp_theme {
 
 	}
 
-	function createLibrary() {
+	function createNews() {
 		$labels = array(
-			'name'               => _x( 'Library', 'post type general name' ),
-			'singular_name'      => _x( 'Library', 'post type singular name' ),
-			'add_new'            => _x( 'Add New', 'Library' ),
-			'add_new_item'       => __( 'Add New Library item' ),
-			'edit_item'          => __( 'Edit Library' ),
-			'new_item'           => __( 'New Library' ),
-			'all_items'          => __( 'All Library' ),
-			'view_item'          => __( 'View Library' ),
-			'search_items'       => __( 'Search Library' ),
-			'not_found'          => __( 'No Library found' ),
-			'not_found_in_trash' => __( 'No Library found in the Trash' ),
+			'name'               => _x( 'News', 'post type general name' ),
+			'singular_name'      => _x( 'News', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'News' ),
+			'add_new_item'       => __( 'Add New News' ),
+			'edit_item'          => __( 'Edit News' ),
+			'new_item'           => __( 'New News' ),
+			'all_items'          => __( 'All News' ),
+			'view_item'          => __( 'View News' ),
+			'search_items'       => __( 'Search News' ),
+			'not_found'          => __( 'No News found' ),
+			'not_found_in_trash' => __( 'No News found in the Trash' ),
 			'parent_item_colon'  => '',
-			'menu_name'          => 'Library'
+			'menu_name'          => 'News'
 		);
 		$args = array(
 			'labels'        => $labels,
-			'description'   => 'Holds our Home and Home specific data',
+			'description'   => 'Holds our News and News specific data',
 			'public'        => true,
-			'menu_position' => -1, // set the menu position in the admin menu
+			'menu_position' => -6, // set the menu position in the admin menu
 			'show_ui' => true,
 	  		'hierarchical' => true,
 			'show_in_menu' => true,
@@ -103,29 +104,24 @@ class angularjs_wp_theme {
 			'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
 
 		);
-		register_post_type( 'home', $args );
-		register_taxonomy( 'format', 'home', $args );
+		register_post_type( 'news', $args );
+		register_taxonomy( 'format', 'news', $args );
 	}
 
-	function createWhatWeDo() {
+	function createLibraryHome() {
 		$labels = array(
-			'name'               => _x( 'What We Do', 'post type general name' ),
-			'singular_name'      => _x( 'What We Do', 'post type singular name' ),
-			'add_new'            => _x( 'Add New', 'What We Do' ),
-			'add_new_item'       => __( 'Add New What We Do' ),
-			'edit_item'          => __( 'Edit What We Do' ),
-			'new_item'           => __( 'New What We Do' ),
-			'all_items'          => __( 'All What We Do' ),
-			'view_item'          => __( 'View What We Do' ),
+			'name'               => _x( 'Libary Home', 'post type general name' ),
+			'singular_name'      => _x( 'Libary Home', 'post type singular name' ),
+			'edit_item'          => __( 'Edit Libary Home' ),
 			'search_items'       => __( 'Search What We Do' ),
-			'not_found'          => __( 'No What We Do found' ),
-			'not_found_in_trash' => __( 'No What We Do found in the Trash' ),
+			'not_found'          => __( 'No Libary Home found' ),
+			'not_found_in_trash' => __( 'No Libary Home found in the Trash' ),
 			'parent_item_colon'  => '',
-			'menu_name'          => 'What We Do'
+			'menu_name'          => 'Libary Home'
 		);
 		$args = array(
 			'labels'        => $labels,
-			'description'   => 'Holds our What We Do and What We Do specific data',
+			'description'   => 'Holds our Libary Home specific data',
 			'public'        => true,
 			'menu_position' => -2, // set the menu position in the admin menu
 			'show_ui' => true,
@@ -143,25 +139,25 @@ class angularjs_wp_theme {
 		register_taxonomy( 'format', 'what-we-do', $args );
 	}
 
-	function createExpertise() {
+	function createLibraryItem() {
 		$labels = array(
-			'name'               => _x( 'Expertise', 'post type general name' ),
-			'singular_name'      => _x( 'Expertise', 'post type singular name' ),
-			'add_new'            => _x( 'Add New', 'Expertise' ),
-			'add_new_item'       => __( 'Add New Expertise' ),
-			'edit_item'          => __( 'Edit Expertise' ),
-			'new_item'           => __( 'New Expertise' ),
-			'all_items'          => __( 'All Expertise' ),
-			'view_item'          => __( 'View Expertise' ),
-			'search_items'       => __( 'Search Expertise' ),
-			'not_found'          => __( 'No Expertise found' ),
-			'not_found_in_trash' => __( 'No Expertise found in the Trash' ),
+			'name'               => _x( 'Libary Items', 'post type general name' ),
+			'singular_name'      => _x( 'Libary Item', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'Libary Item' ),
+			'add_new_item'       => __( 'Add New Libary Item' ),
+			'edit_item'          => __( 'Edit Libary Item' ),
+			'new_item'           => __( 'New Libary Item' ),
+			'all_items'          => __( 'All Libary Items' ),
+			'view_item'          => __( 'View Libary Item' ),
+			'search_items'       => __( 'Search Libary Item' ),
+			'not_found'          => __( 'No Libary Items found' ),
+			'not_found_in_trash' => __( 'No Libary Items found in the Trash' ),
 			'parent_item_colon'  => '',
-			'menu_name'          => 'Expertise'
+			'menu_name'          => 'Libary Items'
 		);
 		$args = array(
 			'labels'        => $labels,
-			'description'   => 'Holds our Expertise and Expertise specific data',
+			'description'   => 'Holds our Libary Item specific data',
 			'public'        => true,
 			'menu_position' => -3, // set the menu position in the admin menu
 			'show_ui' => true,
