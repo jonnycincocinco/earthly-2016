@@ -432,8 +432,8 @@ html {
   src: url("../fonts/rising-sun/RisingSun-Regular.woff") format("woff"); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Rising-Sun", helvetica, arial, sans-serif;
-  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
   letter-spacing: -0.01em; }
 
 html {
@@ -1997,11 +1997,11 @@ button.cta,
     .page-home--intro .page-home--intro-hdr h1 {
       float: left;
       position: relative;
-      font-size: 65px;
-      font-size: 4.0625rem;
-      line-height: 75px;
-      line-height: 4.6875rem;
-      font-weight: 500;
+      font-size: 72px;
+      font-size: 4.5rem;
+      line-height: 82px;
+      line-height: 5.125rem;
+      font-weight: 300;
       text-transform: none;
       text-align: left;
       margin: 0;
@@ -2030,8 +2030,8 @@ button.cta,
     float: left;
     clear: both;
     margin-top: 2px;
-    font-size: 22px;
-    font-size: 1.375rem;
+    font-size: 29px;
+    font-size: 1.8125rem;
     line-height: 24px;
     line-height: 1.5rem;
     text-align: left; }
@@ -2089,6 +2089,9 @@ button.cta,
 
 .applet .applet-video {
   width: 60%; }
+
+.earthly-dna--container .three-up-tiles {
+  background: none; }
 
 @media only screen and (min-width: 768px) {
   .icon-text.ethical-screening {

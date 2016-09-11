@@ -11,6 +11,8 @@ angular.module('Earthly.controllers')
 
     };
 
+    startAnimations();
+
     $(".tabs-menu .tab-item").click(function() {
         $(this).addClass("current");
         $(this).siblings().removeClass("current");
@@ -103,6 +105,7 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'faqs';
 
+    window.sr = ScrollReveal().reveal('.cta-ribbon');
 
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {

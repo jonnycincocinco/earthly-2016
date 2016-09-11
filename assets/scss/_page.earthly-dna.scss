@@ -1,5 +1,11 @@
 //  ## EARTHLY DNA  ----------------------------------------------------------//
 
+.earthly-dna--container {
+    .three-up-tiles {
+      background: none;
+    }
+}
+
 .icon-text {
   &.ethical-screening {
     @include breakpoint(tablet) {

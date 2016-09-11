@@ -109,9 +109,9 @@
         h1 {
             float: left;
             position: relative;
-            @include font-size(65);
-            @include line-height(75);
-            font-weight: 500;
+            @include font-size(72);
+            @include line-height(82);
+            font-weight: 300;
             text-transform: none;
             text-align: left;
             margin: 0;
@@ -139,7 +139,7 @@
         float: left;
         clear: both;
         margin-top: 2px;
-        @include font-size(22);
+        @include font-size(29);
         @include line-height(24);
         text-align: left;
 //        white-space: nowrap;

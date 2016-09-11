@@ -25,6 +25,7 @@
 
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
@@ -67,7 +68,7 @@
               </ul>
             </li>
             <li><a ui-sref="faqs" ng-class="{active: $state.current.activetab == 'faqs'}">FAQs</a></li>
-            <li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li>
+            <!--li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li-->
             <li><a ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">About</a></li>
             <li>
             <button class="desktop-nav--cta cta">Sign up</button>

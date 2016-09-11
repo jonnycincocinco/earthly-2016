@@ -17,6 +17,8 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
+    window.sr = ScrollReveal().reveal('.bg-strip, .section-strip, .site-footer');
+    
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {
         var newPath = imageSrc.replace('.jpg', '@2x.jpg');

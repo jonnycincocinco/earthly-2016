@@ -64,7 +64,7 @@ angular.module('Earthly.controllers')
 
     //scroll reveal
 
-    window.sr = ScrollReveal().reveal('.bg-strip, .section-strip');
+    window.sr = ScrollReveal().reveal('.bg-strip, .section-strip, .site-footer');
 
     //CAROUSEL
 
