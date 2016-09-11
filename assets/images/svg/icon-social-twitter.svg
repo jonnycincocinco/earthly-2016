@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1-Copy" sketch:type="MSArtboardGroup">
+            <g id="Rectangle-74-Copy-+-twitter" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+                <rect id="Rectangle-74-Copy" fill="#EBEEF0" sketch:type="MSShapeGroup" x="0" y="0" width="27" height="27" rx="2"></rect>
+                <g id="twitter" transform="translate(6.000000, 8.000000)" fill="#BEC4C7" sketch:type="MSShapeGroup">
+                    <path d="M13.553,3.057 C13.559,3.189 13.561,3.322 13.561,3.457 C13.561,7.551 10.445,12.271 4.748,12.271 C2.998,12.271 1.371,11.76 0,10.879 C0.242,10.908 0.488,10.922 0.738,10.922 C2.19,10.922 3.526,10.428 4.586,9.596 C3.231,9.572 2.086,8.676 1.691,7.445 C1.881,7.482 2.076,7.502 2.276,7.502 C2.557,7.502 2.83,7.463 3.092,7.393 C1.674,7.107 0.606,5.855 0.606,4.355 L0.606,4.316 C1.024,4.547 1.502,4.687 2.01,4.703 C1.178,4.146 0.631,3.199 0.631,2.125 C0.631,1.557 0.783,1.025 1.051,0.566 C2.578,2.441 4.862,3.674 7.436,3.805 C7.383,3.578 7.356,3.34 7.356,3.098 C7.356,1.387 8.742,0 10.453,0 C11.344,0 12.149,0.377 12.713,0.978 C13.42,0.84 14.082,0.582 14.682,0.227 C14.449,0.949 13.959,1.557 13.318,1.939 C13.945,1.867 14.543,1.699 15.098,1.453 C14.682,2.074 14.158,2.619 13.553,3.057 L13.553,3.057 Z" id="Fill-9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
