@@ -1,0 +1,18 @@
+<div class="page page-our-work anim-in-out anim-slide-below-fade" ng-cloak>
+
+    <div class="portfolio--container ng-cloak" ng-repeat="post in posts">
+
+      <div class="bg-strip inner-hero">
+        <div class="container">
+            <div class="grid">
+                <div class="text-align-center anim-in-out anim-slide-below-fade" data-anim-speed="900">
+                  <h1 class="white">Contact</h1>
+                </div>
+            </div>
+            <div ng-bind-html="post.content.rendered | to_trusted"
+        </div>
+    </div>
+
+  </div>
+
+</div>

@@ -86,6 +86,12 @@
   padding-bottom: calculateRem(20px);
 }
 
+.cinch {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }

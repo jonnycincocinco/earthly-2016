@@ -44,6 +44,24 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
+    .state('services',
+        {
+            url: '/services',
+            controller: 'servicesView',
+            templateUrl: ajaxInfo.template_directory + '/templates/services.html',
+            activetab: 'services'
+        }
+    )
+
+    .state('fees',
+        {
+            url: '/fees',
+            controller: 'feesView',
+            templateUrl: ajaxInfo.template_directory + '/templates/fees.html',
+            activetab: 'fees'
+        }
+    )
+
     .state('security',
         {
             url: '/security',

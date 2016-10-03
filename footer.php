@@ -20,7 +20,7 @@
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list">
-							<li><a class="site-footer-list__link" href="/">About</a></li>
+							<li><a class="site-footer-list__link" ui-sref="about-us">About</a></li>
 							<li><a class="site-footer-list__link" href="/">Privacy policy</a></li>
 							<li><a class="site-footer-list__link" href="/">Client Agreement</a></li>
 							<li><a class="site-footer-list__link" href="/">Terms and conditions</a></li>
@@ -33,7 +33,7 @@
 					<li><a class="site-footer-list__icon site-footer-list__icon--linkedin" href="#">Linkedin</a></li>
 				</ul>
 				<ul class="site-footer-list">
-					<li><a class="site-footer-list__link orange" href="/contact">Contact us</a></li>
+					<li><a class="site-footer-list__link orange" ui-sref="contact">Contact us</a></li>
 				</ul>
 				</div>
 

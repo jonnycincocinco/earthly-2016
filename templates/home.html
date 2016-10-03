@@ -84,16 +84,17 @@
     <div class="cta-ribbon bg-strip section-strip">
         <h2 class="text-align-center white">Ready to make an impact?</h2>
         <p class="cta-ribbon__subhead text-align-center light-green">Start your investment plan.</p>
-        <div class="cta-ribbon__form white text-align-center">
+        <form action="http://beearthly.com" method="get" target="_blank">
+      <div class="cta-ribbon__form white text-align-center">
           <span class="edit-age">
           I am
-          <input class="number" maxlength="3"></input>
+          <input class="number" type="number" name="age" maxlength="3">
           years old
           </span>
           <span class="edit-retirement">
           <span class="text">and currently earn</span>
           <span class="edit-income">
-          <span class="nowrap">$<input class="number salary" maxlength="8"></input>per year.</span>
+          <span class="nowrap">$<input class="number salary" name="salary" maxlength="8"></input>per year.</span>
         </div>
         <div class="cta-ribbon__form cta-ribbon__form--second white text-align-center">
           <span class="edit-age">
@@ -101,9 +102,10 @@
           </span>
           <span class="edit-retirement">
           <span class="edit-income">
-          <span class="nowrap"><input class="number" maxlength="3"></input>years.</span>
+          <span class="nowrap"><input class="number" type="number" name="years" maxlength="3">years.</span>
         </div>
-          <button class="cta">Get Started</button>
+        <button type="submit" class="cta">Get Started</button>
+        </form>
     </div>
     <!-- end below hero -->
   </div>

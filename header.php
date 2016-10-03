@@ -60,13 +60,14 @@
           </a>
           <a class="desktop-nav--logo" title="<?php echo bloginfo('name'); ?>" href="/#/earthly"><?php echo bloginfo('name'); ?></a>
           <ul class="desktop-nav--main">
-            <li class="desktop-nav--main__sub-wrapper"><a ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == ''}">Features</a>
+            <li class="desktop-nav--main__sub-wrapper"><a ui-sref="services" ng-class="{active: $state.current.activetab == ''}">Services</a>
               <ul class="desktop-nav--main__sub">
                 <li><a ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == 'earthy-dna'}">earthly(DNA)</a></li>
                 <li><a ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
                 <li><a ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
               </ul>
             </li>
+            <li><a ui-sref="fees" ng-class="{active: $state.current.activetab == 'fees'}">Fees</a></li>
             <li><a ui-sref="faqs" ng-class="{active: $state.current.activetab == 'faqs'}">FAQs</a></li>
             <!--li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li-->
             <li><a ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">About</a></li>

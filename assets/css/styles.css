@@ -738,6 +738,11 @@ a,
 .push-below {
   padding-bottom: 1.25rem; }
 
+.cinch {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
 
@@ -1736,6 +1741,10 @@ button.cta,
   padding-bottom: 5rem;
   background: linear-gradient(to right bottom, #1b428a, rgba(57, 83, 142, 0.92) 30%, #319dd8 80%, rgba(1, 198, 255, 0.76) 100%); }
 
+.pattern-strip {
+  background: #034168 url(../images/global/bg-pattern.png) 0 0;
+  color: #fff; }
+
 .grid__item ul {
   padding-left: 1.125rem; }
 
@@ -1905,12 +1914,7 @@ button.cta,
   background-size: cover;
   overflow: hidden;
   background: #c2f2ff;
-  background: -moz-linear-gradient(-45deg, #c2f2ff 0%, #93d4f4 24%, #3497dd 73%, #0076d1 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #c2f2ff), color-stop(24%, #93d4f4), color-stop(73%, #3497dd), color-stop(100%, #0076d1));
-  background: -webkit-linear-gradient(-45deg, #c2f2ff 0%, #93d4f4 24%, #3497dd 73%, #0076d1 100%);
-  background: -o-linear-gradient(-45deg, #c2f2ff 0%, #93d4f4 24%, #3497dd 73%, #0076d1 100%);
-  background: -ms-linear-gradient(-45deg, #c2f2ff 0%, #93d4f4 24%, #3497dd 73%, #0076d1 100%);
-  background: linear-gradient(135deg, #c2f2ff 0%, #93d4f4 24%, #3497dd 73%, #0076d1 100%);
+  background: linear-gradient(135deg, #0076d1 0, #3497dd 24%, #80c0e0 73%, #c2f2ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 ); }
 
 .page-home--hero__section {
@@ -2186,6 +2190,9 @@ button.cta,
   width: auto;
   padding-left: 0; }
 
+.whitepaper .whitepaper__text {
+  text-align: left; }
+
 .whitepaper .text-link {
   font-size: 20px;
   font-size: 1.25rem; }
@@ -2415,6 +2422,72 @@ button.cta,
   float: left; }
   .about-team .social-icons a:first-child {
     margin-right: 32px; }
+
+.fees__categories__inner {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px #d1d5d7 solid;
+  border-right: 0;
+  margin-bottom: 3.889rem;
+  background: #fff; }
+  .fees__categories__inner .fees__categories__entry {
+    transition: all 120ms ease-in-out;
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+    .fees__categories__inner .fees__categories__entry:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 768px) {
+      .fees__categories__inner .fees__categories__entry {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 33.33333%;
+        display: inline-block;
+        float: none; }
+        .fees__categories__inner .fees__categories__entry:last-child {
+          margin-right: 0; } }
+    .fees__categories__inner .fees__categories__entry .fees__categories__entry__inner {
+      border-right: 1px #d1d5d7 solid;
+      text-align: center; }
+      .fees__categories__inner .fees__categories__entry .fees__categories__entry__inner .fees__categories__entry__inner__top {
+        padding: 1.875rem 1.25rem; }
+      .fees__categories__inner .fees__categories__entry .fees__categories__entry__inner .fee-rate {
+        font-size: 64px;
+        font-size: 4rem;
+        line-height: 72px;
+        line-height: 4.5rem; }
+      .fees__categories__inner .fees__categories__entry .fees__categories__entry__inner .percentage-symbol {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        position: relative;
+        right: 0;
+        top: 11px;
+        vertical-align: top; }
+      .fees__categories__inner .fees__categories__entry .fees__categories__entry__inner .aum {
+        background-color: #f7f8f9;
+        color: #838d94;
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: auto;
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem; }
+    .fees__categories__inner .fees__categories__entry.featured {
+      z-index: 2;
+      position: relative;
+      border: 2px #f1703f solid;
+      box-shadow: 0 0 0 12px #fff, 0 0 0 15px #f1703f, 0 0 10px 15px rgba(0, 0, 0, 0.1);
+      border-color: transparent; }
+      .fees__categories__inner .fees__categories__entry.featured .fees__categories__entry__inner {
+        border-right: 0; }
+      .fees__categories__inner .fees__categories__entry.featured .aum {
+        width: calc(100% + 28px);
+        margin-left: -14px;
+        position: relative;
+        bottom: -14px;
+        left: 0;
+        padding-bottom: 22px; }
 
 .faqs .icon-text-col {
   float: left;

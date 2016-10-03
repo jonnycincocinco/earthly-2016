@@ -1,0 +1,66 @@
+//  ## FEEs  ----------------------------------------------------------//
+
+.fees__categories__inner {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+  border: 1px #d1d5d7 solid;
+  border-right: 0;
+  margin-bottom: 3.889rem;
+  background: #fff;
+
+  .fees__categories__entry {
+    transition: all 120ms ease-in-out;
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+      @include span-columns(4 of 12);
+      display: inline-block;
+      float: none;
+    }
+    .fees__categories__entry__inner {
+      border-right: 1px #d1d5d7 solid;
+      text-align: center;
+      .fees__categories__entry__inner__top {
+        padding: calculateRem(30px) calculateRem(20px);
+      }
+      .fee-rate {
+        @include font-size(64);
+        @include line-height(72);
+      }
+      .percentage-symbol {
+        @include font-size(19);
+        position: relative;
+        right: 0;
+        top: 11px;
+        vertical-align: top;
+      }
+      .aum {
+        background-color: #f7f8f9;
+        color: #838d94;
+        @include font-size(20);
+        line-height: auto;
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+    }
+//    &:hover {
+    &.featured {
+      z-index: 2;
+      position: relative;
+      border: 2px #f1703f solid;
+      box-shadow: 0 0 0 12px #fff,0 0 0 15px #f1703f,0 0 10px 15px rgba(0,0,0,.1);
+      border-color: transparent;
+      .fees__categories__entry__inner {
+        border-right: 0;
+      }
+      .aum {
+      width: calc(100% + 28px);
+      margin-left: -14px;
+      position: relative;
+      bottom: -14px;
+      left: 0;
+      padding-bottom: 22px;
+      }
+    }
+  }
+}
