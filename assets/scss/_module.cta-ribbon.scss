@@ -2,6 +2,11 @@
 .cta-ribbon {
   background: linear-gradient(to right bottom,#1b428a,rgba(0,0,0,.82) 90%,rgba(0,0,0,.82) 100%);
 
+  &.section-strip {
+    padding-top: calculateRem(90px);
+    padding-bottom: calculateRem(90px);
+  }
+
   h2 {
     margin-bottom: calculateRem(10px);
     @include font-size(54);
@@ -9,7 +14,7 @@
   .cta-ribbon__subhead {
       @include font-size(32);
       font-weight: 800;
-      margin-bottom: 40px;
+      margin-bottom: calculateRem(60px);
   }
   input {
     line-height: 1;

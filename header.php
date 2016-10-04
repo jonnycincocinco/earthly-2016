@@ -60,7 +60,7 @@
           </a>
           <a class="desktop-nav--logo" title="<?php echo bloginfo('name'); ?>" href="/#/earthly"><?php echo bloginfo('name'); ?></a>
           <ul class="desktop-nav--main">
-            <li class="desktop-nav--main__sub-wrapper"><a ui-sref="services" ng-class="{active: $state.current.activetab == ''}">Services</a>
+            <li class="desktop-nav--main__sub-wrapper"><a ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a>
               <ul class="desktop-nav--main__sub">
                 <li><a ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == 'earthy-dna'}">earthly(DNA)</a></li>
                 <li><a ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>

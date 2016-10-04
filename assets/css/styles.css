@@ -739,7 +739,7 @@ a,
   padding-bottom: 1.25rem; }
 
 .cinch {
-  width: 90%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -978,6 +978,14 @@ a,
 .grey-bg {
   background: #f7f8f9; }
 
+.dark-bg {
+  background: #424242;
+  color: white; }
+
+.blue-bg {
+  background: #6cc3d9;
+  color: #fff; }
+
 .slate {
   color: #5f6c73; }
 
@@ -1113,8 +1121,12 @@ header {
     margin-right: 26px; }
     .desktop-nav--main li:last-child {
       margin-right: 0; }
-    .desktop-nav--main li a.active {
-      font-weight: bold; }
+    .desktop-nav--main li a {
+      transition: all 200ms ease-in-out; }
+      .desktop-nav--main li a.active {
+        font-weight: bold; }
+      .desktop-nav--main li a:hover {
+        opacity: .6; }
     .desktop-nav--main li.desktop-nav--main__sub-wrapper {
       position: relative;
       margin-right: 48px;
@@ -1869,6 +1881,9 @@ button.cta,
 
 .cta-ribbon {
   background: linear-gradient(to right bottom, #1b428a, rgba(0, 0, 0, 0.82) 90%, rgba(0, 0, 0, 0.82) 100%); }
+  .cta-ribbon.section-strip {
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem; }
   .cta-ribbon h2 {
     margin-bottom: 0.625rem;
     font-size: 54px;
@@ -1877,7 +1892,7 @@ button.cta,
     font-size: 32px;
     font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 40px; }
+    margin-bottom: 3.75rem; }
   .cta-ribbon input {
     line-height: 1;
     font-weight: 300;
@@ -2590,3 +2605,159 @@ button.cta,
     display: block;
     overflow: visible;
     padding-bottom: 1.875rem; }
+
+.services--container .inner-hero {
+  padding-top: 5.5rem;
+  padding-bottom: 7.5rem; }
+
+.services--container .diversification h2 {
+  margin-bottom: 0; }
+
+.services--container .diversification .diversification__text p {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 38px;
+  line-height: 2.375rem;
+  margin-bottom: 3.125rem; }
+  @media only screen and (min-width: 768px) {
+    .services--container .diversification .diversification__text p {
+      margin-top: 7.5rem;
+      width: 80%; } }
+
+.services--container .diversification.security h2 {
+  margin-bottom: 3.75rem; }
+
+.services--container .diversification.security p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 2.5rem; }
+
+.services--container .detail-box__item {
+  background: #fbfaf9;
+  height: 280px;
+  margin: 0 2px;
+  position: relative;
+  text-align: left;
+  border-right: 10px solid #fff;
+  margin-left: -1px;
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%; }
+  .services--container .detail-box__item:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 768px) {
+    .services--container .detail-box__item {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%;
+      float: none;
+      display: inline-block; }
+      .services--container .detail-box__item:last-child {
+        margin-right: 0; } }
+  .services--container .detail-box__item:hover .box-icon {
+    -ms-transform: scale(0.65) translate(0, -160px);
+    transform: scale(0.65) translate(0, -160px); }
+  .services--container .detail-box__item:hover .content-box {
+    -ms-transform: translate(0, -150px);
+    transform: translate(0, -150px);
+    transform: translate3d(0, -150px, 0); }
+    .services--container .detail-box__item:hover .content-box .detail-title {
+      padding-bottom: 10px; }
+      .services--container .detail-box__item:hover .content-box .detail-title::after {
+        width: 100%; }
+  .services--container .detail-box__item .box-icon {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    backface-visibility: hidden;
+    transition: transform .3s ease-in-out; }
+  .services--container .detail-box__item .overflow-container {
+    overflow: hidden;
+    height: 100%; }
+  .services--container .detail-box__item .content-box {
+    padding: 20px;
+    width: 100%;
+    margin-top: 200px;
+    transition: transform .3s ease-in-out;
+    backface-visibility: hidden;
+    perspective: 1000px; }
+    .services--container .detail-box__item .content-box .detail-title {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      padding: 10px 0 80px;
+      transition: all .3s ease-in-out;
+      position: relative; }
+      .services--container .detail-box__item .content-box .detail-title::after {
+        content: " ";
+        width: 32px;
+        height: 3px;
+        background: #f7931f;
+        position: absolute;
+        left: 0;
+        top: -5px;
+        transition: all .3s ease-in-out; }
+
+.services--container .section-hats {
+  color: #000;
+  background: linear-gradient(to right bottom, #ff5522, rgba(255, 136, 34, 0.92) 30%, #d4d4d4 80%, #ffffff 100%); }
+  .services--container .section-hats .highlight {
+    font-weight: 900;
+    font-family: Georgia; }
+  .services--container .section-hats .grid__item {
+    position: relative;
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+    .services--container .section-hats .grid__item:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 768px) {
+      .services--container .section-hats .grid__item {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 25%;
+        float: none;
+        display: inline-block; }
+        .services--container .section-hats .grid__item:last-child {
+          margin-right: 0; } }
+    .services--container .section-hats .grid__item::after {
+      position: absolute;
+      top: -70px;
+      font-size: 340px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      text-align: center;
+      opacity: .2;
+      color: #fff; }
+    .services--container .section-hats .grid__item p img {
+      float: left;
+      margin-right: 10px; }
+    .services--container .section-hats .grid__item h5 {
+      width: 80%;
+      margin-bottom: 18px; }
+      .services--container .section-hats .grid__item h5::first-letter {
+        float: left;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 40px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+        font-family: Georgia; }
+    .services--container .section-hats .grid__item:nth-of-type(1) h5 {
+      width: 70%; }

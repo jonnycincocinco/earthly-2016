@@ -125,8 +125,12 @@ header {
       margin-right: 0;
     }
     a {
+      transition: all 200ms ease-in-out;
       &.active {
         font-weight: bold;
+      }
+      &:hover {
+        opacity: .6;
       }
     }
     &.desktop-nav--main__sub-wrapper {

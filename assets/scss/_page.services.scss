@@ -1,0 +1,185 @@
+//  ## SERVICES  ----------------------------------------------------------//
+
+.services--container {
+    .inner-hero {
+      padding-top: 5.5rem;
+      padding-bottom: 7.5rem;
+    }
+    .diversification {
+      h2 {
+        margin-bottom: 0;
+      }
+      .diversification__text {
+       p {
+         @include font-size(24);
+         @include line-height(38);
+         margin-bottom: calculateRem(50px);
+           @include breakpoint(tablet) {
+             margin-top: calculateRem(120px);
+             width: 80%;
+           }
+
+         }
+      }
+      &.security {
+        h2 {
+          margin-bottom: calculateRem(60px);
+        }
+        p {
+        @include font-size(18);
+        @include line-height(28);
+        margin-top: 0;
+        margin-bottom: calculateRem(40px);
+      }
+    }
+}
+
+.detail-box__item {
+  background: #fbfaf9;
+  height: 280px;
+  margin: 0 2px;
+  position: relative;
+  text-align: left;
+  border-right: 10px solid #fff;
+  margin-left: -1px;
+  @include span-columns(12 of 12);
+  @include breakpoint(tablet) {
+     @include span-columns(3 of 12);
+     float: none;
+     display: inline-block;
+   }
+  &:hover {
+    .box-icon {
+      -ms-transform: scale(.65) translate(0,-160px);
+      transform: scale(.65) translate(0,-160px);
+    }
+    .content-box {
+      -ms-transform: translate(0,-150px);
+      transform: translate(0,-150px);
+      transform: translate3d(0,-150px,0);
+      .detail-title {
+        padding-bottom: 10px;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .box-icon {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    backface-visibility: hidden;
+    transition: transform .3s ease-in-out;
+  }
+  .overflow-container {
+    overflow: hidden;
+    height: 100%;
+  }
+  .content-box {
+    padding: 20px;
+    width: 100%;
+    margin-top: 200px;
+    transition: transform .3s ease-in-out;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    .detail-title {
+      @include font-size(20);
+      //text-align: center;
+      font-weight: 500;
+      padding: 10px 0 80px;
+      transition: all .3s ease-in-out;
+      position: relative;
+      &::after {
+        content: " ";
+        width: 32px;
+        height: 3px;
+        background: $base--orange;
+        position: absolute;
+        left: 0;
+        top: -5px;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}
+
+.section-hats {
+  color: #000;
+//  background: linear-gradient(to right bottom,rgba(0, 71, 90, 0.76),rgba(0, 55, 181, 0.92) 30%,#006094 80%,#002a75 100%);
+//  background: linear-gradient(to right bottom,rgb(10, 0, 90),rgba(0, 35, 113, 0.92) 30%,#00669c 80%,#0158f1 100%);
+    background: linear-gradient(to right bottom,#ff5522,rgba(255, 136, 34, 0.92) 30%,#d4d4d4 80%,#ffffff 100%);
+    .highlight {
+      font-weight: 900;
+      font-family: Georgia;
+    }
+    .grid__item {
+    position: relative;
+    @include span-columns(12 of 12);
+    @include breakpoint(tablet) {
+       @include span-columns(3 of 12);
+       float: none;
+       display: inline-block;
+     }
+      &::after {
+    //    content: "H";
+        position: absolute;
+        top: -70px;
+        font-size: 340px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        text-align: center;
+        opacity: .2;
+        color: #fff;
+     }
+     &:nth-of-type(2) {
+         &::after {
+      //   content: "A";
+       }
+     }
+     &:nth-of-type(3) {
+        &::after {
+      //   content: "T";
+      }
+     }
+     &:nth-of-type(4) {
+        &::after {
+    //     content: "S";
+      }
+    }
+    p img {
+      float: left;
+      margin-right: 10px;
+    }
+    h5 {
+      width: 80%;
+      margin-bottom: 18px;
+      &::first-letter {
+        float: left;
+        //color: #404040;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 40px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+        font-family: Georgia;
+      }
+    }
+
+    &:nth-of-type(1) {
+      h5 {
+      width: 70%;
+      }
+    }
+  }
+}
+}

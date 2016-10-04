@@ -1,11 +1,11 @@
 angular.module('Earthly.controllers')
 
-.controller('securityView', ['$scope', '$rootScope', '$state', 'PostsByType', '$sce', function ($scope, $rootScope, $state, PostsByType, $sce) {
+.controller('servicesView', ['$scope', '$rootScope', '$state', 'PostsByType', '$sce', function ($scope, $rootScope, $state, PostsByType, $sce) {
     'use strict';
 
     $rootScope.$state = $state;
 
-    $rootScope.bodylayout = 'securityView';
+    $rootScope.bodylayout = 'servicesView';
 
     var startAnimations = function(){
 
