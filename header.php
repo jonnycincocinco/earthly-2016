@@ -69,7 +69,7 @@
             </li>
             <li><a ui-sref="fees" ng-class="{active: $state.current.activetab == 'fees'}">Fees</a></li>
             <li><a ui-sref="faqs" ng-class="{active: $state.current.activetab == 'faqs'}">FAQs</a></li>
-            <!--li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li-->
+            <li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li>
             <li><a ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">About</a></li>
             <li>
             <button class="desktop-nav--cta cta">Sign up</button>

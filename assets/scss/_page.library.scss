@@ -1,0 +1,61 @@
+//  ## SERVICES  ----------------------------------------------------------//
+
+.library--container {
+  .inner-hero {
+    &.bg-strip {
+      padding-top: calculateRem(80px);
+      padding-bottom: calculateRem(80px);
+    }
+  }
+  picture {
+    img {
+      width: 960px;
+    }
+  }
+
+  &.library--container--home {
+    picture {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .library-item {
+    .library--featured-image {
+      display: inline-block;
+      width: 50%;
+    }
+    .library--featured-text {
+      display: inline-block;
+      width: 46%;
+      margin-left: 3%;
+    }
+    h2 {
+      @include font-size(36);
+    }
+    &.not-featured {
+      .library--featured-image {
+        width: 32%;
+      }
+      .library--featured-text {
+        width: 57%;
+      }
+      &.section-strip {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .library--fixed-content {
+    text-align: center;
+  }
+
+  .library-bottom {
+    margin-bottom: calculateRem(120px);
+  }
+
+  .library--nav {
+    display: inline-block;
+  }
+}

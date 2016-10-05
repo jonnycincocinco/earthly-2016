@@ -59,6 +59,12 @@
       transform: translate3d(0,-150px,0);
       .detail-title {
         padding-bottom: 10px;
+        &::before {
+          content: "-";
+          transform: rotate(90deg);
+          padding: 0px 7px 3px;
+      //    border-style: solid;
+        }
         &::after {
           width: 100%;
         }
@@ -97,6 +103,19 @@
       padding: 10px 0 80px;
       transition: all .3s ease-in-out;
       position: relative;
+      &:before {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-size: 1em;
+        line-height: 1em;
+        top: 13px;
+        border: 1px dotted #000;
+        border-style: dotted;
+        padding: 0 6px;
+        border-radius: 100%;
+        transition: all .3s ease-in-out;
+      }
       &::after {
         content: " ";
         width: 32px;
@@ -177,9 +196,14 @@
 
     &:nth-of-type(1) {
       h5 {
-      width: 70%;
+        width: 70%;
+        }
       }
     }
   }
-}
+  .inner-page-section {
+    .subhead {
+      padding-bottom: calculateRem(60px);
+    }
+  }
 }
