@@ -92,15 +92,28 @@ angular.module('Earthly.controllers')
     //Applet Show on Scroll
 
     var homePage = $(".page-home--hero");
+    var vid = $(".applet-video")[0];
+    var graph = $("#graph");
+    var replay = $("#replay-button");
+    vid.currentTime = '0';
+    replay.removeClass('show');
+    
       if (homePage) {
         $(document).scroll(function(){
-        if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 400){
-            var vid = $(".applet-video")[0];
+          if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){
+
             if (vid.currentTime === 0) {
               vid.play();
+              replay.addClass('show');
             }
+            $("#replay-button").click(function(){
+              vid.currentTime = '0';
+              vid.play();
+          //    graph.addClass('show');
+            })
         }
         });
+
       };
 
 // input comma-adder

@@ -19,21 +19,30 @@ angular.module('Earthly.controllers')
 
     window.sr = ScrollReveal().reveal('.section-strip, .site-footer');
 
-    $scope.getRetina = function (imageSrc) {
-      if (typeof imageSrc === 'string') {
-        var newPath = imageSrc.replace('.jpg', '@2x.jpg');
-        var newPath2 = $sce.trustAsResourceUrl(newPath);
-        return newPath2;
-      }
-    };
+    var homePage = $(".inner-hero");
+    var vid = $(".applet-video")[0];
+    var graph = $("#graph");
+    var replay = $("#replay-button");
+    vid.currentTime = '0';
+    replay.removeClass('show');
 
-    $scope.getImageBreakpointSrc = function (imageSrc, breakpoint) {
-      if (typeof imageSrc === 'string') {
-        var newPath = imageSrc.replace('.jpg', '-' + breakpoint + '.jpg');
-        var newPath2 = $sce.trustAsResourceUrl(newPath);
-        return newPath2;
-      }
-    };
+      if (homePage) {
+        $(document).scroll(function(){
+          if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){
+
+            if (vid.currentTime === 0) {
+              vid.play();
+              replay.addClass('show');
+            }
+            $("#replay-button").click(function(){
+              vid.currentTime = '0';
+              vid.play();
+          //    graph.addClass('show');
+            })
+        }
+        });
+
+      };
 
     // input comma-adder
       $('input.number').keyup(function(event) {

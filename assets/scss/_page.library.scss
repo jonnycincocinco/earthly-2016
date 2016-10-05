@@ -51,11 +51,10 @@
     text-align: center;
   }
 
-  .library-bottom {
-    margin-bottom: calculateRem(120px);
-  }
-
   .library--nav {
     display: inline-block;
+  }
+  .site-footer-divider {
+    margin: 0 calculateRem(200px) calculateRem(10px);
   }
 }

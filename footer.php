@@ -28,9 +28,9 @@
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list site-footer-list--social">
-					<li><a class="site-footer-list__icon site-footer-list__icon--facebook" href="#">Facebook</a></li>
-					<li><a class="site-footer-list__icon site-footer-list__icon--twitter" href="#">Twitter</a></li>
-					<li><a class="site-footer-list__icon site-footer-list__icon--linkedin" href="#">Linkedin</a></li>
+					<li><a class="site-footer-list__icon site-footer-list__icon--facebook" href="https://www.facebook.com/earthlypbc">Facebook</a></li>
+					<li><a class="site-footer-list__icon site-footer-list__icon--twitter" href="https://twitter.com/earthlypbc">Twitter</a></li>
+					<li><a class="site-footer-list__icon site-footer-list__icon--linkedin" href="https://www.linkedin.com/company/10879024">Linkedin</a></li>
 				</ul>
 				<ul class="site-footer-list">
 					<li><a class="site-footer-list__link orange" ui-sref="contact">Contact us</a></li>
