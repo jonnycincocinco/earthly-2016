@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <?php wp_head();?>
 
 

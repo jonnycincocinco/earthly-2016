@@ -17,7 +17,7 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
-    window.sr = ScrollReveal().reveal('.section-strip, .site-footer');
+    window.sr = ScrollReveal().reveal('.section-strip');
 
     var homePage = $(".inner-hero");
     var vid = $(".applet-video")[0];

@@ -7,6 +7,7 @@
 				<div class="grid__item">
 					<ul class="site-footer-list">
 							<!--li><span class="site-footer-list__title">Features</span></li-->
+							<li><a class="site-footer-list__link" ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a></li>
 							<li><a class="site-footer-list__link" ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == 'earthy-dna'}">earthly(DNA)</a></li>
 							<li><a class="site-footer-list__link" ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
 							<li><a class="site-footer-list__link" ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
@@ -14,13 +15,14 @@
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list">
+						<li><a class="site-footer-list__link" ui-sref="fees" ng-class="{active: $state.current.activetab == 'fees'}">Fees</a></li>
 						<li><a class="site-footer-list__link" ui-sref="faqs" ng-class="{active: $state.current.activetab == 'faqs'}">FAQs</a></li>
-						<li><a class="site-footer-list__link" ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">Library</a></li>
+						<li><a class="site-footer-list__link" ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li>
+						<li><a class="site-footer-list__link" ui-sref="about" ng-class="{active: $state.current.activetab == 'about'}">About</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list">
-							<li><a class="site-footer-list__link" ui-sref="about-us">About</a></li>
 							<li><a class="site-footer-list__link" href="/">Privacy policy</a></li>
 							<li><a class="site-footer-list__link" href="/">Client Agreement</a></li>
 							<li><a class="site-footer-list__link" href="/">Terms and conditions</a></li>
