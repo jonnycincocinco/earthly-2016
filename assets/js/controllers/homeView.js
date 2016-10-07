@@ -64,7 +64,7 @@ angular.module('Earthly.controllers')
 
     //scroll reveal
 
-    window.sr = ScrollReveal().reveal('.bg-strip, .section-strip, .site-footer');
+    window.sr = ScrollReveal().reveal('.bg-strip, .container, .site-footer');
 
     //CAROUSEL
 
@@ -97,7 +97,7 @@ angular.module('Earthly.controllers')
     var replay = $("#replay-button");
     vid.currentTime = '0';
     replay.removeClass('show');
-    
+
       if (homePage) {
         $(document).scroll(function(){
           if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){

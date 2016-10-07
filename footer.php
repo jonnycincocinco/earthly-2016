@@ -23,9 +23,9 @@
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list">
-							<li><a class="site-footer-list__link" href="/">Privacy policy</a></li>
-							<li><a class="site-footer-list__link" href="/">Client Agreement</a></li>
-							<li><a class="site-footer-list__link" href="/">Terms and conditions</a></li>
+							<li><a class="site-footer-list__link" ui-sref="privacy-policy" ng-class="{active: $state.current.activetab == 'privacy-policy'}">Privacy policy</a></li>
+							<li><a class="site-footer-list__link" ui-sref="client-agreement" ng-class="{active: $state.current.activetab == 'client-agreement'}">Client Agreement</a></li>
+							<li><a class="site-footer-list__link" ui-sref="terms" ng-class="{active: $state.current.activetab == 'terms'}">Terms and conditions</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">

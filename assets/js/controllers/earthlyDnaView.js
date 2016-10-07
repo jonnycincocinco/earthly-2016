@@ -17,7 +17,7 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
-    window.sr = ScrollReveal().reveal('.section-strip, .site-footer');
+    window.sr = ScrollReveal().reveal('.container, .site-footer');
 
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {

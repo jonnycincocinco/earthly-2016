@@ -454,7 +454,8 @@ h1 {
   line-height: 54px;
   line-height: 3.375rem;
   margin: 0 0 0.625rem 0;
-  font-weight: 300; }
+  font-weight: 300;
+  letter-spacing: 0.02rem; }
 
 h2 {
   font-size: 38px;
@@ -2678,7 +2679,6 @@ button.cta,
   margin-bottom: 2.5rem; }
 
 .services--container .detail-box__item {
-  background: #fbfaf9;
   height: 280px;
   margin: 0 2px;
   position: relative;
@@ -2807,7 +2807,9 @@ button.cta,
       margin-right: 10px; }
     .services--container .section-hats .grid__item h5 {
       width: 80%;
-      margin-bottom: 18px; }
+      margin-bottom: 18px;
+      line-height: 23px;
+      line-height: 1.4375rem; }
       .services--container .section-hats .grid__item h5::first-letter {
         float: left;
         font-weight: 900;

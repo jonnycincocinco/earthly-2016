@@ -66,6 +66,7 @@ h1 {
   @include line-height(54);
   margin: 0 0 calculateRem(10px) 0;
   font-weight: 300;
+  letter-spacing: 0.02rem;
 }
 
 h2 {

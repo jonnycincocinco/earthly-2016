@@ -35,7 +35,6 @@
 }
 
 .detail-box__item {
-  background: #fbfaf9;
   height: 280px;
   margin: 0 2px;
   position: relative;
@@ -181,6 +180,7 @@
     h5 {
       width: 80%;
       margin-bottom: 18px;
+      @include line-height(23);
       &::first-letter {
         float: left;
         //color: #404040;

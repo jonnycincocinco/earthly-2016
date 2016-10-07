@@ -114,6 +114,33 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
             templateUrl: ajaxInfo.template_directory + '/templates/contact.html',
             activetab: 'contact'
         }
+    )
+
+    .state('privacy-policy',
+        {
+            url: '/privacy-policy',
+            controller: 'privacyPolicyView',
+            templateUrl: ajaxInfo.template_directory + '/templates/privacy-policy.html',
+            activetab: 'privacy-policy'
+        }
+    )
+
+    .state('terms',
+        {
+            url: '/terms-and-conditions',
+            controller: 'termsView',
+            templateUrl: ajaxInfo.template_directory + '/templates/terms.html',
+            activetab: 'terms'
+        }
+    )
+
+    .state('client-agreement',
+        {
+            url: '/client-agreement',
+            controller: 'clientAgreementView',
+            templateUrl: ajaxInfo.template_directory + '/templates/client-agreement.html',
+            activetab: 'client-agreement'
+        }
     );
 
 }]);
