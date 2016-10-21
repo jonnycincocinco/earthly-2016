@@ -47,11 +47,19 @@
     padding-bottom: calculateRem(40px);
   }
   .inner-hero__image {
-    margin-top: calculateRem(105px);
+    margin-top: calculateRem(64px);
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
        @include span-columns(5 of 12);
        text-align: center;
+     }
+     img {
+       width: 100%;
+       @include breakpoint(cinema) {
+         .earthly-dna--container & {
+           width: 80%;
+         }
+       }
      }
   }
   .inner-hero__text {
@@ -84,6 +92,9 @@
     padding: 0 calculateRem(200px) calculateRem(25px);
     @include font-size(18);
     @include line-height(32);
+    .page-home & {
+      padding: 0 calculateRem(60px) 0;
+    }
   }
   li {
     @include font-size(16);

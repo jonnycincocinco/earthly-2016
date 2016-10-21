@@ -56,26 +56,39 @@
       </div>
     </div>
 
-    <div class="earthly-dna-home grey-bg section-strip">
+    <div class="earthly-dna-home dark-bg section-strip">
       <div class="container">
         <h2 class="text-align-center">What’s your earthlyDNA?</h2>
           <div class="earthly-dna-home__icon">
-            <p><img src="/wp-content/themes/earthly-2016/build/images/icons/icon-earthly-dna.png" class="" width="236"></p>
+            <p><img src="/wp-content/themes/earthly-2016/build/images/pages/earthly-dna.png" class="" width="236"></p>
           </div>
-          <div class="earthly-dna-home__text slate">
+          <div class="earthly-dna-home__text">
             <p>earthly(DNA) is our exclusive diversified stock portfolio which replaces your socially responsible ETF for accounts that invest $10,000 or more in socially responsible equities.
             <span>Unlike an ETF, earthlyDNA has no ETF expenses and provides other benefits.</span>
-            <span class="earthly-dna-home__link"> <a ui-sref="earthy-dna" class="text-link">Learn more</a></span>
+            <span class="earthly-dna-home__link"> <a ui-sref="earthy-dna" class="text-link orange">Learn more</a></span>
             </p>
           </div>
       </div>
     </div>
 
     <div class="applet text-align-center section-strip inner-page-section flush-bottom">
-        <h2 class="">Your investment goes farther</h2>
+        <div class="container">
+          <h2 class="">Your investment goes farther</h2>
         <p class="subhead">Expected 30-year growth on a $100,000 investment comparing <strong class="orange"> a traditional advisor</strong> and <strong class="light-blue">Earthly</strong>. </p>
-        <div id="replay-button">Replay</div>
-        <!--div id="graph">
+        <div class="disclaimer-section">
+          <button>Details</button>
+
+          <div class="modal">
+            <span>&times;</span>
+            <p>This graph compares Earthly's advisory fee and average fund expense ratio (0.04%) with a traditional investment advisor's fee (1.00%) plus the average equity mutual fund expense ratio (1.00%).  Assumptions include $100,000 invested in a 80/20 stock portfolio at 100% socially responsible investments with a 6% continuously compounded annual return over 30 years.  Note that Earthly's advisory fee includes earthly(DNA) which has a 0% expense ratio.</p>
+          </div>
+      </div>
+
+
+
+
+        <!--div id="replay-button"><span class="replay-icon"></span>Replay</div>
+        <div id="graph">
           <div class="graph__inner">$100,000</div>
           <div class="graph__inner">$200,000</div>
           <div class="graph__inner">$300,000</div>
@@ -83,11 +96,15 @@
           <div class="graph__inner">$500,000</div>
           <div class="graph__inner">$600,000</div>
         </div-->
-        <video class="applet-video" width="100%" preload="auto" ng-attr-poster="">
-            <source ng-src="/wp-content/themes/earthly-2016/build/video/comparison-chart.mp4" type='video/mp4' />
-            <!--source ng-src="{{getVideoTypeSrc(asset_url.video_asset, 'webm')}}" type='video/webm; codecs="vp8, vorbis"' />
-            <source ng-src="{{getVideoTypeSrc(asset_url.video_asset, 'ogv')}}" type='video/ogg; codecs="theora, vorbis"' /-->
-        </video>
+        <div class="applet-video-wrapper">
+          <div id="replay-button"><span class="play-icon"></span>Play</div>
+          <video class="applet-video" width="100%" preload="auto" ng-attr-poster="">
+              <source ng-src="/wp-content/themes/earthly-2016/build/video/costs.mp4" type='video/mp4' />
+              <!--source ng-src="{{getVideoTypeSrc(asset_url.video_asset, 'webm')}}" type='video/webm; codecs="vp8, vorbis"' />
+              <source ng-src="{{getVideoTypeSrc(asset_url.video_asset, 'ogv')}}" type='video/ogg; codecs="theora, vorbis"' /-->
+          </video>
+        </div>
+      </div>
     </div>
 
     <div class="cta-ribbon bg-strip section-strip">

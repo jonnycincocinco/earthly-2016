@@ -50,6 +50,9 @@ body {
     @include breakpoint(desktop) {
         padding: 0 calculateRem(130px);
     }
+    @include breakpoint(cinema) {
+      max-width: 1440px;
+    }
 }
 
 .inner-container {

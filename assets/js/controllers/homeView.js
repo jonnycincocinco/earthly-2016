@@ -36,21 +36,21 @@ angular.module('Earthly.controllers')
     var tl4 = new TimelineMax({repeat:-1,delay: .8});
 
     function cloudSmall() {
-      tl2.to('.cloud-small', 1, {opacity: '1', left:"10", ease:Power0.easeNone});
+      tl2.to('.cloud-small', 1, {opacity: '.8', left:"10", ease:Power0.easeNone});
       tl2.to('.cloud-small', 35, {left:"698", ease:Power0.easeNone});
       tl2.to('.cloud-small', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
       tl2.to('.cloud-small', .1, {left:"0", ease:Power0.easeNone});
     }
 
     function cloudMedium() {
-      tl3.to('.cloud-medium', 1, {opacity: '1', left:"12", ease:Power0.easeNone});
+      tl3.to('.cloud-medium', 1, {opacity: '.7', left:"12", ease:Power0.easeNone});
       tl3.to('.cloud-medium', 52, {left:"698", ease:Power0.easeNone});
       tl3.to('.cloud-medium', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
       tl3.to('.cloud-medium', .1, {left:"0", ease:Power0.easeNone});
     }
 
     function cloudLarge() {
-      tl4.to('.cloud-large', 1, {opacity: '1', left:"15", ease:Power0.easeNone});
+      tl4.to('.cloud-large', 1, {opacity: '.6', left:"15", ease:Power0.easeNone});
       tl4.to('.cloud-large', 28, {left:"698", ease:Power0.easeNone});
       tl4.to('.cloud-large', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
       tl4.to('.cloud-large', .1, {left:"0", ease:Power0.easeNone});
@@ -64,7 +64,9 @@ angular.module('Earthly.controllers')
 
     //scroll reveal
 
-    window.sr = ScrollReveal().reveal('.bg-strip, .container, .site-footer');
+    if ($('.bg-strip') || $('.container') || $('.site-footer')) {
+  //    window.sr = ScrollReveal().reveal('.bg-strip, .container, .site-footer');
+    }
 
     //CAROUSEL
 
@@ -109,10 +111,15 @@ angular.module('Earthly.controllers')
             $("#replay-button").click(function(){
               vid.currentTime = '0';
               vid.play();
-          //    graph.addClass('show');
+              $('.play-icon').addClass('clicked');
             })
         }
         });
+
+        vid.addEventListener('ended',myHandler,false);
+          function myHandler(e) {
+            $('.play-icon').removeClass('clicked');
+          }
 
       };
 

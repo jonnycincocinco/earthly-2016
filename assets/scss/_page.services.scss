@@ -133,10 +133,10 @@
   color: #000;
 //  background: linear-gradient(to right bottom,rgba(0, 71, 90, 0.76),rgba(0, 55, 181, 0.92) 30%,#006094 80%,#002a75 100%);
 //  background: linear-gradient(to right bottom,rgb(10, 0, 90),rgba(0, 35, 113, 0.92) 30%,#00669c 80%,#0158f1 100%);
-    background: linear-gradient(to right bottom,#ff5522,rgba(255, 136, 34, 0.92) 30%,#d4d4d4 80%,#ffffff 100%);
+    background: linear-gradient(to right bottom,#ffb9a3,rgba(255, 202, 157, 0.92) 30%,#e8e8e8 80%,#fff 100%);
     .highlight {
       font-weight: 900;
-      font-family: Georgia;
+  //    font-family: Georgia;
     }
     .grid__item {
     position: relative;
@@ -190,7 +190,7 @@
         padding-top: 4px;
         padding-right: 8px;
         padding-left: 3px;
-        font-family: Georgia;
+      //  font-family: Georgia;
       }
     }
 
