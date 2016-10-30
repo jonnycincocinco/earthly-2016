@@ -1,0 +1,42 @@
+<div class="page page-our-work anim-in-out anim-slide-below-fade" ng-cloak>
+
+    <div class="library--container library--container--home">
+
+        <div class="bg-strip inner-hero white">
+          <div class="container">
+              <div class="grid">
+                  <div class="text-align-center anim-in-out anim-slide-below-fade" data-anim-speed="900">
+                    <h1 class="text-align-center">Library</h1>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="section-strip inner-page-section grey-bg library-item">
+        <div class="container">
+          <article class="news--article news--featured--article" ng-repeat="post in posts | filter: post: post.acf.category='sustainable_investing'">
+            <div class="library--featured-image" ng-repeat="asset_url in post.acf.expertise_assets">
+              <picture picturefill ng-if="asset_url.image_asset">
+                  <a href="{{site + '#/library/' + post.slug}}"><img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" /></a>
+              </picture>
+              </div>
+              <div class="library--featured-text">
+                <a href="{{site + '#/library/' + post.slug}}"><h2 ng-bind-html="post.title.rendered | to_trusted"></h2></a>
+                <p ng-bind-html="post.excerpt.rendered | to_trusted"></p>
+                <div class="library--author" ng-repeat="asset_url in post.acf.author_image_thumb">
+                  <picture picturefill ng-if="asset_url.image_asset">
+                      <img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" />
+                  </picture>
+                  <div class="library--author--info">
+                    <span class="blue-slate" ng-bind-html="post.acf.author | to_trusted"></span>
+                    <span class="library-item-date">{{post.acf.date}}</span>
+                  </div>
+                </div>
+              </div>
+          </article>
+        </div>
+      </div>
+
+
+    </div>
+</div>

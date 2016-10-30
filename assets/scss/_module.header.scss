@@ -6,7 +6,7 @@ header {
     top: 0;
     left: 0;
 //    background: $base--headerColor;
-    height: 70px;
+//    height: 70px;
     min-width: $min-width;
     z-index: 1000;
     color: #fff;
@@ -105,7 +105,7 @@ header {
 .desktop-nav--main {
   float: right;
   list-style: none;
-  margin: 29px 30px 0 0;
+  margin: 45px 30px 0 0;
   padding: 0;
   text-transform: uppercase;
   display: none;
@@ -228,7 +228,7 @@ button.cta {
 
 .desktop-nav--logo {
   display: inline-block;
-  margin-top: calculateRem(15px);
+  margin-top: calculateRem(34px);
   margin-left: 0;
   width: 156px;
   height: 52px;

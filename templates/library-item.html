@@ -2,17 +2,28 @@
 
     <div class="library--container" ng-repeat="post in posts">
 
-        <div class="bg-strip inner-hero white">
+        <div class="bg-strip inner-hero library-item-main">
           <div class="container">
-              <div class="grid" ng-repeat="asset_url in post.acf.expertise_assets">
-                  <div class="text-align-center anim-in-out anim-slide-below-fade" data-anim-speed="900">
-                    <h1 class="cinch" ng-bind-html="post.title.rendered | to_trusted"></h1>
-                    <picture picturefill ng-if="asset_url.image_asset">
-                        <img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" />
-                    </picture>
-                  </div>
-              </div>
           </div>
+        </div>
+
+      <div class="section-strip inner-page-section library-inner flush-bottom">
+        <div class="container">
+            <div class="grid" ng-repeat="asset_url in post.acf.expertise_assets">
+                <div class="text-align-center anim-in-out anim-slide-below-fade" data-anim-speed="900">
+                  <h1 class="cinch" ng-bind-html="post.title.rendered | to_trusted"></h1>
+                  <div class="library--author" ng-repeat="asset_url in post.acf.author_image_thumb">
+                    <div class="library--author--info white">
+                      <span class="" ng-bind-html="post.acf.author | to_trusted"></span>&nbsp;–&nbsp;<span class="">{{post.acf.date}}</span>
+                    </div>
+                  </div>
+                  <picture picturefill ng-if="asset_url.image_asset">
+                      <img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" />
+                  </picture>
+                </div>
+
+            </div>
+        </div>
       </div>
 
       <div class="section-strip inner-page-section">
@@ -21,19 +32,5 @@
         </div>
       </div>
 
-      <div class="section-strip inner-page-section flush-top">
-        <div class="container">
-          <div class="expertise--asset-wrapper ng-cloak">
-              <div class="library--fixed-content">
-                  <div class="inner-container">
-                      <nav class="library--nav">
-                          <a href="{{site + '#/library/' + post.acf.previous_post.post_name}}" class="icon-ui icon-ui--previous" ng-click="clickedPrevious()" >Previous</a>
-                          <a href="{{site + '#/library/' + post.acf.next_post.post_name}}" class="icon-ui icon-ui--next" ng-click="clickedNext()">Next</a>
-                      </nav>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
     </div>
 </div>

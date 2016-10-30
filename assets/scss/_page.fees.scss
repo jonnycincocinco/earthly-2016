@@ -54,13 +54,37 @@
         border-right: 0;
       }
       .aum {
-      width: calc(100% + 28px);
-      margin-left: -14px;
-      position: relative;
-      bottom: -14px;
-      left: 0;
-      padding-bottom: 22px;
+        width: calc(100% + 28px);
+        margin-left: -14px;
+        position: relative;
+        bottom: -14px;
+        left: 0;
+        padding-bottom: 22px;
+        }
       }
     }
   }
-}
+  .fees-chart {
+    img {
+      width: 100%;
+      @include breakpoint(desktop) {
+          width: 85%;
+          margin-left: 6%;
+      }
+    }
+    .legal {
+      @include font-size(12);
+      @include line-height(12);
+      &:first-of-type {
+        margin-top: calculateRem(40px);
+      }
+    }
+  }
+  .applet {
+    &.inner-page-section {
+      .subhead {
+        padding: 0 calculateRem(60px) 0;
+        margin: 0;
+      }
+    }
+  }

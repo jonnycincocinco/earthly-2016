@@ -35,6 +35,24 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
+    .state('sustainable',
+        {
+            url: '/library/sustainble-investing/',
+            controller: 'categoryView',
+            templateUrl: ajaxInfo.template_directory + '/templates/library-sustainable.html',
+            activetab: 'library'
+        }
+    )
+
+    .state('news',
+        {
+            url: '/library/news/',
+            controller: 'categoryView',
+            templateUrl: ajaxInfo.template_directory + '/templates/library-news.html',
+            activetab: 'library'
+        }
+    )
+
     .state('earthy-dna',
         {
             url: '/earthy-dna',

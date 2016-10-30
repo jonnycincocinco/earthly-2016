@@ -26,23 +26,28 @@ angular.module('Earthly.controllers')
     vid.currentTime = '0';
     replay.removeClass('show');
 
-      if (homePage) {
-        $(document).scroll(function(){
-          if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){
+    if (homePage) {
+      $(document).scroll(function(){
+        if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){
 
-            if (vid.currentTime === 0) {
-              vid.play();
-              replay.addClass('show');
-            }
-            $("#replay-button").click(function(){
-              vid.currentTime = '0';
-              vid.play();
-          //    graph.addClass('show');
-            })
+          if (vid.currentTime === 0) {
+            vid.play();
+            replay.addClass('show');
+          }
+          $("#replay-button").click(function(){
+            vid.currentTime = '0';
+            vid.play();
+            $('.play-icon').addClass('clicked');
+          })
+      }
+      });
+
+      vid.addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+          $('.play-icon').removeClass('clicked');
         }
-        });
 
-      };
+    };
 
     // input comma-adder
       $('input.number').keyup(function(event) {

@@ -1,45 +1,80 @@
 <div class="page page-our-work anim-in-out anim-slide-below-fade" ng-cloak>
 
-    <div class="portfolio--container ng-cloak" ng-repeat="post in posts">
+    <div class="portfolio--container ng-cloak">
 
       <div class="bg-strip inner-hero">
         <div class="container">
             <div class="grid">
                 <div class="text-align-center anim-in-out anim-slide-below-fade" data-anim-speed="900">
-                  <h1 class="white">Contact</h1>
+                  <h1 class="white">Contact us</h1>
                 </div>
             </div>
-            <form id="contactform" method="post" action="http://erff.dev:8888/wp-content/themes/earthly-2016/contact.php">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="username" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your email message"></textarea>
-                    </div>
+          </div>
+        </div>
 
-                    <br>
-                    <div class="g-recaptcha" data-sitekey="6LfYPAgUAAAAANf1aAc2k1xqBXve-kGLGnGfeTxi"></div>
-                    <br>
-
-                    <div id="formresult">
-
-                    </div>
-
-                    <button type="submit" name="submit" class="btn btn-info">Submit</button>
-                    <button type="reset" class="btn btn-danger">Reset</button>
-                </form>
+            <div class="section-strip inner-page-section grey-bg library-item">
+              <div class="container">
+                <article class="news--article news--featured--article">
+                  <iframe
+        id="JotFormIFrame-63028242413143"
+        onload="window.parent.scrollTo(0,0)"
+        allowtransparency="true"
+        src="https://form.jotform.com/63028242413143"
+        frameborder="0"
+        style="width:100%;
+        height:539px;
+        border:none;"
+        scrolling="no">
+      </iframe>
+      <script type="text/javascript">
+        window.handleIFrameMessage = function(e) {
+          var args = e.data.split(":");
+          var iframe = false;
+          if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); }
+          if (!iframe)
+            return;
+          switch (args[0]) {
+            case "scrollIntoView":
+              iframe.scrollIntoView();
+              break;
+            case "setHeight":
+              iframe.style.height = args[1] + "px";
+              break;
+            case "collapseErrorPage":
+              if (iframe.clientHeight > window.innerHeight) {
+                iframe.style.height = window.innerHeight + "px";
+              }
+              break;
+            case "reloadPage":
+              window.location.reload();
+              break;
+          }
+          var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+          if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+            var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+            iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+          }
+        };
+        if (window.addEventListener) {
+          window.addEventListener("message", handleIFrameMessage, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onmessage", handleIFrameMessage);
+        }
+        if(window.location.href && window.location.href.indexOf("?") > -1) {
+          var ifr = false;
+          if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); }
+          var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+          if(ifr && get.length > 0) {
+            var src = ifr.src;
+            src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+            ifr.src = src;
+          }
+        }
+        </script>
+      </artice>
+    </div>
+    </div>
     </div>
 
-  </div>
 
 </div>
