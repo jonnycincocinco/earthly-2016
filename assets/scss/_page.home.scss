@@ -364,7 +364,7 @@
       opacity: 0;
       visibility: hidden;
       display: flex;
-      top: -1em;
+      top: calculateRem(5px);
       align-items: center;
       justify-content: center;
       position: absolute;

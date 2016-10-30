@@ -72,7 +72,7 @@
 }
 
 .library--author {
-  margin-top: calculateRem(24px);
+  margin: calculateRem(24px) 0;
   picture {
     img {
         width: 40px;

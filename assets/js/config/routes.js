@@ -44,6 +44,33 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
+    .state('personal',
+        {
+            url: '/library/personal-finance/',
+            controller: 'categoryView',
+            templateUrl: ajaxInfo.template_directory + '/templates/library-personal.html',
+            activetab: 'library'
+        }
+    )
+
+    .state('passive',
+        {
+            url: '/library/passive-investing/',
+            controller: 'categoryView',
+            templateUrl: ajaxInfo.template_directory + '/templates/library-passive.html',
+            activetab: 'library'
+        }
+    )
+
+    .state('financial',
+        {
+            url: '/library/financial-planning/',
+            controller: 'categoryView',
+            templateUrl: ajaxInfo.template_directory + '/templates/library-financial.html',
+            activetab: 'library'
+        }
+    )
+
     .state('news',
         {
             url: '/library/news/',

@@ -43,8 +43,8 @@
 
 .inner-hero {
   &.bg-strip {
-    padding-top: calculateRem(40px);
-    padding-bottom: calculateRem(40px);
+  //  padding-top: calculateRem(40px);
+  //  padding-bottom: calculateRem(40px);
   }
   .inner-hero__image {
     margin-top: calculateRem(64px);

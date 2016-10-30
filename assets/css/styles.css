@@ -1794,10 +1794,6 @@ button.cta,
       .three-up-tiles .three-up-tiles__text {
         padding-right: 15%; } }
 
-.inner-hero.bg-strip {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem; }
-
 .inner-hero .inner-hero__image {
   margin-top: 4rem;
   float: left;
@@ -2250,7 +2246,7 @@ button.cta,
   opacity: 0;
   visibility: hidden;
   display: flex;
-  top: -1em;
+  top: 0.3125rem;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -3034,7 +3030,7 @@ button.cta,
   margin: 0 12.5rem 0.625rem; }
 
 .library--author {
-  margin-top: 1.5rem; }
+  margin: 1.5rem 0; }
   .library--author picture img {
     width: 40px; }
   .library--author .library--author--info {

@@ -11,8 +11,8 @@
         <div class="container">
           <ul class="library-categories">
          <li class=""><a ui-sref="library">Recent resources</a></li>
-         <li class="selected"><a ui-sref="sustainable">Sustainable Investing</a></li>
-         <li><a ui-sref="personal">Personal Finance</a></li>
+         <li class=""><a ui-sref="sustainable">Sustainable Investing</a></li>
+         <li class="selected"><a ui-sref="personal">Personal Finance</a></li>
          <li><a ui-sref="passive">Passive Investing</a></li>
          <li><a ui-sref="financial">Financial Planning</a></li>
          <li class=""><a ui-sref="news">News</a></li>
@@ -22,7 +22,7 @@
 
       <div class="section-strip inner-page-section library-item flush-top">
         <div class="container">
-          <article class="news--article news--featured--article" ng-repeat="post in posts | filter: post: post.acf.category='sustainable_investing'">
+          <article class="news--article news--featured--article" ng-repeat="post in posts | filter: post: post.acf.category='personal_finance'">
             <div class="section-strip inner-page-section featured library-item not-featured">
               <div class="container">
                 <article class="news--article news--featured--article">
