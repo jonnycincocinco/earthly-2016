@@ -26,8 +26,8 @@ body {
 
 .page-ui-view--container {
   position: relative;
+  margin-top: -70px;
   @include breakpoint(desktop) {
-    margin-top: -70px;
   }
 }
 

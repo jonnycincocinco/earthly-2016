@@ -26,13 +26,26 @@ $n: 0;
       right: 0;
       margin: auto;
       background: #FFFFFF;
-      width: $card-width;
-      height: $card-height;
+      width: 100%;
+      height: auto;
       border-radius: 4px;
       box-shadow: 0 0 10px rgba(#000, 0.2);
       transform-origin: center;
       transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
       cursor: pointer;
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+
+      @include breakpoint(desktop) {
+        width: $card-width;
+        height: $card-height;
+        img {
+          width: 100%;
+        }
+      }
 
       @while $total >= $n {
         &:nth-child(#{$n + 1}) {

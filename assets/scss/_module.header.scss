@@ -50,7 +50,7 @@ header {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #232323;
+    background: #fff;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -120,7 +120,7 @@ header {
   li {
     float: left;
     @include font-size(13);
-    margin-right: 26px;
+    margin-right: 24px;
     &:last-child {
       margin-right: 0;
     }
@@ -228,7 +228,7 @@ button.cta {
 
 .desktop-nav--logo {
   display: inline-block;
-  margin-top: calculateRem(34px);
+  margin-top: calculateRem(18px);
   margin-left: 0;
   width: 156px;
   height: 52px;
@@ -236,6 +236,13 @@ button.cta {
   background-size: 100%;
   text-indent: -9999px;
   z-index: 100;
+  @include breakpoint(tablet) {
+    margin-top: calculateRem(20px);
+  }
+  @include breakpoint(desktop) {
+    margin-top: calculateRem(34px);
+  }
+
 }
 
 .desktop-nav--social {

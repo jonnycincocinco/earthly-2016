@@ -63,22 +63,22 @@
 }
 
 .hide--onmobile {
-    display: none;
+    display: none !important;
 
     @include breakpoint(tablet) {
-        display: inline-block;
+        display: inline-block !important;
     }
 }
 
 .hide--ontablet {
     @include breakpoint(tablet) {
-        display: none;
+        display: none !important;
     }
 }
 
 .hide--ondesktop {
     @include breakpoint(desktop) {
-        display: none;
+        display: none !important;
     }
 }
 

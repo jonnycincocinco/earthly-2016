@@ -616,10 +616,8 @@ body {
   padding-top: 70px; }
 
 .page-ui-view--container {
-  position: relative; }
-  @media only screen and (min-width: 1024px) {
-    .page-ui-view--container {
-      margin-top: -70px; } }
+  position: relative;
+  margin-top: -70px; }
 
 .page-ui-view {
   position: relative;
@@ -726,18 +724,18 @@ a,
       display: inline-block; } }
 
 .hide--onmobile {
-  display: none; }
+  display: none !important; }
   @media only screen and (min-width: 768px) {
     .hide--onmobile {
-      display: inline-block; } }
+      display: inline-block !important; } }
 
 @media only screen and (min-width: 768px) {
   .hide--ontablet {
-    display: none; } }
+    display: none !important; } }
 
 @media only screen and (min-width: 1024px) {
   .hide--ondesktop {
-    display: none; } }
+    display: none !important; } }
 
 .push-below {
   padding-bottom: 1.25rem; }
@@ -1067,7 +1065,7 @@ header {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #232323;
+    background: #fff;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -1121,7 +1119,7 @@ header {
     float: left;
     font-size: 13px;
     font-size: 0.8125rem;
-    margin-right: 26px; }
+    margin-right: 24px; }
     .desktop-nav--main li:last-child {
       margin-right: 0; }
     .desktop-nav--main li a {
@@ -1212,7 +1210,7 @@ button.cta.desktop-nav--cta {
 
 .desktop-nav--logo {
   display: inline-block;
-  margin-top: 2.125rem;
+  margin-top: 1.125rem;
   margin-left: 0;
   width: 156px;
   height: 52px;
@@ -1220,6 +1218,12 @@ button.cta.desktop-nav--cta {
   background-size: 100%;
   text-indent: -9999px;
   z-index: 100; }
+  @media only screen and (min-width: 768px) {
+    .desktop-nav--logo {
+      margin-top: 1.25rem; } }
+  @media only screen and (min-width: 1024px) {
+    .desktop-nav--logo {
+      margin-top: 2.125rem; } }
 
 .desktop-nav--social {
   float: right;
@@ -1477,13 +1481,22 @@ button.cta.desktop-nav--cta {
     right: 0;
     margin: auto;
     background: #FFFFFF;
-    width: 675px;
-    height: 321px;
+    width: 100%;
+    height: auto;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform-origin: center;
     transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
     cursor: pointer; }
+    .carousel .carousel-cards .carousel-cards__item img {
+      width: 80%;
+      height: auto; }
+    @media only screen and (min-width: 1024px) {
+      .carousel .carousel-cards .carousel-cards__item {
+        width: 675px;
+        height: 321px; }
+        .carousel .carousel-cards .carousel-cards__item img {
+          width: 100%; } }
     .carousel .carousel-cards .carousel-cards__item:nth-child(1) {
       z-index: 10;
       top: 0px;
@@ -1920,6 +1933,7 @@ button.cta,
     margin: auto; }
 
 .page-home--hero {
+  padding-top: 40px;
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
@@ -1932,6 +1946,12 @@ button.cta,
   background: #c2f2ff;
   background: linear-gradient(135deg, #0076d1 0, #3497dd 24%, #80c0e0 73%, #c2f2ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 ); }
+  @media only screen and (min-width: 768px) {
+    .page-home--hero {
+      padding-bottom: 50px; } }
+  @media only screen and (min-width: 1024px) {
+    .page-home--hero {
+      padding-bottom: 0; } }
 
 .page-home--hero__section {
   float: left;
@@ -1952,7 +1972,10 @@ button.cta,
 .page-home--turbine {
   z-index: 1;
   position: relative;
-  padding: 10% 5% 0; }
+  padding: 10% 10% 0; }
+  @media only screen and (min-width: 1024px) {
+    .page-home--turbine {
+      padding: 5% 5% 0; } }
   .page-home--turbine .main {
     position: relative;
     z-index: 1; }
@@ -2003,10 +2026,12 @@ button.cta,
   top: 20%;
   right: 0;
   color: #fff;
-  z-index: 10; }
+  z-index: 10;
+  margin-top: 12%; }
   @media only screen and (min-width: 768px) {
     .page-home--intro {
-      top: 10%; } }
+      top: 15%;
+      margin-top: 0; } }
   @media only screen and (min-width: 1024px) {
     .page-home--intro {
       top: 20%; } }
@@ -2062,11 +2087,11 @@ button.cta,
     @media only screen and (min-width: 768px) {
       .page-home--intro p {
         margin-top: 12px;
-        font-size: 26px;
-        font-size: 1.625rem;
+        font-size: 22px;
+        font-size: 1.375rem;
         line-height: 27px;
         line-height: 1.6875rem;
-        width: 75%; } }
+        width: 90%; } }
     @media only screen and (min-width: 1024px) {
       .page-home--intro p {
         margin-right: 1%;
@@ -2076,11 +2101,33 @@ button.cta,
         font-size: 29px;
         font-size: 1.8125rem;
         line-height: 31px;
-        line-height: 1.9375rem; } }
+        line-height: 1.9375rem;
+        width: 75%; } }
     @media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
       .page-home--intro p {
         font-size: 18px;
         font-size: 1.125rem; } }
+  .page-home--intro.mobile-header {
+    position: relative; }
+    .page-home--intro.mobile-header h1 {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 44px;
+      line-height: 2.75rem;
+      margin: auto;
+      text-align: center; }
+    .page-home--intro.mobile-header p {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 24px;
+      line-height: 1.5rem;
+      text-align: center;
+      margin: 4% auto;
+      padding: 0 10%; }
+    .page-home--intro.mobile-header button {
+      float: none;
+      clear: both;
+      margin: auto; }
 
 .page-home--scroll-cta {
   position: absolute;
@@ -2096,9 +2143,13 @@ button.cta,
   opacity: 0; }
 
 .earthly-dna-home {
-  padding-left: 16.25rem;
-  padding-right: 16.25rem;
-  margin-top: -10.9375rem; }
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+  @media only screen and (min-width: 1024px) {
+    .earthly-dna-home {
+      padding-left: 16.25rem;
+      padding-right: 16.25rem;
+      margin-top: -10.9375rem; } }
   .earthly-dna-home .earthly-dna-home__icon {
     float: left;
     margin-right: 3.125rem; }
