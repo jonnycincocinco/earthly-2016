@@ -87,9 +87,11 @@
 }
 
 .cinch {
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
+  @include breakpoint(tablet) {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

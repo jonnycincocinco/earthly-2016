@@ -76,6 +76,7 @@ header {
   }
   &.open {
     span {
+      background: #000;
       &:nth-child(1) {
         top: 7px;
         width: 0%;
@@ -236,6 +237,10 @@ button.cta {
   background-size: 100%;
   text-indent: -9999px;
   z-index: 100;
+  .overlay--open & {
+    background-image: url('../images/global/earthly-blue.png');
+
+  }
   @include breakpoint(tablet) {
     margin-top: calculateRem(20px);
   }
@@ -332,7 +337,8 @@ button.cta {
   margin: 0;
   padding: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding: 0 0 0 25%;
 //  text-transform: uppercase;
   li {
     @include font-size(32);
@@ -343,6 +349,12 @@ button.cta {
     and (orientation : portrait) {
       @include font-size(22);
       margin-bottom: 16px;
+    }
+    .mobile-nav--main__sub {
+      padding-left: 11%;
+      li {
+        list-style: square;
+      }
     }
   }
 }

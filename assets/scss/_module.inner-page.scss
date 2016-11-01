@@ -14,6 +14,10 @@
 .grid__item {
   ul {
     padding-left: calculateRem(18px);
+    text-align: left;
+    @include breakpoint(tablet) {
+    //  text-align: center;
+    }
   }
 }
 
@@ -21,15 +25,20 @@
   background: linear-gradient(to right bottom,#1b428a,rgba(0, 0, 0, 0.82) 90%,rgba(0, 0, 0, 0.82) 100%);
    .grid__item {
      text-align: center;
+     margin-bottom: calculateRem(40px);
      @include span-columns(12 of 12);
      @include breakpoint(tablet) {
         @include span-columns(4 of 12);
         text-align: left;
      }
+     @include breakpoint(tablet) {
+       margin-bottom: 0;
+     }
+     &:last-child {
+       margin-bottom: 10px;
+     }
    }
-   .three-up-tiles__icon {
 
-   }
    .three-up-tiles__text {
      color: $base--colorWhite;
      @include font-size(15);
@@ -47,26 +56,31 @@
   //  padding-bottom: calculateRem(40px);
   }
   .inner-hero__image {
-    margin-top: calculateRem(64px);
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
-       @include span-columns(5 of 12);
-       text-align: center;
+      margin-top: calculateRem(64px);
+      @include span-columns(5 of 12);
+      text-align: center;
      }
      img {
        width: 100%;
-       @include breakpoint(cinema) {
          .earthly-dna--container & {
-           width: 80%;
+           width: 47%;
+           @include breakpoint(tablet) {
+             width: 100%;
+           }
+           @include breakpoint(cinema) {
+             width: 80%;
          }
        }
      }
   }
   .inner-hero__text {
-    padding-right: calculateRem(125px);
+    //padding-right: calculateRem(125px);
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
-       @include span-columns(7 of 12);
+      padding-right: calculateRem(125px);
+         @include span-columns(7 of 12);
        text-align: left;
      }
   }
@@ -80,7 +94,10 @@
     @include line-height(30);
   }
   .container {
-    margin-top: 70px;
+    margin-top: calculateRem(30px);
+    @include breakpoint(tablet) {
+      margin-top: calculateRem(70px);
+    }
   }
 }
 
@@ -89,11 +106,14 @@
     margin-bottom: calculateRem(30px);
   }
   .subhead {
-    padding: 0 calculateRem(200px) calculateRem(25px);
+    padding: 0 0 calculateRem(25px);
     @include font-size(18);
     @include line-height(32);
     .page-home & {
       padding: 0 calculateRem(60px) 0;
+    }
+    @include breakpoint(tablet) {
+      padding-right: calculateRem(200px);
     }
   }
   li {

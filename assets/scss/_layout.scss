@@ -69,8 +69,10 @@ body {
 .grid__item {
   display: inline-block;
   width: 100%;
-  padding-left: 28px;
   vertical-align: top;
+  @include breakpoint(desktop) {
+    padding-left: 28px;
+  }
 }
 
 //  ## UI OVERRIDES  ----------------------------------------------------------------//

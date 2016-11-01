@@ -17,8 +17,14 @@ $n: 0;
   .carousel-cards {
     @include horz-align(relative);
     width: 100%;
-    min-height: calculateRem(430px);
+    min-height: 21vw;
     top: calculateRem(30px);
+    @include breakpoint(tablet) {
+      min-height: 18vw;
+    }
+    @include breakpoint(desktop) {
+      min-height: calculateRem(430px);
+    }
     .carousel-cards__item {
       position: absolute;
       top: 0;
@@ -33,6 +39,10 @@ $n: 0;
       transform-origin: center;
       transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
       cursor: pointer;
+
+      @include breakpoint(tablet) {
+        width: 70%;
+      }
 
       img {
         width: 80%;

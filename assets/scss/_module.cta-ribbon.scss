@@ -9,12 +9,20 @@
 
   h2 {
     margin-bottom: calculateRem(10px);
-    @include font-size(54);
+    @include font-size(44);
+    padding: 0 calculateRem(20px);
+    @include breakpoint(tablet) {
+      @include font-size(54);
+    }
   }
   .cta-ribbon__subhead {
-      @include font-size(32);
+      @include font-size(28);
       font-weight: 800;
       margin-bottom: calculateRem(60px);
+      padding: 0 calculateRem(60px);
+      @include breakpoint(tablet) {
+        @include font-size(32);
+      }
   }
   input {
     line-height: 1;
@@ -34,7 +42,11 @@
     }
   }
   .cta-ribbon__form {
-    @include font-size(32);
+    @include font-size(24);
+    padding: 0 calculateRem(40px);
+    @include breakpoint(tablet) {
+      @include font-size(32);
+    }
   }
 
   .cta-ribbon__form--second {

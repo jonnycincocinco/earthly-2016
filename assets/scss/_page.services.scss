@@ -36,16 +36,16 @@
 
 .detail-box__item {
   height: 280px;
-  margin: 0 2px;
+  margin: 0 2px 43px -1px;
   position: relative;
   text-align: left;
   border-right: 10px solid #fff;
-  margin-left: -1px;
   @include span-columns(12 of 12);
   @include breakpoint(tablet) {
-     @include span-columns(3 of 12);
-     float: none;
-     display: inline-block;
+    margin-bottom: 0;
+    @include span-columns(3 of 12);
+    float: none;
+    display: inline-block;
    }
   &:hover {
     .box-icon {
@@ -91,7 +91,7 @@
   .content-box {
     padding: 20px;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 180px;
     transition: transform .3s ease-in-out;
     backface-visibility: hidden;
     perspective: 1000px;
@@ -99,7 +99,7 @@
       @include font-size(20);
       //text-align: center;
       font-weight: 500;
-      padding: 10px 0 80px;
+      padding: 10px 130px 80px 0;
       transition: all .3s ease-in-out;
       position: relative;
       &:before {
@@ -140,8 +140,10 @@ background: linear-gradient(to right bottom,#ff3b00,rgba(255,136,34,.92) 30%,#ff
     }
     .grid__item {
     position: relative;
+    margin-bottom: calculateRem(43px);
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
+      margin-bottom: 0;
        @include span-columns(3 of 12);
        float: none;
        display: inline-block;
@@ -179,7 +181,10 @@ background: linear-gradient(to right bottom,#ff3b00,rgba(255,136,34,.92) 30%,#ff
     }
     h5 {
       width: 80%;
-      margin-bottom: 18px;
+      margin-bottom: calculateRem(43px);
+      @include breakpoint(tablet){
+        margin-bottom: calculateRem(18px);
+      }
       @include line-height(23);
       &::first-letter {
         float: left;
