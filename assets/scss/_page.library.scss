@@ -9,14 +9,21 @@
         padding: calculateRem(22px) 0;
       }
       &.library-item-main {
-        padding: calculateRem(200px) 0;
-        margin-bottom: calculateRem(-400px);
+        @include breakpoint(tablet) {
+          padding: calculateRem(200px) 0;
+          margin-bottom: calculateRem(-400px);
+        }
+        padding: calculateRem(250px) 0;
+        margin-bottom: calculateRem(-500px);
       }
     }
   }
   picture {
     img {
-      width: 760px;
+      width: 100%;
+      @include breakpoint(desktop) {
+        width: 760px;
+      }
     }
   }
 
@@ -34,13 +41,19 @@
   .library-item {
     .library--featured-image {
       display: inline-block;
-      width: 50%;
+      width: 100%;
+      @include breakpoint(tablet){
+        width: 50%;
+      }
     }
     .library--featured-text {
       display: inline-block;
-      width: 46%;
+      width: 100%;
       margin-left: 3%;
       vertical-align: top;
+      @include breakpoint(tablet){
+        width: 46%;
+      }
     }
     h2 {
       @include font-size(36);
@@ -48,10 +61,16 @@
     }
     &.not-featured {
       .library--featured-image {
-        width: 32%;
+        width: 100%;
+        @include breakpoint(tablet){
+          width: 32%;
+        }
       }
       .library--featured-text {
-        width: 57%;
+        width: 100%;
+        @include breakpoint(tablet){
+          width: 57%;
+        }
       }
       &.section-strip {
         padding-bottom: 0;
@@ -100,6 +119,11 @@
      margin: 0 8px;
      border-radius: 3px;
      font-weight: 500;
+     width: 100%;
+     @include breakpoint(tablet){
+       width: auto;
+
+     }
      @include font-size(13);
      a {
        color: #7d8ca3;

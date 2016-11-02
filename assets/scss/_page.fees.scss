@@ -16,8 +16,14 @@
       float: none;
     }
     .fees__categories__entry__inner {
-      border-right: 1px #d1d5d7 solid;
+      border: 1px #d1d5d7 solid;
       text-align: center;
+      @include breakpoint(tablet) {
+        border-right: 1px #d1d5d7 solid;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+      }
       .fees__categories__entry__inner__top {
         padding: calculateRem(30px) calculateRem(20px);
       }
@@ -40,6 +46,12 @@
         margin: 0;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        @include breakpoint(tablet) {
+          @include font-size(16);
+        }
+        @include breakpoint(desktop) {
+          @include font-size(20);
+        }
       }
 
     }
@@ -51,15 +63,17 @@
       box-shadow: 0 0 0 12px #fff,0 0 0 15px #f1703f,0 0 10px 15px rgba(0,0,0,.1);
       border-color: transparent;
       .fees__categories__entry__inner {
-        border-right: 0;
+        border: 0;
       }
       .aum {
-        width: calc(100% + 28px);
-        margin-left: -14px;
-        position: relative;
-        bottom: -14px;
-        left: 0;
-        padding-bottom: 22px;
+        @include breakpoint(desktop) {
+          width: calc(100% + 28px);
+          margin-left: -14px;
+          position: relative;
+          bottom: -14px;
+          left: 0;
+          padding-bottom: 22px;
+          }
         }
       }
     }
@@ -68,8 +82,8 @@
     img {
       width: 100%;
       @include breakpoint(desktop) {
-          width: 85%;
-          margin-left: 6%;
+        width: 85%;
+        margin-left: -8%;
       }
     }
     .legal {

@@ -9,15 +9,15 @@
   .inner-hero__image {
     margin-top: calculateRem(-18px);
     @include breakpoint(tablet) {
-       @include span-columns(5 of 12);
-       text-align: center;
+    //   @include span-columns(5 of 12);
+    //   text-align: center;
      }
   }
   .inner-hero__text {
-    padding-right: calculateRem(35px);
-    @include breakpoint(tablet) {
-       @include span-columns(7 of 12);
-       text-align: left;
+    @include breakpoint(desktop) {
+      padding-right: calculateRem(35px);
+    //   @include span-columns(7 of 12);
+    //   text-align: left;
      }
   }
 }
@@ -86,10 +86,15 @@
 .section-tout {
   .section-tout__icon {
     @include span-columns(12 of 12);
+    vertical-align: bottom;
     @include breakpoint(tablet) {
       width: auto;
       float: none;
       display: inline-block;
+      margin: 0 calculateRem(18px) 0;
+    }
+    @include breakpoint(desktop) {
+      margin: 0;
     }
   }
   .section-tout__text {

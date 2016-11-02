@@ -26,11 +26,15 @@
   .icon-text-col__item {
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
+       @include span-columns(6 of 12);
+       text-align: left;
+     }
+    @include breakpoint(desktop) {
        @include span-columns(5 of 12);
        text-align: left;
      }
      .icon-text-col__icon {
-       @include span-columns(12 of 12);
+       width: 10%;
        @include breakpoint(tablet) {
           @include span-columns(4 of 12);
           text-align: right;
@@ -52,10 +56,17 @@
         }
      }
      .icon-text-col__text {
-       @include span-columns(12 of 12);
+       width: 70%;
+       float: right;
        @include breakpoint(tablet) {
+         width: 60%;
+       }
+       @include breakpoint(desktop) {
           @include span-columns(8 of 12);
           text-align: left;
+        }
+        .about-us--container & {
+          width: 80%;
         }
      }
   }
@@ -66,6 +77,13 @@
     span {
       @include font-size(14);
     }
+  }
+}
+
+.three-up-tiles__list {
+  width: 75%;
+  @include breakpoint(tablet) {
+    width: 100%;
   }
 }
 

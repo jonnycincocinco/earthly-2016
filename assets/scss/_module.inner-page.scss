@@ -58,27 +58,43 @@
   .inner-hero__image {
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
-      margin-top: calculateRem(64px);
-      @include span-columns(5 of 12);
+      margin-top: calculateRem(14px);
       text-align: center;
      }
+     @include breakpoint(desktop) {
+       margin-top: calculateRem(64px);
+       @include span-columns(5 of 12);
+       text-align: center;
+      }
      img {
        width: 100%;
+         @include breakpoint(tablet) {
+           width: 60%;
+         }
+         @include breakpoint(desktop) {
+           width: 100%;
+         }
          .earthly-dna--container & {
            width: 47%;
            @include breakpoint(tablet) {
+             width: 30%;
+           }
+           @include breakpoint(desktop) {
              width: 100%;
            }
            @include breakpoint(cinema) {
              width: 80%;
+           }
          }
-       }
      }
   }
   .inner-hero__text {
     //padding-right: calculateRem(125px);
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
+       text-align: center;
+     }
+    @include breakpoint(desktop) {
       padding-right: calculateRem(125px);
          @include span-columns(7 of 12);
        text-align: left;
@@ -113,7 +129,7 @@
       padding: 0 calculateRem(60px) 0;
     }
     @include breakpoint(tablet) {
-      padding-right: calculateRem(200px);
+      padding: 0 calculateRem(100px);
     }
   }
   li {

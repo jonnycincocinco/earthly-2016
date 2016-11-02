@@ -83,7 +83,6 @@
 </header>
 
 <nav class="mobile-nav">
-    <div class="mobile-nav-background"></div>
     <ul class="mobile-nav--main">
       <li><a ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a>
         <ul class="mobile-nav--main__sub">
