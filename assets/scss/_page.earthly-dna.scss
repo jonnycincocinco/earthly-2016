@@ -3,6 +3,12 @@
 .earthly-dna--container {
     .three-up-tiles {
       background: none;
+      .grid__item {
+        text-align: left;
+        @include breakpoint(tablet) {
+          text-align: center;
+        }
+      }
     }
 }
 
@@ -34,9 +40,10 @@
        text-align: left;
      }
      .icon-text-col__icon {
-       width: 10%;
+       width: 25%;
+       float: left;
        @include breakpoint(tablet) {
-          @include span-columns(4 of 12);
+        //  @include span-columns(4 of 12);
           text-align: right;
         }
         img {
@@ -44,10 +51,15 @@
           border-radius: 3px;
           padding: 3px;
           box-shadow: 0 0 2px rgba(0,0,0,.5);
+          float: right;
+          margin-right: 25px;
           .about-us--container & {
             box-shadow: none;
             padding: 0;
-            margin-left: -25px;
+
+            @include breakpoint(tablet) {
+              margin-left: -25px;
+            }
           }
           .social-icons {
             float: left;
@@ -59,14 +71,11 @@
        width: 70%;
        float: right;
        @include breakpoint(tablet) {
-         width: 60%;
+         width: 75%;
        }
        @include breakpoint(desktop) {
           @include span-columns(8 of 12);
           text-align: left;
-        }
-        .about-us--container & {
-          width: 80%;
         }
      }
   }

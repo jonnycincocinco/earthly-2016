@@ -131,6 +131,15 @@
     @include breakpoint(tablet) {
       padding: 0 calculateRem(100px);
     }
+    .about-us--container & {
+      @include breakpoint(tablet) {
+        padding: 0 calculateRem(100px) calculateRem(40px);
+      }
+      @include breakpoint(desktop) {
+        padding: 0 calculateRem(200px) calculateRem(60px);
+      }
+    }
+
   }
   li {
     @include font-size(16);

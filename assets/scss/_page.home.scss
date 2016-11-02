@@ -24,6 +24,12 @@
     @include breakpoint(desktop) {
       padding-bottom: 0;
     }
+    .hero-container {
+      max-width: 1500px;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+    }
 }
 
 .page-home--hero__section {

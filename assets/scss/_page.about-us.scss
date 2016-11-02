@@ -21,12 +21,44 @@
     font-weight: 800;
     @include font-size(12);
   }
-  .social-icons {
-    margin-top: 8px;
-    float: left;
-    a {
-      &:first-child {
-        margin-right: 32px;
+  .icon-text-col__item {
+    .grid__item {
+      .icon-text-col__icon {
+        @include breakpoint(tablet){
+          @include span-columns(4 of 12);
+        }
+        img {
+          width: 80%;
+          height: auto;
+          margin: auto;
+        }
+        .social-icons {
+          text-align: left;
+          margin-top: 12px;
+          margin-left: 20%;
+          display: inline-block;
+          a {
+            display: inline-block;
+            width: 30%;
+            @include breakpoint(tablet) {
+              float: none;
+              width: 20%;
+            }
+            &:first-child {
+              @include breakpoint(tablet) {
+                margin-right: 12px;
+              }
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .icon-text-col__text {
+        @include breakpoint(tablet){
+          @include span-columns(8 of 12);
+        }
       }
     }
   }
