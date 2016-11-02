@@ -52,7 +52,9 @@
           padding: 3px;
           box-shadow: 0 0 2px rgba(0,0,0,.5);
           float: right;
-          margin-right: 25px;
+          @include breakpoint(tablet){
+            margin-right: 25px;
+          }
           .about-us--container & {
             box-shadow: none;
             padding: 0;

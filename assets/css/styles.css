@@ -2480,8 +2480,10 @@ button.cta,
       border-radius: 3px;
       padding: 3px;
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-      float: right;
-      margin-right: 25px; }
+      float: right; }
+      @media only screen and (min-width: 768px) {
+        .icon-text .icon-text-col__item .icon-text-col__icon img {
+          margin-right: 25px; } }
       .about-us--container .icon-text .icon-text-col__item .icon-text-col__icon img {
         box-shadow: none;
         padding: 0; }
