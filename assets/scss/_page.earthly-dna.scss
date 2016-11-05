@@ -91,10 +91,45 @@
   }
 }
 
-.three-up-tiles__list {
-  width: 75%;
+.section-strip {
+  &.flush-top {
+    &.screening {
+      padding-top: calculateRem(30px);
+      .screening--icon {
+        display: inline-block;
+      }
+      h4 {
+        margin: 0;
+        @include breakpoint(mobileOnly) {
+          display: inline-block;
+          top: calculateRem(-10px);
+          position: relative;
+          left: calculateRem(10px);
+        }
+      }
+    }
+  }
+}
+
+ul.three-up-tiles__list {
+//  width: 75%;
+  padding-left: 0;
   @include breakpoint(tablet) {
-    width: 100%;
+//    width: 100%;
+    padding-left: calculateRem(18px);
+  }
+  li {
+    @include font-size(14);
+    @include line-height(24);
+    padding: calculateRem(5px) calculateRem(10px);
+    margin-bottom: calculateRem(5px);
+    list-style: none;
+    font-weight: normal;
+    color: #777;
+    &:nth-child(odd) {
+      background: #f7f8f9;
+      border-radius: 3px;
+    }
   }
 }
 
