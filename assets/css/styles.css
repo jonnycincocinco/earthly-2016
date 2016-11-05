@@ -2483,7 +2483,9 @@ button.cta,
       float: right; }
       @media only screen and (min-width: 768px) {
         .icon-text .icon-text-col__item .icon-text-col__icon img {
-          margin-right: 25px; } }
+          margin-right: 25px; }
+          .security--container .icon-text .icon-text-col__item .icon-text-col__icon img {
+            margin-right: 10px; } }
       .about-us--container .icon-text .icon-text-col__item .icon-text-col__icon img {
         box-shadow: none;
         padding: 0; }
@@ -2559,7 +2561,10 @@ ul.three-up-tiles__list {
   padding-left: 0; }
 
 .whitepaper .whitepaper__text {
-  text-align: left; }
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .whitepaper .whitepaper__text {
+      text-align: left; } }
 
 .whitepaper .text-link {
   font-size: 20px;
@@ -2678,12 +2683,14 @@ ul.three-up-tiles__list {
   display: block;
   margin-right: 0%;
   width: 100%;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  text-align: center;
+  margin: auto; }
   .section-tout .section-tout__icon:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 768px) {
     .section-tout .section-tout__icon {
-      width: auto;
+      width: 20%;
       float: none;
       display: inline-block;
       margin: 0 1.125rem 0; } }
@@ -2703,7 +2710,7 @@ ul.three-up-tiles__list {
       float: left;
       display: block;
       margin-right: 0%;
-      width: 66.66667%;
+      width: 58.33333%;
       float: none;
       display: inline-block; }
       .section-tout .section-tout__text:last-child {
@@ -2757,8 +2764,10 @@ ul.three-up-tiles__list {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 26px;
-  line-height: 1.625rem;
-  padding-right: 5rem; }
+  line-height: 1.625rem; }
+  @media only screen and (min-width: 1024px) {
+    .section-tout.trust .section-tout__text p, .section-tout.trust .section-tout__text li {
+      padding-right: 5rem; } }
 
 .about-us--container .section-strip.border-top {
   padding-top: 5rem;

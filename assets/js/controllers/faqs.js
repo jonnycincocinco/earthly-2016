@@ -105,7 +105,7 @@ angular.module('Earthly.controllers')
 
     $rootScope.bodylayout = 'faqs';
 
-    window.sr = ScrollReveal().reveal('.container');
+  //  window.sr = ScrollReveal().reveal('.container');
 
     $scope.getRetina = function (imageSrc) {
       if (typeof imageSrc === 'string') {

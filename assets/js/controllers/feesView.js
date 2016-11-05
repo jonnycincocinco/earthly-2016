@@ -17,7 +17,7 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
-    window.sr = ScrollReveal().reveal('.container');
+  //  window.sr = ScrollReveal().reveal('.container');
 
     var homePage = $(".inner-hero");
     var vid = $(".applet-video")[0];

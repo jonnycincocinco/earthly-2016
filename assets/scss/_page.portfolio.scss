@@ -87,8 +87,10 @@
   .section-tout__icon {
     @include span-columns(12 of 12);
     vertical-align: bottom;
+    text-align: center;
+    margin: auto;
     @include breakpoint(tablet) {
-      width: auto;
+      width: 20%;
       float: none;
       display: inline-block;
       margin: 0 calculateRem(18px) 0;
@@ -100,7 +102,7 @@
   .section-tout__text {
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
-      @include span-columns(8 of 12);
+      @include span-columns(7 of 12);
       float: none;
       display: inline-block;
     }

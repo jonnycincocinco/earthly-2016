@@ -48,7 +48,9 @@
     p, li {
       @include font-size(14);
       @include line-height(26);
-      padding-right: calculateRem(80px);
+      @include breakpoint(desktop){
+        padding-right: calculateRem(80px);
+        }
       }
     }
   }

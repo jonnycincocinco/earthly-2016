@@ -54,6 +54,9 @@
           float: right;
           @include breakpoint(tablet){
             margin-right: 25px;
+            .security--container & {
+              margin-right: 10px;
+            }
           }
           .about-us--container & {
             box-shadow: none;
@@ -142,7 +145,10 @@ ul.three-up-tiles__list {
     padding-left: 0;
   }
   .whitepaper__text {
-    text-align: left;
+    text-align: center;
+    @include breakpoint(tablet) {
+      text-align: left;
+    }
   }
   .text-link {
       @include font-size(20);
