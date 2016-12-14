@@ -1331,12 +1331,12 @@ button.cta.desktop-nav--cta {
     font-weight: 500; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
       .mobile-nav--main li {
-        font-size: 22px;
-        font-size: 1.375rem;
-        margin-bottom: 16px; } }
+        font-size: 24px;
+        font-size: 1.5rem;
+        margin-bottom: 20px; } }
     .mobile-nav--main li .mobile-nav--main__sub {
       padding-left: 11%;
-      margin: 8px 0 0; }
+      margin: 16px 0 0; }
       .mobile-nav--main li .mobile-nav--main__sub li {
         list-style: square; }
 
@@ -1485,7 +1485,7 @@ button.cta.desktop-nav--cta {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100%;
-  min-height: 21vw;
+  min-height: calc(21vw + 100px);
   top: 1.875rem; }
   @media only screen and (min-width: 768px) {
     .carousel .carousel-cards {
@@ -1511,8 +1511,11 @@ button.cta.desktop-nav--cta {
       .carousel .carousel-cards .carousel-cards__item {
         width: 70%; } }
     .carousel .carousel-cards .carousel-cards__item img {
-      width: 80%;
+      width: 100%;
       height: auto; }
+      @media only screen and (min-width: 1024px) {
+        .carousel .carousel-cards .carousel-cards__item img {
+          width: 80%; } }
     @media only screen and (min-width: 1024px) {
       .carousel .carousel-cards .carousel-cards__item {
         width: 675px;
@@ -2047,14 +2050,15 @@ button.cta,
       float: left;
       display: block;
       margin-right: 0%;
-      width: 50%; }
+      width: 50%;
+      margin-bottom: 1.25rem; }
       .page-home--hero__section:last-child {
         margin-right: 0; } }
 
 .page-home--turbine {
   z-index: 1;
   position: relative;
-  padding: 10% 10% 0; }
+  padding: 0; }
   @media only screen and (min-width: 1024px) {
     .page-home--turbine {
       padding: 5% 5% 0; } }
@@ -2067,20 +2071,32 @@ button.cta,
     position: absolute;
     z-index: 11; }
     .page-home--turbine .anim-element.rotor-right {
-      top: 23.8%;
-      left: 56.6%;
+      top: 18.8%;
+      left: 62.6%;
       width: 36%;
       opacity: 0; }
+      @media only screen and (min-width: 1024px) {
+        .page-home--turbine .anim-element.rotor-right {
+          top: 23.8%;
+          left: 56.6%; } }
     .page-home--turbine .anim-element.rotor-left {
-      top: 22%;
-      left: 39.3%;
+      top: 16.7%;
+      left: 41.3%;
       width: 36%;
       opacity: 0; }
+      @media only screen and (min-width: 1024px) {
+        .page-home--turbine .anim-element.rotor-left {
+          top: 22%;
+          left: 39.3%; } }
     .page-home--turbine .anim-element.rotor-main {
-      top: 7.8%;
-      left: 44.3%;
+      top: 1.3%;
+      left: 48.5%;
       width: 46%;
       opacity: 0; }
+      @media only screen and (min-width: 1024px) {
+        .page-home--turbine .anim-element.rotor-main {
+          top: 7.8%;
+          left: 44.3%; } }
     .page-home--turbine .anim-element.cloud {
       z-index: 12;
       opacity: 0;
@@ -2112,11 +2128,11 @@ button.cta,
   margin-top: 12%; }
   @media only screen and (min-width: 768px) {
     .page-home--intro {
-      top: 15%;
+      top: 12%;
       margin-top: 0; } }
   @media only screen and (min-width: 1024px) {
     .page-home--intro {
-      top: 20%; } }
+      top: 16%; } }
   @media only screen and (min-width: 1300px) {
     .page-home--intro {
       top: 28%;
@@ -2180,8 +2196,8 @@ button.cta,
         margin-top: 27px;
         left: 2px;
         position: relative;
-        font-size: 29px;
-        font-size: 1.8125rem;
+        font-size: 27px;
+        font-size: 1.6875rem;
         line-height: 31px;
         line-height: 1.9375rem;
         width: 75%; } }
@@ -2191,13 +2207,16 @@ button.cta,
         font-size: 1.125rem; } }
   .page-home--intro.mobile-header {
     position: relative; }
+    .page-home--intro.mobile-header .page-home--intro-hdr {
+      width: 100%; }
     .page-home--intro.mobile-header h1 {
       font-size: 36px;
       font-size: 2.25rem;
       line-height: 44px;
       line-height: 2.75rem;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
     .page-home--intro.mobile-header p {
       font-size: 18px;
       font-size: 1.125rem;
@@ -2205,7 +2224,8 @@ button.cta,
       line-height: 1.5rem;
       text-align: center;
       margin: 4% auto;
-      padding: 0 10%; }
+      padding: 0 10%;
+      width: 100%; }
     .page-home--intro.mobile-header button {
       float: none;
       clear: both;
@@ -3042,6 +3062,11 @@ ul.three-up-tiles__list {
     .services--container .diversification .diversification__text p {
       margin-top: 7.5rem;
       width: 80%; } }
+  .services--container .diversification .diversification__text p span {
+    display: block;
+    margin-top: 2.5rem; }
+    .services--container .diversification .diversification__text p span a:hover {
+      color: #585858; }
 
 .services--container .diversification.security h2 {
   margin-bottom: 3.75rem; }
@@ -3318,3 +3343,6 @@ ul.three-up-tiles__list {
   font-size: 42px;
   font-size: 2.625rem;
   color: #fff; }
+
+.highlightedText {
+  background: yellow; }

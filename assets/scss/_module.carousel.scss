@@ -17,7 +17,7 @@ $n: 0;
   .carousel-cards {
     @include horz-align(relative);
     width: 100%;
-    min-height: 21vw;
+    min-height: calc(21vw + 100px);
     top: calculateRem(30px);
     @include breakpoint(tablet) {
       min-height: 18vw;
@@ -45,8 +45,11 @@ $n: 0;
       }
 
       img {
-        width: 80%;
+        width: 100%;
         height: auto;
+        @include breakpoint(desktop) {
+          width: 80%
+        }
       }
 
       @include breakpoint(desktop) {

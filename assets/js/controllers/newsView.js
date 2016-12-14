@@ -1,11 +1,20 @@
 angular.module('Earthly.controllers')
 
-.controller('newsView', ['$scope', '$rootScope', '$state', 'PostsByType', 'PostsByTypeAndSlug', '$stateParams', function ($scope, $rootScope, $state, PostsByType, PostsByTypeAndSlug, $stateParams) {
+.controller('newsView', ['$sce', '$scope', '$rootScope', '$state', 'PostsByType', 'PostsByTypeAndSlug', '$stateParams', function ($sce, $scope, $rootScope, $state, PostsByType, PostsByTypeAndSlug, $stateParams) {
     'use strict';
 
     $rootScope.$state = $state;
 
     $rootScope.bodylayout = 'news';
+
+    $scope.searchProjects = '';
+
+    $scope.highlight = function(text, search) {
+    if (!search) {
+        return $sce.trustAsHtml(text);
+    }
+      return $sce.trustAsHtml(text.replace(new RegExp(search, 'gi'), '<span class="highlightedText">$&</span>'));
+    };
 
     var startAnimations = function(){
 

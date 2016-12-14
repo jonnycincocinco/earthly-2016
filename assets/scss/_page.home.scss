@@ -36,6 +36,7 @@
   @include span-columns(12 of 12);
   @include breakpoint(tablet) {
     @include span-columns(6 of 12);
+    margin-bottom: calculateRem(20px);
   }
 }
 
@@ -43,7 +44,10 @@
 .page-home--turbine {
   z-index: 1;
   position: relative;
-  padding: 10% 10% 0;
+  padding: 0;
+  @include breakpoint(tablet) {
+  //  padding-bottom: 5%;
+  }
   @include breakpoint(desktop) {
     padding: 5% 5% 0;
   }
@@ -58,22 +62,34 @@
     position: absolute;
     z-index: 11;
     &.rotor-right {
-      top: 23.8%;
-      left: 56.6%;
+      top: 18.8%;
+      left: 62.6%;
       width: 36%;
       opacity: 0;
+      @include breakpoint(desktop) {
+        top: 23.8%;
+        left: 56.6%;
+      }
     }
     &.rotor-left {
-      top: 22%;
-      left: 39.3%;
+      top: 16.7%;
+      left: 41.3%;
       width: 36%;
       opacity: 0;
+      @include breakpoint(desktop) {
+        top: 22%;
+        left: 39.3%;
+      }
     }
     &.rotor-main {
-      top: 7.8%;
-      left: 44.3%;
+      top: 1.3%;
+      left: 48.5%;
       width: 46%;
       opacity: 0;
+      @include breakpoint(desktop) {
+        top: 7.8%;
+        left: 44.3%;
+      }
     }
     &.cloud {
       z-index: 12;
@@ -118,11 +134,11 @@
     z-index: 10;
     margin-top: 12%;
     @include breakpoint(tablet) {
-      top: 15%;
+      top: 12%;
       margin-top: 0;
     }
     @include breakpoint(desktop) {
-      top: 20%;
+      top: 16%;
     }
     @include breakpoint(cinema) {
       top: 28%;
@@ -182,7 +198,7 @@
             margin-top: 27px;
             left: 2px;
             position: relative;
-            @include font-size(29);
+            @include font-size(27);
             @include line-height(31);
             width: 75%;
         }
@@ -194,11 +210,15 @@
     }
     &.mobile-header {
       position: relative;
+      .page-home--intro-hdr {
+        width: 100%;
+      }
       h1 {
         @include font-size(36);
         @include line-height(44);
         margin: auto;
         text-align: center;
+        width: 100%;
       }
       p {
         @include font-size(18);
@@ -206,6 +226,7 @@
         text-align: center;
         margin: 4% auto;
         padding: 0 10%;
+        width: 100%;
       }
       button {
         float: none;

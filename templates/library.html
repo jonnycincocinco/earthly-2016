@@ -9,7 +9,20 @@
 
       <div class="section-strip inner-page-section grey-bg library-item">
         <div class="container">
-          <article class="news--article news--featured--article" ng-repeat="post in posts | filter: post: post.acf.is_featured='True'">
+          <div class="search col-sm-2">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search" ng-model="searchProjects">
+                            </div>
+                        </div>
+                    </form>
+                    <span ng-bind-html="highlight(textToSearchThrough, searchText)"></span>
+                </div>
+          <article class="news--article news--featured--article" ng-repeat="post in posts | filter: post: post.acf.is_featured='True' | filter:searchProjects">
             <div class="library--featured-image" ng-repeat="asset_url in post.acf.expertise_assets">
               <picture picturefill ng-if="asset_url.image_asset">
                   <a href="{{site + '#/library/' + post.slug}}"><img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" /></a>
@@ -45,7 +58,7 @@
           </ul>
           </div>
         </div>
-        <div ng-repeat="post in posts | filter: post: post.acf.is_featured='False'">
+        <div ng-repeat="post in posts | filter: post: post.acf.is_featured='False' | filter:searchProjects">
           <div class="section-strip inner-page-section featured library-item not-featured">
             <div class="container">
               <article class="news--article news--featured--article">

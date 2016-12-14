@@ -347,12 +347,12 @@ button.cta {
     @media only screen and (-webkit-min-device-pixel-ratio : 2)
     and (device-aspect-ratio: 2/3)
     and (orientation : portrait) {
-      @include font-size(22);
-      margin-bottom: 16px;
+      @include font-size(24);
+      margin-bottom: 20px;
     }
     .mobile-nav--main__sub {
       padding-left: 11%;
-      margin: 8px 0 0;
+      margin: 16px 0 0;
       li {
         list-style: square;
       }
