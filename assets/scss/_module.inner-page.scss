@@ -146,6 +146,9 @@
     font-weight: 800;
     padding-bottom: calculateRem(5px);
     list-style-position: inherit;
+    .terms--container & {
+      font-weight: inherit;
+    }
     @include line-height(15);
     span {
       @include font-size(12);
@@ -157,6 +160,21 @@
     }
     h5 {
       margin-top: 0;
+    }
+  }
+  &.ethical-screening {
+    .subhead {
+      padding-bottom: calculateRem(40px);
+    }
+  }
+  &.fund-fees {
+    .subhead {
+      @include font-size(20);
+      a {
+        &:hover {
+          color: $base--colorWhite;
+        }
+      }
     }
   }
 }

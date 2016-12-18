@@ -748,6 +748,12 @@ a,
     margin-left: auto;
     margin-right: auto; } }
 
+@media only screen and (min-width: 768px) {
+  .cinch-less {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; } }
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
 
@@ -1964,6 +1970,8 @@ button.cta,
   list-style-position: inherit;
   line-height: 15px;
   line-height: 0.9375rem; }
+  .terms--container .inner-page-section li {
+    font-weight: inherit; }
   .inner-page-section li span {
     font-size: 12px;
     font-size: 0.75rem; }
@@ -1973,6 +1981,15 @@ button.cta,
 
 .inner-page-section.three-up-tiles h5 {
   margin-top: 0; }
+
+.inner-page-section.ethical-screening .subhead {
+  padding-bottom: 2.5rem; }
+
+.inner-page-section.fund-fees .subhead {
+  font-size: 20px;
+  font-size: 1.25rem; }
+  .inner-page-section.fund-fees .subhead a:hover {
+    color: #fff; }
 
 .cta-ribbon {
   background: linear-gradient(to right bottom, #1b428a, rgba(0, 0, 0, 0.82) 90%, rgba(0, 0, 0, 0.82) 100%); }
