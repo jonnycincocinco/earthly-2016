@@ -72,7 +72,7 @@
             <li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li>
             <li><a ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">About</a></li>
             <li>
-            <button class="desktop-nav--cta cta">Sign up</button>
+            <button class="desktop-nav--cta cta">Sign Up</button>
             </li>
             <li><a class="" title="<?php echo bloginfo('name'); ?>" href="/#/">Log In</a></li>
           </ul>

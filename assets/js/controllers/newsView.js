@@ -1,6 +1,6 @@
 angular.module('Earthly.controllers')
 
-.controller('newsView', ['$sce', '$scope', '$rootScope', '$state', 'PostsByType', 'PostsByTypeAndSlug', '$stateParams', function ($sce, $scope, $rootScope, $state, PostsByType, PostsByTypeAndSlug, $stateParams) {
+.controller('newsView', ['$scope', '$sce', '$rootScope', '$state', 'PostsByType', 'PostsByTypeAndSlug', '$stateParams', function ($scope, $sce, $rootScope, $state, PostsByType, PostsByTypeAndSlug, $stateParams) {
     'use strict';
 
     $rootScope.$state = $state;
@@ -8,6 +8,28 @@ angular.module('Earthly.controllers')
     $rootScope.bodylayout = 'news';
 
     $scope.searchProjects = '';
+
+    $scope.activeMenu = "recent";
+
+    $scope.showSustainable = function(val) {
+      return (val.acf.category == 'sustainable_investing');
+    };
+
+    $scope.showPersonal = function(val) {
+      return (val.acf.category == 'personal_finance');
+    };
+
+    $scope.showPassive = function(val) {
+      return (val.acf.category == 'passive_investing');
+    };
+
+    $scope.showFinancial = function(val) {
+      return (val.acf.category == 'financial_planning');
+    };
+
+    $scope.showNews = function(val) {
+      return (val.acf.category == 'news');
+    };
 
     $scope.highlight = function(text, search) {
     if (!search) {
