@@ -102,7 +102,7 @@ angular.module('Earthly.controllers')
 
       if (homePage) {
         $(document).scroll(function(){
-          if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){
+          if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 700){
 
             if (vid.currentTime === 0) {
               vid.play();

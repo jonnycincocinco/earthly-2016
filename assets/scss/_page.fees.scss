@@ -1,23 +1,31 @@
 //  ## FEEs  ----------------------------------------------------------//
 
 .fees__categories__inner {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
-  border: 1px #d1d5d7 solid;
   border-right: 0;
   margin-bottom: 3.889rem;
-  background: #fff;
+  @include breakpoint(tablet) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  };
 
   .fees__categories__entry {
     transition: all 120ms ease-in-out;
     @include span-columns(12 of 12);
+    &:last-child {
+      float: right;
+    }
     @include breakpoint(tablet) {
-      @include span-columns(4 of 12);
+      @include span-columns(5 of 12);
       display: inline-block;
       float: none;
     }
     .fees__categories__entry__inner {
-      border: 1px #d1d5d7 solid;
       text-align: center;
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+      border: 1px #d1d5d7 solid;
+      background: #fff;
+
       @include breakpoint(tablet) {
         border-right: 1px #d1d5d7 solid;
         border-top: none;

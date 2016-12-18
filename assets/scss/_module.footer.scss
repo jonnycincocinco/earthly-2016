@@ -13,6 +13,12 @@
        @include span-columns(2 of 12);
        text-align: left;
     }
+    @include breakpoint(phone) {
+      @include span-columns(12 of 12);
+    }
+    @include breakpoint(mobileOnly) {
+      @include span-columns(6 of 12);
+    }
     &.legal {
       @include breakpoint(tablet) {
          @include span-columns(6 of 12);
