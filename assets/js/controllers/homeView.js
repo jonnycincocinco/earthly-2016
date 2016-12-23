@@ -36,22 +36,22 @@ angular.module('Earthly.controllers')
     var tl4 = new TimelineMax({repeat:-1,delay: .8});
 
     function cloudSmall() {
-      tl2.to('.cloud-small', 1, {opacity: '.8', left:"10", ease:Power0.easeNone});
-      tl2.to('.cloud-small', 35, {left:"698", ease:Power0.easeNone});
+      tl2.to('.cloud-small', 1, {opacity: '.3', left:"10", ease:Power0.easeNone});
+      tl2.to('.cloud-small', 65, {left:"698", ease:Power0.easeNone});
       tl2.to('.cloud-small', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
       tl2.to('.cloud-small', .1, {left:"0", ease:Power0.easeNone});
     }
 
     function cloudMedium() {
-      tl3.to('.cloud-medium', 1, {opacity: '.7', left:"12", ease:Power0.easeNone});
-      tl3.to('.cloud-medium', 52, {left:"698", ease:Power0.easeNone});
+      tl3.to('.cloud-medium', 1, {opacity: '.4', left:"12", ease:Power0.easeNone});
+      tl3.to('.cloud-medium', 72, {left:"698", ease:Power0.easeNone});
       tl3.to('.cloud-medium', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
       tl3.to('.cloud-medium', .1, {left:"0", ease:Power0.easeNone});
     }
 
     function cloudLarge() {
-      tl4.to('.cloud-large', 1, {opacity: '.6', left:"15", ease:Power0.easeNone});
-      tl4.to('.cloud-large', 28, {left:"698", ease:Power0.easeNone});
+      tl4.to('.cloud-large', 1, {opacity: '.2', left:"15", ease:Power0.easeNone});
+      tl4.to('.cloud-large', 48, {left:"698", ease:Power0.easeNone});
       tl4.to('.cloud-large', 1, {opacity: '0', left:"700", ease:Power0.easeNone});
       tl4.to('.cloud-large', .1, {left:"0", ease:Power0.easeNone});
     }

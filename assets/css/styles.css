@@ -2814,10 +2814,10 @@ ul.three-up-tiles__list {
   padding-bottom: 1.25rem; }
 
 .section-tout.trust .section-tout__text p, .section-tout.trust .section-tout__text li {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 26px;
-  line-height: 1.625rem; }
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 28px;
+  line-height: 1.75rem; }
   @media only screen and (min-width: 1024px) {
     .section-tout.trust .section-tout__text p, .section-tout.trust .section-tout__text li {
       padding-right: 5rem; } }
@@ -3405,7 +3405,7 @@ article + .search-none {
 
 .search-none {
   margin-top: -65px;
-  background: #f7f8f9;
+  background: #fff;
   z-index: 11;
   position: relative; }
   .search-none + div {

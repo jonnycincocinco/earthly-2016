@@ -46,8 +46,8 @@
   &.trust {
   .section-tout__text {
     p, li {
-      @include font-size(14);
-      @include line-height(26);
+      @include font-size(16);
+      @include line-height(28);
       @include breakpoint(desktop){
         padding-right: calculateRem(80px);
         }
