@@ -5,7 +5,7 @@ angular.module('Earthly.controllers')
 
     $rootScope.$state = $state;
 
-    $rootScope.bodylayout = 'earthy-dna';
+    $rootScope.bodylayout = 'earthly-dna';
 
     var startAnimations = function(){
 

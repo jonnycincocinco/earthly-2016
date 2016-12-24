@@ -14,9 +14,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Eleven is a creative marketing agency that specializes in innovative advertising, design, and brand identity.">
-  <meta name="author" content="Eleven, Inc.">
-
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta property="og:url" content=""/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Earthly"/>
+  <meta property="og:image" content="/wp-content/themes/earthly-2016/build/images/global/earthly.png"/>
+  <meta property="og:description" content="Earthly Web site"/>
   <link rel="shortcut icon" href="wp-content/themes/earthly-2016/build/images/icons/favicon.ico">
   <link rel="apple-touch-icon" sizes="76x76" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="120x120" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-120x120.png">
@@ -28,9 +32,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
   <?php wp_head();?>
-
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -38,7 +40,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-3678186-2', 'auto');
+    ga('create', '', 'auto');
 //    ga('send', 'pageview');
 
   </script>
@@ -62,7 +64,7 @@
           <ul class="desktop-nav--main">
             <li class="desktop-nav--main__sub-wrapper"><a ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a>
               <ul class="desktop-nav--main__sub">
-                <li><a ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == 'earthy-dna'}">earthly(DNA)</a></li>
+                <li><a ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">earthly(DNA)</a></li>
                 <li><a ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
                 <li><a ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
               </ul>
@@ -74,7 +76,7 @@
             <li>
             <button class="desktop-nav--cta cta">Sign Up</button>
             </li>
-            <li><a class="" title="<?php echo bloginfo('name'); ?>" href="/#/">Log In</a></li>
+            <li><a class="" title="<?php echo bloginfo('name'); ?>" href="https://app.beearthly.com/#/login">Log In</a></li>
           </ul>
         </div>
       </div>
@@ -86,7 +88,7 @@
     <ul class="mobile-nav--main">
       <li><a ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a>
         <ul class="mobile-nav--main__sub">
-          <li><a ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == 'earthy-dna'}">earthly(DNA)</a></li>
+          <li><a ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">earthly(DNA)</a></li>
           <li><a ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
           <li><a ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
         </ul>

@@ -8,7 +8,7 @@
 					<ul class="site-footer-list">
 							<!--li><span class="site-footer-list__title">Features</span></li-->
 							<li><a class="site-footer-list__link" ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a></li>
-							<li><a class="site-footer-list__link" ui-sref="earthy-dna" ng-class="{active: $state.current.activetab == 'earthy-dna'}">earthly(DNA)</a></li>
+							<li><a class="site-footer-list__link" ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">earthly(DNA)</a></li>
 							<li><a class="site-footer-list__link" ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
 							<li><a class="site-footer-list__link" ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
 					</ul>

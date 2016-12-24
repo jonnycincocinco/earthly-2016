@@ -80,12 +80,12 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
-    .state('earthy-dna',
+    .state('earthly-dna',
         {
-            url: '/earthy-dna',
+            url: '/earthly-dna',
             controller: 'earthlyDnaView',
             templateUrl: ajaxInfo.template_directory + '/templates/earthly-dna.html',
-            activetab: 'earthy-dna'
+            activetab: 'earthly-dna'
         }
     )
 

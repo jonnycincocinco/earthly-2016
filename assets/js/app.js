@@ -11,6 +11,7 @@ var app;
         'ngPicturefill',
         'slickCarousel',
         'anim-in-out',
+        '720kb.socialshare',
         'Earthly.controllers',
         'Earthly.directives',
         'Earthly.services'

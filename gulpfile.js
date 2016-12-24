@@ -35,6 +35,7 @@ gulp.task('angular', function(){
 		'assets/js-ng/anim-in-out.js',
 		'assets/js-ng/picturefill.min.js',
 		'assets/js-ng/angular-picture.js',
+		'assets/js-ng/angular-socialshare.min.js',
 		'node_modules/jquery/dist/jquery.js'
 	])
 	.pipe(concat('angular.min.js'))

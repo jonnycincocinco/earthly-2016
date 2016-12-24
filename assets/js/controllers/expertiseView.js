@@ -22,7 +22,7 @@ return {
 };
 })
 
-.controller('expertiseView',['getElement', '$window', '$scope', '$rootScope', '$state', '$location', '$stateParams', 'PostsByTypeAndSlug', '$sce', '$timeout', function (getElement, $window, $scope, $rootScope, $state, $location, $stateParams, PostsByTypeAndSlug, $sce, $timeout){
+.controller('expertiseView',['getElement', '$window', '$scope', '$rootScope', '$state', '$location', '$stateParams', 'PostsByTypeAndSlug', '$sce', '$timeout', 'Socialshare', function (getElement, $window, $scope, $rootScope, $state, $location, $stateParams, PostsByTypeAndSlug, $sce, $timeout, Socialshare){
     'use strict';
 
     $scope.loadedContent = 0;
@@ -34,6 +34,7 @@ return {
         $scope.loadedContent ++;
     };
 
+    
     $rootScope.$state = $state;
 
     $rootScope.bodylayout = 'expertise';
