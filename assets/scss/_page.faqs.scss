@@ -31,6 +31,7 @@
 }
 
 .tabs-menu {
+  margin-bottom: calculateRem(30px);
   a {
     display: block;
     padding-bottom: calculateRem(10px);
@@ -90,8 +91,8 @@
 
 .c-nav--main,
 .c-nav--secondary {
-  display: none;
-  overflow: hidden;
+//  display: none;
+//  overflow: hidden;
 
   &.is-active {
     display: block;

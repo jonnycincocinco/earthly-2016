@@ -165,10 +165,12 @@
 }
 
 .search-info {
-  margin-left: 3%;
   margin-bottom: 3%;
   color: $base--blueHighlight;
   @include font-size(22);
+  .library--container & {
+    margin-left: 3%;
+  }
   .search-highlight {
     color: $base--orange;
     font-weight: 800;
@@ -189,6 +191,9 @@ article {
   background: #fff;
   z-index: 11;
   position: relative;
+  .faqs & {
+    margin-top: -56px;
+  }
 }
 
 input {

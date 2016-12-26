@@ -3038,10 +3038,12 @@ ul.three-up-tiles__list {
     .faqs .faqs__right {
       padding-left: 1.875rem; } }
 
-.tabs-menu a {
-  display: block;
-  padding-bottom: 0.625rem;
-  font-weight: 800; }
+.tabs-menu {
+  margin-bottom: 1.875rem; }
+  .tabs-menu a {
+    display: block;
+    padding-bottom: 0.625rem;
+    font-weight: 800; }
 
 .tab-item.current {
   color: #79A9D1; }
@@ -3074,15 +3076,11 @@ ul.three-up-tiles__list {
     background: #fff; }
 
 /* Nav specific */
-.c-nav--main,
-.c-nav--secondary {
-  display: none;
-  overflow: hidden; }
-  .c-nav--main.is-active,
-  .c-nav--secondary.is-active {
-    display: block;
-    overflow: visible;
-    padding-bottom: 1.875rem; }
+.c-nav--main.is-active,
+.c-nav--secondary.is-active {
+  display: block;
+  overflow: visible;
+  padding-bottom: 1.875rem; }
 
 .services--container .inner-hero {
   padding-top: 5.5rem;
@@ -3397,11 +3395,12 @@ ul.three-up-tiles__list {
   top: 0; }
 
 .search-info {
-  margin-left: 3%;
   margin-bottom: 3%;
   color: #3987c1;
   font-size: 22px;
   font-size: 1.375rem; }
+  .library--container .search-info {
+    margin-left: 3%; }
   .search-info .search-highlight {
     color: #f7931f;
     font-weight: 800; }
@@ -3416,6 +3415,8 @@ article + .search-none {
   position: relative; }
   .search-none + div {
     display: none; }
+  .faqs .search-none {
+    margin-top: -56px; }
 
 input {
   outline: none; }
