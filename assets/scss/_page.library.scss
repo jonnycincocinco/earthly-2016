@@ -236,11 +236,30 @@ input::-webkit-input-placeholder {
 }
 
 /* Demo 2 */
+.library-search {
+  position: relative;
+  width: 66.67%;
+}
+
 .library-search input[type=search] {
 	width: 115px;
 	padding-left: 10px;
 	color: transparent;
 	cursor: pointer;
+}
+.search-cancel {
+  height: calculateRem(15px);
+  width: calculateRem(15px);
+  transition: all .1s;
+  transition-delay: .1s;
+  cursor: pointer;
+  background: url(/wp-content/themes/earthly-2016/build/images/icons/icon-cancel.png) 0;
+  background-size: 15px;
+  position: absolute;
+  right: -6px;
+  top: 11px;
+  z-index: 11111;
+  opacity: 0;
 }
 .library-search input[type=search]:hover {
 	background-color: #fff;
@@ -249,8 +268,14 @@ input::-webkit-input-placeholder {
 //	width: 130px;
 	padding-left: 32px;
 	color: #000;
-	background-color: #fff;
 	cursor: auto;
+  + .search-cancel {
+    opacity: 1;
+    right: 6px;
+    .library--container--home & {
+      right: -44px;
+    }
+  }
 }
 .library-search input:-moz-placeholder {
 	//color: transparent;
