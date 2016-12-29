@@ -26,6 +26,7 @@
    }
     @include breakpoint(tablet) {
       padding-left: calculateRem(30px);
+      margin-top: calculateRem(-20px);
     }
   }
 }
@@ -46,9 +47,9 @@
 }
 
 .tab-content {
-  display: none;
+  //display: none;
   &.faq-section-general {
-    display: block;
+  //  display: block;
   }
 }
 
@@ -89,14 +90,10 @@
 
 /* Nav specific */
 
-.c-nav--main,
-.c-nav--secondary {
-//  display: none;
-//  overflow: hidden;
+.tab-content--main {
+  margin-bottom: calculateRem(50px);
+}
 
-  &.is-active {
-    display: block;
-    overflow: visible;
-    padding-bottom: calculateRem(30px);
-  }
+.faq-search {
+  margin-top: calculateRem(15px);
 }

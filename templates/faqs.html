@@ -20,18 +20,15 @@
           <div class="grid__item icon-text-col faqs__left orange">
             <h3 class="text-align-left orange">Topics</h3>
             <div class="grid tabs-menu">
-              <a class="tab-item orange current" data-link="#faq-section-general" ng-click="searchFAQs = ''">General Questions</a>
-              <a data-link="#faq-section-portfolio" class="tab-item orange" ng-click="searchFAQs = ''">Portfolio Construction</a>
-              <a data-link="#faq-section-accounts" class="tab-item orange" ng-click="searchFAQs = ''">Accounts</a>
-              <a data-link="#faq-section-fees" class="tab-item orange" ng-click="searchFAQs = ''">Fees</a>
-              <a data-link="#faq-section-socially-responsible" class="tab-item orange" ng-click="searchFAQs = ''">Socially Responsible Investing</a>
-              <a data-link="#faq-section-taxes" class="tab-item orange" ng-click="searchFAQs = ''">Taxes</a>
-            </div>
-            <div class="faq-search">
-              <form class="library-search">
-                <input type="search" class="form-control" placeholder="Search" ng-model="searchFAQs" ng-model-options="{debounce: 800}">
-                <span class="search-cancel" ng-click="searchFAQs = ''"></span>
-              </form>
+              <div ng-repeat="faq in faqs" ng-init="faqs.tab = 'faq-section-general'">
+                  <a class="light-blue" ng-class="'active': activeTab" ng-click="faqs.tab = faq.id;closeSearch();">{{faq.title}}</a>
+                </div>
+              <div class="faq-search">
+                <form class="library-search">
+                  <input type="search" class="form-control" placeholder="Search" ng-model="searchFAQs" ng-model-options="{debounce: 800}">
+                  <span class="search-cancel" ng-click="searchFAQs = ''"></span>
+                </form>
+              </div>
             </div>
           </div>
             <!--
@@ -39,12 +36,12 @@
           <div class="grid__item icon-text-col faqs__right">
             <!-- GENERAL -->
             <div ng-if="searchFAQs" class="search-info">FAQs that contain '<span class="search-highlight" ng-bind-html="searchFAQs"></span>'</div>
-            <article ng-repeat="faq in faqs | filter:searchFAQs">
-              <div class="tab-content {{section.id}}" role="navigation" id="{{section.id}}" ng-repeat="section in faq.sections | filter:searchFAQs">
-                <h3 class="text-align-left light-blue" ng-if="!searchFAQs">{{section.title}}</h3>
-                  <div ng-repeat="post in section.posts | filter:searchFAQs">
+            <article ng-repeat="faq in faqs | filter:searchFAQs" ng-show="faqs.tab === faq.id">
+              <div class="tab-content {{faq.id}}" role="navigation" id="{{faq.id}}">
+                <h2 class="text-align-left" ng-if="!searchFAQs">{{faq.title}}</h2>
+                  <div ng-repeat="post in faq.posts | filter:searchFAQs">
                     <a class="c-nav--trigger js-nav-toggle light-blue" ng-click="active$index = !active$index" ng-class="{'expandcollapse-heading-collapsed': active$index, 'expandcollapse-heading-expanded': !active$index}">{{post.title}}</a>
-                    <div class="c-nav--main" role="navigation" ng-hide="active$index">
+                    <div class="tab-content--main" ng-hide="active$index">
                       <div ng-repeat="postSection in post.content">
                         <p ng-if="postSection.postSection">{{postSection.postSection}}</p>
                         <p ng-if="postSection.postSectionIndent" class="indent">{{postSection.postSectionIndent}}</p>

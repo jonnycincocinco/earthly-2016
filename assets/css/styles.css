@@ -3036,7 +3036,8 @@ ul.three-up-tiles__list {
         margin-right: 0; } }
   @media only screen and (min-width: 768px) {
     .faqs .faqs__right {
-      padding-left: 1.875rem; } }
+      padding-left: 1.875rem;
+      margin-top: -1.25rem; } }
 
 .tabs-menu {
   margin-bottom: 1.875rem; }
@@ -3047,11 +3048,6 @@ ul.three-up-tiles__list {
 
 .tab-item.current {
   color: #79A9D1; }
-
-.tab-content {
-  display: none; }
-  .tab-content.faq-section-general {
-    display: block; }
 
 .c-nav--trigger {
   display: block;
@@ -3076,11 +3072,11 @@ ul.three-up-tiles__list {
     background: #fff; }
 
 /* Nav specific */
-.c-nav--main.is-active,
-.c-nav--secondary.is-active {
-  display: block;
-  overflow: visible;
-  padding-bottom: 1.875rem; }
+.tab-content--main {
+  margin-bottom: 3.125rem; }
+
+.faq-search {
+  margin-top: 0.9375rem; }
 
 .services--container .inner-hero {
   padding-top: 5.5rem;
@@ -3438,9 +3434,9 @@ input[type=search] {
   padding: 9px 10px 9px 32px;
   width: 55px;
   border-radius: 3px;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s; }
 
 input[type=search]:focus {
   background-color: #fff;
@@ -3464,16 +3460,15 @@ input::-webkit-input-placeholder {
   cursor: pointer; }
 
 .search-cancel {
-  height: 0.9375rem;
-  width: 0.9375rem;
-  transition: all .1s;
-  transition-delay: .1s;
+  height: 0.75rem;
+  width: 0.75rem;
+  transition: all .3s;
   cursor: pointer;
   background: url(/wp-content/themes/earthly-2016/build/images/icons/icon-cancel.png) 0;
-  background-size: 15px;
+  background-size: 12px;
   position: absolute;
-  right: -6px;
-  top: 11px;
+  right: 26px;
+  top: 13px;
   z-index: 11111;
   opacity: 0; }
 

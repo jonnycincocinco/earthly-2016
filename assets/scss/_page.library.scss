@@ -218,9 +218,9 @@ input[type=search] {
 	padding: 9px 10px 9px 32px;
 	width: 55px;
 	border-radius: 3px;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
 }
 input[type=search]:focus {
 //	width: 130px;
@@ -248,16 +248,16 @@ input::-webkit-input-placeholder {
 	cursor: pointer;
 }
 .search-cancel {
-  height: calculateRem(15px);
-  width: calculateRem(15px);
-  transition: all .1s;
-  transition-delay: .1s;
+  height: calculateRem(12px);
+  width: calculateRem(12px);
+  transition: all .3s;
+  //transition-delay: .1s;
   cursor: pointer;
   background: url(/wp-content/themes/earthly-2016/build/images/icons/icon-cancel.png) 0;
-  background-size: 15px;
+  background-size: 12px;
   position: absolute;
-  right: -6px;
-  top: 11px;
+  right: 26px;
+  top: 13px;
   z-index: 11111;
   opacity: 0;
 }
