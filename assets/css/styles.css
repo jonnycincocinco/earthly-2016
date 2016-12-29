@@ -3046,30 +3046,12 @@ ul.three-up-tiles__list {
     padding-bottom: 0.625rem;
     font-weight: 800; }
 
-.tab-item.current {
-  color: #79A9D1; }
-
 .c-nav--trigger {
   display: block;
   padding-bottom: 20px;
   font-weight: 800;
   text-decoration: none;
   transition: background ease .3s; }
-
-/* Navigation */
-.c-nav__list {
-  list-style: none;
-  margin: 0 0 30px 0;
-  padding: 0; }
-
-.c-nav__link {
-  text-decoration: none;
-  display: block;
-  border-bottom: 1px solid #fff;
-  padding: 10px 10px 10px 20px;
-  transition: background ease .3s; }
-  .c-nav__link:hover {
-    background: #fff; }
 
 /* Nav specific */
 .tab-content--main {

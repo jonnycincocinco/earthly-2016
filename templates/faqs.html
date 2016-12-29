@@ -21,7 +21,7 @@
             <h3 class="text-align-left orange">Topics</h3>
             <div class="grid tabs-menu">
               <div ng-repeat="faq in faqs" ng-init="faqs.tab = 'faq-section-general'">
-                  <a class="light-blue" ng-class="'active': activeTab" ng-click="faqs.tab = faq.id;closeSearch();">{{faq.title}}</a>
+                  <a class="" ng-click="faqs.tab = faq.id;closeSearch();activateTab($index)" ng-class="{'orange': $index == activeTab}">{{faq.title}}</a>
                 </div>
               <div class="faq-search">
                 <form class="library-search">

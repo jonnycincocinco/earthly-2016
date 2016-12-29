@@ -17,8 +17,20 @@ angular.module('Earthly.controllers')
 
     $scope.closeSearch = function() {
       $scope.searchFAQs = '';
-      $scope.activeTab = !$scope.activeTab;
     }
+
+    $scope.activeTab = 0;
+    $scope.currentPage = 0;
+    $scope.activateTab =function(indx){
+
+      $scope.activeTab=indx
+
+    };
+
+    $scope.$watch('currentPage', function(){
+
+      $scope.activeTab = 0;
+   })
 
     $scope.faqs = [
       {
