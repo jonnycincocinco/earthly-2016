@@ -100,7 +100,7 @@ angular.module('Earthly.controllers')
     vid.currentTime = '0';
     replay.removeClass('show');
 
-      if (homePage) {
+      if ($(".applet")) {
         $(document).scroll(function(){
           if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 700){
 

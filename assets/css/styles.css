@@ -2894,6 +2894,21 @@ ul.three-up-tiles__list {
       margin-right: 0; }
     .fees__categories__inner .fees__categories__entry:last-child {
       float: right; }
+    .fees__categories__inner .fees__categories__entry.middle-text {
+      text-align: center;
+      vertical-align: top;
+      margin: 1.25rem 0; }
+      @media only screen and (min-width: 768px) {
+        .fees__categories__inner .fees__categories__entry.middle-text {
+          float: left;
+          display: block;
+          margin-right: 0%;
+          width: 16.66667%;
+          display: inline-block;
+          float: none;
+          margin-top: 80px; }
+          .fees__categories__inner .fees__categories__entry.middle-text:last-child {
+            margin-right: 0; } }
     @media only screen and (min-width: 768px) {
       .fees__categories__inner .fees__categories__entry {
         float: left;
@@ -3370,7 +3385,14 @@ ul.three-up-tiles__list {
   font-size: 0.875rem;
   position: absolute;
   right: 0;
-  top: 0; }
+  left: 0;
+  margin: auto;
+  bottom: -53px;
+  top: auto; }
+  @media only screen and (min-width: 1024px) {
+    .search {
+      top: 0;
+      left: auto; } }
 
 .search-info {
   margin-bottom: 3%;
@@ -3433,7 +3455,10 @@ input::-webkit-input-placeholder {
 /* Demo 2 */
 .library-search {
   position: relative;
-  width: 66.67%; }
+  width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .library-search {
+      width: 66.67%; } }
 
 .library-search input[type=search] {
   width: 115px;

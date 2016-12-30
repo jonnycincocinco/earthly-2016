@@ -15,6 +15,17 @@
     &:last-child {
       float: right;
     }
+    &.middle-text {
+      text-align: center;
+      vertical-align: top;
+      margin: calculateRem(20px) 0;
+      @include breakpoint(tablet) {
+        @include span-columns(2 of 12);
+        display: inline-block;
+        float: none;
+        margin-top: 80px;
+      }
+    }
     @include breakpoint(tablet) {
       @include span-columns(5 of 12);
       display: inline-block;

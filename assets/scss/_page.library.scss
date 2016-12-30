@@ -161,7 +161,14 @@
   @include font-size(14);
   position: absolute;
   right: 0;
-  top: 0;
+  left: 0;
+  margin: auto;
+  bottom: -53px;
+  top: auto;
+  @include breakpoint(desktop) {
+    top: 0;
+    left: auto;
+  }
 }
 
 .search-info {
@@ -238,7 +245,10 @@ input::-webkit-input-placeholder {
 /* Demo 2 */
 .library-search {
   position: relative;
-  width: 66.67%;
+  width: 100%;
+  @include breakpoint(desktop) {
+    width: 66.67%;
+  }
 }
 
 .library-search input[type=search] {
