@@ -247,7 +247,7 @@ input::-webkit-input-placeholder {
   position: relative;
   width: 100%;
   @include breakpoint(desktop) {
-    width: 66.67%;
+//    width: 66.67%;
   }
 }
 
@@ -281,9 +281,9 @@ input::-webkit-input-placeholder {
 	cursor: auto;
   + .search-cancel {
     opacity: 1;
-    right: 6px;
-    .library--container--home & {
-      right: -44px;
+    right: 20px;
+    .faqs & {
+      right: -10px;
     }
   }
 }

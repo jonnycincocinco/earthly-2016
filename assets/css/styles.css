@@ -3073,7 +3073,11 @@ ul.three-up-tiles__list {
   margin-bottom: 3.125rem; }
 
 .faq-search {
+  width: 137px;
   margin-top: 0.9375rem; }
+
+.faq-indent {
+  margin-left: 1.25rem; }
 
 .services--container .inner-hero {
   padding-top: 5.5rem;
@@ -3456,9 +3460,6 @@ input::-webkit-input-placeholder {
 .library-search {
   position: relative;
   width: 100%; }
-  @media only screen and (min-width: 1024px) {
-    .library-search {
-      width: 66.67%; } }
 
 .library-search input[type=search] {
   width: 115px;
@@ -3488,9 +3489,9 @@ input::-webkit-input-placeholder {
   cursor: auto; }
   .library-search input[type=search]:focus + .search-cancel {
     opacity: 1;
-    right: 6px; }
-    .library--container--home .library-search input[type=search]:focus + .search-cancel {
-      right: -44px; }
+    right: 20px; }
+    .faqs .library-search input[type=search]:focus + .search-cancel {
+      right: -10px; }
 
 .library-search input::-webkit-input-placeholder {
   padding-left: 35px; }

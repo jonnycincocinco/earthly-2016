@@ -26,7 +26,7 @@
               <div class="faq-search">
                 <form class="library-search">
                   <input type="search" class="form-control" placeholder="Search" ng-model="searchFAQs" ng-model-options="{debounce: 800}">
-                  <span class="search-cancel" ng-click="searchFAQs = ''"></span>
+                  <span class="search-cancel" ng-click="closeSearch()"></span>
                 </form>
               </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="tab-content--main" ng-hide="active$index">
                       <div ng-repeat="postSection in post.content">
                         <p ng-if="postSection.postSection">{{postSection.postSection}}</p>
-                        <p ng-if="postSection.postSectionIndent" class="indent">{{postSection.postSectionIndent}}</p>
+                        <p ng-if="postSection.postSectionIndent" class="faq-indent">{{postSection.postSectionIndent}}</p>
                         <p ng-if="postSection.postSectionLegal" class="legal">{{postSection.postSectionLegal}}</p>
                       </div>
                     </div>
