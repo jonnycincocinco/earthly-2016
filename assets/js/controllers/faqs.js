@@ -38,26 +38,17 @@ angular.module('Earthly.controllers')
         "title": "General Questions",
         "posts": [
             {
-              "title": "When will Earthly launch and what is the status of the development process?",
-              "content":
-              [
-                {
-                  "postSection": "We are targeting an Q4 2016 release. Earthly is currently in private beta undergoing stress testing and auditing."
-                }
-              ]
-            },
-            {
               "title": "What is Earthly?",
               "content":
               [
                 {
-                  "postSection": "Earthly is the first automated investment advisory and portfolio management firm devoted to socially responsible investing (SRI) and impact investing. We harness the power and cost saving potential of automated systems to create a more affordable and seamless advisory experience."
+                  "postSection": "Earthly is the first automated investment advisory and portfolio management company devoted to sustainable investing. We harness the power and cost saving potential of automated systems to create a more affordable and seamless advisory experience."
                 },
                 {
-                  "postSection": "Our primary focus centers around helping clients create diversified investment portfolios that reflect their principles and then managing that portfolio for social responsibility, impact, risk and taxes."
+                  "postSection": "Our primary focus centers around helping clients create diversified investment portfolios that reflect their principles and then managing that portfolio for sustainability, risk and taxes."
                 },
                 {
-                  "postSection": "Our goal is to help our clients both build wealth and make an impact in the world."
+                  "postSection": "Our goal is to help our clients both build wealth and make a difference in the world."
                 }
               ]
             },
@@ -72,7 +63,7 @@ angular.module('Earthly.controllers')
                   "postSection": "As a secondary objective, our founders also desired to automate tax and risk management processes that previously required careful monitoring."
                 },
                 {
-                  "postSection": "Today, Earthly’s mission is to be the premier source for socially responsible and impact investing in the world by making the investment process simple, inexpensive and worry-free."
+                  "postSection": "Today, Earthly’s mission is to be the premier source for sustainable investing in the world by making the investment process simple, inexpensive and worry-free."
                 }
               ]
             },
@@ -120,28 +111,13 @@ angular.module('Earthly.controllers')
                   "postSection": "Social justice activists looking to focus on companies not employing impoverished labor, companies with a focus on employment diversity and companies that support local communities."
                 }
               ]
-            },
+            },            
             {
-              "title": "How much should I invest in the Earthly platform?",
+              "title": "How does Earthly compare to a socially responsible or ESG mutual/index fund?",
               "content":
               [
                 {
-                  "postSection": "Earthly believes a general rule of thumb is to maintain roughly six months to a year of living expenses in cash for unexpected life events such as a job loss or unexpected medical expenses.  Any other cash needs that are expected to occur within the next 0-5 years might also be good candidates to be invested in FDIC insured instruments such as bank deposits."
-                },
-                {
-                  "postSection": "Cash not needed within the first 5 years might be better served being invested in a diversified allocation of stocks and bonds such as that offered by Earthly."
-                },
-                {
-                  "postSection": "Please note that information in this section may not be suitable for all clients and are general rules of thumb only."
-                }
-              ]
-            },
-            {
-              "title": "How does Earthly compare to a socially responsible mutual or index fund?",
-              "content":
-              [
-                {
-                  "postSection": "Socially responsible mutual and index funds are suffer from several problems:"
+                  "postSection": "Socially responsible mutual and index funds suffer from several problems:"
                 },
                 {
                   "postSectionIndent": "1) High Fees"
@@ -156,29 +132,29 @@ angular.module('Earthly.controllers')
                   "postSectionIndent": "4) Voting Rights Transferred to Fund Manager"
                 },
                 {
-                  "postSection": "Earthly addresses these problems in the following ways:"
+                  "postSection": "Earthly(DNA), our diversified sustainable index portfolio addresses these problems in the following ways:"
                 },
                 {
-                  "postSectionIndent": "1) We charge a low 0.25% management fee which is significantly less than the average SRI mutual fund and ETF."
+                  "postSectionIndent": "1) We charge a low 0.35% management fee which is significantly less than the average SRI mutual fund and ETF."
                 },
                 {
-                  "postSectionIndent": "2) We offer customized portfolios tailored to each client’s SRI preferences."
+                  "postSectionIndent": "2) We offer customized portfolios tailored to each client’s ESG and ethical preferences."
                 },
                 {
-                  "postSectionIndent": "3) We use a data-driven, quantitative approach to rating companies’ SRI performance and we disclose our methods."
+                  "postSectionIndent": "3) We use a data-driven, quantitative approach to rating companies’ ESG and ethical performance and we disclose our methods."
                 },
                 {
-                  "postSectionIndent": "4) We allow clients to vote their shares or vote proxies on their behalf."
+                  "postSectionIndent": "4) We vote client proxies on their behalf according to a published set of guidelines."
                 },
                 {
                   "title": "How can I gauge your level of performance?",
                   "content":
                   [
                     {
-                      "postSection": "Given that our Social Identity service can conceivably produce a nearly infinite number of distinct portfolios, we will provide a performance charting application with sample portfolios at certain key Social Identity preference levels.  Our clients and potential clients can then view how their preferences would have historically affected their investment performance."
+                      "postSection": "We publish Earthly(DNA) and composite performance information on our website.  Our Earthly(DNA) whitepaper also provides historical simulated performance and portfolio dispersion for reference purposes.  All clients have the ability to view their individual performance history through their online account."
                     },
                     {
-                      "postSection": "All clients have the ability to view their individual performance history through their online account."
+                      "postSection": "Clients and prospective clients should be advised that past or simulated performance is no guarantee of future results."
                     }                      ]
                 },
                 {
@@ -216,10 +192,7 @@ angular.module('Earthly.controllers')
                   "content":
                   [
                     {
-                      "postSection": "We maintain a minimum cash balance equal to the fees you’re likely to owe over the next year. In addition, stocks and ETFs trade in whole number increments and partial shares are not available, so we will never be able to invest exactly 100% of your investment. We will combine future dividends received and any additional deposits you may make with your cash balance to minimize your cash balance whenever possible."
-                    },
-                    {
-                      "postSection": "If you have signed up for tax-loss harvesting (TLH), then there may be certain unusual scenarios when we cannot invest all of your cash due to the wash sale rule."
+                      "postSection": "We normally invest 100% of your invested capital, however there may be periods where we hold cash such as before a market order."
                     }
                   ]
                 }
@@ -232,7 +205,7 @@ angular.module('Earthly.controllers')
         "title": "Portfolio",
         "posts": [
             {
-              "title": "How does Earthly determine the securities that go into my portfolio?",
+              "title": "How does Earthly(DNA) determine the securities that go into my portfolio?",
               "content":
               [
                 {
@@ -281,7 +254,7 @@ angular.module('Earthly.controllers')
                   "postSection": "One may be interested in seeing how their custom SRI portfolio benchmarks against a broad market index, however again, tracking error would be a misleading statistic since a broad market index is not necessarily the appropriate tracking benchmark for an SRI portfolio."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "Our Earthly(DNA) whitepaper provides tracking error estimates for simulated portfolios examined over a historical ten year period."
                 }
               ]
             },
