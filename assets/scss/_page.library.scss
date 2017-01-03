@@ -266,7 +266,7 @@ input::-webkit-input-placeholder {
   background: url(/wp-content/themes/earthly-2016/build/images/icons/icon-cancel.png) 0;
   background-size: 12px;
   position: absolute;
-  right: 26px;
+  right: 10px;
   top: 13px;
   z-index: 11111;
   opacity: 0;
@@ -281,7 +281,7 @@ input::-webkit-input-placeholder {
 	cursor: auto;
   + .search-cancel {
     opacity: 1;
-    right: 20px;
+  //  right: 20px;
     .faqs & {
       right: -10px;
     }

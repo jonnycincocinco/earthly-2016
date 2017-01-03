@@ -2057,8 +2057,11 @@ button.cta,
   background-size: cover;
   overflow: hidden;
   background: #c2f2ff;
-  background: linear-gradient(135deg, #0076d1 0, #3497dd 24%, #80c0e0 73%, #c2f2ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 ); }
+  min-height: 700px;
+  background-image: url(/wp-content/themes/earthly-2016/build/images/global/hand-in-dirt.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover; }
   @media only screen and (min-width: 768px) {
     .page-home--hero {
       padding-bottom: 50px; } }
@@ -2083,7 +2086,7 @@ button.cta,
       float: left;
       display: block;
       margin-right: 0%;
-      width: 50%;
+      width: 58.33333%;
       margin-bottom: 1.25rem; }
       .page-home--hero__section:last-child {
         margin-right: 0; } }
@@ -2153,23 +2156,12 @@ button.cta,
     padding-top: 0; }
 
 .page-home--intro {
-  position: absolute;
-  top: 20%;
-  right: 0;
-  color: #fff;
-  z-index: 10;
-  margin-top: 12%; }
-  @media only screen and (min-width: 768px) {
-    .page-home--intro {
-      top: 12%;
-      margin-top: 0; } }
-  @media only screen and (min-width: 1024px) {
-    .page-home--intro {
-      top: 16%; } }
+  position: relative;
+  margin-top: 13%;
+  color: #3a2719;
+  z-index: 10; }
   @media only screen and (min-width: 1300px) {
     .page-home--intro {
-      top: 28%;
-      right: 3%;
       padding-left: 2%; } }
   .page-home--intro .page-home--intro-hdr {
     float: left;
@@ -2198,10 +2190,6 @@ button.cta,
         .page-home--intro .page-home--intro-hdr h1 {
           font-size: 60px;
           font-size: 3.75rem; } }
-      @media only screen and (min-width: 1300px) {
-        .page-home--intro .page-home--intro-hdr h1 {
-          font-size: 65px;
-          font-size: 4.0625rem; } }
       @media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
         .page-home--intro .page-home--intro-hdr h1 {
           font-size: 90px;
@@ -3202,6 +3190,29 @@ ul.three-up-tiles__list {
         left: 0;
         top: -5px;
         transition: all .3s ease-in-out; }
+    .services--container .detail-box__item .content-box .detail-description {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 24px;
+      line-height: 1.5rem; }
+      @media only screen and (min-width: 768px) {
+        .services--container .detail-box__item .content-box .detail-description {
+          font-size: 12px;
+          font-size: 0.75rem;
+          line-height: 16px;
+          line-height: 1rem; } }
+      @media only screen and (min-width: 1024px) {
+        .services--container .detail-box__item .content-box .detail-description {
+          font-size: 13px;
+          font-size: 0.8125rem;
+          line-height: 17px;
+          line-height: 1.0625rem; } }
+      @media only screen and (min-width: 1300px) {
+        .services--container .detail-box__item .content-box .detail-description {
+          font-size: 14px;
+          font-size: 0.875rem;
+          line-height: 20px;
+          line-height: 1.25rem; } }
 
 .services--container .section-hats {
   color: #000;
@@ -3475,7 +3486,7 @@ input::-webkit-input-placeholder {
   background: url(/wp-content/themes/earthly-2016/build/images/icons/icon-cancel.png) 0;
   background-size: 12px;
   position: absolute;
-  right: 26px;
+  right: 10px;
   top: 13px;
   z-index: 11111;
   opacity: 0; }
@@ -3488,8 +3499,7 @@ input::-webkit-input-placeholder {
   color: #000;
   cursor: auto; }
   .library-search input[type=search]:focus + .search-cancel {
-    opacity: 1;
-    right: 20px; }
+    opacity: 1; }
     .faqs .library-search input[type=search]:focus + .search-cancel {
       right: -10px; }
 

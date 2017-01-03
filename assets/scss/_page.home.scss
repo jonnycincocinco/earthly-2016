@@ -16,13 +16,13 @@
     //background: -webkit-linear-gradient(-45deg, rgba(194,242,255,1) 0%, rgba(147,212,244,1) 24%, rgba(52,151,221,1) 73%, rgba(0,118,209,1) 100%);
     //background: -o-linear-gradient(-45deg, rgba(194,242,255,1) 0%, rgba(147,212,244,1) 24%, rgba(52,151,221,1) 73%, rgba(0,118,209,1) 100%);
     //background: -ms-linear-gradient(-45deg, rgba(194,242,255,1) 0%, rgba(147,212,244,1) 24%, rgba(52,151,221,1) 73%, rgba(0,118,209,1) 100%);
-    background: linear-gradient(135deg,#0076d1 0,#3497dd 24%,#80c0e0 73%,#c2f2ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 );
-
-    //background-image: url(/wp-content/themes/earthly-2016/build/images/global/hands-in-dirt.jpg);
-    //background-repeat: no-repeat;
-    //background-position: 0 0;
-    //background-size: cover;
+    //background: linear-gradient(135deg,#0076d1 0,#3497dd 24%,#80c0e0 73%,#c2f2ff 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2f2ff', endColorstr='#0076d1', GradientType=1 );
+    min-height: 700px;
+    background-image: url(/wp-content/themes/earthly-2016/build/images/global/hand-in-dirt.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
 
     @include breakpoint(tablet) {
       padding-bottom: 50px;
@@ -41,7 +41,7 @@
 .page-home--hero__section {
   @include span-columns(12 of 12);
   @include breakpoint(tablet) {
-    @include span-columns(6 of 12);
+    @include span-columns(7 of 12);
     margin-bottom: calculateRem(20px);
   }
 }
@@ -133,22 +133,15 @@
 
 
 .page-home--intro {
-    position: absolute;
-    top: 20%;
-    right: 0;
-    color: $base--headerColor;
+    position: relative;
+    margin-top: 13%;
+    color: $base--homeHeaderColor;
     z-index: 10;
-    margin-top: 12%;
     @include breakpoint(tablet) {
-      top: 12%;
-      margin-top: 0;
     }
     @include breakpoint(desktop) {
-      top: 16%;
     }
     @include breakpoint(cinema) {
-      top: 28%;
-      right: 3%;
       padding-left: 2%;
     }
     .page-home--intro-hdr {
@@ -174,7 +167,7 @@
                 @include font-size(60);
             }
             @include breakpoint(cinema) {
-                @include font-size(65);
+//                @include font-size(65);
             }
             @media only screen and (-webkit-min-device-pixel-ratio : 2)
             and (device-aspect-ratio: 2/3)

@@ -1,6 +1,6 @@
 angular.module('Earthly.controllers')
 
-.controller('portfolioView', ['$scope', '$rootScope', '$state', 'PostsByType', '$sce', function ($scope, $rootScope, $state, PostsByType, $sce) {
+.controller('portfolioView', ['$scope', '$rootScope', '$state', 'PostsByType', '$location', '$anchorScroll', function ($scope, $rootScope, $state, PostsByType, $location, $anchorScroll) {
     'use strict';
 
     $rootScope.$state = $state;
@@ -19,21 +19,10 @@ angular.module('Earthly.controllers')
 
   //  window.sr = ScrollReveal().reveal('.bg-strip, .section-strip, .site-footer');
 
-    $scope.getRetina = function (imageSrc) {
-      if (typeof imageSrc === 'string') {
-        var newPath = imageSrc.replace('.jpg', '@2x.jpg');
-        var newPath2 = $sce.trustAsResourceUrl(newPath);
-        return newPath2;
-      }
-    };
-
-    $scope.getImageBreakpointSrc = function (imageSrc, breakpoint) {
-      if (typeof imageSrc === 'string') {
-        var newPath = imageSrc.replace('.jpg', '-' + breakpoint + '.jpg');
-        var newPath2 = $sce.trustAsResourceUrl(newPath);
-        return newPath2;
-      }
-    };
+  $scope.scrollTo = function(id) {
+    $location.hash(id);
+    $anchorScroll();
+ }
 
     // input comma-adder
       $('input.number').keyup(function(event) {

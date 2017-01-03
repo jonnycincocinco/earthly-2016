@@ -64,7 +64,7 @@
           <ul class="desktop-nav--main">
             <li class="desktop-nav--main__sub-wrapper"><a ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a>
               <ul class="desktop-nav--main__sub">
-                <li><a ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">earthly(DNA)</a></li>
+                <li><a ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">Earthly(DNA)</a></li>
                 <li><a ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
                 <li><a ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
               </ul>
@@ -88,7 +88,7 @@
     <ul class="mobile-nav--main">
       <li><a ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a>
         <ul class="mobile-nav--main__sub">
-          <li><a ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">earthly(DNA)</a></li>
+          <li><a ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">Earthly(DNA)</a></li>
           <li><a ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
           <li><a ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
         </ul>

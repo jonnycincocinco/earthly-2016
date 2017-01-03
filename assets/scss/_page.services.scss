@@ -134,6 +134,22 @@
         transition: all .3s ease-in-out;
       }
     }
+    .detail-description {
+      @include font-size(16);
+      @include line-height(24);
+      @include breakpoint(tablet) {
+        @include font-size(12);
+        @include line-height(16);
+      }
+      @include breakpoint(desktop) {
+        @include font-size(13);
+        @include line-height(17);
+      }
+      @include breakpoint(cinema) {
+        @include font-size(14);
+        @include line-height(20);
+      }
+    }
   }
 }
 
