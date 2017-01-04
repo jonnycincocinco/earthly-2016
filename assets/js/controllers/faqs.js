@@ -259,7 +259,7 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Why doesn’t Earthly strictly use Black-Litterman or mean-variance optimization to create client portfolios?",
+              "title": "Does Earthly strictly use Black-Litterman or mean-variance optimization to create client portfolios?",
               "content":
               [
                 {
@@ -302,7 +302,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "We currently don’t offer the ability to tilt towards specific equity sectors."
+                  "postSection": "We currently don’t offer the ability to tilt towards specific equity styles."
                 },
                 {
                   "postSection": ""
@@ -344,7 +344,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "There is no minimum amount to open an account with us, however we require at least $10,000 available to invest in equity products to utilize our Social Identity service. If this threshold is not met at initial funding, we will invest your cash in socially responsible index funds until the $10,000 threshold is met.  At that time, you may instruct us to reallocate your investments into our Social Identity service. "
+                  "postSection": "There is no minimum amount to open an account with us."
                 },
                 {
                   "postSection": ""
@@ -386,7 +386,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "We only charge one fee; an annualized asset management fee of 0.25% of total assets paid monthly. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
+                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.35% of total assets paid monthly or $5 per month. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
                 },
                 {
                   "postSection": ""
@@ -404,7 +404,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Fees are calculated and paid monthly in arrears. The monthly fee calculated is the annual asset management fee of 0.25% divided by 12 months applied to the daily weighted average assets under management calculated in that month.  The fee will be deducted from the account the first business day after the end of the prior month.  For example, fees incurred during the month of July would be deducted the first business day of August."
+                  "postSection": "Fees are calculated and paid monthly in arrears. For example, the monthly fee calculated is the annual asset management fee of 0.35% divided by 12 months applied to the daily weighted average assets under management calculated in that month (or $5, whichever is greater).  The fee will be deducted from the account the first business day after the end of the prior month.  For example, fees incurred during the month of July would be deducted the first business day of August."
                 },
                 {
                   "postSection": ""
@@ -421,28 +421,28 @@ angular.module('Earthly.controllers')
       },
       {
         "id": "faq-section-sri",
-        "title": "Socially Responsible Investing",
+        "title": "Sustainable Investing",
         "posts": [
             {
-              "title": "What is Socially Responsible Investing?",
+              "title": "What is Sustainable Investing?",
               "content":
               [
                 {
-                  "postSection": "Socially responsible investing or SRI refers to an investing methodology that seeks a competitive financial return and contribute to social good."
+                  "postSection": "Sustainable investing refers to an investing methodology that seeks a competitive financial return and contribute to social good."
                 },
                 {
                   "postSection": "This philosophy most frequently consists of a combination of negative and positive screens that serve as a sort of corporate social responsibility litmus test.  Positive filters screen companies based on their adherence to certain environmental, social and governance principles while negative screens exclude those companies involved in the manufacture or distribution of products with questionable social benefit. "
                 },
                 {
-                  "postSection": "In addition, some SRI investors place a greater emphasis on investment activities such as micro-lending that are intended to promote stronger communities."
+                  "postSection": "In addition, some sustainable investors place a greater emphasis on investment activities such as micro-lending that are intended to promote stronger communities."
                 },
                 {
-                  "postSection": "Often, SRI investors will use their status as shareholders to influence the managerial decisions of corporations in order to ensure that SRI principles are reflected in the day-to-day operations of the business."
+                  "postSection": "Often, sustainable investors will use their status as shareholders to influence the managerial decisions of corporations in order to ensure that SRI principles are reflected in the day-to-day operations of the business."
                 }
               ]
             },
             {
-              "title": "Why should I invest in a socially responsible manner?",
+              "title": "Why should I invest in a sustainable manner?",
               "content":
               [
                 {
@@ -460,11 +460,11 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "How does the performance of socially responsible investing compare to traditional investing?",
+              "title": "How does the performance of sustainable, ESG or socially responsible investing compare to traditional investing?",
               "content":
               [
                 {
-                  "postSection": "Because SRI is such a broad-based term with many manifestations, it’s difficult to historically quantify socially responsible investing in terms of investment performance.  Nevertheless, there have been many academic studies conducted on the subject with most of the research suggesting that SRI outperforms a traditional approach in some time periods and underperforms in others."
+                  "postSection": "There have been several published academic studies that attempt to quantify the performance difference between socially responsible investing (SRI) with traditional investing.  Most of the research suggests that SRI outperforms a traditional approach in some time periods and underperforms in others."
                 },
                 {
                   "postSection": "There is evidence to suggest that ESG screening has historically contributed to outperformance and negative screening has negatively affected performance, but based on total body of research, the results are inconclusive."
@@ -503,7 +503,7 @@ angular.module('Earthly.controllers')
                   "postSection": "There are several advantages to investing with us.  To name a few:"
                 },
                 {
-                  "postSection": "First, our platform allows you to custom tailor your portfolio to your specific SRI preferences. The problem with the current crop of SRI funds is that you get stuck with someone else’s opinion of what constitutes responsible investing."
+                  "postSection": "First, our platform allows you to custom tailor your portfolio to your specific sustainability preferences. The problem with the current crop of SRI funds is that you get stuck with someone else’s opinion of what constitutes sustainable investing."
                 },
                 {
                   "postSection": "Second, we create a diversified portfolio using a combination of stocks and bonds that fits your risk profile. We take all the legwork out of managing your portfolio by adjusting it over time to ensure it continues to meet your investment objectives and risk tolerances and continues to uphold your socially responsible standards."
@@ -575,7 +575,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Many potential clients have stated that they would like to allocate only a portion of their assets towards socially responsible investments.  Offering traditional ETFs allows us to exclusively serve such clients since our portfolio management systems work best when clients hold all of their assets with us."
+                  "postSection": "Many potential clients have stated that they would like to allocate only a portion of their assets towards sustainable investments.  Offering traditional ETFs allows us to exclusively serve such clients since our portfolio management systems work best when clients hold all of their assets with us."
                 },
                 {
                   "postSection": ""
@@ -599,13 +599,13 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Earthly will absolutely be able to seamlessly and automatically tax loss harvest a client’s portfolio and with our Social Identity service, we’ll be able to pass along losses from individual holdings which is something that cannot be done with ETFs.  This will, in most cases, lead to a noticeably greater immediate after-tax return for our clients.  "
+                  "postSection": "Earthly will absolutely be able to seamlessly and automatically tax loss harvest ETFs in a client’s portfolio.  "
                 },
                 {
                   "postSection": "We dislike the term “daily” when referring to tax-loss harvesting because it misleads clients into thinking that tax losses are harvested every day the market value of a client’s asset drops below its tax lot cost basis.  In reality, while algorithms do look daily for a harvesting opportunity, an opportunity won’t be realized until a market loss reaches a predetermined threshold value that’s set by the advisor which implies that losses are almost never going to be harvested on a daily basis.  In fact, to do so would be nearly impossible because of the wash sale rule and the limited selection of correlated yet distinct ETFs tracking different indices."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "Note that we do not attempt to harvest losses within Earthly(DNA).  The primary reason is that replacement securities will inevitably have a inferior ESG score to the original security."
                 },
                 {
                   "postSection": ""
