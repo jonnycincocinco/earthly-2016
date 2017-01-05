@@ -35,7 +35,7 @@
           -->
           <div class="grid__item icon-text-col faqs__right">
             <!-- GENERAL -->
-            <div ng-if="searchFAQs != ''" class="search-info">FAQs that contain '<span class="search-highlight" ng-bind-html="searchFAQs"></span>'</div>
+            <div ng-if="searchFAQs != ''" class="search-info">Results for: <span class="search-highlight" ng-bind-html="searchFAQs"></span></div>
             <article ng-repeat="faq in faqs | filter:searchFAQs" ng-show="faqs.tab === faq.id">
               <div class="tab-content {{faq.id}}" role="navigation" id="{{faq.id}}">
                 <h2 class="text-align-left" ng-if="!searchFAQs">{{faq.title}}</h2>
@@ -51,7 +51,7 @@
                   </div>
                 </div>
                 </article>
-            <div ng-if="searchFAQs" class="search-info search-none">Sorry, there are no FAQs that include '<span class="search-highlight" ng-bind-html="searchFAQs"></span>'
+            <div ng-if="searchFAQs" class="search-info search-none">Sorry, there are no results for: <span class="search-highlight" ng-bind-html="searchFAQs"></span>
             </div>
       </div>
     </div>

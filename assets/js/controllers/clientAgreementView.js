@@ -5,7 +5,7 @@ angular.module('Earthly.controllers')
 
     $rootScope.$state = $state;
 
-    $rootScope.bodylayout = 'clientAgreementView';
+    $rootScope.bodylayout = 'legal';
 
     var startAnimations = function(){
 

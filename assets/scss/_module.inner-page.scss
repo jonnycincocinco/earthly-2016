@@ -178,4 +178,8 @@
       }
     }
   }
+  .legal & {
+    @include font-size(14);
+    @include line-height(22);
+  }
 }

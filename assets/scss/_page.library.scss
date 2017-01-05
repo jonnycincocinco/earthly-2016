@@ -99,6 +99,9 @@
 
 .library--author {
   margin: calculateRem(24px) 0;
+  .search-results & {
+    margin-top: calculateRem(5px);
+  }
   picture {
     img {
         width: 40px;
@@ -108,6 +111,9 @@
       display: inline-block;
       vertical-align: top;
       margin-left: calculateRem(15px);
+      .search-results & {
+        margin-left: 0;
+      }
       @include font-size(14);
       .library-item-date {
         @include font-size(12);
@@ -172,9 +178,10 @@
 }
 
 .search-info {
-  margin-bottom: 3%;
+  text-align: center;
+  margin-bottom: calculateRem(60px);
   color: $base--blueHighlight;
-  @include font-size(22);
+  @include font-size(32);
   .library--container & {
     margin-left: 3%;
   }
@@ -194,7 +201,7 @@ article {
   + div {
     display: none;
   }
-  margin-top: -65px;
+  margin-top: calculateRem(-100px);
   background: #fff;
   z-index: 11;
   position: relative;
@@ -230,7 +237,7 @@ input[type=search] {
 	transition: all .3s;
 }
 input[type=search]:focus {
-//	width: 130px;
+	width: 180px;
 	background-color: #fff;
 	border-color: $base--blueHighlight;
 }
@@ -252,7 +259,7 @@ input::-webkit-input-placeholder {
 }
 
 .library-search input[type=search] {
-	width: 115px;
+	width: 90px;
 	padding-left: 10px;
 	color: transparent;
 	cursor: pointer;
@@ -275,7 +282,7 @@ input::-webkit-input-placeholder {
 	background-color: #fff;
 }
 .library-search input[type=search]:focus {
-//	width: 130px;
+	width: 180px;
 	padding-left: 32px;
 	color: #000;
 	cursor: auto;
@@ -319,4 +326,10 @@ input::-webkit-input-placeholder {
     font-size: 14px;
   }
   */
+}
+
+.search-results {
+  .category {
+    font-weight: bold;
+  }
 }

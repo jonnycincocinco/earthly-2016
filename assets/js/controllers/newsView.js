@@ -31,6 +31,13 @@ angular.module('Earthly.controllers')
       return (val.acf.category == 'news');
     };
 
+    $scope.categoryText = function(item) {
+      if (item.acf.category == 'sustainable_investing') {
+        item.categoryHeader = "Sustainable Investing";
+      }
+
+    }
+
     $scope.highlight = function(text, search) {
     if (!search) {
         return $sce.trustAsHtml(text);
@@ -48,9 +55,9 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
-
     PostsByType.getPostsByType('expertise').then(function (response) {
         $scope.posts = response;
+        var posts = $scope.posts;
     });
 
     $scope.parseDateTimeString = function(timeString) {

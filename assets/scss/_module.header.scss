@@ -113,6 +113,9 @@ header {
   > li {
     > a {
       color: #fff;
+      .home & {
+        color: $base--homeHeaderColor;
+      }
     }
   }
   @include breakpoint(desktop) {
@@ -140,6 +143,9 @@ header {
       padding-bottom: 9px;
       &:after {
         @include caret(-45deg,17px,-17px);
+        .home & {
+          color: $base--homeHeaderColor;
+        }
       }
       &:hover {
         .desktop-nav--main__sub {
@@ -239,7 +245,9 @@ button.cta {
   z-index: 100;
   .overlay--open & {
     background-image: url('../images/global/earthly-blue.png');
-
+  }
+  .home & {
+    background-image: url('../images/global/earthly-home.png');
   }
   @include breakpoint(tablet) {
     margin-top: calculateRem(20px);

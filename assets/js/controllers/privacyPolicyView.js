@@ -5,7 +5,7 @@ angular.module('Earthly.controllers')
 
     $rootScope.$state = $state;
 
-    $rootScope.bodylayout = 'privacyPolicyView';
+    $rootScope.bodylayout = 'legal';
 
     var startAnimations = function(){
 
