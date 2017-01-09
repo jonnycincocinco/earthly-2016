@@ -2269,7 +2269,7 @@ button.cta,
         font-size: 1.125rem; } }
   .page-home--intro.mobile-header {
     position: relative;
-    margin-bottom: 70%;
+    margin-bottom: 45%;
     padding-left: 0; }
     .page-home--intro.mobile-header .page-home--intro-hdr {
       width: 100%; }
@@ -2336,13 +2336,13 @@ button.cta,
     bottom: -6px; }
     @media only screen and (min-width: 768px) {
       .applet .applet-video-wrapper .applet-video {
-        width: 80%; } }
+        width: 82%; } }
     @media only screen and (min-width: 1441px) {
       .applet .applet-video-wrapper .applet-video {
         width: 60%; } }
   .applet .applet-video-wrapper .play-icon {
     opacity: 0;
-    display: block;
+    display: none;
     width: 0;
     height: 0;
     border-top: 50px solid transparent;
@@ -2374,6 +2374,9 @@ button.cta,
       -moz-transition: all 0.3s; }
     .applet .applet-video-wrapper .play-icon.clicked {
       opacity: 0 !important; }
+    @media only screen and (min-width: 768px) {
+      .applet .applet-video-wrapper .play-icon {
+        display: block; } }
   .applet .applet-video-wrapper:hover .play-icon {
     opacity: .4; }
     .applet .applet-video-wrapper:hover .play-icon:hover {
@@ -2464,6 +2467,7 @@ button.cta,
   visibility: hidden;
   display: flex;
   top: 0.3125rem;
+  left: 12%;
   align-items: center;
   justify-content: center;
   position: absolute;
