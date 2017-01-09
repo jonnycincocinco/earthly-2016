@@ -641,7 +641,7 @@ body {
   @media only screen and (min-width: 1024px) {
     .container {
       padding: 0 8.125rem; } }
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 1441px) {
     .container {
       max-width: 1440px; } }
 
@@ -1117,7 +1117,7 @@ header {
 .desktop-nav--main {
   float: right;
   list-style: none;
-  margin: 45px 30px 0 0;
+  margin: 45px 20px 0 0;
   padding: 0;
   text-transform: uppercase;
   display: none; }
@@ -1904,7 +1904,7 @@ button.cta,
       @media only screen and (min-width: 1024px) {
         .earthly-dna--container .inner-hero .inner-hero__image img {
           width: 100%; } }
-      @media only screen and (min-width: 1300px) {
+      @media only screen and (min-width: 1441px) {
         .earthly-dna--container .inner-hero .inner-hero__image img {
           width: 80%; } }
 
@@ -1977,7 +1977,11 @@ button.cta,
   line-height: 15px;
   line-height: 0.9375rem; }
   .terms--container .inner-page-section li {
-    font-weight: inherit; }
+    font-weight: inherit;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 22px;
+    line-height: 1.375rem; }
   .inner-page-section li span {
     font-size: 12px;
     font-size: 0.75rem; }
@@ -2059,6 +2063,7 @@ button.cta,
 
 .page-home--hero {
   padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
@@ -2069,17 +2074,24 @@ button.cta,
   background-size: cover;
   overflow: hidden;
   background: #c2f2ff;
-  min-height: 700px;
-  background-image: url(/wp-content/themes/earthly-2016/build/images/global/hand-in-dirt.jpg);
+  background-image: url(/wp-content/themes/earthly-2016/build/images/pages/hero-hands-mobile.jpg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50%;
   background-size: cover; }
   @media only screen and (min-width: 768px) {
     .page-home--hero {
-      padding-bottom: 50px; } }
+      padding-bottom: 50px;
+      min-height: 500px;
+      background-image: url(/wp-content/themes/earthly-2016/build/images/pages/hero-hands.jpg);
+      background-position: 0 0; } }
   @media only screen and (min-width: 1024px) {
     .page-home--hero {
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      min-height: 750px; } }
+  @media only screen and (min-width: 1441px) {
+    .page-home--hero {
+      padding-bottom: 0;
+      min-height: 1000px; } }
   .page-home--hero .hero-container {
     max-width: 1500px;
     overflow: hidden;
@@ -2098,7 +2110,7 @@ button.cta,
       float: left;
       display: block;
       margin-right: 0%;
-      width: 58.33333%;
+      width: 75%;
       margin-bottom: 1.25rem; }
       .page-home--hero__section:last-child {
         margin-right: 0; } }
@@ -2169,10 +2181,17 @@ button.cta,
 
 .page-home--intro {
   position: relative;
-  margin-top: 13%;
+  margin-top: 17%;
+  padding-left: 28px;
   color: #3a2719;
   z-index: 10; }
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 768px) {
+    .page-home--intro {
+      margin-top: 12%; } }
+  @media only screen and (min-width: 1024px) {
+    .page-home--intro {
+      margin-top: 17%; } }
+  @media only screen and (min-width: 1441px) {
     .page-home--intro {
       padding-left: 2%; } }
   .page-home--intro .page-home--intro-hdr {
@@ -2194,18 +2213,28 @@ button.cta,
       letter-spacing: 0; }
       @media only screen and (min-width: 768px) {
         .page-home--intro .page-home--intro-hdr h1 {
-          font-size: 58px;
-          font-size: 3.625rem;
-          line-height: 58px;
-          line-height: 3.625rem; } }
+          font-size: 46px;
+          font-size: 2.875rem;
+          line-height: 50px;
+          line-height: 3.125rem; } }
       @media only screen and (min-width: 1024px) {
         .page-home--intro .page-home--intro-hdr h1 {
-          font-size: 60px;
-          font-size: 3.75rem; } }
+          font-size: 56px;
+          font-size: 3.5rem;
+          line-height: 64px;
+          line-height: 4rem; } }
+      @media only screen and (min-width: 1441px) {
+        .page-home--intro .page-home--intro-hdr h1 {
+          font-size: 65px;
+          font-size: 4.0625rem;
+          line-height: 70px;
+          line-height: 4.375rem; } }
       @media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
         .page-home--intro .page-home--intro-hdr h1 {
           font-size: 90px;
           font-size: 5.625rem; } }
+    .page-home--intro .page-home--intro-hdr span {
+      display: block; }
   .page-home--intro p {
     float: left;
     clear: both;
@@ -2218,8 +2247,8 @@ button.cta,
     @media only screen and (min-width: 768px) {
       .page-home--intro p {
         margin-top: 12px;
-        font-size: 22px;
-        font-size: 1.375rem;
+        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 27px;
         line-height: 1.6875rem;
         width: 90%; } }
@@ -2233,18 +2262,20 @@ button.cta,
         font-size: 1.6875rem;
         line-height: 31px;
         line-height: 1.9375rem;
-        width: 75%; } }
+        width: 100%; } }
     @media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
       .page-home--intro p {
         font-size: 18px;
         font-size: 1.125rem; } }
   .page-home--intro.mobile-header {
-    position: relative; }
+    position: relative;
+    margin-bottom: 70%;
+    padding-left: 0; }
     .page-home--intro.mobile-header .page-home--intro-hdr {
       width: 100%; }
     .page-home--intro.mobile-header h1 {
-      font-size: 36px;
-      font-size: 2.25rem;
+      font-size: 32px;
+      font-size: 2rem;
       line-height: 44px;
       line-height: 2.75rem;
       margin: auto;
@@ -2306,7 +2337,7 @@ button.cta,
     @media only screen and (min-width: 768px) {
       .applet .applet-video-wrapper .applet-video {
         width: 80%; } }
-    @media only screen and (min-width: 1300px) {
+    @media only screen and (min-width: 1441px) {
       .applet .applet-video-wrapper .applet-video {
         width: 60%; } }
   .applet .applet-video-wrapper .play-icon {
@@ -2874,7 +2905,14 @@ ul.three-up-tiles__list {
     margin-right: 0%;
     width: 66.66667%; }
     .about-team .icon-text-col__item .grid__item .icon-text-col__text:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .about-team .icon-text-col__item .grid__item .icon-text-col__text.advisory-team {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 100%; }
+      .about-team .icon-text-col__item .grid__item .icon-text-col__text.advisory-team:last-child {
+        margin-right: 0; } }
 
 .fees__categories__inner {
   border-right: 0;
@@ -3219,7 +3257,7 @@ ul.three-up-tiles__list {
           font-size: 0.8125rem;
           line-height: 17px;
           line-height: 1.0625rem; } }
-      @media only screen and (min-width: 1300px) {
+      @media only screen and (min-width: 1441px) {
         .services--container .detail-box__item .content-box .detail-description {
           font-size: 14px;
           font-size: 0.875rem;
@@ -3520,7 +3558,7 @@ input::-webkit-input-placeholder {
   .library-search input[type=search]:focus + .search-cancel {
     opacity: 1; }
     .faqs .library-search input[type=search]:focus + .search-cancel {
-      right: -10px; }
+      right: -75px; }
 
 .library-search input::-webkit-input-placeholder {
   padding-left: 35px; }

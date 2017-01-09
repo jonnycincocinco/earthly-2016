@@ -149,6 +149,8 @@
     list-style-position: inherit;
     .terms--container & {
       font-weight: inherit;
+      @include font-size(14);
+      @include line-height(22);
     }
     @include line-height(15);
     span {

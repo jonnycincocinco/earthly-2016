@@ -58,6 +58,9 @@
       .icon-text-col__text {
         @include breakpoint(tablet){
           @include span-columns(8 of 12);
+          &.advisory-team {
+            @include span-columns(12 of 12);
+          }
         }
       }
     }

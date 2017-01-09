@@ -1,20 +1,20 @@
 <div class="page page-home" ng-cloak>
 
     <div class="page-home--hero">
-
+    <div class="page-home--hero__scrim"></div>
       <div class="container">
         <div class="page-home--intro anim-in-out anim-slide-below-fade page-home--hero__section hide--ontablet mobile-header" data-anim-speed="300">
             <div class="page-home--intro-hdr">
                 <h1>Invest in your future <span class="">and the planet’s.</span></h1>
-                <p>Comprehensive wealth management that makes a difference.</p>
+                <p>Comprehensive wealth management <span>that makes a difference.</span></p>
                 <button class="cta left">Sign Up</button>
             </div>
         </div>
         <div class="page-home--intro anim-in-out anim-slide-below-fade page-home--hero__section hide--onmobile" data-anim-speed="300">
             <div class="page-home--intro-hdr">
-                <h1>Invest in your future <span class="">and the planet’s.</span></h1>
-                <p>Comprehensive wealth management that makes a difference.</p>
-                <button class="cta left">Sign Up</button>
+                <h1>Invest in your future <span>and the planet’s.</span></h1>
+                <p>Comprehensive wealth management <span>that makes a difference.</span></p>
+                <button ui-sref="sign-up" class="cta left">Sign Up</button>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
           <span class="edit-income">
           <span class="nowrap"><input class="number" type="number" name="years" maxlength="3">years.</span>
         </div-->
-        <button type="submit" class="cta">Get Started</button>
+        <button type="submit" ui-sref="sign-up" class="cta">Get Started</button>
         </form>
     </div>
     <!-- end below hero -->

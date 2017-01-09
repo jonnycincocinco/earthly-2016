@@ -12,12 +12,12 @@
             <div class="grid" ng-repeat="asset_url in post.acf.expertise_assets">
                 <div class="text-align-center anim-in-out anim-slide-below-fade" data-anim-speed="900">
                   <h1 class="cinch" ng-bind-html="post.title.rendered | to_trusted"></h1>
-                  <div class="library--author" ng-repeat="asset_url in post.acf.author_image_thumb">
+                  <div class="library--author">
                     <div class="library--author--info white">
                       <span class="" ng-bind-html="post.acf.author | to_trusted"></span>&nbsp;–&nbsp;<span class="">{{post.acf.date}}</span>
                     </div>
                     <div class="social-share-links">
-                      <a class="social-share" socialshare="" socialshare-provider="facebook" socialshare-text="{{post.title.rendered}}" socialshare-url="{{post.link}}">
+                      <a class="social-share" socialshare="" socialshare-provider="facebook" socialshare-text="{{post.title.rendered}}" socialshare-media="{{asset_url.image_asset}}" socialshare-url="{{post.link}}">
                        <img src="/wp-content/themes/earthly-2016/build/images/icons/facebook-icon.png"/>
                       </a>
                       <a class="social-share" socialshare="" socialshare-text="{{post.title.rendered}}" socialshare-provider="twitter" socialshare-url="{{post.link}}">

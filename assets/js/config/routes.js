@@ -179,6 +179,15 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
         }
     )
 
+    .state('sign-up',
+        {
+            url: '/sign-up',
+            controller: 'signUpView',
+            templateUrl: ajaxInfo.template_directory + '/templates/sign-up.html',
+            activetab: 'sign-up'
+        }
+    )
+
     .state('client-agreement',
         {
             url: '/client-agreement',
