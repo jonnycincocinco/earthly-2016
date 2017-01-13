@@ -152,6 +152,12 @@
       @include font-size(14);
       @include line-height(22);
     }
+    .library--container & {
+      font-weight: inherit;
+      list-style-position: inside;
+      @include font-size(15);
+      @include line-height(25);
+    }
     @include line-height(15);
     span {
       @include font-size(12);

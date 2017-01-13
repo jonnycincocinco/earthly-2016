@@ -8,7 +8,7 @@
 					<ul class="site-footer-list">
 							<!--li><span class="site-footer-list__title">Features</span></li-->
 							<li><a class="site-footer-list__link" ui-sref="services" ng-class="{active: $state.current.activetab == 'services'}">Services</a></li>
-							<li><a class="site-footer-list__link" ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">earthly(DNA)</a></li>
+							<li><a class="site-footer-list__link" ui-sref="earthly-dna" ng-class="{active: $state.current.activetab == 'earthly-dna'}">Earthly(DNA)</a></li>
 							<li><a class="site-footer-list__link" ui-sref="portfolio" ng-class="{active: $state.current.activetab == 'portfolio'}">Portfolio</a></li>
 							<li><a class="site-footer-list__link" ui-sref="security" ng-class="{active: $state.current.activetab == 'security'}">Security</a></li>
 					</ul>
@@ -23,7 +23,7 @@
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list">
-							<li><a class="site-footer-list__link" ui-sref="privacy-policy" ng-class="{active: $state.current.activetab == 'privacy-policy'}">Privacy policy</a></li>
+							<li><a class="site-footer-list__link" ui-sref="privacy-policy" ng-class="{active: $state.current.activetab == 'privacy-policy'}">Privacy Policy</a></li>
 							<li><a class="site-footer-list__link" ui-sref="client-agreement" ng-class="{active: $state.current.activetab == 'client-agreement'}">Client Agreement</a></li>
 							<li><a class="site-footer-list__link" ui-sref="terms" ng-class="{active: $state.current.activetab == 'terms'}">Terms of Use</a></li>
 					</ul>
@@ -35,7 +35,7 @@
 					<li><a class="site-footer-list__icon site-footer-list__icon--linkedin" href="https://www.linkedin.com/company/10879024">Linkedin</a></li>
 				</ul>
 				<ul class="site-footer-list">
-					<li><a class="site-footer-list__link orange" ui-sref="contact">Contact us</a></li>
+					<li><a class="site-footer-list__link orange" ui-sref="contact">Contact Us</a></li>
 				</ul>
 				</div>
 

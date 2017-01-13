@@ -1,6 +1,10 @@
 //  ## SERVICES  ----------------------------------------------------------//
 
 .library--container {
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
   .inner-hero {
     &.bg-strip {
       padding-top: calculateRem(80px);
@@ -206,7 +210,7 @@ article {
   z-index: 11;
   position: relative;
   .faqs & {
-    margin-top: -56px;
+    margin-top: -108px;
   }
 }
 

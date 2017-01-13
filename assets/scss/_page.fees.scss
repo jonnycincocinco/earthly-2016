@@ -37,6 +37,14 @@
       border: 1px #d1d5d7 solid;
       background: #fff;
 
+      .timing {
+        font-weight: 500;
+      }
+
+      .assets {
+        font-weight: 200;
+      }
+
       @include breakpoint(tablet) {
         border-right: 1px #d1d5d7 solid;
         border-top: none;

@@ -31,7 +31,7 @@ $n: 0;
       left: 0;
       right: 0;
       margin: auto;
-      background: #FFFFFF;
+      //background: #FFFFFF;
       width: 100%;
       height: auto;
       border-radius: 4px;
@@ -47,6 +47,7 @@ $n: 0;
       img {
         width: 100%;
         height: auto;
+        border-radius: 4px;
         @include breakpoint(desktop) {
           width: 80%
         }
