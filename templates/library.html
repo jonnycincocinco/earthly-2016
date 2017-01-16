@@ -101,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div ng-repeat="post in posts | filter:categoryFilter | filter: post: post.acf.is_featured='False'" ng-if="!searchProjects">
+        <div ng-repeat="post in posts | filter:categoryFilter | orderBy:sortType:sortReverse | filter: post: post.acf.is_featured='False'" ng-if="!searchProjects">
           <div class="section-strip inner-page-section featured library-item not-featured">
             <div class="container">
               <article class="news--article news--featured--article">

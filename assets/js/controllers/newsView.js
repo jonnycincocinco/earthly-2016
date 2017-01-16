@@ -11,6 +11,10 @@ angular.module('Earthly.controllers')
 
     $scope.activeMenu = "recent";
 
+    $scope.sortType = 'acf.date'; // set the default sort type
+
+    $scope.sortReverse = true;  // set the default sort order
+
     $scope.showSustainable = function(val) {
       return (val.acf.category == 'sustainable_investing');
     };
