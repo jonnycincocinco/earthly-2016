@@ -12,6 +12,14 @@
   .icon-text {
     border-top: 1px;
   }
+  .inner-hero {
+    .inner-hero__image {
+      margin-top: -6.25%;
+      .page-home--turbine {
+        width: 100%;
+      }
+    }
+  }
 }
 
 
@@ -28,9 +36,9 @@
           @include span-columns(4 of 12);
         }
         img {
-          width: 80%;
-          height: auto;
-          margin: auto;
+  //        width: 80%;
+  //        height: auto;
+  //        margin: auto;
         }
         .social-icons {
           text-align: left;

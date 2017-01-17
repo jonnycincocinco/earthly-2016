@@ -2872,6 +2872,11 @@ ul.three-up-tiles__list {
 .about-us--container .icon-text {
   border-top: 1px; }
 
+.about-us--container .inner-hero .inner-hero__image {
+  margin-top: -6.25%; }
+  .about-us--container .inner-hero .inner-hero__image .page-home--turbine {
+    width: 100%; }
+
 .about-team .title {
   font-weight: 800;
   font-size: 12px;
@@ -2885,11 +2890,6 @@ ul.three-up-tiles__list {
     width: 33.33333%; }
     .about-team .icon-text-col__item .grid__item .icon-text-col__icon:last-child {
       margin-right: 0; } }
-
-.about-team .icon-text-col__item .grid__item .icon-text-col__icon img {
-  width: 80%;
-  height: auto;
-  margin: auto; }
 
 .about-team .icon-text-col__item .grid__item .icon-text-col__icon .social-icons {
   text-align: left;
