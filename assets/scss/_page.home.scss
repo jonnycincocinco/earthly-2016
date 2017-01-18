@@ -82,8 +82,8 @@
       width: 36%;
       opacity: 0;
       @include breakpoint(desktop) {
-        top: 23.8%;
-        left: 56.6%;
+        top: 21.8%;
+        left: 59.6%;
       }
     }
     &.rotor-left {
@@ -92,8 +92,8 @@
       width: 36%;
       opacity: 0;
       @include breakpoint(desktop) {
-        top: 22%;
-        left: 39.3%;
+        top: 19.5%;
+        left: 40.3%;
       }
     }
     &.rotor-main {
@@ -102,8 +102,8 @@
       width: 46%;
       opacity: 0;
       @include breakpoint(desktop) {
-        top: 7.8%;
-        left: 44.3%;
+        top: 4.7%;
+        left: 46.3%;
       }
     }
     &.cloud {
