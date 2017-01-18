@@ -990,7 +990,7 @@ a,
   background: #f7f8f9; }
 
 .dark-bg {
-  background: #424242;
+  background: #423830;
   color: white; }
 
 .blue-bg {
@@ -1832,7 +1832,7 @@ button.cta,
   text-align: left; }
 
 .three-up-tiles {
-  background: linear-gradient(to right bottom, #15346d, rgba(39, 63, 117, 0.92) 30%, #319dd8 80%, rgba(1, 198, 255, 0.76) 100%); }
+  background: linear-gradient(to right bottom, #1b428a, rgba(0, 0, 0, 0.82) 90%, rgba(0, 0, 0, 0.82) 100%); }
   .three-up-tiles .grid__item {
     text-align: center;
     margin-bottom: 2.5rem;
@@ -2015,7 +2015,7 @@ button.cta,
   line-height: 1.375rem; }
 
 .cta-ribbon {
-  background: linear-gradient(to right bottom, #1b428a, rgba(0, 0, 0, 0.82) 90%, rgba(0, 0, 0, 0.82) 100%); }
+  background: linear-gradient(to right bottom, #1b428a, rgba(57, 83, 142, 0.92) 30%, #319dd8 80%, rgba(1, 198, 255, 0.76) 100%); }
   .cta-ribbon.section-strip {
     padding-top: 5.625rem;
     padding-bottom: 5.625rem; }
