@@ -57,10 +57,10 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Earthly was originally conceived as a means for our founders to passively invest in a diversified investment portfolio that excluded fossil fuel companies.  Over time, the idea evolved to not only punish negative environmental performance, but favor positive performance.  Finally, other key performance indicators (KPIs) were added across multiple Environmental, Social and Governance (ESG) categories as a way for our founders to invest using not only environmental criteria, but other principled criteria."
+                  "postSection": "Earthly was originally conceived as a means to passively invest in a diversified investment portfolio that excluded fossil fuel companies.  Over time, the idea evolved to not only punish negative environmental performance, but favor positive performance.  Finally, other key performance indicators (KPIs) were added across multiple Environmental, Social and Governance (ESG) categories as a way for our founders to invest using not only environmental criteria, but other principled criteria."
                 },
                 {
-                  "postSection": "As a secondary objective, our founders also desired to automate tax and risk management processes that previously required careful monitoring."
+                  "postSection": "As a secondary objective, we also desired to automate tax and risk management processes that previously required careful monitoring."
                 },
                 {
                   "postSection": "Today, Earthly’s mission is to be the premier source for sustainable investing in the world by making the investment process simple, inexpensive and worry-free."
@@ -135,7 +135,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Earthly(DNA), our diversified sustainable index portfolio addresses these problems in the following ways:"
                 },
                 {
-                  "postSectionIndent": "1) We charge a low 0.35% management fee which is significantly less than the average SRI mutual fund and ETF."
+                  "postSectionIndent": "1) We charge a low 0.30% management fee which is significantly less than the average SRI mutual fund and ETF."
                 },
                 {
                   "postSectionIndent": "2) We offer customized portfolios tailored to each client’s ESG and ethical preferences."
@@ -227,7 +227,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Unfortunately, not at this time. The main reason being that due to the tax-loss harvesting feature for taxable accounts and due to the resulting wash sale rule, we may end up reinvesting your funds into a security you did not originally select. You may, however, specify securities which you want to exclude, whether for legal or personal reasons."
+                  "postSection": "No, however we may offer the ability for clients to select a limited number of specific securities in the future."
                 },
                 {
                   "postSection": ""
@@ -248,13 +248,10 @@ angular.module('Earthly.controllers')
                   "postSection": "Tracking error is a statistic used to benchmark how closely a portfolio tracks an index.  Since each client portfolio is unique, our service is not designed to track indices in the same way that index funds do."
                 },
                 {
-                  "postSection": "Unlike a total stock market index, indices used to create SRI portfolios are somewhat arbitrary with regards to the number of stocks selected, the weights of those stocks and the market capitalization, style and sector profiles.  Using tracking error as a means of comparing one of our Social Identity portfolios to an SRI index may not be entirely appropriate since the stock selection parameters will not align well."
+                  "postSection": "Unlike a total stock market index, indices used to create SRI portfolios are somewhat arbitrary with regards to the number of stocks selected, the weights of those stocks and the market capitalization, style and sector profiles.  Using tracking error as a means of comparing one of our Earthly(DNA) portfolios to an SRI index may not be entirely appropriate since the stock selection parameters will not align well."
                 },
                 {
-                  "postSection": "One may be interested in seeing how their custom SRI portfolio benchmarks against a broad market index, however again, tracking error would be a misleading statistic since a broad market index is not necessarily the appropriate tracking benchmark for an SRI portfolio."
-                },
-                {
-                  "postSection": "Our Earthly(DNA) whitepaper provides tracking error estimates for simulated portfolios examined over a historical ten year period."
+                  "postSection": "Our Earthly(DNA) whitepaper provides S&P 500 and MSCI USA ESG Select Index tracking error estimates for simulated portfolios examined over a historical ten year period."
                 }
               ]
             },
@@ -386,7 +383,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.35% of total assets paid monthly or $5 per month. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
+                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.30% of total assets paid monthly or $5 per month. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
                 },
                 {
                   "postSection": ""
@@ -404,7 +401,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Fees are calculated and paid monthly in arrears. For example, the monthly fee calculated is the annual asset management fee of 0.35% divided by 12 months applied to the daily weighted average assets under management calculated in that month (or $5, whichever is greater).  The fee will be deducted from the account the first business day after the end of the prior month.  For example, fees incurred during the month of July would be deducted the first business day of August."
+                  "postSection": "Fees are calculated and paid monthly in arrears. For example, the monthly fee calculated is the annual asset management fee of 0.30% divided by 12 months applied to the daily weighted average assets under management calculated in that month (or $5, whichever is greater).  The fee will be deducted from the account the first business day after the end of the prior month.  For example, fees incurred during the month of July would be deducted the first business day of August."
                 },
                 {
                   "postSection": ""
@@ -446,7 +443,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "There are many reasons. First, we believe that over the long term, the marketplace will reward firms that adhere to socially responsible principles and all things being equal, this economic strength will translate to better long-term performance for investors."
+                  "postSection": "There are many reasons. First, we believe that over the long term, the marketplace will reward firms that adhere to sustainable principles and all things being equal, this economic strength will translate to better long-term performance for investors."
                 },
                 {
                   "postSection": "In addition, through our platform, you have the capability to let your money dictate your principles and convictions directly to the companies you own and indirectly to the companies you don’t own. In other words, your voice is heard through your investment actions. In the same way lobbyists try to influence politicians (many of which are successful), we believe that affecting investment flows conveys a message that is difficult to ignore."
@@ -506,7 +503,7 @@ angular.module('Earthly.controllers')
                   "postSection": "First, our platform allows you to custom tailor your portfolio to your specific sustainability preferences. The problem with the current crop of SRI funds is that you get stuck with someone else’s opinion of what constitutes sustainable investing."
                 },
                 {
-                  "postSection": "Second, we create a diversified portfolio using a combination of stocks and bonds that fits your risk profile. We take all the legwork out of managing your portfolio by adjusting it over time to ensure it continues to meet your investment objectives and risk tolerances and continues to uphold your socially responsible standards."
+                  "postSection": "Second, we create a diversified portfolio using a combination of stocks and bonds that fits your risk profile. We take all the legwork out of managing your portfolio by adjusting it over time to ensure it continues to meet your investment objectives and risk tolerances and continues to uphold your principles."
                 },
                 {
                   "postSection": "Third, we tax manage your portfolio to ensure that you’re not paying unnecessary taxes on your investment gains. Because each of our portfolios consists of individual stocks and bonds, we can more efficiently pass through capital losses resulting in higher after-tax returns compared to advisors using a similar type of index fund."
@@ -521,10 +518,10 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Earthly constructs its own proprietary client-neutral ratings for 15 sub-categories of ESG using data consisting of about 500 metrics for around 4,700 companies, manually collected based on public information."
+                  "postSection": "Earthly constructs its own proprietary client-neutral ratings for 37 sub-categories of ESG using data consisting of about 500 metrics for around 7,000 companies, manually collected based on public information."
                 },
                 {
-                  "postSection": "We then take the results from a client’s Social Identity survey and assign an importance to each sub-category of ESG. "
+                  "postSection": "We then take the results from a client’s Earthly(DNA) survey and assign an importance to each sub-category of ESG. "
                 },
                 {
                   "postSection": "The total client-weighted score for each company gives each company a client-specific rating which forms the basis of the client’s stock selection."
@@ -571,7 +568,7 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Why does Earthly offer traditional ETFs in addition to your socially responsible ETFs?",
+              "title": "Why does Earthly offer traditional ETFs in addition to your sustainable ETFs?",
               "content":
               [
                 {
@@ -595,11 +592,11 @@ angular.module('Earthly.controllers')
         "title": "Taxes",
         "posts": [
             {
-              "title": "Does Earthly offer daily tax-loss harvesting similar to other automated investment advisors?",
+              "title": "Does Earthly offer daily tax-loss harvesting?",
               "content":
               [
                 {
-                  "postSection": "Earthly will absolutely be able to seamlessly and automatically tax loss harvest ETFs in a client’s portfolio.  "
+                  "postSection": "Earthly offers automatically tax loss harvesting for ETFs in a client’s portfolio."
                 },
                 {
                   "postSection": "We dislike the term “daily” when referring to tax-loss harvesting because it misleads clients into thinking that tax losses are harvested every day the market value of a client’s asset drops below its tax lot cost basis.  In reality, while algorithms do look daily for a harvesting opportunity, an opportunity won’t be realized until a market loss reaches a predetermined threshold value that’s set by the advisor which implies that losses are almost never going to be harvested on a daily basis.  In fact, to do so would be nearly impossible because of the wash sale rule and the limited selection of correlated yet distinct ETFs tracking different indices."
