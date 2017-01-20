@@ -53,21 +53,6 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Why did you start Earthly?",
-              "content":
-              [
-                {
-                  "postSection": "Earthly was originally conceived as a means to passively invest in a diversified investment portfolio that excluded fossil fuel companies.  Over time, the idea evolved to not only punish negative environmental performance, but favor positive performance.  Finally, other key performance indicators (KPIs) were added across multiple Environmental, Social and Governance (ESG) categories as a way for our founders to invest using not only environmental criteria, but other principled criteria."
-                },
-                {
-                  "postSection": "As a secondary objective, we also desired to automate tax and risk management processes that previously required careful monitoring."
-                },
-                {
-                  "postSection": "Today, Earthly’s mission is to be the premier source for sustainable investing in the world by making the investment process simple, inexpensive and worry-free."
-                }
-              ]
-            },
-            {
               "title": "Where does Earthly stand on the various environmental, social, governance and ethical issues it advertises to clients?",
               "content":
               [
