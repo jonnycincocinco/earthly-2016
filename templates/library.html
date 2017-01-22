@@ -36,7 +36,7 @@
                   </picture>
                   <div class="library--author--info">
                     <div class="blue-slate" ng-bind-html="post.acf.author | to_trusted"></div>
-                    <div class="library-item-date">{{post.acf.date}}</div>
+                    <div class="library-item-date" ng-bind-html="post.newDate | to_trusted"></div>
                   </div>
                 </div>
               </div>
@@ -77,8 +77,8 @@
                         <img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" />
                     </picture>
                     <div class="library--author--info">
-                      <span class="blue-slate" ng-bind-html="post.acf.author | to_trusted"></span>
-                      <span class="library-item-date">{{post.acf.date}}</span>
+                      <div class="blue-slate" ng-bind-html="post.acf.author | to_trusted"></div>
+                      <div class="library-item-date" ng-bind-html="post.newDate | to_trusted"></div>
                     </div>
                   </div>
                 </div>
@@ -118,8 +118,8 @@
                           <img ng-srcset="{{asset_url.image_asset | to_trustedURL}}" alt="{{post.title.rendered | to_trusted}}" class="scroll-element"  imageonload="contentLoaded()" />
                       </picture>
                       <div class="library--author--info">
-                        <span class="blue-slate" ng-bind-html="post.acf.author | to_trusted"></span>
-                        <span class="library-item-date">{{post.acf.date}}</span>
+                        <div class="blue-slate" ng-bind-html="post.acf.author | to_trusted"></div>
+                        <div class="library-item-date" ng-bind-html="post.newDate | to_trusted"></div>
                       </div>
                     </div>
                   </div>

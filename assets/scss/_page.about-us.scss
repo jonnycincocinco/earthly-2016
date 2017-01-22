@@ -64,6 +64,9 @@
         }
       }
       .icon-text-col__text {
+        h3 {
+          margin-top: calculateRem(14px);
+        }
         @include breakpoint(tablet){
           @include span-columns(8 of 12);
           &.advisory-team {

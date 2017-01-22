@@ -96,7 +96,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Social justice activists looking to focus on companies not employing impoverished labor, companies with a focus on employment diversity and companies that support local communities."
                 }
               ]
-            },            
+            },
             {
               "title": "How does Earthly compare to a socially responsible or ESG mutual/index fund?",
               "content":

@@ -20,7 +20,10 @@
 }
 
 .text-align-center {
-    text-align: center;
+    text-align: left;
+    @include breakpoint(tablet) {
+      text-align: center;
+    }
 }
 
 .text-align-left {

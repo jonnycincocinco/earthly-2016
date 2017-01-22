@@ -686,7 +686,10 @@ a,
   opacity: .5; }
 
 .text-align-center {
-  text-align: center; }
+  text-align: left; }
+  @media only screen and (min-width: 768px) {
+    .text-align-center {
+      text-align: center; } }
 
 .text-align-left {
   text-align: center; }
@@ -2200,6 +2203,7 @@ button.cta,
       margin-top: 17%; } }
   @media only screen and (min-width: 1441px) {
     .page-home--intro {
+      margin-top: 25%;
       padding-left: 2%; } }
   .page-home--intro .page-home--intro-hdr {
     float: left;
@@ -2908,6 +2912,9 @@ ul.three-up-tiles__list {
         margin-right: 12px; } }
     .about-team .icon-text-col__item .grid__item .icon-text-col__icon .social-icons a img {
       width: 100%; }
+
+.about-team .icon-text-col__item .grid__item .icon-text-col__text h3 {
+  margin-top: 0.875rem; }
 
 @media only screen and (min-width: 768px) {
   .about-team .icon-text-col__item .grid__item .icon-text-col__text {

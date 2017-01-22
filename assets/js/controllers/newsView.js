@@ -11,9 +11,11 @@ angular.module('Earthly.controllers')
 
     $scope.activeMenu = "recent";
 
-    $scope.sortType = 'acf.date'; // set the default sort type
+    var postDate = 'acf.date';
 
-    $scope.sortReverse = true;  // set the default sort order
+    $scope.sortType = postDate;
+
+    $scope.sortReverse = true;
 
     $scope.showSustainable = function(val) {
       return (val.acf.category == 'sustainable_investing');
@@ -39,7 +41,6 @@ angular.module('Earthly.controllers')
       if (item.acf.category == 'sustainable_investing') {
         item.categoryHeader = "Sustainable Investing";
       }
-
     }
 
     $scope.highlight = function(text, search) {
@@ -62,6 +63,7 @@ angular.module('Earthly.controllers')
     PostsByType.getPostsByType('expertise').then(function (response) {
         $scope.posts = response;
         var posts = $scope.posts;
+
     });
 
     $scope.parseDateTimeString = function(timeString) {
@@ -75,10 +77,26 @@ angular.module('Earthly.controllers')
 
     $scope.PostsByTypeAndSlug.$promise.then(function (response) {
       $scope.posts = response;
+      var posts = $scope.posts;
+      var options = {
+        weekday: "long", year: "numeric", month: "long",
+        day: "numeric", hour: "2-digit", minute: "2-digit"
+      };
+      for (var i = 0; i < posts.length; i++) {
+        var dates = posts[i].acf.date.toLocaleString();
+        var year        = dates.substring(0,4);
+        var month       = dates.substring(4,6);
+        var day         = dates.substring(6,8);
+        var date        = new Date(year, month-1, day);
+        date = date.toLocaleTimeString("en-us", options);
+        date = date.substring(date.indexOf(",") + 1);
+        date = date.split(',')
+        date.splice(-1, 1)
+        date = date.join(',');
+        posts[i].newDate = date;
+      }
+      console.log(posts);
     });
-
-//    console.log($scope.post);
-
 
     $scope.clickedNext = function(){
       getElement.setValue('next');
