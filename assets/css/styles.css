@@ -1888,21 +1888,20 @@ button.cta,
   float: left;
   display: block;
   margin-right: 0%;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .inner-hero .inner-hero__image:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 768px) {
     .inner-hero .inner-hero__image {
-      margin-top: 0.875rem;
-      text-align: center; } }
+      margin-top: 0.875rem; } }
   @media only screen and (min-width: 1024px) {
     .inner-hero .inner-hero__image {
       margin-top: 4rem;
       float: left;
       display: block;
       margin-right: 0%;
-      width: 41.66667%;
-      text-align: center; }
+      width: 41.66667%; }
       .inner-hero .inner-hero__image:last-child {
         margin-right: 0; } }
   .inner-hero .inner-hero__image img {
@@ -1950,7 +1949,11 @@ button.cta,
   font-size: 26px;
   font-size: 1.625rem;
   font-weight: 800;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .inner-hero .inner-hero__text--subhead {
+      text-align: left; } }
 
 .inner-hero .inner-hero__text--main {
   font-size: 15px;
