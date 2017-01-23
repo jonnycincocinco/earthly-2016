@@ -690,15 +690,29 @@ a,
   @media only screen and (min-width: 768px) {
     .text-align-center {
       text-align: center; } }
+  .cta-ribbon .text-align-center {
+    text-align: center; }
 
 .text-align-left {
+  text-align: left; }
+
+h1,
+h2.text-align-left {
   text-align: center; }
   @media only screen and (min-width: 768px) {
-    .text-align-left {
+    h1,
+    h2.text-align-left {
       text-align: left; } }
 
-.text-align-right {
+.text-align-center h1, .text-align-center
+h2 {
   text-align: center; }
+
+h2.text-align-center {
+  text-align: center; }
+
+.text-align-right {
+  text-align: left; }
   @media only screen and (min-width: 768px) {
     .text-align-right {
       text-align: right; } }
@@ -1942,7 +1956,11 @@ button.cta,
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 30px;
-  line-height: 1.875rem; }
+  line-height: 1.875rem;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .inner-hero .inner-hero__text--main {
+      text-align: left; } }
 
 .inner-hero .container {
   margin-top: 1.875rem; }
@@ -2322,14 +2340,32 @@ button.cta,
 .earthly-dna-home {
   padding-left: 0.625rem;
   padding-right: 0.625rem; }
+  @media only screen and (min-width: 768px) {
+    .earthly-dna-home {
+      padding-left: 7.5rem;
+      padding-right: 7.5rem;
+      margin-top: 2.8125rem; } }
   @media only screen and (min-width: 1024px) {
     .earthly-dna-home {
-      padding-left: 16.25rem;
-      padding-right: 16.25rem;
+      padding-left: 12.5rem;
+      padding-right: 12.5rem;
       margin-top: -10.9375rem; } }
+  @media only screen and (min-width: 1441px) {
+    .earthly-dna-home {
+      padding-left: 16.25rem;
+      padding-right: 16.25rem; } }
   .earthly-dna-home .earthly-dna-home__icon {
-    float: left;
-    margin-right: 3.125rem; }
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .earthly-dna-home .earthly-dna-home__icon {
+        text-align: left;
+        float: left;
+        margin-right: 3.125rem; } }
+  .earthly-dna-home .earthly-dna-home__text {
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .earthly-dna-home .earthly-dna-home__text {
+        text-align: left; } }
   .earthly-dna-home p {
     font-size: 18px;
     font-size: 1.125rem; }

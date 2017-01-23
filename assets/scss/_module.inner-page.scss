@@ -109,6 +109,10 @@
   .inner-hero__text--main {
     @include font-size(15);
     @include line-height(30);
+    text-align: center;
+    @include breakpoint(tablet){
+      text-align: left;
+    }
   }
   .container {
     margin-top: calculateRem(30px);

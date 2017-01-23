@@ -24,17 +24,36 @@
     @include breakpoint(tablet) {
       text-align: center;
     }
+    .cta-ribbon & {
+      text-align: center;
+    }
 }
 
 .text-align-left {
+  text-align: left;
+}
+
+h1,
+h2.text-align-left {
   text-align: center;
-  @include breakpoint(tablet) {
-    text-align: left;
+    @include breakpoint(tablet) {
+      text-align: left;
   }
 }
 
-.text-align-right {
+h1,
+h2 {
+  .text-align-center & {
+    text-align: center;
+  }
+}
+
+h2.text-align-center {
   text-align: center;
+}
+
+.text-align-right {
+  text-align: left;
   @include breakpoint(tablet) {
     text-align: right;
   }
