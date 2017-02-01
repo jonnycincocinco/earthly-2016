@@ -14,7 +14,7 @@
                   <h1 class="cinch" ng-bind-html="post.title.rendered | to_trusted"></h1>
                   <div class="library--author">
                     <div class="library--author--info white">
-                      <span class="" ng-bind-html="post.acf.author | to_trusted"></span>&nbsp;–&nbsp;<span class="">{{post.acf.date}}</span>
+                      <span class="" ng-bind-html="post.acf.author | to_trusted"></span>&nbsp;–&nbsp;<span class="" ng-bind-html="post.newDate | to_trusted"></span>
                     </div>
                     <div class="social-share-links">
                       <a class="social-share" socialshare="" socialshare-provider="facebook" socialshare-text="{{post.title.rendered}}" socialshare-media="{{asset_url.image_asset}}" socialshare-url="{{post.link}}">

@@ -63,7 +63,23 @@ angular.module('Earthly.controllers')
     PostsByType.getPostsByType('expertise').then(function (response) {
         $scope.posts = response;
         var posts = $scope.posts;
-
+        var options = {
+          weekday: "long", year: "numeric", month: "long",
+          day: "numeric", hour: "2-digit", minute: "2-digit"
+        };
+        for (var i = 0; i < posts.length; i++) {
+          var dates = posts[i].acf.date.toLocaleString();
+          var year        = dates.substring(0,4);
+          var month       = dates.substring(4,6);
+          var day         = dates.substring(6,8);
+          var date        = new Date(year, month-1, day);
+          date = date.toLocaleTimeString("en-us", options);
+          date = date.substring(date.indexOf(",") + 1);
+          date = date.split(',')
+          date.splice(-1, 1)
+          date = date.join(',');
+          posts[i].newDate = date;
+        }
     });
 
     $scope.parseDateTimeString = function(timeString) {
@@ -95,7 +111,6 @@ angular.module('Earthly.controllers')
         date = date.join(',');
         posts[i].newDate = date;
       }
-      console.log(posts);
     });
 
     $scope.clickedNext = function(){

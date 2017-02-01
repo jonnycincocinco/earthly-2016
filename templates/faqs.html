@@ -43,9 +43,9 @@
                     <a class="c-nav--trigger js-nav-toggle light-blue" ng-click="active$index = !active$index" ng-class="{'expandcollapse-heading-collapsed': active$index, 'expandcollapse-heading-expanded': !active$index}">{{post.title}}</a>
                     <div class="tab-content--main" ng-hide="active$index">
                       <div ng-repeat="postSection in post.content">
-                        <p ng-if="postSection.postSection">{{postSection.postSection}}</p>
-                        <p ng-if="postSection.postSectionIndent" class="faq-indent">{{postSection.postSectionIndent}}</p>
-                        <p ng-if="postSection.postSectionLegal" class="legal">{{postSection.postSectionLegal}}</p>
+                        <p ng-if="postSection.postSection" ng-bind-html="postSection.postSection | parseUrlFilter:'_blank'"></p>
+                        <p ng-if="postSection.postSectionIndent" ng-bind-html="postSection.postSectionIndent | parseUrlFilter:'_blank'" class="faq-indent"></p>
+                        <p ng-if="postSection.postSectionLegal" ng-bind-html="postSection.postSectionLegal | parseUrlFilter:'_blank'" class="legal"></p>
                       </div>
                     </div>
                   </div>
