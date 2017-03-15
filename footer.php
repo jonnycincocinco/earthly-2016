@@ -51,11 +51,11 @@
 		<div class="container">
 			<div class="grid">
 				<div class="grid__item legal">
-					<p>Past performance is no guarantee of future results. Investments are not FDIC insured, and securities and investments may lose value. Any historical returns, expected returns, or probability projections may not reflect actual future performance. All securities involve risk and may result in loss. All information herein as well as any communications on social media is not an offer, solicitation of an offer, or advice to buy or sell securities or services. By using this website, you hereby consent to our Terms of Use and Privacy Policy.</p>
+					<p>Past performance is no guarantee of future results. Investments are not FDIC insured, and securities and investments may lose value. Any historical returns, expected returns, or probability projections may not reflect actual future performance. All securities involve risk and may result in loss. All information herein as well as any communications on social media is not an offer, solicitation of an offer, or advice to buy or sell securities or services.</p>
 				</div>
 
 				<div class="grid__item legal">
-					<p>Earthly is a Public Benefit Corporation and is an SEC registered investment advisor.  Brokerage services are provided by Robinhood Financial, LLC.</p>
+					<p>Earthly is a Public Benefit Corporation and is an SEC registered investment advisor.  Brokerage services are provided by FOLIOfn, Inc.</p>
 					<p>By using this website, you hereby consent to our Terms of Use and Privacy Policy.</p>
 					<p>Securities in your account are protected up to $500,000. See <a href="http://sipc.org">sipc.org</a> for more details.</p>
 				</div>
