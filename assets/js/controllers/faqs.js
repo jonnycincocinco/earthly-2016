@@ -185,9 +185,9 @@ angular.module('Earthly.controllers')
             }
           ]
         },
-      {
-        "id": "faq-section-portfolio",
-        "title": "Portfolio",
+        {
+        "id": "faq-section-edna",
+        "title": "Earthly(DNA)",
         "posts": [
             {
               "title": "How does Earthly(DNA) determine the securities that go into my portfolio?",
@@ -197,7 +197,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Security selection is a two-stage process."
                 },
                 {
-                  "postSection": "First, based on your responses to our questionnaire we generate importance values to the various sub-categories of ESG that correspond to your profile.  We then rank the universe of securities using our internal rating system and your importance values."
+                  "postSection": "First, based on your responses to our questionnaire we generate importance values to the various sub-categories of ESG that correspond to your profile.  We then rank the universe of securities using our internal rating system and your importance values while throwing out securities which are deemed to conflict with your principles."
                 },
                 {
                   "postSection": "Second, we maximize the average rating of the entire portfolio subject to a series of constraints including, but not limited to, market capitalization, sector, style and liquidity."
@@ -208,14 +208,14 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Can I select the exact securities that go into my portfolio?",
+              "title": "How does the performance of Earthly(DNA) differ to that of a socially responsible mutual fund or ETF?",
               "content":
               [
                 {
-                  "postSection": "No, however we may offer the ability for clients to select a limited number of specific securities in the future."
+                  "postSection": "Our Earthly(DNA) whitepaper provides an analysis of simulated performance over the past 10 years compared to the S&P 500 and a popular SRI ETF."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "Past or simulated performance is no guarantee of actual or future performance."
                 },
                 {
                   "postSection": ""
@@ -226,7 +226,79 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "What kind of tracking error should I expect from your portfolios?",
+              "title": "How does Earthly(DNA) determine which stocks to exclude based on the criteria I specify?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) excludes a company if it is determined that the company has any tie to the business activity in question."
+                },
+                {
+                  "postSection": "Any tie is defined as a relationship in which the company serves as an investor, holds ownership, or receives revenue at any point on the supply chain related to the business activity in question."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Why is Earthly(DNA) an equal-weighted index instead of capitalization weighted?",
+              "content":
+              [
+                {
+                  "postSection": "Capitalization weighted indices overweight companies who have a higher market capitalization which is often at odds with a company's ESG performance."
+                },
+                {
+                  "postSection": "Equal weighted indicies allow Earthly(DNA) a greater degree of freedom to balance ESG performance with market factor exposures."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Can Earthly(DNA) exclude stocks that I specify?",
+              "content":
+              [
+                {
+                  "postSection": "Yes.  A client may specify up to 10 stocks to exclude from an Earthly(DNA) portfolio."
+                },
+                {
+                  "postSection": "These stocks will not be eligible for inclusion under Earthly(DNA).  They may still be included if the client chooses anything other than 100% sustainable investments."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Can Earthly(DNA) include stocks that I specify?",
+              "content":
+              [
+                {
+                  "postSection": "Yes.  A client may specify up to 10 stocks to include in an Earthly(DNA) portfolio.  Each stock will be given an allocation of 1% of the Earthly(DNA) allocation."
+                },
+                {
+                  "postSection": "These stocks will not necessarily be included in a portfolio if the client allocates 0% towards sustainable investments."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            }
+            {
+              "title": "What kind of tracking error should I expect from Earthly(DNA)?",
               "content":
               [
                 {
@@ -237,6 +309,30 @@ angular.module('Earthly.controllers')
                 },
                 {
                   "postSection": "Our Earthly(DNA) whitepaper provides S&P 500 and MSCI USA ESG Select Index tracking error estimates for simulated portfolios examined over a historical ten year period."
+                }
+              ]
+            },
+          ]
+      },
+      {
+        "id": "faq-section-portfolio",
+        "title": "Portfolio",
+        "posts": [
+            {
+              "title": "Can I select the exact securities that go into my portfolio?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) allows clients to designate up to 10 specific stocks, each of which may occupy 1% of the overall Earthly(DNA) allocation."
+                },
+                {
+                  "postSection": "A client will be able to select up to 10 specific stocks only if the client's allocation to sustainable investments is greater than 0%."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
                 }
               ]
             },
@@ -506,7 +602,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Earthly constructs its own proprietary client-neutral ratings for 37 sub-categories of ESG using data consisting of about 500 metrics for around 7,000 companies, manually collected based on public information."
                 },
                 {
-                  "postSection": "We then take the results from a client’s Earthly(DNA) survey and assign an importance to each sub-category of ESG. "
+                  "postSection": "We then take the results from a client’s Earthly(DNA) survey and assign an importance to each category of ESG. "
                 },
                 {
                   "postSection": "The total client-weighted score for each company gives each company a client-specific rating which forms the basis of the client’s stock selection."
@@ -576,24 +672,6 @@ angular.module('Earthly.controllers')
         "id": "faq-section-taxes",
         "title": "Taxes",
         "posts": [
-            {
-              "title": "Does Earthly offer daily tax-loss harvesting?",
-              "content":
-              [
-                {
-                  "postSection": "Earthly offers automatically tax loss harvesting for ETFs in a client’s portfolio."
-                },
-                {
-                  "postSection": "We dislike the term “daily” when referring to tax-loss harvesting because it misleads clients into thinking that tax losses are harvested every day the market value of a client’s asset drops below its tax lot cost basis.  In reality, while algorithms do look daily for a harvesting opportunity, an opportunity won’t be realized until a market loss reaches a predetermined threshold value that’s set by the advisor which implies that losses are almost never going to be harvested on a daily basis.  In fact, to do so would be nearly impossible because of the wash sale rule and the limited selection of correlated yet distinct ETFs tracking different indices."
-                },
-                {
-                  "postSection": "Note that we do not attempt to harvest losses within Earthly(DNA).  The primary reason is that replacement securities will inevitably have a inferior ESG score to the original security."
-                },
-                {
-                  "postSection": ""
-                }
-              ]
-            },
             {
               "title": "Does Earthly guarantee that I will pay lower taxes as a result of its tax minimization strategies?",
               "content":
