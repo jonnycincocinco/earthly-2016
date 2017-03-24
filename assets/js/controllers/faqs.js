@@ -31,7 +31,7 @@ angular.module('Earthly.controllers')
 
       $scope.activeTab = 0;
    })
-   
+
     $scope.faqs = [
       {
         "id": "faq-section-general",
@@ -296,7 +296,7 @@ angular.module('Earthly.controllers')
                   "postSection": ""
                 }
               ]
-            }
+            },
             {
               "title": "What kind of tracking error should I expect from Earthly(DNA)?",
               "content":

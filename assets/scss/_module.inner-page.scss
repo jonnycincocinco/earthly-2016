@@ -58,13 +58,14 @@
   }
   .inner-hero__image {
     @include span-columns(12 of 12);
-    text-align: center;
     @include breakpoint(tablet) {
       margin-top: calculateRem(14px);
+      text-align: center;
      }
      @include breakpoint(desktop) {
        margin-top: calculateRem(64px);
        @include span-columns(5 of 12);
+       text-align: center;
       }
      img {
        width: 100%;
@@ -104,18 +105,10 @@
     @include font-size(26);
     font-weight: 800;
     margin-bottom: calculateRem(32px);
-    text-align: center;
-    @include breakpoint(tablet){
-      text-align: left;
-    }
   }
   .inner-hero__text--main {
     @include font-size(15);
     @include line-height(30);
-    text-align: center;
-    @include breakpoint(tablet){
-      text-align: left;
-    }
   }
   .container {
     margin-top: calculateRem(30px);

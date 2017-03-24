@@ -60,7 +60,7 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
-    PostsByType.getPostsByType('expertise').then(function (response) {
+    PostsByType.getPostsByType('posts').then(function (response) {
         $scope.posts = response;
         var posts = $scope.posts;
         var options = {
@@ -89,7 +89,7 @@ angular.module('Earthly.controllers')
       return months[date.getMonth()] + " " + (date.getDay()) + ", " + (date.getFullYear());
     };
 
-    $scope.PostsByTypeAndSlug = PostsByTypeAndSlug.getPostsByTypeAndSlug('expertise').query($stateParams);
+    $scope.PostsByTypeAndSlug = PostsByTypeAndSlug.getPostsByTypeAndSlug('posts').query($stateParams);
 
     $scope.PostsByTypeAndSlug.$promise.then(function (response) {
       $scope.posts = response;

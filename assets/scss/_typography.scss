@@ -1,32 +1,9 @@
 //  ## TYPOGRAPHY  -----------------------------------------------------------------//
 
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: bolder;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-Black.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-DemiBold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-Regular.woff") format("woff"); }
 
 
 %circular-headline {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
 //  font-family: "Rising-Sun", helvetica, arial, sans-serif;
 //  font-weight: bolder;
@@ -35,12 +12,12 @@
 }
 
 %circular {
-  font-family: "Rising-Sun", helvetica, arial, sans-serif;
+  font-family: "Quicksand", helvetica, arial, sans-serif;
   font-weight: normal;
 }
 
 %circular-medium {
-  font-family: "Rising-Sun", helvetica, arial, sans-serif;
+  font-family: "Quicksand", helvetica, arial, sans-serif;
   font-weight: normal;
   font-style: normal;
 }

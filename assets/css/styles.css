@@ -407,37 +407,13 @@ html {
   100% {
     opacity: 1; } }
 
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: bolder;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-Black.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-DemiBold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Rising-Sun';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/rising-sun/RisingSun-Regular.woff") format("woff"); }
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   letter-spacing: -0.01em; }
 
 html {
-  font-family: "Rising-Sun", helvetica, arial, sans-serif;
+  font-family: "Quicksand", helvetica, arial, sans-serif;
   font-weight: normal; }
 
 html {
@@ -686,33 +662,16 @@ a,
   opacity: .5; }
 
 .text-align-center {
-  text-align: left; }
-  @media only screen and (min-width: 768px) {
-    .text-align-center {
-      text-align: center; } }
-  .cta-ribbon .text-align-center {
-    text-align: center; }
+  text-align: center; }
 
 .text-align-left {
-  text-align: left; }
-
-h1,
-h2.text-align-left {
   text-align: center; }
   @media only screen and (min-width: 768px) {
-    h1,
-    h2.text-align-left {
+    .text-align-left {
       text-align: left; } }
 
-.text-align-center h1, .text-align-center
-h2 {
-  text-align: center; }
-
-h2.text-align-center {
-  text-align: center; }
-
 .text-align-right {
-  text-align: left; }
+  text-align: center; }
   @media only screen and (min-width: 768px) {
     .text-align-right {
       text-align: right; } }
@@ -1888,20 +1847,21 @@ button.cta,
   float: left;
   display: block;
   margin-right: 0%;
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
   .inner-hero .inner-hero__image:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 768px) {
     .inner-hero .inner-hero__image {
-      margin-top: 0.875rem; } }
+      margin-top: 0.875rem;
+      text-align: center; } }
   @media only screen and (min-width: 1024px) {
     .inner-hero .inner-hero__image {
       margin-top: 4rem;
       float: left;
       display: block;
       margin-right: 0%;
-      width: 41.66667%; }
+      width: 41.66667%;
+      text-align: center; }
       .inner-hero .inner-hero__image:last-child {
         margin-right: 0; } }
   .inner-hero .inner-hero__image img {
@@ -1949,21 +1909,13 @@ button.cta,
   font-size: 26px;
   font-size: 1.625rem;
   font-weight: 800;
-  margin-bottom: 2rem;
-  text-align: center; }
-  @media only screen and (min-width: 768px) {
-    .inner-hero .inner-hero__text--subhead {
-      text-align: left; } }
+  margin-bottom: 2rem; }
 
 .inner-hero .inner-hero__text--main {
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 30px;
-  line-height: 1.875rem;
-  text-align: center; }
-  @media only screen and (min-width: 768px) {
-    .inner-hero .inner-hero__text--main {
-      text-align: left; } }
+  line-height: 1.875rem; }
 
 .inner-hero .container {
   margin-top: 1.875rem; }
@@ -2343,32 +2295,14 @@ button.cta,
 .earthly-dna-home {
   padding-left: 0.625rem;
   padding-right: 0.625rem; }
-  @media only screen and (min-width: 768px) {
-    .earthly-dna-home {
-      padding-left: 7.5rem;
-      padding-right: 7.5rem;
-      margin-top: 2.8125rem; } }
   @media only screen and (min-width: 1024px) {
     .earthly-dna-home {
-      padding-left: 12.5rem;
-      padding-right: 12.5rem;
-      margin-top: -10.9375rem; } }
-  @media only screen and (min-width: 1441px) {
-    .earthly-dna-home {
       padding-left: 16.25rem;
-      padding-right: 16.25rem; } }
+      padding-right: 16.25rem;
+      margin-top: -10.9375rem; } }
   .earthly-dna-home .earthly-dna-home__icon {
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .earthly-dna-home .earthly-dna-home__icon {
-        text-align: left;
-        float: left;
-        margin-right: 3.125rem; } }
-  .earthly-dna-home .earthly-dna-home__text {
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .earthly-dna-home .earthly-dna-home__text {
-        text-align: left; } }
+    float: left;
+    margin-right: 3.125rem; }
   .earthly-dna-home p {
     font-size: 18px;
     font-size: 1.125rem; }
@@ -3386,8 +3320,10 @@ ul.three-up-tiles__list {
   padding-bottom: 3.75rem; }
 
 .library--container p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 21px;
+  line-height: 1.3125rem;
+  margin-bottom: 1.125rem; }
 
 .library--container .inner-hero.bg-strip {
   padding-top: 5rem;
@@ -3567,7 +3503,7 @@ input::-webkit-search-cancel-button {
   display: none; }
 
 input[type=search] {
-  background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  background: #ededed url(/wp-content/themes/earthly-2016/build/images/icons/search-icon.png) no-repeat 9px center;
   background-size: 14px;
   border: solid 1px #ccc;
   padding: 9px 10px 9px 32px;

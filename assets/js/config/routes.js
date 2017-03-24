@@ -1,4 +1,4 @@
-window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider', function ($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
+window.app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$sceDelegateProvider', function ($stateProvider, $locationProvider, $urlRouterProvider, $sceDelegateProvider) {
     'use strict';
 
     $sceDelegateProvider.resourceUrlWhitelist([
@@ -196,5 +196,8 @@ window.app.config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider
             activetab: 'client-agreement'
         }
     );
+
+    $locationProvider.hashPrefix('!');
+    $locationProvider.html5Mode(false);
 
 }]);

@@ -1,7 +1,15 @@
 angular.module('Earthly.services')
 
-.factory('PostsbySlug', function ($resource) {
-    return $resource(ajaxInfo.api_url + 'posts/?filter[name]=:slug',{
+.factory('PostsBySlug', function ($resource) {
+
+    getPostsBySlug = function (type) {
+        return $resource('index.php/' + ajaxInfo.api_url + type + '?slug=:slug',{
         slug:'@slug'
-    }, { cache: true});
+        }, { cache: true});
+    };
+
+    return {
+        getPostsBySlug: getPostsBySlug
+    };
+
 });
