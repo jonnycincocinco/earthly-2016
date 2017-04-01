@@ -2,10 +2,9 @@
 
 .library--container {
   p {
-  //  font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    @extend %roboto;
     @include line-height(21);
-    margin-bottom: calculateRem(18px);
+    margin-bottom: calculateRem(14px);
   }
   .inner-hero {
     &.bg-strip {

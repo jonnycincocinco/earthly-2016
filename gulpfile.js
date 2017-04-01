@@ -30,8 +30,6 @@ gulp.task('angular', function(){
 		'node_modules/angular-sanitize/angular-sanitize.min.js',
 		'node_modules/angular-animate/angular-animate.min.js',
 		'node_modules/angular-ui-router/build/angular-ui-router.min.js',
-		'node_modules/slick-carousel/slick/slick.min.js',
-		'node_modules/angular-slick-carousel/dist/angular-slick.min.js',
 		'assets/js-ng/anim-in-out.js',
 		'assets/js-ng/picturefill.min.js',
 		'assets/js-ng/angular-picture.js',

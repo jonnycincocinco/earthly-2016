@@ -9,7 +9,6 @@ var app;
         'ngSanitize',
         'ngAnimate',
         'ngPicturefill',
-        'slickCarousel',
         'anim-in-out',
         '720kb.socialshare',
         'Earthly.controllers',

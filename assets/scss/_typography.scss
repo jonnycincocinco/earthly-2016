@@ -3,7 +3,7 @@
 
 
 %circular-headline {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 100;
 //  font-family: "Rising-Sun", helvetica, arial, sans-serif;
 //  font-weight: bolder;
@@ -12,12 +12,18 @@
 }
 
 %circular {
-  font-family: "Quicksand", helvetica, arial, sans-serif;
+  font-family: "Muli", helvetica, arial, sans-serif;
   font-weight: normal;
 }
 
 %circular-medium {
-  font-family: "Quicksand", helvetica, arial, sans-serif;
+  font-family: "Muli", helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+%roboto {
+  font-family: "Roboto", helvetica, arial, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
