@@ -53,6 +53,27 @@ angular.module('Earthly.controllers')
               ]
             },
             {
+              "title": "Is Earthly right for me?",
+              "content":
+              [
+                {
+                  "postSection": "Our offerings are targeted towards individual investors and institutions who desire to divest from unethical movements and focus investment on causes that mirror their principles. Earthly may be right for you if you identify with any of the following:"
+                },
+                {
+                  "postSection": "Environmentally-minded investors looking to divest from fossil fuels and support clean energy;"
+                },
+                {
+                  "postSection": "Religious investors looking to divest from weapons, alcohol and tobacco;"
+                },
+                {
+                  "postSection": "Social justice activists looking to focus on companies not employing impoverished labor, companies with a focus on employment diversity and companies that support local communities."
+                },
+                {
+                  "postSection": "We also cater to clients indifferent about sustainable management and desiring automated portfolio management and advice.  We offer traditional index portfolios as a complementary or standalone option."
+                }
+              ]
+            },
+            {
               "title": "Where does Earthly stand on the various environmental, social, governance and ethical issues it advertises to clients?",
               "content":
               [
@@ -79,58 +100,8 @@ angular.module('Earthly.controllers')
                 }
               ]
             },
-            {
-              "title": "Who is Earthly's target client base?",
-              "content":
-              [
-                {
-                  "postSection": "Our offerings are targeted towards individual investors and institutions who desire to divest from unethical movements and focus investment on causes that mirror their principles. Examples of clients could include:"
-                },
-                {
-                  "postSection": "Environmentally-minded investors looking to divest from fossil fuels and support clean energy;"
-                },
-                {
-                  "postSection": "Religious investors looking to divest from weapons, alcohol and tobacco;"
-                },
-                {
-                  "postSection": "Social justice activists looking to focus on companies not employing impoverished labor, companies with a focus on employment diversity and companies that support local communities."
-                }
-              ]
-            },
-            {
-              "title": "How does Earthly compare to a socially responsible or ESG mutual/index fund?",
-              "content":
-              [
-                {
-                  "postSection": "Socially responsible mutual and index funds suffer from several problems:"
-                },
-                {
-                  "postSectionIndent": "1) High Fees"
-                },
-                {
-                  "postSectionIndent": "2) Cookie cutter principles"
-                },
-                {
-                  "postSectionIndent": "3) Lack of Transparency"
-                },
-                {
-                  "postSectionIndent": "4) Voting Rights Transferred to Fund Manager"
-                },
-                {
-                  "postSection": "Earthly(DNA), our diversified sustainable index portfolio addresses these problems in the following ways:"
-                },
-                {
-                  "postSectionIndent": "1) We charge a low 0.30% management fee which is significantly less than the average SRI mutual fund and ETF."
-                },
-                {
-                  "postSectionIndent": "2) We offer customized portfolios tailored to each client’s ESG and ethical preferences."
-                },
-                {
-                  "postSectionIndent": "3) We use a data-driven, quantitative approach to rating companies’ ESG and ethical performance and we disclose our methods."
-                },
-                {
-                  "postSectionIndent": "4) We vote client proxies on their behalf according to a published set of guidelines."
-                },
+
+                 
                 {
                   "title": "How can I gauge your level of performance?",
                   "content":
@@ -189,6 +160,7 @@ angular.module('Earthly.controllers')
         "id": "faq-section-edna",
         "title": "Earthly(DNA)",
         "posts": [
+            
             {
               "title": "How does Earthly(DNA) determine the securities that go into my portfolio?",
               "content":
@@ -207,6 +179,41 @@ angular.module('Earthly.controllers')
                 }
               ]
             },
+            {
+              "title": "How does Earthly compare to a socially responsible or ESG mutual/index fund?",
+              "content":
+              [
+                {
+                  "postSection": "Socially responsible mutual and index funds suffer from several problems:"
+                },
+                {
+                  "postSectionIndent": "1) High Fees"
+                },
+                {
+                  "postSectionIndent": "2) Cookie cutter principles"
+                },
+                {
+                  "postSectionIndent": "3) Lack of Transparency"
+                },
+                {
+                  "postSectionIndent": "4) Voting Rights Transferred to Fund Manager"
+                },
+                {
+                  "postSection": "Earthly(DNA), our diversified sustainable index portfolio addresses these problems in the following ways:"
+                },
+                {
+                  "postSectionIndent": "1) We charge a low 0.30% management fee which is significantly less than the average SRI mutual fund and ETF."
+                },
+                {
+                  "postSectionIndent": "2) We offer customized portfolios tailored to each client’s ESG and ethical preferences."
+                },
+                {
+                  "postSectionIndent": "3) We use a data-driven, quantitative approach to rating companies’ ESG and ethical performance and we disclose our methods."
+                },
+                {
+                  "postSectionIndent": "4) We vote client proxies on their behalf according to a published set of guidelines."
+                }
+              },
             {
               "title": "How does the performance of Earthly(DNA) differ to that of a socially responsible mutual fund or ETF?",
               "content":
@@ -308,7 +315,25 @@ angular.module('Earthly.controllers')
                   "postSection": "Unlike a total stock market index, indices used to create SRI portfolios are somewhat arbitrary with regards to the number of stocks selected, the weights of those stocks and the market capitalization, style and sector profiles.  Using tracking error as a means of comparing one of our Earthly(DNA) portfolios to an SRI index may not be entirely appropriate since the stock selection parameters will not align well."
                 },
                 {
-                  "postSection": "Our Earthly(DNA) whitepaper provides S&P 500 and MSCI USA ESG Select Index tracking error estimates for simulated portfolios examined over a historical ten year period."
+                  "postSection": "Our Earthly(DNA) whitepaper provides S&P 500, S&P 500 Equal Weight and MSCI USA ESG Select Index tracking error estimates for simulated portfolios examined over a historical ten year period."
+                }
+              ]
+            },
+            {
+              "title": "How does Earthly(DNA) rate the companies eligible for inclusion in my portfolio?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly constructs its own proprietary client-neutral ratings for 37 sub-categories of ESG using data consisting of about 500 metrics for around 2,500 companies, manually collected based on public information."
+                },
+                {
+                  "postSection": "We then take the results from a client’s Earthly(DNA) survey and assign an importance to each category of ESG. "
+                },
+                {
+                  "postSection": "The total client-weighted score for each company gives each company a client-specific rating which forms the basis of the client’s stock selection."
+                },
+                {
+                  "postSection": ""
                 }
               ]
             },
@@ -318,6 +343,36 @@ angular.module('Earthly.controllers')
         "id": "faq-section-portfolio",
         "title": "Portfolio",
         "posts": [
+            {
+              "title": "Can I select a mix of both sustainable and traditional investments?",
+              "content":
+              [
+                {
+                  "postSection": "Yes, our recommended investment plans can be customized to include a mix of both sustainable and traditional investments."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Can I select the exact securities that go into my portfolio?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) allows clients to designate up to 10 specific stocks, each of which may occupy 1% of the overall Earthly(DNA) allocation."
+                },
+                {
+                  "postSection": "A client will be able to select up to 10 specific stocks only if the client's allocation to sustainable investments is greater than 0%."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
             {
               "title": "Can I select the exact securities that go into my portfolio?",
               "content":
@@ -595,24 +650,6 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "How does Earthly rate the companies eligible for inclusion in my portfolio?",
-              "content":
-              [
-                {
-                  "postSection": "Earthly constructs its own proprietary client-neutral ratings for 37 sub-categories of ESG using data consisting of about 500 metrics for around 7,000 companies, manually collected based on public information."
-                },
-                {
-                  "postSection": "We then take the results from a client’s Earthly(DNA) survey and assign an importance to each category of ESG. "
-                },
-                {
-                  "postSection": "The total client-weighted score for each company gives each company a client-specific rating which forms the basis of the client’s stock selection."
-                },
-                {
-                  "postSection": ""
-                }
-              ]
-            },
-            {
               "title": "How do you respond to critics who say socially responsible investing makes no difference because you’re not actually giving firms money directly when you buy shares on the open market?",
               "content":
               [
@@ -677,7 +714,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Note that we don’t guarantee any particular tax outcome with our automated tax-loss harvesting service or tax minimization strategies and any dialogue or advice we provide should not be considered tax advice.  There’s always a risk that due to the uncertainty around marginal income tax rates that your tax liability may eventually be higher as a result of our tax minimization strategies.  This is not unique to Earthly but to all financial advisors engaged in tax minimization for clients."
+                  "postSection": "Note that we don’t guarantee any particular tax outcome with our tax minimization strategies and any dialogue or advice we provide should not be considered tax advice.  There’s always a risk that due to the uncertainty around marginal income tax rates that your tax liability may eventually be higher as a result of our tax minimization strategies.  This is not unique to Earthly but to all financial advisors engaged in tax minimization for clients."
                 },
                 {
                   "postSection": ""
@@ -691,11 +728,11 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Is tax-loss harvesting or any of the tax minimization strategies used by Earthly illegal?",
+              "title": "Is tax-aware rebalancing or any of the tax minimization strategies used by Earthly illegal?",
               "content":
               [
                 {
-                  "postSection": "No.  Tax avoidance strategies like tax-loss harvesting have been legal for years and are in use by many financial advisors."
+                  "postSection": "No.  Tax avoidance strategies like tax-aware rebalancing have been legal for years and are in use by many financial advisors."
                 },
                 {
                   "postSection": "Tax evasion is illegal and usually consists of deceptive underreporting of tax liability.  Earthly does not engage in or condone tax evasion on behalf of clients."
