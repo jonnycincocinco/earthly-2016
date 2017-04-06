@@ -12,7 +12,7 @@ class angularjs_wp_theme {
 
 		add_action( 'init', array( $this, 'register_my_menus' ) );
 		add_action( 'init', array( $this, 'register_my_sidebar' ) );
-		add_action( 'init', array( $this, 'createLibraryItem' ) );
+	//	add_action( 'init', array( $this, 'createLibraryItem' ) );
 	//	add_action( 'init', array( $this, 'createContact' ) );
 
 		add_action( 'after_setup_theme', array( $this, 'add_awesome_theme_support' ) );

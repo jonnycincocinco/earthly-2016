@@ -123,7 +123,8 @@ header {
   }
   li {
     float: left;
-    @include font-size(13);
+    @include font-size(14);
+    font-weight: 400;
     margin-right: 23px;
     &:last-child {
       margin-right: 0;

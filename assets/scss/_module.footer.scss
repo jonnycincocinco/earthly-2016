@@ -45,7 +45,8 @@
     padding: 0;
   }
   .site-footer-list__link {
-    @include font-size(12);
+    @include font-size(13);
+    font-weight: 400;
     @include line-height(20);
   }
 
