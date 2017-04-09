@@ -160,7 +160,42 @@ angular.module('Earthly.controllers')
         "id": "faq-section-edna",
         "title": "Earthly(DNA)",
         "posts": [
-            
+             {
+              "title": "What is Earthly(DNA)?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) is our fsustainable equity investment vehicle and is a passively managed account of around 100 equally-weighted individual stocks custom tailored to each client’s Earthly(DNA) and fully diversified to maximize total stock market exposure.   It is designed to make up the core equity component of a client’s sustainable portfolio."
+                },
+                {
+                  "postSection": "It is similar in concept to an ETF and possesses additional advantages, but with the downside of increased management complexity.  Advanced algorithms and optimization logic drives the creation of our Earthly(DNA) portfolios in real-time."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+             {
+              "title": "How can I get Earthly(DNA)?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) is included at no extra charge for all clients.  As a result, you pay no equity ETF expenses if you utilize Earthly(DNA) as your sole equity investment vehicle."
+                },
+                {
+                  "postSection": "Note that if you select 0% sustainable investments, Earthly(DNA) will not be part of your portfolio."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
             {
               "title": "How does Earthly(DNA) determine the securities that go into my portfolio?",
               "content":
@@ -179,8 +214,62 @@ angular.module('Earthly.controllers')
                 }
               ]
             },
+             {
+              "title": "So an algorithm will select individual stocks for me and manage it over time.  Isn’t this active management?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) relies on the same principles of passive investment management that drive the creation of many of today’s socially responsible index ETFs."
+                },
+                {
+                  "postSection": "Whereas an active manager would seek to earn above market before-tax returns by examining and researching the economic fundamentals of select investments, a passive manager would seek to match the performance of a specific index by closely tracking the composition of that index.  "
+                },
+                {
+                  "postSection": "Our approach is similar to the passive manager, however we create our indices in real-time by drawing on quantitative security selection methods that evaluate the sustainability and business involvement of companies."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
             {
-              "title": "How does Earthly compare to a socially responsible or ESG mutual/index fund?",
+              "title": "Shouldn’t I get better performance if Earthly(DNA) manages my portfolio actively rather than passively?",
+              "content":
+              [
+                {
+                  "postSection": "The major distinction that separates Earthly(DNA) and most automated advisors from active managers is that we seek to earn an average before-tax market return for our clients by ignoring the economic fundamentals of specific companies.  While being average may sound like a bad thing, consider that greater than 80% of active managers typically fail to beat their benchmark index in any given year.  And active management typically results in higher taxes and much higher fees, often making the performance difference even more pronounced."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Why does Earthly(DNA) only include around 100 individual stocks instead of 500 or 1000?  Am I really diversified with that number of stocks?",
+              "content":
+              [
+                {
+                  "postSection": "ESG screening inherently involves sacrificing a small amount of diversification in favor of environmental, social and governance outperformance and exclusionary screening.  One of our goals when conceptualizing Earthly(DNA) was to determine the appropriate number of stocks that would provide our clients with the bulk of diversification benefits and at the same time ensure that only the upper ESG echelon of securities is selected."
+                },
+                {
+                  "postSection": "We eventually agreed upon a target of 100 securities based on an analysis of historical data which suggests that greater than 99% of diversification benefits would be captured with this number of securities.  In addition, 100 securities allows us to target an average ESG performance percentile ranking in the top 15%, ensuring that clients are provided with only the strongest ESG performers."
+                }
+              ]
+            },
+            {
+              "title": "Am I really diversified with Earthly(DNA) when other advisors invest me in 5-10 stock ETFs?",
+              "content":
+              [
+                {
+                  "postSection": "The number of ETFs that constitutes a portfolio has very little bearing on the level of diversification of that portfolio.  Today, a single ETF such as the Vanguard Total World Stock ETF (VT) provides complete total stock market coverage and miniscule unsystematic risk exposure.  Advisors typically use greater numbers of ETFs for style, sector and capitalization tilt away from a total market index because Modern Portfolio Theory (MPT) has indicated that such a portfolio will provide superior risk-adjusted returns.  There are also slightly greater tax benefits to owning a greater number of ETFs."
+                },
+                {
+                  "postSection": "Earthly(DNA) does not ascribe to the notion that MPT yields any actionable conclusions because of the dynamically changing nature of markets and large number of questionable input parameters.  Please see our other FAQs for more information about our position on MPT."
+                }
+              ]
+            },
+            {
+              "title": "How does Earthly(DNA) compare to a socially responsible or ESG mutual/index fund?",
               "content":
               [
                 {
@@ -269,14 +358,14 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Can Earthly(DNA) exclude stocks that I specify?",
+              "title": "Can Earthly(DNA) exclude individual stocks that I specify?",
               "content":
               [
                 {
-                  "postSection": "Yes.  A client may specify up to 10 stocks to exclude from an Earthly(DNA) portfolio."
+                  "postSection": "Yes.  You may specify up to 10 stocks to exclude from an Earthly(DNA) portfolio."
                 },
                 {
-                  "postSection": "These stocks will not be eligible for inclusion under Earthly(DNA).  They may still be included if the client chooses anything other than 100% sustainable investments."
+                  "postSection": "These stocks will not be eligible for inclusion under Earthly(DNA).  They may still be included if you choose anything other than 100% sustainable investments."
                 },
                 {
                   "postSection": ""
@@ -287,14 +376,14 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Can Earthly(DNA) include stocks that I specify?",
+              "title": "Can Earthly(DNA) include individual stocks that I specify?",
               "content":
               [
                 {
-                  "postSection": "Yes.  A client may specify up to 10 stocks to include in an Earthly(DNA) portfolio.  Each stock will be given an allocation of 1% of the Earthly(DNA) allocation."
+                  "postSection": "Yes.  You may specify up to 10 stocks to include in an Earthly(DNA) portfolio.  Each stock will be given an allocation of 1% of the Earthly(DNA) allocation."
                 },
                 {
-                  "postSection": "These stocks will not necessarily be included in a portfolio if the client allocates 0% towards sustainable investments."
+                  "postSection": "These stocks will not necessarily be included in a portfolio if you allocate 0% towards sustainable investments."
                 },
                 {
                   "postSection": ""
@@ -337,6 +426,78 @@ angular.module('Earthly.controllers')
                 }
               ]
             },
+            {
+              "title": "What is the model total market portfolio that serves the input to Earthly(DNA)?",
+              "content":
+              [
+                {
+                  "postSection": "We use an aggregate of several popular total stock market index funds as the backbone of our security selection constraints.  We chose an aggregate due to slight discrepancies between the various total stock market index options and to avoid licensing fees on index products that would drive up client costs."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Which benchmark should I use to evaluate the performance of Earthly(DNA)?",
+              "content":
+              [
+                {
+                  "postSection": "Since Earthly(DNA) is structured to mimic market capitalization and sector weightings of a market portfolio, the most appropriate benchmark would probably be an equal weight broad market index such as the S&P 500 Equal Weight Index.  Comparing the performance history of the two will allow a client to gauge how sustainability is affecting their portfolio’s performance controlling for most other factors. "
+                },
+                {
+                  "postSection": "Alternatively, a client could simply compare their Earthly(DNA) portfolio to a well-established SRI ETF such as DSI or KLD.  This would provide the benefit of gauging how a client’s sustainable principles affect their portfolio’s performance.  Caution is again advised as sustainable portfolios do not necessarily benchmark a market capitalization and sector weighted market portfolio, nor are their ESG and ethical screening criteria the same or similar, making a true apples-to-apples comparison difficult."
+                }
+              ]
+            },
+            {
+              "title": "What happens to the proxy voting rights of the stock I own?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly currently votes your securities in accordance with its core mission."
+                },
+                {
+                  "postSection": "Over time, we plan to introduce some exciting new features pertaining to voting rights.  Stay tuned for more details."
+                }
+              ]
+            },
+            {
+              "title": "How often is my target Earthly(DNA) Index updated?",
+              "content":
+              [
+                {
+                  "postSection": "Clients should expect their target Earthly(DNA) index to be updated every quarter.  Typically, company ESG scores are updated once on a staggered basis throughout the year with the exception of black swan events such as a corporate scandal or major product recall.  In the latter case, revised interim scores are typically issued within a month. "
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Will investing in Earthly(DNA) help to avoid investing in a company that may be involved in a major corporate scandal?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly(DNA) is designed to incorporate ESG criteria into its security selection process.  There is research that suggests that companies exhibiting strong ESG outperformance are less likely to be involved in major scandals and other negative corporate events, however we can’t even say that an Earthly(DNA) constituent will never be involved in such an event."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "What happens to a company in my Earthly(DNA) index that has a corporate scandal or similar black swan event?",
+              "content":
+              [
+                {
+                  "postSection": "Your Earthly(DNA) index will be updated quarterly to account for any recent scandals or events."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
           ]
       },
       {
@@ -356,20 +517,68 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Can I select the exact securities that go into my portfolio?",
+              "title": "How do you justify a bundle of mortgage-backed securities, municipal and government bonds as sustainable bond investments?",
               "content":
               [
                 {
-                  "postSection": "Earthly(DNA) allows clients to designate up to 10 specific stocks, each of which may occupy 1% of the overall Earthly(DNA) allocation."
+                  "postSection": "Sustainable lending standards can depend on principles of a particular client.  When selecting our sustainable bond basket, we sought to balance the following principles:"
                 },
                 {
-                  "postSection": "A client will be able to select up to 10 specific stocks only if the client's allocation to sustainable investments is greater than 0%."
+                  "postSection": "1) Investing in local communities;"
                 },
                 {
-                  "postSection": ""
+                  "postSection": "2) Investing in the disadvantaged and the underprivileged;"
                 },
                 {
-                  "postSection": ""
+                  "postSection": "3) Avoid investing in activities that destroy the environment or promote conflict;"
+                },
+                {
+                  "postSection": "4) Ensure that investment costs are sufficiently low;"
+                },
+                {
+                  "postSection": "With the exception of (4), these principles generally form the basis of most sustainable mutual funds.  Currently, no sustainable ETFs exist that exhibit all four of the above principles.  There do exist a handful of mutual funds, however these funds typically average close to 1.00% in annual fund fees which conflicts with our objective of providing low-cost sustainable investment options."
+                },
+                {
+                  "postSection": "We conducted extensive analysis of the individual holdings of the current crop of sustainable mutual funds and found that all of them invest predominantly in mortgage-backed securities, municipal bonds and government debt.  When examining price movement, correlation history and adjusting for duration/convexity, our bond basket tracks these mutual funds very well, without the burden of the higher fees.  In addition, our service will allow you to exclude certain categories of controversial investment such as government bonds whereas mutual funds are not customizable."
+                }
+              ]
+            },
+            {
+              "title": "Why are your sustainable offerings so highly concentrated in US investments?",
+              "content":
+              [
+                {
+                  "postSection": "Investing in local communities is part of the sustainable philosophy.  Because Earthly only serves US clients, we structure our sustainable offerings to focus on US-based investments."
+                },
+                {
+                  "postSection": "A secondary reason we offer only US-based sustainable investment options are the lack of liquidity, research and accessibility of sustainable international investments."
+                }
+              ]
+            },
+            {
+              "title": "Am I really diversified investing only in US-based socially responsible stocks and bonds?",
+              "content":
+              [
+                {
+                  "postSection": "Many years ago, there were significant diversification benefits to investing internationally.  With increasing economic globalization, many of these diversification benefits have evaporated and now, international and domestic markets appear very highly correlated, especially in periods of financial distress. Today, a company like Apple Computer, sells its products all over the world and is exposed to international economic forces despite being domiciled in the US.  As a result, adding international securities to a portfolio doesn’t provide as much of a diversification benefit as one might think."
+                },
+                {
+                  "postSection": "Sustainable investing inherently involves sacrificing a small amount of diversification in favor of environmental, social and governance outperformance and exclusionary screening.  We believe the exclusion of international investments in favor of ESG outperformance and community-based lending represents a tradeoff that is in our client’s interest."
+                },
+                {
+                  "postSection": "Our traditional investment offerings still offer international securities in market weighted amounts.  Even though correlations between international and domestic stocks have been high in recent decades, there’s no guarantee going forward that this dynamic will continue to exist.  In the absence of any ethical and ESG considerations, we recommend that clients own a market-weighted portfolio which includes international investments."
+                }
+              ]
+            },
+            {
+              "title": "Why did Earthly select its particular basket of Traditional ETFs?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly's traditional ETF basket was selected to provide maximum global diversification which we believe will minimize unsystematic risk for the client."
+                },
+                {
+                  "postSection": "Individual ETFs were selected based on a thorough analysis of expense ratio, average bid/ask spread, degree of liquidity and provider reputation."
                 }
               ]
             },
@@ -413,7 +622,7 @@ angular.module('Earthly.controllers')
               ]
             },
             {
-              "title": "Why does Earthly only offer stocks and bonds and not natural resources and real estate like other providers?",
+              "title": "Why does Earthly only offer stocks and bonds and not natural resources and real estate ETFs like other providers?",
               "content":
               [
                 {
@@ -593,6 +802,24 @@ angular.module('Earthly.controllers')
               ]
             },
             {
+              "title": "What is impact investing and how does it differ from socially responsible or sustainable investing?",
+              "content":
+              [
+                {
+                  "postSection": "Similar to socially responsible investing, impact investing is an investing methodology that seeks a competitive financial return and contribute to social good."
+                },
+                {
+                  "postSection": "In addition to utilizing similar screening methods, impact investing seeks to measure the impact of the investment by examining pre and post investment quantitative and qualitative metrics."
+                },
+                {
+                  "postSection": "Often, impact investors will use their status as stakeholders to influence the managerial decisions of corporations in order to ensure that SRI principles are reflected in the day-to-day operations of the business."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
               "title": "How does the performance of sustainable, ESG or socially responsible investing compare to traditional investing?",
               "content":
               [
@@ -736,6 +963,18 @@ angular.module('Earthly.controllers')
                 },
                 {
                   "postSection": "Tax evasion is illegal and usually consists of deceptive underreporting of tax liability.  Earthly does not engage in or condone tax evasion on behalf of clients."
+                }
+              ]
+            },
+            {
+              "title": "Will Earthly(DNA) incur short-term capital gains in the event of revised ESG scores or business involvement screens?",
+              "content":
+              [
+                {
+                  "postSection": "Because the primary mission of Earthly(DNA) is to uphold the ethical and ESG principles of our clients, we prioritize changes to the client’s Earthly(DNA) index above unfavorable tax implications."
+                },
+                {
+                  "postSection": "This policy will lead to some clients incurring short-term capital gains for the sake of revisions to their Earthly(DNA) index."
                 }
               ]
             }
