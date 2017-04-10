@@ -55,7 +55,7 @@
 				</div>
 
 				<div class="grid__item legal">
-					<p>Earthly is a Public Benefit Corporation and is an SEC registered investment advisor.  Brokerage services are provided by FOLIOfn, Inc.</p>
+					<p>Earthly is a Public Benefit Corporation and is an SEC registered investment advisor.  Brokerage services are provided by Folio Investments, Inc.</p>
 					<p>By using this website, you hereby consent to our Terms of Use and Privacy Policy.</p>
 					<p>Securities in your account are protected up to $500,000. See <a href="http://sipc.org">sipc.org</a> for more details.</p>
 				</div>
@@ -71,7 +71,7 @@
 		<div class="container">
 			<div class="grid">
 				<div class="grid__item copyright text-align-center">
-					<p>&copy; Earthly 2016</p>
+					<p>&copy; Earthly 2017</p>
 				</div>
 	</footer>
 </body>
