@@ -38,7 +38,7 @@ angular.module('Earthly.controllers')
         "title": "General Questions",
         "posts": [
             {
-              "title": "What is  Earthly?",
+              "title": "What is Earthly?",
               "content":
               [
                 {
@@ -148,7 +148,7 @@ angular.module('Earthly.controllers')
                   "content":
                   [
                     {
-                      "postSection": "We normally invest 100% of your invested capital, however there may be periods where we hold cash such as before a market order."
+                      "postSection": "We normally invest 100% of your invested capital, however there may be periods where we hold cash such as before a market order or in order to receive our advisory fee."
                     }
                   ]
                 }
@@ -719,6 +719,90 @@ angular.module('Earthly.controllers')
             }
           ]
       },
+      {
+        "id": "faq-section-custodian",
+        "title": "Custodian",
+        "posts": [
+            {
+              "title": "Where are my assets held?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly utilizes Folio Investments, Inc. to provide trading, execution and custodial services for Earthly clients."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Who is Folio Investments, Inc.?",
+              "content":
+              [
+                {
+                  "postSection": "Folio Investments, Inc. (“Folio Institutional”) is a registered clearing broker-dealer with the U.S. Securities and Exchange Commission (“SEC”) and a member of the Financial Industry Regulatory Authority (FINRA) and the Securities Investor Protection Corporation (“SIPC”). Folio Institutional, among other things, holds public and non-public/unlisted securities and cash on behalf of its customers."
+                },
+                {
+                  "postSection": "Folio Institutional is based in McLean, VA and is not affiliated with Earthly PBC.  Folio Institutional is not responsible for and does not approve, endorse, review, recommend or guarantee the services of Earthly PBC.  Folio Institutional does not question, investigate, analyze, monitor, or otherwise evaluate the suitability of any investment made in your brokerage account or review the prudence, merits, viability, or suitability of any security as an investment for you or the decision to purchase or hold securities.  You have access to your account with Folio Institutional at www.folioclient.com."
+                }
+              ]
+            },
+            {
+              "title": "Are my assets commingled with others?",
+              "content":
+              [
+                {
+                  "postSection": "Your assets are held in your own account in your own name.  They are not commingled."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "What would happen if Folio Investments, Inc. becomes insolvent?",
+              "content":
+              [
+                {
+                  "postSection": "In the unlikely event that Folio Institutional were to become insolvent, your brokerage accounts are covered by SIPC insurance,  SIPC insurance protects against losses stemming from the financial failure of SIPC member brokerage firms. SIPC insurance protects the securities and cash in a brokerage account up to $500,000 (which includes a limit of $250,000 protection for cash in an account). SIPC insurance protection for customers with multiple accounts is determined by “separate capacity” as defined by SIPC. A brochure explaining SIPC coverage is available on the SIPC website (www.sipc.org)."
+                },
+                {
+                  "postSection": "Independent of and in addition to SIPC coverage, Folio Institutional provides brokerage customers with additional supplemental insurance coverage, which would only be used when SIPC insurance coverage is exhausted. Purchased from underwriters at Lloyds of London this separate, supplemental insurance provides coverage for an additional amount of loss to clients limited to a combined aggregate return to all customer from SIPC and certain underwriters at Lloyds of London of $10 million each with a sub-limit of $900,000 to cover cash based on any one customer’s presentation of an excess SIPC claim."
+                },
+                {
+                  "postSection": "Neither SIPC insurance nor the supplemental insurance coverage protects against investment losses from the decline in the market value of securities."
+                },
+                {
+                  "postSection": "In addition to the SIPC insurance coverage for cash, you also may be entitled to insurance through the Federal Deposit Insurance Corporation (“FDIC”). All cash deposits held in Folio Institutional’s bank sweep program (“the Program” as defined in Exhibit 2 to the Folio Institutional Customer Agreement), by account ownership category as recognized by the FDIC, are covered by insurance from the FDIC, up to certain amounts."
+                },
+                {
+                  "postSection": "Under the Program, Folio Institutional provides extended FDIC insurance by placing your cash, by account ownership category, in a bank or multiple banks when it would exceed the limits of any one bank. For the number and identity of the current banks in the Program, the available FDIC insurance, and a full explanation of the Program please see Folio’s website."
+                },
+                {
+                  "postSection": "You can get publicly available financial information concerning any or all of the banks at http://www.ffiec.gov/nicpubweb/nicweb/nichome.aspx and more detail on FDIC insurance from http://www.fdic.gov/deposit/deposits/index.html by contacting the FDIC Public Information Center by mail at 3501 North Fairfax Drive, Room E-1005, Arlington, VA 22226 or by phone at (877) 275-3342 or (703) 562-2200."
+                }
+              ]
+            },
+            {
+              "title": "Why is it necessary to have my account verified by Folio Institutional?",
+              "content":
+              [
+                {
+                  "postSection": "When you apply to open a brokerage account with Folio Institutional, Folio Institutional will confirm certain aspects of your personal information such as your social security number, date of birth and email address in order to comply with U.S. government laws and rules, as well as rules imposed by self-regulatory organizations (SROs).  Folio Institutional uses your email address to send you important notices and information, including information about your trade confirmations, account statements and year-end tax information.  It’s important that your account is verified so that you can receive valuable information about your investments directly from Folio Institutional as your custodian."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            }
+          ]
+      }
       {
         "id": "faq-section-fees",
         "title": "Fees",
