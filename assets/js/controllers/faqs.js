@@ -101,7 +101,7 @@ angular.module('Earthly.controllers')
               ]
             },
 
-                 
+
                 {
                   "title": "How can I gauge your level of performance?",
                   "content":
@@ -111,7 +111,8 @@ angular.module('Earthly.controllers')
                     },
                     {
                       "postSection": "Clients and prospective clients should be advised that past or simulated performance is no guarantee of future results."
-                    }                      ]
+                    }
+                  ]
                 },
                 {
                   "title": "How frequently can I direct trades in my portfolio?",
@@ -153,8 +154,6 @@ angular.module('Earthly.controllers')
                   ]
                 }
               ]
-            }
-          ]
         },
         {
         "id": "faq-section-edna",
@@ -302,6 +301,7 @@ angular.module('Earthly.controllers')
                 {
                   "postSectionIndent": "4) We vote client proxies on their behalf according to a published set of guidelines."
                 }
+                ]
               },
             {
               "title": "How does the performance of Earthly(DNA) differ to that of a socially responsible mutual fund or ETF?",
@@ -802,7 +802,7 @@ angular.module('Earthly.controllers')
               ]
             }
           ]
-      }
+      },
       {
         "id": "faq-section-fees",
         "title": "Fees",
