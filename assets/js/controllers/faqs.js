@@ -455,10 +455,10 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Earthly currently votes your securities in accordance with its core mission."
+                  "postSection": "Our custodian, Folio Investments Inc. allows clients to vote on individual proxies.  These proxy statements can be accessed through your Folio account portal using your Folio username and password."
                 },
                 {
-                  "postSection": "Over time, we plan to introduce some exciting new features pertaining to voting rights.  Stay tuned for more details."
+                  "postSection": "You may also delegate voting of proxy statements to Earthly if you should so choose.  We will vote proxies in accordance with our core mission under an ESG framework."
                 }
               ]
             },
@@ -794,7 +794,121 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "When you apply to open a brokerage account with Folio Institutional, Folio Institutional will confirm certain aspects of your personal information such as your social security number, date of birth and email address in order to comply with U.S. government laws and rules, as well as rules imposed by self-regulatory organizations (SROs).  Folio Institutional uses your email address to send you important notices and information, including information about your trade confirmations, account statements and year-end tax information.  It’s important that your account is verified so that you can receive valuable information about your investments directly from Folio Institutional as your custodian."
+                  "postSection": "When you apply to open a brokerage account with Folio Institutional, Folio Institutional will confirm certain aspects of your personal information such as your social security number, date of birth and email address in order to comply with U.S. government laws and rules, as well as rules imposed by self-regulatory organizations (SROs).  Folio Institutional uses your email address to send you important notices and information, including information about your trade confirmations, account statements and year-end tax information.  It’s important that your account is verified so that you can receive valuable information about your investments directly from Folio Institutional."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            }
+          ]
+      },
+      {
+        "id": "faq-section-foresight",
+        "title": "Foresight",
+        "posts": [
+            {
+              "title": "What is Foresight?",
+              "content":
+              [
+                {
+                  "postSection": "Foresight is our financial projections tool which calculates a level of confidence that you will have at least a given amount of money available on a certain date in the future."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Why is Foresight useful to me?",
+              "content":
+              [
+                {
+                  "postSection": "Foresight allows clients to develop a savings and investment strategy that helps them achieve their goals with a confidence level they feel comfortable with."
+                },
+                {
+                  "postSection": "For example, if saving for a goal like retirement or a down-payment on a house, it is useful to know, within a degree of confidence, whether you will meet your required spending goal."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Why doesn't Foresight tell me with a 100% probabilty what my investment growth will be?",
+              "content":
+              [
+                {
+                  "postSection": "All investing involves risk and returns can never be guaranteed.  Therefore, Foresight provides growth projections at certain key confidence levels that provide clients a balance of investment certainty and performance."
+                },
+                {
+                  "postSection": "Projected returns may not be indicative of actual returns."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "How does Foresight project my future growth?",
+              "content":
+              [
+                {
+                  "postSection": "Foresight conducts a parametric monte carlo simulation using your account inputs and a historical analysis of stock and bond performance."
+                },
+                {
+                  "postSection": "The system will generate a sufficiently large number of return paths through a stochastic process and then map the resulting paths to a statistical function."
+                },
+                {
+                  "postSection": "Foresight then returns the return paths that correspond to the reported confidence levels."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "What is a reasonable confidence level to assume?",
+              "content":
+              [
+                {
+                  "postSection": "Every client's circumstance is unique and the reasonableness of a particular confidence level will depend on a variety of factors such as the savings goal in question or your risk tolerance."
+                },
+                {
+                  "postSection": "For retirement planning, we generally recommend a 90% confidence level or higher.  Higher degrees of confidence require higher savings rates and/or higher degrees of risk which may not be practical for all clients."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Why does Foresight not report confidence levels lower than 50%?",
+              "content":
+              [
+                {
+                  "postSection": "Confidence levels below 50% don't present any actionable information to the the client."
+                },
+                {
+                  "postSection": "While it's quite possible that observed performance will be better than projected at a 50% confidence level, clients should not base their financial plan around achieving this level of performance."
+                },
+                {
+                  "postSection": ""
                 },
                 {
                   "postSection": ""
