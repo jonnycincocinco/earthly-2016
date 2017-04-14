@@ -2850,7 +2850,7 @@ ul.three-up-tiles__list {
   display: table;
   position: relative;
   overflow: hidden;
-  margin: 1.5625rem 0 0;
+  margin: 1.5625rem 0 1.25rem;
   width: 100%;
   text-align: center; }
   .sustainable .tabs {
@@ -2880,12 +2880,51 @@ ul.three-up-tiles__list {
     .sustainable .tabs a {
       border-color: #96c43d; }
 
+.tab_content {
+  position: relative;
+  padding-bottom: 3.125rem; }
+
+.pie-chart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27%;
+  margin-left: 48px; }
+  .pie-chart .st0 {
+    fill: #5B9AD4; }
+  .pie-chart .st1 {
+    fill: #A4A4A4; }
+  .pie-chart .st2 {
+    fill: #EC7D31; }
+  .pie-chart .st3 {
+    fill: #FEBF00; }
+  .pie-chart .st4 {
+    fill: #265E91; }
+  .pie-chart .st5 {
+    fill: #70AC47; }
+  .pie-chart .st6 {
+    fill: #4472C4; }
+  .pie-chart path {
+    transition: all .3s ease-out; }
+    .pie-chart path:first-child {
+      transform: translate(5px, -5px); }
+
+.chart-disclaimer {
+  margin-top: 15px;
+  width: 120%; }
+  .chart-disclaimer p {
+    font-size: 12px;
+    font-size: 0.75rem; }
+
 .tabs_item {
   display: none;
   text-align: center;
   border-radius: 0.3125rem;
   padding: 2.5rem 1.25rem 3.4375rem;
   margin: 1.25rem 0; }
+  .tabs_item.tabs_section {
+    text-align: left;
+    width: 65%; }
   .tabs_item h4 {
     font-weight: bold;
     margin-bottom: 0.875rem; }
@@ -2901,7 +2940,6 @@ ul.three-up-tiles__list {
       color: #b3b3b3; }
   .tabs_item p {
     font-family: 'Roboto';
-    width: 85%;
     margin-left: auto;
     margin-right: auto; }
     .tabs_item p.ratio {
@@ -2914,7 +2952,9 @@ ul.three-up-tiles__list {
         .sustainable .tabs_item p.ratio span {
           color: #96c43d; }
   .tabs_item:first-child {
-    display: block; }
+    display: inline-block;
+    position: relative;
+    top: -2px; }
 
 .current a {
   color: #fff;

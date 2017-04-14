@@ -22,17 +22,36 @@ angular.module('Earthly.controllers')
 
        $('.tab ul.tabs li a').click(function (g) {
          var tab = $(this).closest('.tab'),
-           index = $(this).closest('li').index();
+           index = $(this).closest('li').index(),
+           pieChart = $('.pie-chart g > g');
 
          tab.find('ul.tabs > li').removeClass('current');
          $(this).closest('li').addClass('current');
+         pieChart.find('path').not('path:eq(' + index + ')').css('transform', 'translate(0,0)');
+         if (index == 0) {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(5px,-5px)');
+         } else if (index == 1) {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(3px,5px)');
+         } else if (index == 2) {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-7px,6px)');
+         } else if (index == 3) {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-12px,-6px)');
+         } else if (index == 4) {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-3px,-14px)');
+         } else if (index == 5) {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-7px,-11px)');
+         } else {
+           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-9px,-10px)');
+         };
 
          tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
          tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
 
          g.preventDefault();
        } );
+
      })(jQuery);
+
 
   $scope.scrollTo = function(id) {
     $location.hash(id);

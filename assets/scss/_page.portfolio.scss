@@ -121,7 +121,7 @@
   }
 }
 
-//TABS
+//
 
 
 .tab {
@@ -163,7 +163,7 @@
 	display: table;
 	position: relative;
 	overflow: hidden;
-	margin: calculateRem(25px) 0 0;
+	margin: calculateRem(25px) 0 calculateRem(20px);
   width: 100%;
   text-align: center;
   .sustainable & {
@@ -200,6 +200,42 @@
 	}
 }
 
+.tab_content {
+  position: relative;
+  padding-bottom: calculateRem(50px);
+}
+
+.pie-chart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27%;
+  margin-left: 48px;
+
+  .st0{fill:#5B9AD4;}
+  .st1{fill:#A4A4A4;}
+  .st2{fill:#EC7D31;}
+  .st3{fill:#FEBF00;}
+  .st4{fill:#265E91;}
+  .st5{fill:#70AC47;}
+  .st6{fill:#4472C4;}
+
+  path {
+    transition: all .3s ease-out;
+    &:first-child {
+      transform: translate(5px,-5px);
+    }
+  }
+}
+
+.chart-disclaimer {
+  margin-top: 15px;
+  width: 120%;
+  p {
+    @include font-size(12);
+  }
+}
+
 .tabs_item {
 	display: none;
   text-align: center;
@@ -208,7 +244,13 @@
   padding: calculateRem(40px) calculateRem(20px) calculateRem(55px);
   margin: calculateRem(20px) 0;
 
-	h4 {
+  &.tabs_section {
+//    display: inline-block;
+    text-align: left;
+    width: 65%;
+  }
+
+  h4 {
 		font-weight: bold;
 		margin-bottom: calculateRem(14px);
     span {
@@ -230,7 +272,7 @@
 
 	p {
     font-family: 'Roboto';
-    width: 85%;
+  //  width: 85%;
     margin-left: auto;
     margin-right: auto;
     &.ratio {
@@ -247,7 +289,11 @@
     }
   }
 
-	&:first-child {display: block;}
+	&:first-child {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+  }
 }
 
 .current a {
