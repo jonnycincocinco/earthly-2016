@@ -20,28 +20,59 @@ angular.module('Earthly.controllers')
     (function ($) {
        $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
+        $('.tab ul.tabs li a').hover(function () {
+          if ($(this).closest('.tabs').hasClass('chart-traditional')) {
+           $('.pie-chart-traditional').addClass('current');
+           $('.pie-chart-sustainable').removeClass('current');
+         } else {
+           $('.pie-chart-sustainable').addClass('current');
+           $('.pie-chart-traditional').removeClass('current');
+         }
+       });
+
        $('.tab ul.tabs li a').click(function (g) {
          var tab = $(this).closest('.tab'),
            index = $(this).closest('li').index(),
-           pieChart = $('.pie-chart g > g');
+           pieChart1 = $('.pie-chart.current g > g');
 
          tab.find('ul.tabs > li').removeClass('current');
          $(this).closest('li').addClass('current');
-         pieChart.find('path').not('path:eq(' + index + ')').css('transform', 'translate(0,0)');
+
+            pieChart1.find('path').not('path:eq(' + index + ')').css('transform', 'translate(0,0)');
          if (index == 0) {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(5px,-5px)');
+           if ($('.pie-chart-traditional').hasClass('current')) {
+             pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(5px,-5px)');
+           } else {
+             pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(5px,-5px)');
+           };
          } else if (index == 1) {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(3px,5px)');
+           if ($('.pie-chart-traditional').hasClass('current')) {
+            pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(3px,5px)');
+          } else {
+            pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-10px,-5px)');
+          };
          } else if (index == 2) {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-7px,6px)');
+           if ($('.pie-chart-traditional').hasClass('current')) {
+            pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-7px,6px)');
+          } else {
+            pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-3px,-14px)');
+          };
          } else if (index == 3) {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-12px,-6px)');
+           if ($('.pie-chart-traditional').hasClass('current')) {
+             pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-12px,-6px)');
+           } else {
+             pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-8px,11px)');
+           };
          } else if (index == 4) {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-3px,-14px)');
+           if ($('.pie-chart-traditional').hasClass('current')) {
+             pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-9px,-10px)');
+           } else {
+             pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-23px,5px)');
+           };
          } else if (index == 5) {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-7px,-11px)');
+           pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-7px,-11px)');
          } else {
-           pieChart.find('path:eq(' + index + ')').css('transform', 'translate(-9px,-10px)');
+           pieChart1.find('path:eq(' + index + ')').css('transform', 'translate(-3px,-14px)');
          };
 
          tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();

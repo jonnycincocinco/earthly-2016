@@ -163,22 +163,36 @@
 	display: table;
 	position: relative;
 	overflow: hidden;
-	margin: calculateRem(25px) 0 calculateRem(20px);
+	margin: calculateRem(25px) auto calculateRem(20px);
   width: 100%;
   text-align: center;
-  .sustainable & {
+  padding: 0;
+  @include breakpoint(tablet) {
     width: 90%;
+  }
+  @include breakpoint(cinema) {
+    width: 100%;
+  }
+  .sustainable & {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    @include breakpoint(tablet) {
+      width: 90%;
+    }
   }
 
 
 	li {
     display: inline-block;
-		@include line-height(38);
+		@include line-height(32);
     overflow: hidden;
 		padding: 0;
 		position: relative;
+    width: 100%;
+    @include breakpoint(tablet) {
+      width: auto;
+    }
 	}
 
 	a {
@@ -186,7 +200,7 @@
 		font-weight: 500;
 		display: block;
 		outline: none;
-		padding: 0 calculateRem(20px) calculateRem(1px);
+		padding: calculateRem(4px) calculateRem(1px);
     margin: calculateRem(6px);
     text-decoration: none;
 		-webkit-transition: all 0.2s ease-in-out;
@@ -196,6 +210,10 @@
     border-radius: calculateRem(5px);
     .sustainable & {
       border-color: $base--greenHighlight;
+    }
+    @include breakpoint(tablet) {
+      padding-left: calculateRem(20px);
+      padding-right: calculateRem(20px);
     }
 	}
 }
@@ -211,6 +229,10 @@
   right: 0;
   width: 27%;
   margin-left: 48px;
+  display: none;
+  @include breakpoint(tablet) {
+    display: block;
+  }
 
   .st0{fill:#5B9AD4;}
   .st1{fill:#A4A4A4;}
@@ -219,6 +241,12 @@
   .st4{fill:#265E91;}
   .st5{fill:#70AC47;}
   .st6{fill:#4472C4;}
+
+  .st0-s{fill:#5B9AD4;}
+  .st1-s{fill:#EC7D31;}
+  .st2-s{fill:#FEBF00;}
+  .st3-s{fill:#4472C3;}
+  .st4-s{fill:#A4A4A4;}
 
   path {
     transition: all .3s ease-out;
@@ -230,9 +258,8 @@
 
 .chart-disclaimer {
   margin-top: 15px;
-  width: 120%;
   p {
-    @include font-size(12);
+    @include font-size(11);
   }
 }
 
@@ -246,8 +273,12 @@
 
   &.tabs_section {
 //    display: inline-block;
-    text-align: left;
-    width: 65%;
+    text-align: center;
+    width: 100%;
+    @include breakpoint(tablet) {
+      width: 65%;
+      text-align: left;
+    }
   }
 
   h4 {
