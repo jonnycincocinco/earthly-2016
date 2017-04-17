@@ -164,7 +164,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Earthly(DNA) is our fsustainable equity investment vehicle and is a passively managed account of around 100 equally-weighted individual stocks custom tailored to each client’s Earthly(DNA) and fully diversified to maximize total stock market exposure.   It is designed to make up the core equity component of a client’s sustainable portfolio."
+                  "postSection": "Earthly(DNA) is our sustainable equity investment vehicle and is a passively managed account of around 100 equally-weighted individual stocks custom tailored to each client’s Earthly(DNA) and fully diversified to maximize total stock market exposure.   It is designed to make up the core equity component of a client’s sustainable portfolio."
                 },
                 {
                   "postSection": "It is similar in concept to an ETF and possesses additional advantages, but with the downside of increased management complexity.  Advanced algorithms and optimization logic drives the creation of our Earthly(DNA) portfolios in real-time."
