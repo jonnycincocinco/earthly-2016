@@ -887,10 +887,10 @@ angular.module('Earthly.controllers')
                   "postSection": "Every client's circumstance is unique and the reasonableness of a particular confidence level will depend on a variety of factors such as the savings goal in question or your risk tolerance."
                 },
                 {
-                  "postSection": "For retirement planning, we generally recommend a 90% confidence level or higher.  Higher degrees of confidence require higher savings rates and/or higher degrees of risk which may not be practical for all clients."
+                  "postSection": "For retirement planning, we generally recommend between a 60% and 90% confidence level.  Higher degrees of confidence require higher savings rates and/or higher degrees of risk which may not be practical for all clients."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "It is most likely based on historical data that your investment growth will mirror growth at a 50% confidence level (the expected value).  This means that if you plan for a higher degree of confidence, it is likely that your assets could outlive you.  This situation is more favorable than coming up short since having more than you need represents a degree of optionality."
                 },
                 {
                   "postSection": ""
@@ -1166,6 +1166,45 @@ angular.module('Earthly.controllers')
             }
           ]
       },
+      {
+              "title": "How does Earthly handle fossil fuel divestment?",
+              "content":
+              [
+                {
+                  "postSection": "Fossil fuel divestment demands close scrutiny due to the degree in which fossil fuels are utilized industry-wide.  Divesting from fossil fuels will result in deviation from the market portfolio and a noticeable degree of tracking error to standard benchmarks."
+                },
+                {
+                  "postSection": "Earthly defines fossil fuel divestment as the exclusion of any company categorized in one of the following GICS industry subclassifications:"
+                },
+                {
+                  "postSection": "Coal & Consumable Fuels"
+                },
+                {
+                  "postSection": "Integrated Oil & Gas"
+                },
+                {
+                  "postSection": "Oil & Gas Equipment & Services"
+                },
+                {
+                  "postSection": "Oil & Gas Drilling"
+                },
+                {
+                  "postSection": "Oil & Gas Exploration & Production"
+                },
+                {
+                  "postSection": "Oil & Gas Refining & Marketing"
+                },
+                {
+                  "postSection": "Oil & Gas Storage & Transportation"
+                },
+                {
+                  "postSection": "We recognize that fossil fuel divestment can take on a more or less restrictive framework than provided above.  For example, end users of fossil fuel derived products and products where fossil fuels are a critical input to operations are not screened in the above framework. Examples could include automobile manufactures and electric utilities. "
+                },
+                {
+                  "postSection": "Our stance is that the above framework properly balances the lowest hanging fruit of the fossil fuel divestment process along with unsystematic risk dynamics."
+                }
+              ]
+            },
       {
         "id": "faq-section-taxes",
         "title": "Taxes",
