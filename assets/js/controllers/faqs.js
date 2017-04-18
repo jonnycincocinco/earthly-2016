@@ -914,6 +914,42 @@ angular.module('Earthly.controllers')
                   "postSection": ""
                 }
               ]
+            },
+            {
+              "title": "Does Foresight assume a glidepath over time?",
+              "content":
+              [
+                {
+                  "postSection": "Yes, Foresight assumes a linear step function towards a more conservative portfolio over time."
+                },
+                {
+                  "postSection": "The magnitude and duration of this shift is scaled up for more aggressive portfolios and longer time horizons.  Data on glide path functions is based on academic research."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "Does Foresight account for Earthly's management fee?",
+              "content":
+              [
+                {
+                  "postSection": "Yes, our management fee assumptions are embedded in Foresight's calculations."
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                },
+                {
+                  "postSection": ""
+                }
+              ]
             }
           ]
       },
