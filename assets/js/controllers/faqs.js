@@ -209,7 +209,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Second, we maximize the average rating of the entire portfolio subject to a series of constraints including, but not limited to, market capitalization, sector, style and liquidity."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "Constraints are put in place to prevent factor exposure deviation from the broad market."
                 }
               ]
             },
@@ -332,7 +332,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Any tie is defined as a relationship in which the company serves as an investor, holds ownership, or receives revenue at any point on the supply chain related to the business activity in question."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "The only exception is the fossil fuel category which excludes il, gas and coal companies based on their GICS subsector classification."
                 },
                 {
                   "postSection": ""
@@ -404,7 +404,10 @@ angular.module('Earthly.controllers')
                   "postSection": "Unlike a total stock market index, indices used to create SRI portfolios are somewhat arbitrary with regards to the number of stocks selected, the weights of those stocks and the market capitalization, style and sector profiles.  Using tracking error as a means of comparing one of our Earthly(DNA) portfolios to an SRI index may not be entirely appropriate since the stock selection parameters will not align well."
                 },
                 {
-                  "postSection": "Our Earthly(DNA) whitepaper provides S&P 500, S&P 500 Equal Weight and MSCI USA ESG Select Index tracking error estimates for simulated portfolios examined over a historical ten year period."
+                  "postSection": "Our Earthly(DNA) whitepaper provides S&P 500, S&P 500 Equal Weight and MSCI USA ESG Select Index tracking error estimates for an average of simulated portfolios examined over a historical ten year period."
+                },
+                {
+                  "postSection": "Clients should be aware that business involvement screens increase the probability that a client's factor exposures won't closely approximate those of a broad market index."
                 }
               ]
             },
