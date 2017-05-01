@@ -1271,6 +1271,36 @@ angular.module('Earthly.controllers')
                   "postSection": "This policy will lead to some clients incurring short-term capital gains for the sake of revisions to their Earthly(DNA) index."
                 }
               ]
+            },
+            {
+              "title": "Can I export my transaction information into tax software?",
+              "content":
+              [
+                {
+                  "postSection": "Yes. You can import most reportable data from your Form 1099(s) directly into tax reporting packages including TurboTax and H&R Block by using their import from brokerage/financial institution function."
+                },
+                {
+                  "postSection": "How to import your information:"
+                },
+                {
+                  "postSection": "1) Open your tax program and follow the instructions for importing data from brokerages and other financial institutions. There you will be presented with a menu of available financial firms."
+                },
+                {
+                  "postSection": "2) Select FOLIOfn Investments from the menu. That will take you to a custom login screen."
+                },    
+                {
+                  "postSection": "3) Enter your full Account Number and the Document ID found at the top of your Form 1099. You should not enter the spaces found in the Document ID."
+                },
+                {
+                  "postSection": "4) Your tax software will automatically enter your imported data into the appropriate sections of your tax return."
+                },                     
+                {
+                  "postSection": "5) Repeat this process for each of your accounts that received a Form 1099."
+                },    
+                {
+                  "postSection": "Be sure to carefully compare all imported data with the information on your Form 1099(s) to ensure that all the information is correct and all activity is accounted for. In certain circumstances, the imported data may not contain all the information required by your tax return. For securities transferred into Folio from another firm, you may need to add or adjust cost basis information."
+                },                      
+              ]
             }
           ]
       }
