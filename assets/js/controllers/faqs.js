@@ -803,6 +803,24 @@ angular.module('Earthly.controllers')
                   "postSection": ""
                 }
               ]
+            },
+            {
+              "title": "How does the Folio's execution quality compare to other brokers?",
+              "content":
+              [
+                {
+                  "postSection": "Earthly selected Folio as custodian and broker in part due to offering best execution of client trades."
+                },
+                {
+                  "postSection": "We've examined self-reported statistics on moment and distribution of historical execution prices vs National Best Bid and Offer prices and have found Folio's execution quality to be inline with major competitors."
+                },
+                {
+                  "postSection": "We review reports and data on an annual basis to ensure that Folio continues to offer clients the best service and execution."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
             }
           ]
       },
