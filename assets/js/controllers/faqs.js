@@ -332,7 +332,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Any tie is defined as a relationship in which the company serves as an investor, holds ownership, or receives revenue at any point on the supply chain related to the business activity in question."
                 },
                 {
-                  "postSection": "The only exception is the fossil fuel category which excludes il, gas and coal companies based on their GICS subsector classification."
+                  "postSection": "The only exception is the fossil fuel category which excludes oil, gas and coal companies based on their GICS subsector classification."
                 },
                 {
                   "postSection": ""

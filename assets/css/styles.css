@@ -416,7 +416,7 @@ html {
   font-family: "Muli", helvetica, arial, sans-serif;
   font-weight: normal; }
 
-.library--container p {
+.tab-content--main, .library--container p {
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
