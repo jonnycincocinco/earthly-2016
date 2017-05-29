@@ -3,6 +3,8 @@
 .site-footer {
   padding: calculateRem(40px);
   position: relative;
+  background: linear-gradient(to right bottom,#1b428a,#012690 30%,#319dd8 80%,rgba(1,198,255,.76) 100%);
+
   .container {
     padding-bottom: calculateRem(20px);
   }
@@ -48,6 +50,7 @@
     @include font-size(13);
     font-weight: 400;
     @include line-height(20);
+    color: white;
   }
 
   .site-footer-list--social li {
@@ -60,11 +63,11 @@
     font-size: 14px;
     font-size: .77778rem;
     line-height: 2;
-    height: 1.61111rem;
+    height: 30px;
+    width: 30px;
     margin: 0 .16667rem;
     text-indent: -999em;
     overflow: hidden;
-    width: 1.61111rem;
     &.site-footer-list__icon--facebook {
       background: url('../images/svg/icon-social-facebook.svg') 0 0 no-repeat;
     }

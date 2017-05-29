@@ -1,5 +1,11 @@
 	<footer class="site-footer anim-in-out anim-slide-below-fade below-hero" data-anim-speed="2000">
+		<div class="cta-ribbon section-strip">
+				<h2 class="text-align-center white">Ready to make a difference?</h2>
+				<p class="cta-ribbon__subhead text-align-center light-green">Start your investment plan.</p>
+					<button ui-sref="sign-up" class="cta">Get Started</button>
+		</div>
 		<div class="container">
+
 			<div class="grid">
 				<div class="grid__item">
 					<span class="site-footer-brand__ident">Earthly</span>
@@ -50,14 +56,14 @@
 
 		<div class="container">
 			<div class="grid">
-				<div class="grid__item legal">
+				<div class="grid__item legal white">
 					<p>Past performance is no guarantee of future results. Investments are not FDIC insured, and securities and investments may lose value. Any historical returns, expected returns, or probability projections may not reflect actual future performance. All securities involve risk and may result in loss. All information herein as well as any communications on social media is not an offer, solicitation of an offer, or advice to buy or sell securities or services.</p>
 				</div>
 
-				<div class="grid__item legal">
+				<div class="grid__item legal white">
 					<p>Earthly is a Public Benefit Corporation and is an SEC registered investment advisor.  Brokerage services are provided by Folio Investments, Inc.</p>
-					<p>By using this website, you hereby consent to our Terms of Use and Privacy Policy.</p>
-					<p>Securities in your account are protected up to $500,000. See <a href="http://sipc.org">sipc.org</a> for more details.</p>
+					<p>By using this website, you hereby consent to our <a ui-sref="terms" class="white">Terms of Use</a> and <a  class="white" ui-sref="privacy-policy">Privacy Policy</a>.</p>
+					<p>Securities in your account are protected up to $500,000. See <a href="http://sipc.org" class="white">sipc.org</a> for more details.</p>
 				</div>
 			</div>
 		</div>
@@ -71,7 +77,7 @@
 		<div class="container">
 			<div class="grid">
 				<div class="grid__item copyright text-align-center">
-					<p>&copy; Earthly 2017</p>
+					<p class="white">&copy; Earthly 2017</p>
 				</div>
 	</footer>
 </body>

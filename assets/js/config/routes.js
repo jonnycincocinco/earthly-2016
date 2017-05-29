@@ -5,11 +5,7 @@ window.app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', 
         // Allow same origin resource loads.
         'self',
         'http://erff.dev:8888/**/*',
-        'http://127.0.0.1:54000',
-        'http://stage-2015.eleveninc.com/**/*',
-        'http://www.eleveninc.com/**/*',
-        'https://s3.amazonaws.com/cdn.eleveninc.com/**/*'
-
+        'http://127.0.0.1:54000'
     ]);
 
 

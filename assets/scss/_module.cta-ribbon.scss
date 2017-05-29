@@ -1,11 +1,11 @@
 //  ## CTA RIBBON  ------------------------------------------------------------------------//
 .cta-ribbon {
 //  background: linear-gradient(to right bottom,#1b428a,rgba(0,0,0,.82) 90%,rgba(0,0,0,.82) 100%);
-    background: linear-gradient(to right bottom,#1b428a,rgba(57,83,142,.92) 30%,#319dd8 80%,rgba(1,198,255,.76) 100%);
+//    background: linear-gradient(to right bottom,#1b428a,rgba(57,83,142,.92) 30%,#319dd8 80%,rgba(1,198,255,.76) 100%);
 
   &.section-strip {
     padding-top: calculateRem(90px);
-    padding-bottom: calculateRem(90px);
+    padding-bottom: calculateRem(120px);
   }
 
   h2 {

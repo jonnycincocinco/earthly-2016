@@ -29,6 +29,13 @@
       margin-top: calculateRem(-20px);
     }
   }
+  .section-strip {
+    &.border-top {
+      padding-top: calculateRem(80px);
+      margin-top: calculateRem(50px);
+      border-top: 1px solid #ddd;
+    }
+  }
 }
 
 .tabs-menu {

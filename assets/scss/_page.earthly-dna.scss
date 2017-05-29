@@ -143,6 +143,7 @@ ul.three-up-tiles__list {
   .grid__item {
     width: auto;
     padding-left: 0;
+    padding-top: 30px;
   }
   .whitepaper__text {
     text-align: center;
@@ -159,5 +160,12 @@ ul.three-up-tiles__list {
     .whitepaper__icon {
     float: left;
     margin-right: calculateRem(25px);
+    img {
+      border-radius: 5px;
+      height: 140px;
+      width: auto;
+      position: relative;
+      top: -17px;
+    }
   }
 }

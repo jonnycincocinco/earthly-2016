@@ -55,10 +55,29 @@
       @include span-columns(5 of 12);
    }
    img {
+     position: relative;
      //transform: rotate(90deg);
      width: 280px;
      @include breakpoint(desktop) {
        width: 400px;
+     }
+   }
+   &.diversification__image-taxes {
+     img {
+       border-radius: 10px;
+       position: relative;
+       top: 80px;
+       left: 80px;
+       @include breakpoint(desktop) {
+         width: 300px;
+       }
+     }
+   }
+   &.diversification__image-security {
+     img {
+       border-radius: 10px;
+       background: #423830;
+       padding: 20px;
      }
    }
   }

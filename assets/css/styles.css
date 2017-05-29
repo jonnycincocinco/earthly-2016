@@ -971,7 +971,7 @@ a,
   color: #96c43d; }
 
 .grey-bg {
-  background: #f7f8f9; }
+  background: #f3f3f3; }
 
 .dark-bg {
   background: #423830;
@@ -1377,7 +1377,8 @@ button.cta.desktop-nav--cta {
 
 .site-footer {
   padding: 2.5rem;
-  position: relative; }
+  position: relative;
+  background: linear-gradient(to right bottom, #1b428a, #012690 30%, #319dd8 80%, rgba(1, 198, 255, 0.76) 100%); }
   .site-footer .container {
     padding-bottom: 1.25rem; }
   .site-footer .grid__item {
@@ -1450,7 +1451,8 @@ button.cta.desktop-nav--cta {
     font-size: 0.8125rem;
     font-weight: 400;
     line-height: 20px;
-    line-height: 1.25rem; }
+    line-height: 1.25rem;
+    color: white; }
   .site-footer .site-footer-list--social li {
     display: inline-block; }
   .site-footer .site-footer-list__icon {
@@ -1460,11 +1462,11 @@ button.cta.desktop-nav--cta {
     font-size: 14px;
     font-size: .77778rem;
     line-height: 2;
-    height: 1.61111rem;
+    height: 30px;
+    width: 30px;
     margin: 0 .16667rem;
     text-indent: -999em;
-    overflow: hidden;
-    width: 1.61111rem; }
+    overflow: hidden; }
     .site-footer .site-footer-list__icon.site-footer-list__icon--facebook {
       background: url("../images/svg/icon-social-facebook.svg") 0 0 no-repeat; }
     .site-footer .site-footer-list__icon.site-footer-list__icon--twitter {
@@ -2000,59 +2002,63 @@ button.cta,
   line-height: 22px;
   line-height: 1.375rem; }
 
-.cta-ribbon {
-  background: linear-gradient(to right bottom, #1b428a, rgba(57, 83, 142, 0.92) 30%, #319dd8 80%, rgba(1, 198, 255, 0.76) 100%); }
-  .cta-ribbon.section-strip {
-    padding-top: 5.625rem;
-    padding-bottom: 5.625rem; }
-  .cta-ribbon h2 {
-    margin-bottom: 0.625rem;
-    font-size: 44px;
-    font-size: 2.75rem;
-    padding: 0 1.25rem; }
-    @media only screen and (min-width: 768px) {
-      .cta-ribbon h2 {
-        font-size: 54px;
-        font-size: 3.375rem; } }
-  .cta-ribbon .cta-ribbon__subhead {
-    font-size: 28px;
-    font-size: 1.75rem;
-    font-weight: 800;
-    margin-bottom: 3.75rem;
-    padding: 0 3.75rem; }
-    @media only screen and (min-width: 768px) {
-      .cta-ribbon .cta-ribbon__subhead {
-        font-size: 32px;
-        font-size: 2rem; } }
-  .cta-ribbon input {
-    line-height: 1;
-    font-weight: 300;
-    outline: 0;
-    border: 0;
-    border-bottom: 1px solid #999;
-    width: 70px;
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-    background-color: transparent;
-    font-size: 1em;
-    color: #fff; }
-    .cta-ribbon input.salary {
-      width: 145px; }
-  .cta-ribbon .cta-ribbon__form {
-    font-size: 24px;
-    font-size: 1.5rem;
-    padding: 0 2.5rem; }
-    @media only screen and (min-width: 768px) {
-      .cta-ribbon .cta-ribbon__form {
-        font-size: 32px;
-        font-size: 2rem; } }
-  .cta-ribbon .cta-ribbon__form--second {
-    margin-bottom: 50px;
-    margin-top: 15px; }
-  .cta-ribbon .cta {
-    float: none;
-    margin: auto; }
+.cta-ribbon.section-strip {
+  padding-top: 5.625rem;
+  padding-bottom: 7.5rem; }
+
+.cta-ribbon h2 {
+  margin-bottom: 0.625rem;
+  font-size: 44px;
+  font-size: 2.75rem;
+  padding: 0 1.25rem; }
+  @media only screen and (min-width: 768px) {
+    .cta-ribbon h2 {
+      font-size: 54px;
+      font-size: 3.375rem; } }
+
+.cta-ribbon .cta-ribbon__subhead {
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 3.75rem;
+  padding: 0 3.75rem; }
+  @media only screen and (min-width: 768px) {
+    .cta-ribbon .cta-ribbon__subhead {
+      font-size: 32px;
+      font-size: 2rem; } }
+
+.cta-ribbon input {
+  line-height: 1;
+  font-weight: 300;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  width: 70px;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+  font-size: 1em;
+  color: #fff; }
+  .cta-ribbon input.salary {
+    width: 145px; }
+
+.cta-ribbon .cta-ribbon__form {
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 0 2.5rem; }
+  @media only screen and (min-width: 768px) {
+    .cta-ribbon .cta-ribbon__form {
+      font-size: 32px;
+      font-size: 2rem; } }
+
+.cta-ribbon .cta-ribbon__form--second {
+  margin-bottom: 50px;
+  margin-top: 15px; }
+
+.cta-ribbon .cta {
+  float: none;
+  margin: auto; }
 
 .page-home--hero {
   padding-top: 40px;
@@ -2640,7 +2646,8 @@ ul.three-up-tiles__list {
 
 .whitepaper .grid__item {
   width: auto;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-top: 30px; }
 
 .whitepaper .whitepaper__text {
   text-align: center; }
@@ -2670,6 +2677,12 @@ ul.three-up-tiles__list {
 .whitepaper .whitepaper__icon {
   float: left;
   margin-right: 1.5625rem; }
+  .whitepaper .whitepaper__icon img {
+    border-radius: 5px;
+    height: 140px;
+    width: auto;
+    position: relative;
+    top: -17px; }
 
 .portfolio--container .inner-hero.bg-strip {
   padding-top: 5rem;
@@ -2727,10 +2740,23 @@ ul.three-up-tiles__list {
       .diversification .diversification__image:last-child {
         margin-right: 0; } }
   .diversification .diversification__image img {
+    position: relative;
     width: 280px; }
     @media only screen and (min-width: 1024px) {
       .diversification .diversification__image img {
         width: 400px; } }
+  .diversification .diversification__image.diversification__image-taxes img {
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    left: 80px; }
+    @media only screen and (min-width: 1024px) {
+      .diversification .diversification__image.diversification__image-taxes img {
+        width: 300px; } }
+  .diversification .diversification__image.diversification__image-security img {
+    border-radius: 10px;
+    background: #423830;
+    padding: 20px; }
 
 .diversification .diversification__text {
   float: left;
@@ -3343,6 +3369,11 @@ ul.three-up-tiles__list {
       padding-left: 1.875rem;
       margin-top: -1.25rem; } }
 
+.faqs .section-strip.border-top {
+  padding-top: 5rem;
+  margin-top: 3.125rem;
+  border-top: 1px solid #ddd; }
+
 .tabs-menu {
   margin-bottom: 1.875rem; }
   .tabs-menu a {
@@ -3516,8 +3547,7 @@ ul.three-up-tiles__list {
           line-height: 1.25rem; } }
 
 .services--container .section-hats {
-  color: #000;
-  background: linear-gradient(to right bottom, #ff3b00, rgba(255, 136, 34, 0.92) 30%, #ffffff 80%, #fff 100%); }
+  color: #000; }
   .services--container .section-hats .highlight {
     font-weight: 900; }
   .services--container .section-hats .grid__item {

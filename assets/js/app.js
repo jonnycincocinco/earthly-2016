@@ -10,6 +10,7 @@ var app;
         'ngAnimate',
         'ngPicturefill',
         'anim-in-out',
+        'updateMeta',
         '720kb.socialshare',
         'Earthly.controllers',
         'Earthly.directives',

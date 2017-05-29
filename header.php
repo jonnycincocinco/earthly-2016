@@ -16,12 +16,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta property="og:url" content=""/>
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Earthly"/>
+  <meta property="og:title" content="Earthly Sustainable Investments"/>
   <meta property="og:image" content="/wp-content/themes/earthly-2016/build/images/global/earthly.png"/>
   <meta property="og:description" content="Earthly Web site"/>
-  <link rel="shortcut icon" href="wp-content/themes/earthly-2016/build/images/icons/favicon.ico">
+  <meta property="og:url" content="https://www.beearthly.com/#!/" />
+  <link rel="icon" type="image/png" href="wp-content/themes/earthly-2016/build/images/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="wp-content/themes/earthly-2016/build/images/icons/favicon-16x16.png" sizes="16x16">
   <link rel="apple-touch-icon" sizes="76x76" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="120x120" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="152x152" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-152x152.png">
@@ -31,7 +32,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Roboto" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
   <?php wp_head();?>
 
   <script>
