@@ -1184,10 +1184,8 @@ angular.module('Earthly.controllers')
                   "postSection": ""
                 }
               ]
-            }
-          ]
-      },
-      {
+            },
+            {
               "title": "How does Earthly handle fossil fuel divestment?",
               "content":
               [
@@ -1225,7 +1223,9 @@ angular.module('Earthly.controllers')
                   "postSection": "Our stance is that the above framework properly balances the lowest hanging fruit of the fossil fuel divestment process along with unsystematic risk dynamics."
                 }
               ]
-            },
+            }
+          ]
+      },      
       {
         "id": "faq-section-taxes",
         "title": "Taxes",
