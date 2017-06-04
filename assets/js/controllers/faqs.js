@@ -290,7 +290,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Earthly(DNA), our diversified sustainable index portfolio addresses these problems in the following ways:"
                 },
                 {
-                  "postSectionIndent": "1) We charge a low 0.30% management fee which is significantly less than the average SRI mutual fund and ETF."
+                  "postSectionIndent": "1) We charge a low 0.40% management fee which is significantly less than the average SRI mutual fund and ETF."
                 },
                 {
                   "postSectionIndent": "2) We offer customized portfolios tailored to each client’s ESG and ethical preferences."
@@ -983,7 +983,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.30% of total assets paid monthly or $5 per month. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
+                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.40% of total assets paid monthly or $5 per month. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
                 },
                 {
                   "postSection": ""
@@ -1001,7 +1001,7 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Fees are calculated and paid monthly in arrears. For example, the monthly fee calculated is the annual asset management fee of 0.30% divided by 12 months applied to the daily weighted average assets under management calculated in that month (or $5, whichever is greater).  The fee will be deducted from the account the first business day after the end of the prior month.  For example, fees incurred during the month of July would be deducted the first business day of August."
+                  "postSection": "Fees are calculated and paid monthly in arrears. For example, the monthly fee calculated is the annual asset management fee of 0.40% divided by 12 months applied to the daily weighted average assets under management calculated in that month (or $5, whichever is greater).  The fee will be deducted from the account the first business day after the end of the prior month.  For example, fees incurred during the month of July would be deducted the first business day of August."
                 },
                 {
                   "postSection": ""
