@@ -30,7 +30,7 @@
 						<li><a class="site-footer-list__link" ui-sref="fees" ng-class="{active: $state.current.activetab == 'fees'}">Fees</a></li>
 						<li><a class="site-footer-list__link" ui-sref="faqs" ng-class="{active: $state.current.activetab == 'faqs'}">FAQs</a></li>
 						<li><a class="site-footer-list__link" ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li>
-						<li><a class="site-footer-list__link" ui-sref="about" ng-class="{active: $state.current.activetab == 'about'}">About</a></li>
+						<li><a class="site-footer-list__link" ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about'}">About</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">

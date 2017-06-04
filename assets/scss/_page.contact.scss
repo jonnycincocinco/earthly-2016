@@ -117,6 +117,15 @@
            margin-top: 20px;
         }
     }
+    img {
+      width: 20px;
+      position: relative;
+      top: 6px;
+      margin-right: 8px;
+      &.email-icon {
+        top: 3px;
+      }
+    }
 }
 
 .contact--rule {
@@ -145,6 +154,6 @@
 .contact--form {
   width: 100% !important;
   @include breakpoint(tablet) {
-    width: 40% !important;
+    width: 50% !important;
   }
 }

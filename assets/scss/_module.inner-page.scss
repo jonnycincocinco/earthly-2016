@@ -23,7 +23,11 @@
 }
 
 .three-up-tiles {
-  background: linear-gradient(to right bottom,#15346d,rgba(39, 63, 117, 0.92) 30%,#319dd8 80%,rgba(1,198,255,.76) 100%);
+  //background: linear-gradient(to right bottom,#15346d,rgba(39, 63, 117, 0.92) 30%,#319dd8 80%,rgba(1,198,255,.76) 100%);
+    .home & {
+      padding-top: calculateRem(80px);
+      padding-bottom: calculateRem(80px);
+    }
    .grid__item {
      text-align: center;
      margin-bottom: calculateRem(40px);
@@ -48,6 +52,12 @@
      @include breakpoint(desktop) {
        padding-right: 15%;
      };
+     .home & {
+       color: $base--color;
+     }
+     .earthly-dna & {
+       color: $base--orange;
+     }
    }
 }
 
@@ -306,8 +316,7 @@
         line-height: 1em;
         top: 13px;
         border: 1px dotted #000;
-        border-style: dotted;
-        padding: 0 6px;
+        padding: 2px 7px 3px;
         border-radius: 100%;
         transition: all .3s ease-in-out;
       }

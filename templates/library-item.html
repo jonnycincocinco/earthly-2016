@@ -1,6 +1,15 @@
+
+
 <div class="page page-our-work anim-in-out anim-slide-below-fade" ng-cloak>
 
     <div class="library--container" ng-repeat="post in posts">
+
+      <update-title title="{{post.title.rendered}}"></update-title>
+      <update-meta name="description" content="{{post.excerpt.rendered}}"></update-meta>
+      <update-meta property="og:title" content="{{post.title.rendered}}"></update-meta>
+      <update-meta property="og:description" content="{{post.excerpt.rendered}}"></update-meta>
+      <update-meta property="og:url" content="https://www.beearthly.com/#!/library/{{post.slug}}"></update-meta>
+      <update-meta property="og:image" content="{{post.acf.expertise_assets[0].image_asset}}"></update-meta>
 
         <div class="bg-strip inner-hero library-item-main">
           <div class="container">
@@ -17,7 +26,7 @@
                       <span class="" ng-bind-html="post.acf.author | to_trusted"></span>&nbsp;–&nbsp;<span class="" ng-bind-html="post.newDate | to_trusted"></span>
                     </div>
                     <div class="social-share-links">
-                      <a class="social-share" socialshare="" socialshare-provider="facebook" socialshare-text="{{post.title.rendered}}" socialshare-media="{{asset_url.image_asset}}" socialshare-url="{{post.link}}">
+                      <a class="social-share" socialshare="" socialshare-provider="facebook" socialshare-text="{{post.title.rendered}}" socialshare-media="{{asset_url.image_asset}}" socialshare-url="https://www.beearthly.com/#!/library/{{post.slug}}">
                        <img src="/wp-content/themes/earthly-2016/build/images/icons/facebook-icon.png"/>
                       </a>
                       <a class="social-share" socialshare="" socialshare-text="{{post.title.rendered}}" socialshare-provider="twitter" socialshare-url="{{post.link}}">

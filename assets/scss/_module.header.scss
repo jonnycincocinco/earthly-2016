@@ -114,7 +114,7 @@ header {
     > a {
       color: #fff;
       .home & {
-        color: $base--homeHeaderColor;
+  //      color: $base--homeHeaderColor;
       }
     }
   }
@@ -145,7 +145,7 @@ header {
       &:after {
         @include caret(-45deg,17px,-17px);
         .home & {
-          color: $base--homeHeaderColor;
+//          color: $base--homeHeaderColor;
         }
       }
       &:hover {
@@ -248,7 +248,7 @@ button.cta {
     background-image: url('../images/global/earthly-blue.png');
   }
   .home & {
-    background-image: url('../images/global/earthly-home.png');
+//    background-image: url('../images/global/earthly-home.png');
   }
   @include breakpoint(tablet) {
     margin-top: calculateRem(20px);

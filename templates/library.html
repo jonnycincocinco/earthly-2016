@@ -1,8 +1,9 @@
-<update-title title="Earthly Library"></update-title>
-<update-meta name="description" content="A page specific description"></update-meta>
-<update-meta property="og:title" content="A resource library focusing on tips for sustainable investmenting."></update-meta>
-<update-meta itemprop="description" content="A page specific itemprop description"></update-meta>
-<update-meta property="og:url" content="https://www.beearthly.com/#!/library"></update-meta>
+<update-title title="{{post.title.rendered}}"></update-title>
+<update-meta name="description" content="{{post.excerpt.rendered}}"></update-meta>
+<update-meta property="og:title" content="{{post.title.rendered}}"></update-meta>
+<update-meta property="og:description" content="{{post.excerpt.rendered}}"></update-meta>
+<update-meta property="og:url" content="{{post.link}}"></update-meta>
+<update-meta property="og:image" content="{{post.acf.expertise_assets[0].image_asset}}"></update-meta>
 
 <div class="page page-our-work anim-in-out anim-slide-below-fade" ng-cloak>
 

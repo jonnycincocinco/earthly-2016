@@ -12,12 +12,28 @@
   .icon-text {
     border-top: 1px;
   }
+  .icon-text-col__text {
+      @include breakpoint(tablet){
+        padding-right: 40px;
+    }
+    @include breakpoint(desktop){
+      padding-right: 0;
+    }
+  }
   .inner-hero {
     .inner-hero__image {
       margin-top: -6.25%;
       .page-home--turbine {
         width: 100%;
       }
+    }
+  }
+  .icon-text-col {
+    margin-left: 0;
+  }
+  .icon-text-col__item {
+    @include breakpoint(tablet){
+      @include span-columns(6 of 12);
     }
   }
 }
