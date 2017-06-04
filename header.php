@@ -32,6 +32,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Roboto" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqj-WoXv8WTFvkh62hpBAPz8kjC0F8YnQ&libraries=places"></script>
+
   <?php wp_head();?>
 
   <script>

@@ -110,7 +110,7 @@
       width: 100%;
       @include breakpoint(desktop) {
         width: 85%;
-        margin-left: -8%;
+        margin-left: 8%;
       }
     }
     .legal {

@@ -3,7 +3,7 @@
   padding-top: calculateRem(80px);
   padding-bottom: calculateRem(80px);
   //background: $base--bgStripcolor url(../images/global/bg-pattern.png) 0 0;
-  background: linear-gradient(to right bottom,rgb(27, 66, 138),rgba(57, 83, 142, 0.92) 30%,#319dd8 80%,rgba(1, 198, 255, 0.76) 100%);
+  background: linear-gradient(to right bottom,#1b428a,#012690 30%,#319dd8 80%,rgba(1,198,255,.76) 100%);
   //background: linear-gradient(to right bottom,#006a77,rgba(0, 163, 181, 0.92) 30%,#9cd1d6 80%,rgba(152, 197, 194, 0.76) 100%);
 }
 
@@ -189,5 +189,163 @@
   .legal & {
     @include font-size(14);
     @include line-height(22);
+  }
+}
+
+//expando box
+
+.detail-box__item {
+  height: 280px;
+  margin: 0 2px 43px -1px;
+  position: relative;
+  text-align: left;
+  border-right: 10px solid #fff;
+  .earthly-dna & {
+    height: 480px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      height: 700px;
+    }
+  }
+  @include span-columns(12 of 12);
+  @include breakpoint(tablet) {
+    margin-bottom: 0;
+    @include span-columns(3 of 12);
+    float: none;
+    display: inline-block;
+    .earthly-dna & {
+      @include span-columns(4 of 12);
+    }
+   }
+  &:hover {
+    .box-icon {
+      -ms-transform: scale(.65) translate(0,-160px);
+      transform: scale(.65) translate(0,-160px);
+      .earthly-dna & {
+        -ms-transform: scale(.85) translate(0,-160px);
+        transform: scale(.85) translate(0,-160px);
+      }
+    }
+    .detail-description {
+      .earthly-dna & {
+        margin-bottom: 10px !important;
+      }
+    }
+    .content-box {
+      -ms-transform: translate(0,-150px);
+      transform: translate(0,-150px);
+      transform: translate3d(0,-150px,0);
+      .earthly-dna & {
+        margin-top: 180px;
+        transition: all .3s ease-in-out;
+      }
+      .detail-title {
+        padding-bottom: 10px;
+        .earthly-dna & {
+          padding-bottom: 10px;
+        }
+        &::before {
+          content: "-";
+          transform: rotate(90deg);
+          padding: 0px 7px 3px;
+      //    border-style: solid;
+        }
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .box-icon {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    backface-visibility: hidden;
+    transition: transform .3s ease-in-out;
+    .earthly-dna & {
+      top: 8%;
+    }
+  }
+  .overflow-container {
+    overflow: hidden;
+    height: 100%;
+  }
+  .content-box {
+    padding: 20px;
+    width: 100%;
+    margin-top: 180px;
+    transition: transform .3s ease-in-out;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    .earthly-dna & {
+      margin-top: 130px;
+      transition: all .3s ease-in-out;
+    }
+    .detail-title {
+      @include font-size(20);
+      //text-align: center;
+      font-weight: 500;
+      padding: 10px 130px 80px 0;
+      transition: all .3s ease-in-out;
+      position: relative;
+      .earthly-dna & {
+        padding-bottom: 80px;
+      }
+      &:before {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-size: 1em;
+        line-height: 1em;
+        top: 13px;
+        border: 1px dotted #000;
+        border-style: dotted;
+        padding: 0 6px;
+        border-radius: 100%;
+        transition: all .3s ease-in-out;
+      }
+      &::after {
+        content: " ";
+        width: 32px;
+        height: 3px;
+        background: $base--orange;
+        position: absolute;
+        left: 0;
+        top: -5px;
+        transition: all .3s ease-in-out;
+      }
+    }
+    .detail-description {
+      transition: all .3s ease-in-out;
+      @include font-size(16);
+      @include line-height(24);
+      @include breakpoint(tablet) {
+        @include font-size(12);
+        @include line-height(16);
+      }
+      @include breakpoint(desktop) {
+        @include font-size(13);
+        @include line-height(17);
+        .earthly-dna & {
+          @include font-size(14);
+          @include line-height(22);
+          font-weight: 500;
+        }
+      }
+      @include breakpoint(cinema) {
+        @include font-size(14);
+        @include line-height(20);
+      }
+      .earthly-dna & {
+        margin-bottom: 90px;
+      }
+    }
   }
 }

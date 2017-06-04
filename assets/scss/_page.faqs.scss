@@ -75,3 +75,14 @@
 .faq-indent {
   margin-left: calculateRem(20px);
 }
+
+.question-link {
+  .text-link {
+    @include font-size(24);
+    &:before {
+      bottom: calculateRem(9px);
+      height: 9px;
+      width: 9px;
+    }
+  }
+}

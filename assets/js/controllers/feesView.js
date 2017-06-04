@@ -17,47 +17,5 @@ angular.module('Earthly.controllers')
 
     startAnimations();
 
-  //  window.sr = ScrollReveal().reveal('.container');
-
-    var homePage = $(".inner-hero");
-    var vid = $(".applet-video")[0];
-    var graph = $("#graph");
-    var replay = $("#replay-button");
-    vid.currentTime = '0';
-    replay.removeClass('show');
-
-    if (homePage) {
-      $(document).scroll(function(){
-        if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 800){
-
-          if (vid.currentTime === 0) {
-            vid.play();
-            replay.addClass('show');
-          }
-          $("#replay-button").click(function(){
-            vid.currentTime = '0';
-            vid.play();
-            $('.play-icon').addClass('clicked');
-          })
-      }
-      });
-
-      vid.addEventListener('ended',myHandler,false);
-        function myHandler(e) {
-          $('.play-icon').removeClass('clicked');
-        }
-
-    };
-
-    // input comma-adder
-      $('input.number').keyup(function(event) {
-      if(event.which >= 37 && event.which <= 40) return;
-      $(this).val(function(index, value) {
-        return value
-        .replace(/\D/g, "")
-        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-        ;
-      });
-    });
 
 }]);

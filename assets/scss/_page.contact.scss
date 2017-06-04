@@ -4,28 +4,32 @@
     @include span-columns(12 of 12);
     @include breakpoint(tablet) {
         @include span-columns(6 of 12);
-    }
+        float: right;
+      }
     @include breakpoint(desktop) {
         margin-top: 50px;
     }
 }
 
 .contact--map-scale {
-    @include fill-parent();
+    //@include fill-parent();
     float: left;
     margin-bottom: 20px;
+    width: 100%;
     @include breakpoint(desktop) {
-        width: 440px;
         float: none;
-        @include horz-align(relative);
+  //      @include horz-align(relative);
+    }
+    .container {
+      padding: 0 calculateRem(40px);
     }
 }
 
 .contact--map {
-    @include fill-parent();
+    //  @include fill-parent();
     height: 320px;
     @include breakpoint(desktop) {
-        height: 440px;
+    //    height: 440px;
     }
 }
 
@@ -136,4 +140,11 @@
     @include breakpoint(tablet) {
         margin-top: 15px;
     }
+}
+
+.contact--form {
+  width: 100% !important;
+  @include breakpoint(tablet) {
+    width: 40% !important;
+  }
 }

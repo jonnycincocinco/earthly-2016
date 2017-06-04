@@ -62,12 +62,6 @@ angular.module('Earthly.controllers')
     cloudLarge();
 
 
-    //scroll reveal
-
-    if ($('.bg-strip') || $('.container') || $('.site-footer')) {
-  //    window.sr = ScrollReveal().reveal('.bg-strip, .container, .site-footer');
-    }
-
     //CAROUSEL
 
     (function() {
@@ -91,47 +85,6 @@ angular.module('Earthly.controllers')
 
     }).call(this);
 
-    //Applet Show on Scroll
 
-    var homePage = $(".page-home--hero");
-    var vid = $(".applet-video")[0];
-    var graph = $("#graph");
-    var replay = $("#replay-button");
-    vid.currentTime = '0';
-    replay.removeClass('show');
-
-      if ($(".applet")) {
-        $(document).scroll(function(){
-          if($(document).scrollTop() + $(window).height() > $(".applet").offset().top + 700){
-
-            if (vid.currentTime === 0) {
-              vid.play();
-              replay.addClass('show');
-            }
-            $("#replay-button").click(function(){
-              vid.currentTime = '0';
-              vid.play();
-              $('.play-icon').addClass('clicked');
-            })
-        }
-        });
-
-        vid.addEventListener('ended',myHandler,false);
-          function myHandler(e) {
-            $('.play-icon').removeClass('clicked');
-          }
-
-      };
-
-// input comma-adder
-  $('input.number').keyup(function(event) {
-  if(event.which >= 37 && event.which <= 40) return;
-  $(this).val(function(index, value) {
-    return value
-    .replace(/\D/g, "")
-    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    ;
-  });
-});
 
 }]);

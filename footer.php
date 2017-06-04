@@ -4,6 +4,12 @@
 				<p class="cta-ribbon__subhead text-align-center light-green">Start your investment plan.</p>
 					<button ui-sref="sign-up" class="cta">Get Started</button>
 		</div>
+
+				<div class="container">
+					<div class="grid">
+						<hr class="site-footer-divider site-footer-divider__top">
+						</div>
+				</div>
 		<div class="container">
 
 			<div class="grid">
@@ -68,11 +74,6 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="grid">
-				<hr class="site-footer-divider">
-				</div>
-		</div>
 
 		<div class="container">
 			<div class="grid">
