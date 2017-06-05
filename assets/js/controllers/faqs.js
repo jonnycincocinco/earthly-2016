@@ -911,7 +911,7 @@ angular.module('Earthly.controllers')
                   "postSection": "For retirement planning, we generally recommend between a 60% and 90% confidence level.  Higher degrees of confidence require higher savings rates and/or higher degrees of risk which may not be practical for all clients."
                 },
                 {
-                  "postSection": "It is most likely based on historical data that your investment growth will mirror growth at a 50% confidence level (the expected value).  This means that if you plan for a higher degree of confidence, it is likely that your assets could outlive you.  This situation is more favorable than coming up short since having more than you need represents a degree of optionality."
+                  "postSection": "It is most likely, based on historical data, that your investment growth will mirror growth at a 50% confidence level (the expected value).  This means that if you plan for a higher degree of confidence, it is likely that your assets could outlive you.  This situation is more favorable than coming up short since having more than you need represents a degree of optionality."
                 },
                 {
                   "postSection": ""
