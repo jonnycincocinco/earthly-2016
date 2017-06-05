@@ -3894,8 +3894,9 @@ input::-webkit-input-placeholder {
   @media only screen and (min-width: 1024px) {
     .contact--map-scale {
       float: none; } }
-  .contact--map-scale .container {
-    padding: 0 2.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .contact--map-scale .container {
+      padding: 0 2.5rem; } }
 
 .contact--map {
   height: 320px; }
@@ -3909,13 +3910,7 @@ input::-webkit-input-placeholder {
     margin-right: 0; }
   @media only screen and (min-width: 768px) {
     .contact--office {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 50%;
-      margin-top: 4px; }
-      .contact--office:last-child {
-        margin-right: 0; } }
+      margin-top: 4px; } }
   @media only screen and (min-width: 1024px) {
     .contact--office {
       margin-top: 50px; } }
@@ -3933,7 +3928,6 @@ input::-webkit-input-placeholder {
     font-style: normal;
     margin-bottom: 30px; }
   .contact--office .contact--phone-link {
-    float: left;
     font-size: 16px;
     font-size: 1rem;
     margin-bottom: 30px; }
@@ -3990,6 +3984,11 @@ input::-webkit-input-placeholder {
   @media only screen and (min-width: 1024px) {
     .contact--inner-container {
       padding: 0 26px 0 50px; } }
+  .contact--inner-container .container {
+    padding: 0 2.5rem; }
+    @media only screen and (min-width: 768px) {
+      .contact--inner-container .container {
+        padding: 0; } }
   @media only screen and (min-width: 768px) {
     .contact--inner-container.dept {
       padding: 0;
