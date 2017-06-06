@@ -727,11 +727,11 @@ angular.module('Earthly.controllers')
         "title": "Custodian",
         "posts": [
             {
-              "title": "Where are my assets held?",
+              "title": "Where are my investments held?",
               "content":
               [
                 {
-                  "postSection": "Earthly utilizes Folio Investments, Inc. to provide trading, execution and custodial services for Earthly clients."
+                  "postSection": "Your cash and securities are held in a brokerage account in your name at Folio Investments, Inc."
                 },
                 {
                   "postSection": ""
@@ -752,7 +752,19 @@ angular.module('Earthly.controllers')
                   "postSection": "Folio Investments, Inc. (“Folio Institutional”) is a registered clearing broker-dealer with the U.S. Securities and Exchange Commission (“SEC”) and a member of the Financial Industry Regulatory Authority (FINRA) and the Securities Investor Protection Corporation (“SIPC”). Folio Institutional, among other things, holds public and non-public/unlisted securities and cash on behalf of its customers."
                 },
                 {
-                  "postSection": "Folio Institutional is based in McLean, VA and is not affiliated with Earthly PBC.  Folio Institutional is not responsible for and does not approve, endorse, review, recommend or guarantee the services of Earthly PBC.  Folio Institutional does not question, investigate, analyze, monitor, or otherwise evaluate the suitability of any investment made in your brokerage account or review the prudence, merits, viability, or suitability of any security as an investment for you or the decision to purchase or hold securities.  You have access to your account with Folio Institutional at www.folioclient.com."
+                  "postSection": "Folio Institutional is based in McLean, VA and is not affiliated with Earthly PBC. Folio Institutional is not responsible for and does not approve, endorse, review, recommend or guarantee the services of Earthly PBC. Folio Institutional does not question, investigate, analyze, monitor, or otherwise evaluate the suitability of any investment made in your brokerage account or review the prudence, merits, viability, or suitability of any security as an investment for you or the decision to purchase or hold securities.  You have access to your account with Folio Institutional at www.folioclient.com."
+                }
+              ]
+            },
+            {
+              "title": "What’s a brokerage account at Folio Institutional?",
+              "content":
+              [
+                {
+                  "postSection": "A brokerage account is an account held, in your name, by Folio Institutional as a broker-dealer registered with the SEC and authorized to hold the cash and securities managed by Earthly PBC."
+                },
+                {
+                  "postSection": ""
                 }
               ]
             },
@@ -761,7 +773,19 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "Your assets are held in your own account in your own name.  They are not commingled."
+                  "postSection": "Your assets are held in an account in your own name.  They are not commingled."
+                },
+                {
+                  "postSection": ""
+                }
+              ]
+            },
+            {
+              "title": "What is account verification?",
+              "content":
+              [
+                {
+                  "postSection": "When you apply to open a brokerage account with Folio Institutional, Folio Institutional will confirm certain of your personal information, including your email address. This verification process is very important because Folio Institutional will be unable to open a brokerage account for you until your information has been verified, including your email address.  Folio Institutional uses your email address to send you important notices and information, including information about your trade confirmations, account statements and year-end tax information.  It’s important that your account is verified so that you can receive valuable information about your investments directly from Folio Institutional as your custodian."
                 },
                 {
                   "postSection": ""
@@ -789,18 +813,6 @@ angular.module('Earthly.controllers')
                 },
                 {
                   "postSection": "You can get publicly available financial information concerning any or all of the banks at http://www.ffiec.gov/nicpubweb/nicweb/nichome.aspx and more detail on FDIC insurance from http://www.fdic.gov/deposit/deposits/index.html by contacting the FDIC Public Information Center by mail at 3501 North Fairfax Drive, Room E-1005, Arlington, VA 22226 or by phone at (877) 275-3342 or (703) 562-2200."
-                }
-              ]
-            },
-            {
-              "title": "Why is it necessary to have my account verified by Folio Institutional?",
-              "content":
-              [
-                {
-                  "postSection": "When you apply to open a brokerage account with Folio Institutional, Folio Institutional will confirm certain aspects of your personal information such as your social security number, date of birth and email address in order to comply with U.S. government laws and rules, as well as rules imposed by self-regulatory organizations (SROs).  Folio Institutional uses your email address to send you important notices and information, including information about your trade confirmations, account statements and year-end tax information.  It’s important that your account is verified so that you can receive valuable information about your investments directly from Folio Institutional."
-                },
-                {
-                  "postSection": ""
                 }
               ]
             },
