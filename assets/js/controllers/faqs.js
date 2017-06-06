@@ -902,7 +902,7 @@ angular.module('Earthly.controllers')
                   "postSection": "Foresight conducts a parametric monte carlo simulation using your account inputs and a historical analysis of stock and bond performance."
                 },
                 {
-                  "postSection": "The system will generate a sufficiently large number of return paths through a stochastic process and then map the resulting paths to a statistical function."
+                  "postSection": "The system will generate a sufficiently large number of return paths through a stochastic process and then map the resulting paths to a probability density function."
                 },
                 {
                   "postSection": "Foresight then returns the return paths that correspond to the reported confidence levels."
