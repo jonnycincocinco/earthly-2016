@@ -149,7 +149,10 @@ angular.module('Earthly.controllers')
                   "content":
                   [
                     {
-                      "postSection": "We normally invest 100% of your invested capital, however there may be periods where we hold cash such as before a market order or in order to receive our advisory fee."
+                      "postSection": "In most circumstances, we invest 100% of your capital, however even with fractional share accounting, you may have a small residual balance held in cash."
+                    },
+                    {
+                      "postSection": "Due to rounding, the more capital you have invested, the easier it will be for us to invest all of your capital."
                     }
                   ]
                 }
