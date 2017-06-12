@@ -998,13 +998,13 @@ angular.module('Earthly.controllers')
               "content":
               [
                 {
-                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.40% of total assets paid monthly or $5 per month. There are no other fees of any kind and that includes no trading, transfer and account closing fees."
+                  "postSection": "We only charge one fee; the greater of an annualized asset management fee of 0.40% of total assets paid monthly or $5 per month."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "Note that our custodian may charge fees beyond our advisory fee for certain special services."
                 },
                 {
-                  "postSection": ""
+                  "postSection": "Please see https://www.folioinvesting.com/folioinvesting/pricing/special-services-fees/ for all special services fees."
                 },
                 {
                   "postSection": ""
