@@ -71,6 +71,16 @@
 					<p>By using this website, you hereby consent to our <a ui-sref="terms" class="white">Terms of Use</a> and <a  class="white" ui-sref="privacy-policy">Privacy Policy</a>.</p>
 					<p>Securities in your account are protected up to $500,000. See <a href="http://sipc.org" class="white">sipc.org</a> for more details.</p>
 				</div>
+
+				<div class="applet">
+					<div class="disclaimer-section">
+	          <button>Details</button>
+	          <div class="modal">
+	            <span>&times;</span>
+	            <p>This graph compares Earthly's advisory fee and average fund expense ratio (0.04%) with a traditional investment advisor's fee (1.00%) plus the average equity mutual fund expense ratio (1.00%).  Assumptions include $100,000 invested in a 90/10 stock portfolio at 100% socially responsible investments with a 6% continuously compounded annual return over 30 years.  Note that Earthly's advisory fee includes Earthly(DNA) which has a 0% expense ratio.</p>
+	          </div>
+		      </div>
+	      </div>
 			</div>
 		</div>
 

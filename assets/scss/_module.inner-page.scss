@@ -213,8 +213,15 @@
   .earthly-dna & {
     height: 480px;
     transition: all .3s ease-in-out;
+    margin-bottom: 90px;
     &:hover {
-      height: 700px;
+      height: 780px;
+      @include breakpoint(desktop) {
+        height: 900px;
+      }
+      @include breakpoint(cinema) {
+        height: 800px;
+      }
     }
   }
   @include span-columns(12 of 12);

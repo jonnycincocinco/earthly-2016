@@ -2017,9 +2017,16 @@ button.cta,
   width: 100%; }
   .earthly-dna .detail-box__item {
     height: 480px;
-    transition: all .3s ease-in-out; }
+    transition: all .3s ease-in-out;
+    margin-bottom: 90px; }
     .earthly-dna .detail-box__item:hover {
-      height: 700px; }
+      height: 780px; }
+      @media only screen and (min-width: 1024px) {
+        .earthly-dna .detail-box__item:hover {
+          height: 900px; } }
+      @media only screen and (min-width: 1430px) {
+        .earthly-dna .detail-box__item:hover {
+          height: 800px; } }
   .detail-box__item:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 768px) {
@@ -3409,6 +3416,18 @@ ul.three-up-tiles__list {
 .applet.inner-page-section .subhead {
   padding: 0 3.75rem 0;
   margin: 0; }
+
+.section__personal-advisor {
+  background-image: url(/wp-content/themes/earthly-2016/build/images/pages/personal-advisor.png);
+  background-position: 50% 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 12.5rem; }
+  .section__personal-advisor h2 {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 1024px) {
+    .section__personal-advisor {
+      padding: 5rem 0 26.25rem; } }
 
 .faqs .icon-text-col {
   float: left;
