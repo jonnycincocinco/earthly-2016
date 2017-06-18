@@ -35,9 +35,9 @@
 				</div>
 				<div class="grid__item">
 					<ul class="site-footer-list">
-							<li><a class="site-footer-list__link" ui-sref="privacy-policy" ng-class="{active: $state.current.activetab == 'privacy-policy'}">Privacy Policy</a></li>
-							<li><a class="site-footer-list__link" ui-sref="client-agreement" ng-class="{active: $state.current.activetab == 'client-agreement'}">Client Agreement</a></li>
-							<li><a class="site-footer-list__link" ui-sref="terms" ng-class="{active: $state.current.activetab == 'terms'}">Terms of Use</a></li>
+							<li><a class="site-footer-list__link" href="/docs/Earthly_Privacy_Policy.pdf" ng-class="{active: $state.current.activetab == 'privacy-policy'}">Privacy Policy</a></li>
+							<li><a class="site-footer-list__link" href="/docs/Earthly_Client_Agreement.pdf" ng-class="{active: $state.current.activetab == 'client-agreement'}">Client Agreement</a></li>
+							<li><a class="site-footer-list__link" href="/docs/Earthly_Terms_of_Use.pdf" ng-class="{active: $state.current.activetab == 'terms'}">Terms of Use</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">
@@ -60,7 +60,35 @@
 				</div>
 		</div>
 
-		<div class="container">
+		<div class="three-up-tiles">
+			<div class="container">
+					<div class="grid">
+							<div class="grid__item">
+								<p class="three-up-tiles__text">Data and custody provided by:</p>
+								<p><img src="/wp-content/themes/earthly-2016/build/images/global/folio-client.png" class="three-up-tiles__icon  three-up-tiles__icon--sustainable" width="" height=""></p>
+							</div>
+							<div class="grid__item">
+								<p class="three-up-tiles__text">&nbsp;</p>
+								<p><a href="http://www.msci.com" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/MSCI_logo.png" class="three-up-tiles__icon  three-up-tiles__icon--automated" width="" height=""></a></p>
+								<div class="applet">
+									<div class="disclaimer-section">
+										<button>Disclaimer information</button>
+										<div class="modal">
+											<span>&times;</span>
+											<p>THE USE BY EARTHLY PBC OF ANY MSCI ESG RESEARCH LLC DATA, AND THE USE OF MSCI LOGOS, TRADEMARKS, SERVICE MARKS OR INDEX NAMES HERIN, DO NOT CONSTITUTE A SPONSORSHIP, ENDORSEMENT OR PROMOTION OF EARTHLY PBC BY MSCI OR ANY OF ITS AFFILIATES. MSCI SERVICES AND DATA ARE THE PROPERTY OF MSCI OR ITS INFORMATION PROVIDERS. MSCI AND MSCI ESG RESEARCH NAMES AND LOGOS ARE TRADEMARKS OR SERVICE MARKS OF MSCI OR ITS AFFILIATES.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid__item">
+									<p class="three-up-tiles__text">&nbsp;</p>
+									<p><a href="http://sipc.org" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/sipc-logo-member.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost" width="" height=""></a></p>
+							</div>
+					</div>
+			</div>
+	</div>
+
+	<div class="container">
 			<div class="grid">
 				<div class="grid__item legal white">
 					<p>Past performance is no guarantee of future results. Investments are not FDIC insured, and securities and investments may lose value. Any historical returns, expected returns, or probability projections may not reflect actual future performance. All securities involve risk and may result in loss. All information herein as well as any communications on social media is not an offer, solicitation of an offer, or advice to buy or sell securities or services.</p>
@@ -71,18 +99,9 @@
 					<p>By using this website, you hereby consent to our <a ui-sref="terms" class="white">Terms of Use</a> and <a  class="white" ui-sref="privacy-policy">Privacy Policy</a>.</p>
 					<p>Securities in your account are protected up to $500,000. See <a href="http://sipc.org" class="white">sipc.org</a> for more details.</p>
 				</div>
-
-				<div class="applet">
-					<div class="disclaimer-section">
-	          <button>Details</button>
-	          <div class="modal">
-	            <span>&times;</span>
-	            <p>This graph compares Earthly's advisory fee and average fund expense ratio (0.04%) with a traditional investment advisor's fee (1.00%) plus the average equity mutual fund expense ratio (1.00%).  Assumptions include $100,000 invested in a 90/10 stock portfolio at 100% socially responsible investments with a 6% continuously compounded annual return over 30 years.  Note that Earthly's advisory fee includes Earthly(DNA) which has a 0% expense ratio.</p>
-	          </div>
-		      </div>
-	      </div>
 			</div>
 		</div>
+
 
 
 		<div class="container">

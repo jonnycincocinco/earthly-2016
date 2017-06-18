@@ -1476,6 +1476,28 @@ button.cta.desktop-nav--cta {
     overflow: hidden;
     width: 5.625rem;
     background-size: 50%; }
+  .site-footer .three-up-tiles .three-up-tiles__text,
+  .site-footer .three-up-tiles button {
+    color: #fff !important;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    margin: 0 0 0.75rem;
+    text-align: left; }
+  .site-footer .three-up-tiles button {
+    text-decoration: underline;
+    font-style: italic;
+    max-width: 100%;
+    margin-top: -10px; }
+  .site-footer .three-up-tiles img {
+    height: 75px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    padding: 15px; }
+  .site-footer .three-up-tiles .applet .disclaimer-section {
+    justify-content: flex-start; }
 
 .site-footer-divider {
   background: #ebeef0;
@@ -1818,6 +1840,10 @@ button.cta,
 .home .three-up-tiles {
   padding-top: 5rem;
   padding-bottom: 5rem; }
+
+.site-footer .three-up-tiles {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .three-up-tiles .grid__item {
   text-align: center;
@@ -2661,7 +2687,7 @@ button.cta,
           .security--container .icon-text .icon-text-col__item .icon-text-col__icon img {
             margin-right: 10px; } }
       .about-us--container .icon-text .icon-text-col__item .icon-text-col__icon img {
-        box-shadow: none;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
         padding: 0; }
         @media only screen and (min-width: 768px) {
           .about-us--container .icon-text .icon-text-col__item .icon-text-col__icon img {
@@ -3419,7 +3445,7 @@ ul.three-up-tiles__list {
 
 .section__personal-advisor {
   background-image: url(/wp-content/themes/earthly-2016/build/images/pages/personal-advisor.png);
-  background-position: 50% 80%;
+  background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 12.5rem; }
@@ -3427,7 +3453,8 @@ ul.three-up-tiles__list {
     margin-bottom: 0; }
   @media only screen and (min-width: 1024px) {
     .section__personal-advisor {
-      padding: 5rem 0 26.25rem; } }
+      padding: 5rem 0 27.5rem;
+      background-position: 50% 100px; } }
 
 .faqs .icon-text-col {
   float: left;

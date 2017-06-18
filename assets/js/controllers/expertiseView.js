@@ -43,7 +43,7 @@ return {
 
     $scope.PostsBySlug = PostsBySlug.getPostsBySlug('posts').query($stateParams);
 
-
+//     =
 
 
     $scope.PostsBySlug.$promise.then(function (response) {
@@ -65,6 +65,8 @@ return {
         date.splice(-1, 1)
         date = date.join(',');
         posts[i].newDate = date;
+        $scope.cleanExcerpt = posts[i].excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, "");
+        console.log($scope.cleanExcerpt);
       }
     });
 

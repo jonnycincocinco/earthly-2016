@@ -89,6 +89,32 @@
     width: calculateRem(90px);
     background-size: 50%;
   }
+  .three-up-tiles {
+    .three-up-tiles__text,
+    button {
+      color: #fff !important;
+      @include font-size(12);
+      @include line-height(20);
+      margin: 0 0 calculateRem(12px);
+      text-align: left;
+    }
+    button {
+      text-decoration: underline;
+      font-style: italic;
+      max-width: 100%;
+      margin-top: -10px;
+    }
+    img {
+      height: 75px;
+      background: #fff;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0,0,0,.5);
+      padding: 15px;
+    }
+    .applet .disclaimer-section {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .site-footer-divider {

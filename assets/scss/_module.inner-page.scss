@@ -28,6 +28,10 @@
       padding-top: calculateRem(80px);
       padding-bottom: calculateRem(80px);
     }
+    .site-footer & {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
    .grid__item {
      text-align: center;
      margin-bottom: calculateRem(40px);

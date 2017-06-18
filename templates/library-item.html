@@ -5,9 +5,9 @@
     <div class="library--container" ng-repeat="post in posts">
 
       <update-title title="{{post.title.rendered}}"></update-title>
-      <update-meta name="description" content="{{post.excerpt.rendered}}"></update-meta>
+      <update-meta name="description" content="{{cleanExcerpt}}"></update-meta>
       <update-meta property="og:title" content="{{post.title.rendered}}"></update-meta>
-      <update-meta property="og:description" content="{{post.excerpt.rendered}}"></update-meta>
+      <update-meta property="og:description" content="{{cleanExcerpt}}"></update-meta>
       <update-meta property="og:url" content="https://www.beearthly.com/#!/library/{{post.slug}}"></update-meta>
       <update-meta property="og:image" content="{{post.acf.expertise_assets[0].image_asset}}"></update-meta>
 
