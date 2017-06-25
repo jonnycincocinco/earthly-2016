@@ -132,15 +132,27 @@
 
   .section__personal-advisor {
     background-image: url(/wp-content/themes/earthly-2016/build/images/pages/personal-advisor.png);
-    background-position: 50% 100%;
+    background-position: 75% 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-bottom: calculateRem(200px);
+//    padding-bottom: calculateRem(200px);
+    .container {
+        @include breakpoint(tablet) {
+          margin-left: calculateRem(50px);
+        }
+        @include breakpoint(desktop) {
+          margin-left: calculateRem(100px);
+        }
+        @include breakpoint(cinema) {
+          margin-left: calculateRem(200px);
+        }
+
+
+    }
     h2 {
       margin-bottom: 0;
     }
-    @include breakpoint(desktop) {
-      padding: calculateRem(80px) 0 calculateRem(440px);
-    background-position: 50% 100px;
+    @include breakpoint(mobileOnly) {
+      background-image: none;
     }
   }

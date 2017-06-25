@@ -65,8 +65,9 @@ return {
         date.splice(-1, 1)
         date = date.join(',');
         posts[i].newDate = date;
-        $scope.cleanExcerpt = posts[i].excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, "");
-        console.log($scope.cleanExcerpt);
+        $scope.cleanExcerpt = posts[i].excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, "").replace(/&#8217;/g, "'");
+        $scope.cleanTitle = posts[i].title.rendered.replace(/&#8217;/g, "'");
+  //      console.log($scope.cleanTitle);
       }
     });
 

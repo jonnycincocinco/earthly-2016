@@ -30,7 +30,8 @@
     }
     .site-footer & {
       padding-top: 0;
-      padding-bottom: 0;
+      padding-bottom: calculateRem(20px);
+//      margin-left: calculateRem(-43px);
     }
    .grid__item {
      text-align: center;

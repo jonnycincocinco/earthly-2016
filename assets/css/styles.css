@@ -738,6 +738,9 @@ a,
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
 
+.nowrap {
+  white-space: nowrap; }
+
 .anim-in-out.anim-in-setup.anim-fade, .anim-in-out.anim-in-setup .anim-fade {
   opacity: 0; }
 
@@ -1476,19 +1479,24 @@ button.cta.desktop-nav--cta {
     overflow: hidden;
     width: 5.625rem;
     background-size: 50%; }
-  @media only screen and (min-width: 768px) {
-    .site-footer .three-up-tiles .grid__item {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 25%; }
-      .site-footer .three-up-tiles .grid__item:last-child {
-        margin-right: 0; } }
+  .site-footer .three-up-tiles .grid__item {
+    position: relative;
+    z-index: 1; }
+    .site-footer .three-up-tiles .grid__item.grid__item--applet {
+      z-index: 99999; }
+    @media only screen and (min-width: 768px) {
+      .site-footer .three-up-tiles .grid__item {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 25%; }
+        .site-footer .three-up-tiles .grid__item:last-child {
+          margin-right: 0; } }
   .site-footer .three-up-tiles .three-up-tiles__image {
-    text-align: center;
-    margin: auto; }
+    text-align: left; }
   .site-footer .three-up-tiles .three-up-tiles__text,
-  .site-footer .three-up-tiles button {
+  .site-footer .three-up-tiles button,
+  .site-footer .three-up-tiles .disclaimer--text {
     color: #fff !important;
     font-size: 12px;
     font-size: 0.75rem;
@@ -1501,20 +1509,19 @@ button.cta.desktop-nav--cta {
     text-decoration: underline;
     font-style: italic;
     max-width: 100%;
-    margin-top: -10px;
-    text-align: center;
+    text-align: left;
     padding: 0; }
+  .site-footer .three-up-tiles .disclaimer--text {
+    max-width: 12.5rem; }
   .site-footer .three-up-tiles img {
-    height: 70px;
-    border-radius: 2px;
-    padding: 15px; }
-    .site-footer .three-up-tiles img.three-up-tiles__image--large {
-      height: 80px; }
+    height: 40px;
+    border-radius: 2px; }
   .site-footer .three-up-tiles .applet .disclaimer-section {
     justify-content: flex-start; }
     .site-footer .three-up-tiles .applet .disclaimer-section .modal {
       max-width: 50vw;
-      width: 50vw; }
+      width: 50vw;
+      left: -100%; }
 
 .site-footer-divider {
   background: #ebeef0;
@@ -1860,7 +1867,7 @@ button.cta,
 
 .site-footer .three-up-tiles {
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 1.25rem; }
 
 .three-up-tiles .grid__item {
   text-align: center;
@@ -2294,7 +2301,8 @@ button.cta,
   @media only screen and (min-width: 1024px) {
     .page-home--hero {
       padding-bottom: 0;
-      min-height: 750px; } }
+      min-height: 750px;
+      background-position: 0 64px; } }
   @media only screen and (min-width: 1430px) {
     .page-home--hero {
       padding-bottom: 0;
@@ -2563,7 +2571,6 @@ button.cta,
   width: 0.45em; }
 
 .applet .disclaimer-section {
-  cursor: pointer;
   margin: 0;
   display: flex;
   align-items: center;
@@ -2572,6 +2579,8 @@ button.cta,
   z-index: 1;
   font-size: 14px;
   font-size: 0.875rem; }
+  .applet .disclaimer-section button {
+    cursor: pointer; }
   .applet .disclaimer-section:focus + .disclaimer {
     height: auto;
     opacity: 1;
@@ -3297,6 +3306,10 @@ ul.three-up-tiles__list {
     .about-us--container .icon-text-col__item:last-child {
       margin-right: 0; } }
 
+.about-us--container .better-way img {
+  box-shadow: none !important;
+  border: none !important; }
+
 .about-team .title {
   font-weight: 800;
   font-size: 12px;
@@ -3474,16 +3487,23 @@ ul.three-up-tiles__list {
 
 .section__personal-advisor {
   background-image: url(/wp-content/themes/earthly-2016/build/images/pages/personal-advisor.png);
-  background-position: 50% 100%;
+  background-position: 75% 100%;
   background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 12.5rem; }
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 768px) {
+    .section__personal-advisor .container {
+      margin-left: 3.125rem; } }
+  @media only screen and (min-width: 1024px) {
+    .section__personal-advisor .container {
+      margin-left: 6.25rem; } }
+  @media only screen and (min-width: 1430px) {
+    .section__personal-advisor .container {
+      margin-left: 12.5rem; } }
   .section__personal-advisor h2 {
     margin-bottom: 0; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     .section__personal-advisor {
-      padding: 5rem 0 27.5rem;
-      background-position: 50% 100px; } }
+      background-image: none; } }
 
 .faqs .icon-text-col {
   float: left;

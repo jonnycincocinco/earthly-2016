@@ -35,6 +35,7 @@
     @include breakpoint(desktop) {
       padding-bottom: 0;
       min-height: 750px;
+      background-position: 0 64px;
     }
     @include breakpoint(cinema) {
       padding-bottom: 0;
@@ -326,7 +327,6 @@
       }
     }
   .disclaimer-section {
-    cursor: pointer;
     margin: 0;
     display: flex;
     align-items: center;
@@ -334,6 +334,9 @@
     position: relative;
     z-index: 1;
     @include font-size(14);
+    button {
+      cursor: pointer;
+    }
     &:focus {
       +.disclaimer {
         height: auto;
