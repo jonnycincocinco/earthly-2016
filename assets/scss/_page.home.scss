@@ -434,3 +434,12 @@
     }
   }
 }
+
+.comparison-chart {
+  img {
+    width: 100%;
+    @include breakpoint(desktop) {
+      width: 675px;
+    }
+  }
+}

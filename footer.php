@@ -38,6 +38,7 @@
 							<li><a class="site-footer-list__link" href="/docs/Earthly_Privacy_Policy.pdf" ng-class="{active: $state.current.activetab == 'privacy-policy'}">Privacy Policy</a></li>
 							<li><a class="site-footer-list__link" href="/docs/Earthly_Client_Agreement.pdf" ng-class="{active: $state.current.activetab == 'client-agreement'}">Client Agreement</a></li>
 							<li><a class="site-footer-list__link" href="/docs/Earthly_Terms_of_Use.pdf" ng-class="{active: $state.current.activetab == 'terms'}">Terms of Use</a></li>
+							<li><a class="site-footer-list__link" href="/docs/Earthly_Form_ADV_Part2A.pdf" ng-class="{active: $state.current.activetab == 'terms'}">Form ADV Part 2</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">
@@ -65,11 +66,15 @@
 					<div class="grid">
 							<div class="grid__item">
 								<p class="three-up-tiles__text">Data and custody provided by:</p>
-								<p><img src="/wp-content/themes/earthly-2016/build/images/global/folio-client.png" class="three-up-tiles__icon  three-up-tiles__icon--sustainable" width="" height=""></p>
+								<p class="three-up-tiles__image"><img src="/wp-content/themes/earthly-2016/build/images/global/folio-client.png" class="three-up-tiles__icon  three-up-tiles__icon--sustainable" width="" height=""></p>
+							</div>
+							<div class="grid__item">
+									<p class="three-up-tiles__text">&nbsp;</p>
+									<p class="three-up-tiles__image"><a href="http://sipc.org" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/sipc-logo-member.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost three-up-tiles__image--large" width="" height=""></a></p>
 							</div>
 							<div class="grid__item">
 								<p class="three-up-tiles__text">&nbsp;</p>
-								<p><a href="http://www.msci.com" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/MSCI_logo.png" class="three-up-tiles__icon  three-up-tiles__icon--automated" width="" height=""></a></p>
+								<p class="three-up-tiles__image"><a href="http://www.msci.com" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/MSCI_logo.png" class="three-up-tiles__icon  three-up-tiles__icon--automated" width="" height=""></a></p>
 								<div class="applet">
 									<div class="disclaimer-section">
 										<button>Disclaimer information</button>
@@ -82,7 +87,7 @@
 							</div>
 							<div class="grid__item">
 									<p class="three-up-tiles__text">&nbsp;</p>
-									<p><a href="http://sipc.org" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/sipc-logo-member.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost" width="" height=""></a></p>
+									<p class="three-up-tiles__image three-up-tiles__image--large"><img src="/wp-content/themes/earthly-2016/build/images/global/secure_invert.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost three-up-tiles__image--large" width="" height=""></p>
 							</div>
 					</div>
 			</div>

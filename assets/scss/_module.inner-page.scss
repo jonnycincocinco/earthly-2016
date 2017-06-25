@@ -204,6 +204,12 @@
     @include font-size(14);
     @include line-height(22);
   }
+  &__traditional {
+    color: $base--ctaColor;
+  }
+  &__earthly {
+    color: $base--lightblue;
+  }
 }
 
 //expando box
