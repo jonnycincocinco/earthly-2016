@@ -150,10 +150,10 @@
     color: white;
     z-index: 10;
     @include breakpoint(tablet) {
-      margin-top: 12%;
+      margin-top: calculateRem(143px);
     }
     @include breakpoint(desktop) {
-      margin-top: 17%;
+      margin-top: calculateRem(230px);
     }
     @include breakpoint(cinema) {
       margin-top: 25%;

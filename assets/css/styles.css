@@ -1112,13 +1112,20 @@ header {
     color: #fff; }
   @media only screen and (min-width: 1024px) {
     .desktop-nav--main {
+      margin-right: 0;
       display: block; } }
+  @media only screen and (min-width: 1430px) {
+    .desktop-nav--main {
+      margin-right: 20px; } }
   .desktop-nav--main li {
     float: left;
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 400;
     margin-right: 23px; }
+    @media only screen and (min-width: 1024px) {
+      .desktop-nav--main li {
+        margin-right: 21px; } }
     .desktop-nav--main li:last-child {
       margin-right: 0; }
     .desktop-nav--main li a {
@@ -2402,10 +2409,10 @@ button.cta,
   z-index: 10; }
   @media only screen and (min-width: 768px) {
     .page-home--intro {
-      margin-top: 12%; } }
+      margin-top: 8.9375rem; } }
   @media only screen and (min-width: 1024px) {
     .page-home--intro {
-      margin-top: 17%; } }
+      margin-top: 14.375rem; } }
   @media only screen and (min-width: 1430px) {
     .page-home--intro {
       margin-top: 25%;

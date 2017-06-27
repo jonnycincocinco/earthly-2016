@@ -101,7 +101,7 @@
 									<p class="three-up-tiles__image"><a href="http://sipc.org" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/sipc-logo-member.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost three-up-tiles__image--large" width="" height=""></a></p>
 									<div class="applet">
 										<div class="disclaimer-section">
-											<p class="disclaimer--text">Securities in your account are protected up to $500,000.</p>
+											<p class="disclaimer--text">Securities in your account are protected up to $500,000. See <a class="white" href="http://sipc.org" target="_blank">sipc.org</a> for more details.</p>
 										</div>
 									</div>
 							</div>

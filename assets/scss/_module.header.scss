@@ -119,13 +119,20 @@ header {
     }
   }
   @include breakpoint(desktop) {
-      display: block;
+    margin-right: 0;
+    display: block;
+  }
+  @include breakpoint(cinema) {
+    margin-right: 20px;
   }
   li {
     float: left;
     @include font-size(14);
     font-weight: 400;
     margin-right: 23px;
+    @include breakpoint(desktop) {
+      margin-right: 21px;
+    }
     &:last-child {
       margin-right: 0;
     }
