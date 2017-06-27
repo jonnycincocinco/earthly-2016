@@ -84,7 +84,7 @@
 								<p class="three-up-tiles__image"><img src="/wp-content/themes/earthly-2016/build/images/global/folio-client.png" class="three-up-tiles__icon  three-up-tiles__icon--sustainable" width="" height=""></p>
 							</div>
 							<div class="grid__item grid__item--applet">
-								<p class="three-up-tiles__text">ESG and business involvement <span class="nowrap">research from:</span></p>
+								<p class="three-up-tiles__text">Sustainability <span class="nowrap">research from:</span></p>
 								<p class="three-up-tiles__image"><a href="http://www.msci.com" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/MSCI_logo.png" class="three-up-tiles__icon  three-up-tiles__icon--automated" width="" height=""></a></p>
 								<div class="applet">
 									<div class="disclaimer-section">
