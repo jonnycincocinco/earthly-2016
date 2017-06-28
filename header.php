@@ -14,12 +14,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="Earthly offers investment advisory and management services based on the principles of passive investment management, sustainable investing and socially responsible investing in order to provide a low-cost and sustainable investment platform for individual investors and institutions.">
   <meta name="author" content="">
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Earthly Sustainable Investments"/>
+  <meta property="og:title" content="Earthly - Sustainable Investment Management and Advice"/>
   <meta property="og:image" content="/wp-content/themes/earthly-2016/build/images/global/earthly.png"/>
-  <meta property="og:description" content="Earthly Web site"/>
+  <meta property="og:description" content="Earthly offers investment advisory and management services based on the principles of passive investment management, sustainable investing and socially responsible investing in order to provide a low-cost and sustainable investment platform for individual investors and institutions."/>
   <meta property="og:url" content="https://www.beearthly.com/#!/" />
   <link rel="icon" type="image/png" href="wp-content/themes/earthly-2016/build/images/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="wp-content/themes/earthly-2016/build/images/icons/favicon-16x16.png" sizes="16x16">
@@ -27,6 +27,7 @@
   <link rel="apple-touch-icon" sizes="120x120" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="152x152" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="wp-content/themes/earthly-2016/build/images/icons/apple-touch-icon-180x180.png">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.beearthly.com/sitemap.xml" />
 
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 

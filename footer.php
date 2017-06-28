@@ -72,6 +72,7 @@
 				<div class="grid__item legal white">
 					<p>Earthly is a Public Benefit Corporation and is an SEC registered investment advisor.  Brokerage services are provided by Folio Investments, Inc.</p>
 					<p>By using this website, you hereby consent to our <a href="/docs/Earthly_Terms_of_Use.pdf" class="white">Terms of Use</a> and <a href="/docs/Earthly_Privacy_Policy.pdf" class="white">Privacy Policy</a>.</p>
+					<p>Securities in your account are protected up to $500,000. See <a class="white" href="http://sipc.org" target="_blank">sipc.org</a> for more details.</p>
 				</div>
 			</div>
 		</div>
@@ -80,7 +81,7 @@
 			<div class="container">
 					<div class="grid">
 							<div class="grid__item">
-								<p class="three-up-tiles__text">&nbsp;<br/>Data and custody provided by:</p>
+								<p class="three-up-tiles__text">Data and custody provided by:</p>
 								<p class="three-up-tiles__image"><img src="/wp-content/themes/earthly-2016/build/images/global/folio-client.png" class="three-up-tiles__icon  three-up-tiles__icon--sustainable" width="" height=""></p>
 							</div>
 							<div class="grid__item grid__item--applet">
@@ -97,16 +98,16 @@
 								</div>
 							</div>
 							<div class="grid__item">
-									<p class="three-up-tiles__text">&nbsp;<br/>&nbsp;</p>
+									<p class="three-up-tiles__text">&nbsp;</p>
 									<p class="three-up-tiles__image"><a href="http://sipc.org" target="_blank"><img src="/wp-content/themes/earthly-2016/build/images/global/sipc-logo-member.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost three-up-tiles__image--large" width="" height=""></a></p>
 									<div class="applet">
 										<div class="disclaimer-section">
-											<p class="disclaimer--text">Securities in your account are protected up to $500,000. See <a class="white" href="http://sipc.org" target="_blank">sipc.org</a> for more details.</p>
+											<p class="disclaimer--text"></p>
 										</div>
 									</div>
 							</div>
 							<div class="grid__item">
-									<p class="three-up-tiles__text">&nbsp;<br/>&nbsp;</p>
+									<p class="three-up-tiles__text">&nbsp;</p>
 									<p class="three-up-tiles__image three-up-tiles__image--large"><img src="/wp-content/themes/earthly-2016/build/images/global/secure_invert.png" class="three-up-tiles__icon  three-up-tiles__icon--low-cost three-up-tiles__image--large" width="" height=""></p>
 							</div>
 					</div>
