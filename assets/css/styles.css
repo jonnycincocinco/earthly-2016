@@ -2492,7 +2492,8 @@ button.cta,
         font-size: 1.125rem; } }
   .page-home--intro.mobile-header {
     position: relative;
-    margin-bottom: 45%;
+    margin-top: 35%;
+    margin-bottom: 65%;
     padding-left: 0; }
     .page-home--intro.mobile-header .page-home--intro-hdr {
       width: 100%; }
