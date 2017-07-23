@@ -2,7 +2,7 @@
 		<div class="cta-ribbon section-strip">
 				<h2 class="text-align-center white">Ready to make a difference?</h2>
 				<p class="cta-ribbon__subhead text-align-center light-green">Start your investment plan.</p>
-					<button ui-sref="sign-up" class="cta">Get Started</button>
+					<a href="https://app.beearthly.com/#!/register"><button class="cta">Get Started</button></a>
 		</div>
 
 				<div class="container">

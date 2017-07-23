@@ -77,7 +77,7 @@
             <li><a ui-sref="library" ng-class="{active: $state.current.activetab == 'library'}">Library</a></li>
             <li><a ui-sref="about-us" ng-class="{active: $state.current.activetab == 'about-us'}">About</a></li>
             <li>
-            <button ui-sref="sign-up"  class="desktop-nav--cta cta">Sign Up</button>
+            <a href="https://app.beearthly.com/#!/register"><button class="desktop-nav--cta cta">Sign Up</button></a>
             </li>
             <li><a class="" title="<?php echo bloginfo('name'); ?>" href="https://app.beearthly.com/#/login">Log In</a></li>
           </ul>
