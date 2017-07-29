@@ -1728,7 +1728,7 @@ input[type=date]::-webkit-outer-spin-button {
   overflow: hidden; }
 
 .cta a,
-.cta button,
+a.cta,
 button.cta,
 .form-buttons input {
   font-size: 16px;
@@ -1748,21 +1748,21 @@ button.cta,
   box-shadow: 0 0.05556rem 0 0 #f2703f;
   border-radius: .33333rem; }
   .cta a.right,
-  .cta button.right,
+  a.cta.right,
   button.cta.right,
   .form-buttons input.right {
     float: right;
     clear: both;
     margin-right: 1%; }
   .cta a.left,
-  .cta button.left,
+  a.cta.left,
   button.cta.left,
   .form-buttons input.left {
     float: left;
     clear: both;
     margin-right: 1%; }
   .cta a:hover,
-  .cta button:hover,
+  a.cta:hover,
   button.cta:hover,
   .form-buttons input:hover {
     background-color: #c23c27;
