@@ -17,8 +17,8 @@
   <meta name="description" content="Earthly offers investment advisory and management services based on the principles of passive investment management, sustainable investing and socially responsible investing in order to provide a low-cost and sustainable investment platform for individual investors and institutions.">
   <meta name="author" content="">
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Earthly - Sustainable Investment Management and Advice"/>
-  <meta property="og:image" content="/wp-content/themes/earthly-2016/build/images/global/earthly.png"/>
+  <!-- <meta property="og:title" content="Earthly - Sustainable Investment Management and Advice"/>
+  <meta property="og:image" content="/wp-content/themes/earthly-2016/build/images/global/earthly.png"/> -->
   <meta property="og:description" content="Earthly offers investment advisory and management services based on the principles of passive investment management, sustainable investing and socially responsible investing in order to provide a low-cost and sustainable investment platform for individual investors and institutions."/>
   <meta property="og:url" content="https://www.beearthly.com/#!/" />
   <link rel="icon" type="image/png" href="wp-content/themes/earthly-2016/build/images/icons/favicon-32x32.png" sizes="32x32">
