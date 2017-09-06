@@ -31,6 +31,7 @@ gulp.task('angular', function(){
 		'node_modules/angular-animate/angular-animate.min.js',
 		'node_modules/angular-ui-router/build/angular-ui-router.min.js',
 		'bower_components/angular-update-meta/dist/update-meta.min.js',
+		'bower_components/highcharts/highstock.js',
 		'assets/js-ng/anim-in-out.js',
 		'assets/js-ng/picturefill.min.js',
 		'assets/js-ng/angular-picture.js',

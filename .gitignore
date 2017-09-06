@@ -40,6 +40,7 @@ coverage
 
 npm-debug.log
 node_modules
+bower_components
 
 # -----------------------------------------
 # ENVIRONMENT & IDE SPECIFIC SETTINGS FILES
